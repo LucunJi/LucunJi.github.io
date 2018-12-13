@@ -1895,7 +1895,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #1f886c;
+  background: #ffff7e;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3220,7 +3220,7 @@ body {
 }
 @font-face {
   font-family: zcool-gdh;
-  src: url("./fonts/站酷高端黑修订151105.ttf") format('truetype');
+  src: url("../fonts/站酷高端黑修订151105.ttf") format('truetype');
 }
 .site-title {
   font-size: 40px !important;
