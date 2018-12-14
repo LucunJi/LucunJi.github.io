@@ -1895,7 +1895,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #5bff67;
+  background: #4f54a8;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3234,4 +3234,19 @@ body {
 }
 .site-author-image {
   border-radius: 10%;
+}
+.video {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.video iframe,
+.video object,
+.video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
