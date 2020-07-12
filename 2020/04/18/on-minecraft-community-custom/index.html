@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=6.6.0" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.6.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=6.6.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=6.6.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.6.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '6.6.0',
+    sidebar: {"position":"left","width":260,"display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="目前的 Minecraft 社区中，一直存在着关于红石、建筑、指令各领域用户作品归属、使用、再创作等问题的争论。这些争议短则一天，长则一周甚至一月。这些争议很少能够被较为圆满地解决，而由这些争议所引发的社区中的进步就更是凤毛麟角。">
+<meta name="keywords" content="minecraft">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于 Minecraft 社区规范">
+<meta property="og:url" content="http://lucunji.github.io/2020/04/18/on-minecraft-community-custom/index.html">
+<meta property="og:site_name" content="LucunJi">
+<meta property="og:description" content="目前的 Minecraft 社区中，一直存在着关于红石、建筑、指令各领域用户作品归属、使用、再创作等问题的争论。这些争议短则一天，长则一周甚至一月。这些争议很少能够被较为圆满地解决，而由这些争议所引发的社区中的进步就更是凤毛麟角。">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2020-04-18T14:35:48.454Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="关于 Minecraft 社区规范">
+<meta name="twitter:description" content="目前的 Minecraft 社区中，一直存在着关于红石、建筑、指令各领域用户作品归属、使用、再创作等问题的争论。这些争议短则一天，长则一周甚至一月。这些争议很少能够被较为圆满地解决，而由这些争议所引发的社区中的进步就更是凤毛麟角。">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="LucunJi" type="application/atom+xml">
+
+
+
+
+  <link rel="canonical" href="http://lucunji.github.io/2020/04/18/on-minecraft-community-custom/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>关于 Minecraft 社区规范 | LucunJi</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion .logo-line-before i { left: initial; }
+    .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">LucunJi</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-booklist">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/booklist/" rel="section"><i class="menu-item-icon fa fa-fw fa-book"></i> <br>书单</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-gallery">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/gallery/" rel="section"><i class="menu-item-icon fa fa-fw fa-photo"></i> <br>相册</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://lucunji.github.io/2020/04/18/on-minecraft-community-custom/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="LucunJi">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LucunJi">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">关于 Minecraft 社区规范
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2020-04-18 06:11:58 / 修改时间：09:35:48" itemprop="dateCreated datePublished" datetime="2020-04-18T06:11:58-05:00">2020-04-18</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2020/04/18/on-minecraft-community-custom/" class="leancloud_visitors" data-flag-title="关于 Minecraft 社区规范">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数：</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>目前的 Minecraft 社区中，一直存在着关于红石、建筑、指令各领域用户作品归属、使用、再创作等问题的争论。这些争议短则一天，长则一周甚至一月。这些争议很少能够被较为圆满地解决，而由这些争议所引发的社区中的进步就更是凤毛麟角。</p>
+<a id="more"></a>
+<p>了解一些英文的读者可以看出，这篇文章的标题是 <em>On Minecraft Community Custom</em>，致敬了大作家蒙田的文章 <em>On Custom</em>。作为一次东施效颦，在这篇文章里我会尝试着以怀疑态度对一些 MC 社区中的观点进行反驳。此文仅代表我在写作此文时的态度——我的观点必然会随着时间或多或少地变化。另外，我也期待与各位读者进行相关话题的探讨。</p>
+<p>为了讨论对 MC 玩家作品的使用和借鉴规范，我们回到问题的根本处。之所以需要此类探讨，是因为现存的法律体系难以给出一个令人满意的答案。将视野拉远，互联网的版权问题一直存在着争议：迪士尼层出不穷的版权官司，漫画本地化人员的冷遇，“搬运工”涉及到的种种争议。互联网上作品传播、保存、评论的简单快捷注定使得非互联网领域的版权规范在这里显得古板而笨拙。于是各个网络社区的用户都尝试着在表达创作的同时自行约定规范。经过较长一段时间的积淀后，这些零散的规范逐渐变得深入人心，由此便形成了各种社区规范习俗。MMD[1]会要求制作者注明“借物表”，即列出所使用的模型的作者；不去“本家”（即原作）刷翻唱也称成为音乐相关作品的礼仪规范。</p>
+<p>然而，并不是所有用户社区都可以在这样的一个过程中形成一套自己的规范，Minecraft 社区就是一个例子。可以做出如下分析：由于入门 Minecraft 游戏并没有太大的难度，玩家并不会刻意地加入专门讨论这个游戏的社区。他们可以只是用这个游戏打发业余时间，与朋友联络。而另一些事物，例如 音MAD[2]，MMD 等，都对用户有着较高的入门要求。因此用户更倾向于加入一个专一的社区来更高效地提升水平。由于 Minecraft 用户完全可以游离于专门的社区之外，很难确保他们对于社区的规范有所了解。另外，Minecraft 服务器使得玩家更倾向于分散为更小的群体，各自为政。这些小群体内部往往有着比外部社区更高的交流。这些小群体之间并非没有交流，但是往往较难暴露出观点的一些差异。</p>
+<p>这些关于作品所有权、使用方法的意见差异，往往会导致群体之间的争论，并且在这些争论中被暴露出来。不过由于缺乏有组织的、理性的思考，这些争论往往并不会产生什么真正有利社区的结果——休战只是为了双方止损，而观念的差异却没有被解决。持有不同意见的个人、群体之间难以建立有效的对话。观点的交流往往被妥协所取代。</p>
+<p>在这些争论中，一种常见的观点是对现存版权法律的“拿来主义”。持有这种观念的人通常会使用现存法律条文中的规定来画出网络上侵权与非侵权的界线，并据此认为，应有的裁定已经完成，剩下的只是依照现有条文进行处罚。然而，在经过考虑以后，人们应该会发现这种思维只是图一时之方便的偷懒之举。这种观点错误地判断了原因与结果：因现有法律条文难以较好地适配网络社区，而需要对此乱象进行更细致的讨论；并非因现存的种种乱象，需要引用现存的法律条文来进行规范。如果现存的法律条文能较好地对网络社区进行规范，各种争执便不会产生。而目前出现的争论，正是现有条文无法维持社区秩序的印证。</p>
+<p>于是，问题从来没有从根本上解决，因为这种生搬硬套往往难以让人信服。正如福熙对于第一次世界大战的评论[3]：</p>
+<center><i>This is not peace. It is an armistice for 20 years.</i></center>
+<center><i>这不是和平。这是二十年的休战。</i></center>
+<p>这种“拿来主义”是一种因恐惧争论进一步激化而不愿深入探讨问题的消极作风。不仅不能提供一种有效的解决手段，反而会使这个社区的成员产生一种“有法可依”的错觉。一旦类似争议再次爆发，用户便会出现一种奇妙的心理状态。他们对于被怀疑侵权者产生了一种犹如敌视罪犯一般的道德谴责，同时又对假定的秩序无法被有效遵守产生一种沮丧、悲观态度。于是常常会出现对被怀疑者的激烈声讨，与对社区整体的不信任。为了不使文章离题，这里不对常见的有罪推定、非黑即白等进一步激化矛盾的误区进行赘述，不过作为题外话，小心地求证，并大胆假设正方反方意见应当位列行为准则之中。</p>
+<p>基于个人对目前 MC 社区的微不足道的观察，一种有效地改良方式应当是这样的：首先应当积极地推动不同小群体、不同小领域之间的对话。不仅要在争论的时候进行探讨，更要在平时进行探讨。在一时的争论中，对话双方可能会因为利益、公众影响等原因有所顾忌、有所保留；而在平时，双方一般会有较少的顾虑，也更容易心平气和地进行探讨。另外，不能完全摒弃现存法律的条文，而是有所选择性的利用。现存的条文通常是基于一定的假设和原则而制定的。当我们将这些条文搬到网络环境中时，需要考虑到他们所基于的假设是否在 Minecraft 社区中存在，是否在网络社区中产生了变化。这里的逻辑类似于知乎上的一段关于马克思主义的论述[4]：</p>
+<center><i>……历史上并非先有了一套“不拥有生产资料”，“代表先进生产力”，“领导阶级”的论断之后，才有人去研究资本主义社会的弊病，经济剥削的本质，革命力量的所在。真正的逻辑是倒过来的，有了对社会现实的大量研究，对社会革命的强烈动机，为此结合实践创建了一整套理论体系，最后才有人去抽象出几个论断，方便人理解。</i></center>
+<p>例如，创作者可以通过 Creative Commons 等协议注明自己保留、转让、放弃的权利。而具体到如何界定抄袭和侵权，可以由作者明确划出规范，也可以商量决定。海外 Minecraft 社区关于这一点上采取的措施可能可以起到不错的示范作用。</p>
+<p>以上便是我对 Minecraft 社区中用户版权的一些思考。希望能为社区的良性发展起到贡献。</p>
+<p>[1] 即 MikuMikuDance <a href="https://zh.moegirl.org/MikuMikuDance" target="_blank" rel="noopener">https://zh.moegirl.org/MikuMikuDance</a><br>
+[2] 为日文音系MAD／音声MAD的缩略语，是一种使用素材中的乐器对所选BGM进行演奏的视频形式 <a href="https://zh.moegirl.org/%E9%9F%B3MAD#" target="_blank" rel="noopener">https://zh.moegirl.org/音MAD#</a><br>
+[3] Ruth Henig, Versailles and After, 1919-33 (Routledge, 1995), p. 52.<br>
+[4] 作者：白头豕 链接：<a href="https://www.zhihu.com/question/36851145/answer/108617648" target="_blank" rel="noopener">https://www.zhihu.com/question/36851145/answer/108617648</a> 来源：知乎</p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      <div>
+        
+          
+<div class="my_post_copyright">
+<div style="text-align:center;color: #ccc;font-size:14px;">
+------ 版权信息 ------</div>
+ <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+ 
+ <p><span>本文标题:</span><a href="/2020/04/18/on-minecraft-community-custom/">关于 Minecraft 社区规范</a></p>
+ <p><span>文章作者:</span><a href="/" title="访问 LucunJi 的个人博客">LucunJi</a></p>
+ <p><span>发布时间:</span>2020年04月18日 - 06:11</p>
+ <p><span>最后更新:</span>2020年04月18日 - 09:35</p>
+ <p><span>原始链接:</span><a href="/2020/04/18/on-minecraft-community-custom/" title="关于 Minecraft 社区规范">http://lucunji.github.io/2020/04/18/on-minecraft-community-custom/</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://lucunji.github.io/2020/04/18/on-minecraft-community-custom/" aria-label="复制成功！"></i></span>
+ </p>
+ <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0)</a> 转载请保留原文链接及作者。</p>  
+</div>
+<script> 
+   var clipboard = new Clipboard('.fa-clipboard');
+   $(".fa-clipboard").click(function(){
+     clipboard.on('success', function(){
+       swal({   
+         title: "",   
+         text: '复制成功',
+         icon: "success", 
+         showConfirmButton: true
+         });
+ 	 });
+   });  
+</script>
+
+
+        
+      </div>
+      
+        <div class="post-tags">
+          
+            <a href="/tags/minecraft/" rel="tag"># minecraft</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div class="social_share">
+            
+            
+               <div id="needsharebutton-postbottom">
+                 <span class="btn">
+                    <i class="fa fa-share-alt" aria-hidden="true"></i>
+                 </span>
+               </div>
+            
+          </div>
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/01/16/minecraft-bytecode-modding/" rel="next" title="简易修改 Minecraft 字节码">
+                <i class="fa fa-chevron-left"></i> 简易修改 Minecraft 字节码
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/07/12/elevator/" rel="prev" title="电梯">
+                电梯 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+    <div id="gitalk-container">
+    </div>
+    
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/avatar.jpg" alt="LucunJi">
+            
+              <p class="site-author-name" itemprop="name">LucunJi</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">7</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/LucunJi" title="GitHub &rarr; https://github.com/LucunJi" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://space.bilibili.com/2117299/" title="Bilibili &rarr; https://space.bilibili.com/2117299/" rel="noopener" target="_blank"><i class="fa fa-fw fa-toggle-right"></i>Bilibili</a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                友情链接/Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://tis.world" title="https://tis.world" rel="noopener" target="_blank">TIS Union</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://cfpa.team" title="http://cfpa.team" rel="noopener" target="_blank">CFPA 汉化组</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">LucunJi</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v6.6.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+    
+      <div id="needsharebutton-float">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script src="/js/src/utils.js?v=6.6.0"></script>
+
+  <script src="/js/src/motion.js?v=6.6.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/src/affix.js?v=6.6.0"></script>
+
+  <script src="/js/src/schemes/pisces.js?v=6.6.0"></script>
+
+
+
+  
+  <script src="/js/src/scrollspy.js?v=6.6.0"></script>
+<script src="/js/src/post-details.js?v=6.6.0"></script>
+
+
+
+  
+
+
+  <script src="/js/src/bootstrap.js?v=6.6.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <script src="//cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.min.js"></script>
+
+  
+  
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.css">
+
+  
+  
+  <script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+
+   <script>
+        var gitalk = new Gitalk({
+          clientID: '8fd22f2eb6ea944a13c2',
+          clientSecret: '9ed843020c43682254a95859546418fa8d7d43a1',
+          repo: 'MyGitalk',
+          owner: 'LucunJi',
+          admin: ['LucunJi'],
+          id: md5(location.pathname),
+          distractionFreeMode: 'true'
+        })
+        gitalk.render('gitalk-container')
+       </script>
+
+
+  
+
+
+
+
+
+  
+
+  
+  <script>
+    
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+
+      Counter('get', '/classes/Counter', { where: JSON.stringify({ url }) })
+        .done(function ({ results }) {
+          if (results.length > 0) {
+            var counter = results[0];
+            
+              var $element = $(document.getElementById(url));
+              $element.find('.leancloud-visitors-count').text(counter.time + 1);
+            
+            Counter('put', `/classes/Counter/${counter.objectId}`, JSON.stringify({ time: { "__op":"Increment", "amount":1 } }))
+            
+            .fail(function ({ responseJSON }) {
+                console.log('Failed to save Visitor num, with error message: ' + responseJSON.error);
+            })
+          } else {
+            
+              var $element = $(document.getElementById(url));
+              $element.find('.leancloud-visitors-count').text('Counter not initialized! See more at console err msg.');
+              console.error('ATTENTION! LeanCloud counter has security bug, see here how to solve it: https://github.com/theme-next/hexo-leancloud-counter-security. \n But you also can use LeanCloud without security, by set \'security\' option to \'false\'.');
+            
+          }
+        })
+      .fail(function ({ responseJSON }) {
+        console.log('LeanCloud Counter Error:' + responseJSON.code + " " + responseJSON.error);
+      });
+    }
+    
+
+    $(function() {
+      $.get('https://app-router.leancloud.cn/2/route?appId=' + "omA5C6Kbw4UTeHyzGWfuY2cS-gzGzoHsz")
+        .done(function ({ api_server }) {
+          var Counter = function (method, url, data) {
+            return $.ajax({
+              method: method,
+              url: `https://${api_server}/1.1${url}`,
+              headers: {
+                'X-LC-Id': "omA5C6Kbw4UTeHyzGWfuY2cS-gzGzoHsz",
+                'X-LC-Key': "1eclNX1NtUl95xJ4lk9k4hrp",
+                'Content-Type': 'application/json',
+              },
+              data: data,
+            });
+          };
+          
+          addCount(Counter);
+          
+        })
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "box";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,QQ,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+      flOptions = {};
+      
+          flOptions.iconStyle = "box";
+      
+          flOptions.boxForm = "horizontal";
+      
+          flOptions.position = "middleRight";
+      
+          flOptions.networks = "Weibo,Wechat,Douban,QQZone,QQ,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-float', flOptions);
+    
+  </script>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
