@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lucunji.github.io/"/>
-  <updated>2020-07-12T10:06:05.419Z</updated>
+  <updated>2020-07-22T10:20:57.015Z</updated>
   <id>http://lucunji.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【译】科技能救我们于深度伪造之中吗？</title>
+    <link href="http://lucunji.github.io/2020/07/22/can-tech-save-us-from-deepfakes/"/>
+    <id>http://lucunji.github.io/2020/07/22/can-tech-save-us-from-deepfakes/</id>
+    <published>2020-07-22T10:03:48.000Z</published>
+    <updated>2020-07-22T10:20:57.015Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/2020/07/22/can-tech-save-us-from-deepfakes/nasa-mission-control-A.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="tech" scheme="http://lucunji.github.io/tags/tech/"/>
+    
+      <category term="ai" scheme="http://lucunji.github.io/tags/ai/"/>
+    
+      <category term="deepfake" scheme="http://lucunji.github.io/tags/deepfake/"/>
+    
+      <category term="ML(machine learning)" scheme="http://lucunji.github.io/tags/ML-machine-learning/"/>
+    
+  </entry>
   
   <entry>
     <title>电梯</title>
