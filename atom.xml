@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lucunji.github.io/"/>
-  <updated>2020-07-22T10:20:57.015Z</updated>
+  <updated>2020-08-20T04:57:49.614Z</updated>
   <id>http://lucunji.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>TekTopia 教程：开始打造你的桃花源</title>
+    <link href="http://lucunji.github.io/2020/08/19/tektopia-tutorial-1/"/>
+    <id>http://lucunji.github.io/2020/08/19/tektopia-tutorial-1/</id>
+    <published>2020-08-20T01:54:29.000Z</published>
+    <updated>2020-08-20T04:57:49.614Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;一个刷铁塔大佬会做哪些事？&lt;/p&gt;
+&lt;p&gt;玩音游；烹饪；写 mod&lt;/p&gt;
+&lt;p&gt;答：以上全部[^1]&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="minecraft" scheme="http://lucunji.github.io/tags/minecraft/"/>
+    
+      <category term="mod" scheme="http://lucunji.github.io/tags/mod/"/>
+    
+      <category term="TekTopia" scheme="http://lucunji.github.io/tags/TekTopia/"/>
+    
+  </entry>
   
   <entry>
     <title>【译】科技能救我们于深度伪造之中吗？</title>
