@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lucunji.github.io/"/>
-  <updated>2020-08-20T05:35:57.726Z</updated>
+  <updated>2020-08-25T05:14:21.732Z</updated>
   <id>http://lucunji.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>TekTopia 教程：当上土皇帝（中期 + 后期）</title>
+    <link href="http://lucunji.github.io/2020/08/22/tektopia-tutorial-2/"/>
+    <id>http://lucunji.github.io/2020/08/22/tektopia-tutorial-2/</id>
+    <published>2020-08-22T06:59:46.000Z</published>
+    <updated>2020-08-25T05:14:21.732Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在获得了20只农民和10只伐木工的时候，没有什么能阻挡你的发展了。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/2020/08/22/tektopia-tutorial-2/title.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="minecraft" scheme="http://lucunji.github.io/tags/minecraft/"/>
+    
+      <category term="mod" scheme="http://lucunji.github.io/tags/mod/"/>
+    
+      <category term="TekTopia" scheme="http://lucunji.github.io/tags/TekTopia/"/>
+    
+  </entry>
   
   <entry>
     <title>TekTopia 教程：开始打造你的桃花源（前期）</title>
