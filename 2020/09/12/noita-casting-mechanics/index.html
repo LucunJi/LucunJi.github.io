@@ -140,7 +140,7 @@
 <meta property="og:image" content="http://lucunji.github.io/2020/09/12/noita-casting-mechanics/final-example.png">
 <meta property="og:image" content="http://lucunji.github.io/2020/09/12/noita-casting-mechanics/final-example-analysis.png">
 <meta property="og:image" content="http://lucunji.github.io/2020/09/12/noita-casting-mechanics/final.gif">
-<meta property="og:updated_time" content="2020-09-13T23:24:00.792Z">
+<meta property="og:updated_time" content="2020-09-14T00:15:41.860Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Noita 施法机制分析">
 <meta name="twitter:description" content="类似编程语言的法术编排是 Noita 中的一大亮点，也是一大难点。《如何在&amp;lt;Noita&amp;gt;中打造爆款法术》（或曰《&amp;lt;Noita&amp;gt;法术编程指南》）一文较完整地讨论了法术编排和释放的机制，但依然存在不少失误。本文尝试在此基础上进行进一步的假设和实验，力图提出一个更加普适、更加易于理解和分析的理论，为 Noita 的游玩提供帮助。">
@@ -422,7 +422,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2020-09-13 18:24:00" itemprop="dateModified" datetime="2020-09-13T18:24:00-05:00">2020-09-13</time>
+                <time title="修改时间：2020-09-13 19:15:41" itemprop="dateModified" datetime="2020-09-13T19:15:41-05:00">2020-09-13</time>
               
             
           </span>
@@ -593,6 +593,9 @@
 <p>最后统计一下所有的投射修正：法杖直接发射的定时火花弹与霰弹都是有加速修正和火花弹的 +5% 暴击修正的；定时火花弹触发的四个火花弹都有沉重一击修正和四个火花弹提供的 4 * 5% = 20% 的暴击修正。另外，阵型-背后使得这四个火花弹会在 ±180° 内均匀散布。</p>
 <p>施放效果：</p>
 <p><img src="/2020/09/12/noita-casting-mechanics/final.gif" alt=""></p>
+<h2 id="鸣谢"><a class="header-anchor" href="#鸣谢">►</a>鸣谢</h2>
+<p>Noita 贴吧交流1群的 <a href="https://space.bilibili.com/7238810" target="_blank" rel="noopener">谷戻り</a> 创作的 <a href="">《如何在&lt;Noita&gt;中打造爆款法术》</a>（《&lt;Noita&gt;法术编程指南》）。没有这篇文章也就没有我今天想到的这些理论。 和他的交流也令我很受启发。</p>
+<p>Bilibili 的 <a href="https://space.bilibili.com/51719" target="_blank" rel="noopener">196⑨</a> 的一系列 Noita 直播和游戏录像。火花弹类似投射修正的效果是最早从他的视频里了解到的。直播和录播都做的很有意思。</p>
 
       
     </div>
@@ -624,7 +627,7 @@
  <p><span>本文标题:</span><a href="/2020/09/12/noita-casting-mechanics/">Noita 施法机制分析</a></p>
  <p><span>文章作者:</span><a href="/" title="访问 LucunJi 的个人博客">LucunJi</a></p>
  <p><span>发布时间:</span>2020年09月12日 - 21:24</p>
- <p><span>最后更新:</span>2020年09月13日 - 18:24</p>
+ <p><span>最后更新:</span>2020年09月13日 - 19:15</p>
  <p><span>原始链接:</span><a href="/2020/09/12/noita-casting-mechanics/" title="Noita 施法机制分析">http://lucunji.github.io/2020/09/12/noita-casting-mechanics/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://lucunji.github.io/2020/09/12/noita-casting-mechanics/" aria-label="复制成功！"></i></span>
  </p>
@@ -896,7 +899,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#讨论范围"><span class="nav-number">1.</span> <span class="nav-text">►讨论范围</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分析方法的改进"><span class="nav-number">2.</span> <span class="nav-text">►分析方法的改进</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#施法数的变化"><span class="nav-number">2.1.</span> <span class="nav-text">►施法数的变化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#触发与定时法术"><span class="nav-number">2.2.</span> <span class="nav-text">►触发与定时法术</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#投射修正的范围"><span class="nav-number">2.3.</span> <span class="nav-text">►投射修正的范围</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#快速分析法"><span class="nav-number">2.4.</span> <span class="nav-text">►快速分析法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#大家都是投射修正"><span class="nav-number">3.</span> <span class="nav-text">►大家都是投射修正！</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#多重施放可以当投射修正"><span class="nav-number">3.1.</span> <span class="nav-text">►多重施放可以当投射修正</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#投射物也可以当投射修正"><span class="nav-number">3.2.</span> <span class="nav-text">►投射物也可以当投射修正</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#法术池的透支"><span class="nav-number">4.</span> <span class="nav-text">►法术池的透支</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#有限的透支"><span class="nav-number">4.1.</span> <span class="nav-text">►有限的透支</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#法术池何时刷新？"><span class="nav-number">4.2.</span> <span class="nav-text">►法术池何时刷新？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#用投射修正射出子弹"><span class="nav-number">4.3.</span> <span class="nav-text">►用投射修正射出子弹！</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#综合性例子"><span class="nav-number">5.</span> <span class="nav-text">►综合性例子</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#讨论范围"><span class="nav-number">1.</span> <span class="nav-text">►讨论范围</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分析方法的改进"><span class="nav-number">2.</span> <span class="nav-text">►分析方法的改进</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#施法数的变化"><span class="nav-number">2.1.</span> <span class="nav-text">►施法数的变化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#触发与定时法术"><span class="nav-number">2.2.</span> <span class="nav-text">►触发与定时法术</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#投射修正的范围"><span class="nav-number">2.3.</span> <span class="nav-text">►投射修正的范围</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#快速分析法"><span class="nav-number">2.4.</span> <span class="nav-text">►快速分析法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#大家都是投射修正"><span class="nav-number">3.</span> <span class="nav-text">►大家都是投射修正！</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#多重施放可以当投射修正"><span class="nav-number">3.1.</span> <span class="nav-text">►多重施放可以当投射修正</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#投射物也可以当投射修正"><span class="nav-number">3.2.</span> <span class="nav-text">►投射物也可以当投射修正</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#法术池的透支"><span class="nav-number">4.</span> <span class="nav-text">►法术池的透支</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#有限的透支"><span class="nav-number">4.1.</span> <span class="nav-text">►有限的透支</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#法术池何时刷新？"><span class="nav-number">4.2.</span> <span class="nav-text">►法术池何时刷新？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#用投射修正射出子弹"><span class="nav-number">4.3.</span> <span class="nav-text">►用投射修正射出子弹！</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#综合性例子"><span class="nav-number">5.</span> <span class="nav-text">►综合性例子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#鸣谢"><span class="nav-number">6.</span> <span class="nav-text">►鸣谢</span></a></li></ol></div>
             
 
           </div>
