@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lucunji.github.io/"/>
-  <updated>2020-09-14T00:15:41.860Z</updated>
+  <updated>2020-09-14T00:18:24.496Z</updated>
   <id>http://lucunji.github.io/</id>
   
   <author>
@@ -21,11 +21,11 @@
     <link href="http://lucunji.github.io/2020/09/12/noita-casting-mechanics/"/>
     <id>http://lucunji.github.io/2020/09/12/noita-casting-mechanics/</id>
     <published>2020-09-13T02:24:55.000Z</published>
-    <updated>2020-09-14T00:15:41.860Z</updated>
+    <updated>2020-09-14T00:18:24.496Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;类似编程语言的法术编排是 Noita 中的一大亮点，也是一大难点。&lt;a href=&quot;&quot;&gt;《如何在&amp;lt;Noita&amp;gt;中打造爆款法术》&lt;/a&gt;（或曰《&amp;lt;Noita&amp;gt;法术编程指南》）一文较完整地讨论了法术编排和释放的机制，但依然存在不少失误。本文尝试在此基础上进行进一步的假设和实验，力图提出一个更加普适、更加易于理解和分析的理论，为 Noita 的游玩提供帮助。&lt;/p&gt;
+      &lt;p&gt;类似编程语言的法术编排是 Noita 中的一大亮点，也是一大难点。&lt;a href=&quot;https://www.bilibili.com/read/cv3761812&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《如何在&amp;lt;Noita&amp;gt;中打造爆款法术》&lt;/a&gt;（或曰《&amp;lt;Noita&amp;gt;法术编程指南》）一文较完整地讨论了法术编排和释放的机制，但依然存在不少失误。本文尝试在此基础上进行进一步的假设和实验，力图提出一个更加普适、更加易于理解和分析的理论，为 Noita 的游玩提供帮助。&lt;/p&gt;
     
     </summary>
     
