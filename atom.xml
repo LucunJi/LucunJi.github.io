@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lucunji.github.io/"/>
-  <updated>2020-09-14T00:18:24.496Z</updated>
+  <updated>2021-02-04T04:06:47.635Z</updated>
   <id>http://lucunji.github.io/</id>
   
   <author>
@@ -15,6 +15,53 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>自动写作尝试</title>
+    <link href="http://lucunji.github.io/2021/02/03/automatic-writing/"/>
+    <id>http://lucunji.github.io/2021/02/03/automatic-writing/</id>
+    <published>2021-02-04T04:02:45.000Z</published>
+    <updated>2021-02-04T04:06:47.635Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="weird" scheme="http://lucunji.github.io/tags/weird/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【译】为什么人们热爱战争</title>
+    <link href="http://lucunji.github.io/2020/09/21/why-men-love-war-translation/"/>
+    <id>http://lucunji.github.io/2020/09/21/why-men-love-war-translation/</id>
+    <published>2020-09-21T19:10:12.000Z</published>
+    <updated>2021-02-04T07:00:35.263Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;font color=&quot;gray&quot; size=&quot;2&quot;&gt;原文：&lt;em&gt;Why Men Love War&lt;/em&gt;&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt;&lt;/font&gt;&lt;br&gt;
+&lt;font color=&quot;gray&quot; size=&quot;2&quot;&gt;翻译：&lt;a href=&quot;https://www.deepl.com/translator&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;DeepL&lt;/a&gt;翻译 + 禄存天玑后期润色&lt;/font&gt;&lt;br&gt;
+&lt;font color=&quot;gray&quot; size=&quot;2&quot;&gt;译者注：仅对原文进行翻译搬运，旨在拓宽大众视野，不代表译者立场。&lt;br&gt;能找到的原文错误较多，且译者能力有限，不通顺之处还望多多包涵和提建议。若想要了解作者的精确含义，烦请查阅原文。&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;我最后一次见到希尔斯是在越南的稻田里。他那时十九岁，是我的技艺高超又桀骜不驯的电报员。几个月来，我们之间的距离很少超过三英尺。然后有一天他回家了。十五年过去了，去年冬天我们才在华盛顿的越战老兵纪念馆意外相遇。几个月后，我去佛蒙特州拜访了希尔斯和他的妻子苏珊，他们在那里经营着一家民宿。第一天早上，我们天不亮就起床，试图拯救五只刚出生的兔子。希尔斯在棚子里用兔毛和稻草搭了个窝，并放了盏灯来御寒。&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="translation" scheme="http://lucunji.github.io/tags/translation/"/>
+    
+  </entry>
   
   <entry>
     <title>Noita 施法机制分析</title>
@@ -45,7 +92,7 @@
     <summary type="html">
     
       &lt;p&gt;在获得了20只农民和10只伐木工的时候，没有什么能阻挡你的发展了。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/2020/08/22/tektopia-tutorial-2/title.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/2020/08/22/tektopia-tutorial-2/title.png&quot; alt&gt;&lt;/p&gt;
     
     </summary>
     
@@ -71,7 +118,7 @@
       &lt;p&gt;一个刷铁塔大佬会做哪些事？&lt;/p&gt;
 &lt;p&gt;玩音游；烹饪；写 mod&lt;/p&gt;
 &lt;p&gt;答：以上全部&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/2020/08/19/tektopia-tutorial-1/title.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/2020/08/19/tektopia-tutorial-1/title.png&quot; alt&gt;&lt;/p&gt;
     
     </summary>
     
@@ -90,11 +137,11 @@
     <link href="http://lucunji.github.io/2020/07/22/can-tech-save-us-from-deepfakes/"/>
     <id>http://lucunji.github.io/2020/07/22/can-tech-save-us-from-deepfakes/</id>
     <published>2020-07-22T10:03:48.000Z</published>
-    <updated>2020-07-22T10:20:57.015Z</updated>
+    <updated>2021-02-04T03:57:39.459Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;/2020/07/22/can-tech-save-us-from-deepfakes/nasa-mission-control-A.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;img src=&quot;/2020/07/22/can-tech-save-us-from-deepfakes/nasa-mission-control-A.jpg&quot; alt&gt;&lt;/p&gt;
     
     </summary>
     
@@ -107,6 +154,8 @@
       <category term="deepfake" scheme="http://lucunji.github.io/tags/deepfake/"/>
     
       <category term="ML(machine learning)" scheme="http://lucunji.github.io/tags/ML-machine-learning/"/>
+    
+      <category term="translation" scheme="http://lucunji.github.io/tags/translation/"/>
     
   </entry>
   
@@ -197,7 +246,7 @@
     <link href="http://lucunji.github.io/2020/01/02/bedrock-breaking/"/>
     <id>http://lucunji.github.io/2020/01/02/bedrock-breaking/</id>
     <published>2020-01-02T22:28:59.000Z</published>
-    <updated>2020-01-07T20:41:32.789Z</updated>
+    <updated>2021-02-04T20:19:17.347Z</updated>
     
     <summary type="html">
     
@@ -259,7 +308,7 @@
     <link href="http://lucunji.github.io/2018/12/11/3Ws/"/>
     <id>http://lucunji.github.io/2018/12/11/3Ws/</id>
     <published>2018-12-11T23:35:19.000Z</published>
-    <updated>2020-07-12T08:56:52.902Z</updated>
+    <updated>2021-02-04T04:12:41.319Z</updated>
     
     <summary type="html">
     
@@ -275,10 +324,10 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://lucunji.github.io/2018/02/06/hello-world/"/>
-    <id>http://lucunji.github.io/2018/02/06/hello-world/</id>
-    <published>2018-02-07T03:09:23.368Z</published>
-    <updated>2018-12-12T12:53:49.824Z</updated>
+    <link href="http://lucunji.github.io/2018/12/10/hello-world/"/>
+    <id>http://lucunji.github.io/2018/12/10/hello-world/</id>
+    <published>2018-12-10T12:53:50.000Z</published>
+    <updated>2021-02-04T19:26:42.376Z</updated>
     
     <summary type="html">
     

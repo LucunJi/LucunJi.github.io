@@ -15,7 +15,7 @@
 
 
 <html class="theme-next gemini use-motion" lang="zh-CN">
-<head><meta name="generator" content="Hexo 3.8.0">
+<head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
@@ -183,7 +183,7 @@
 
 </head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
   
   
@@ -193,7 +193,7 @@
   <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta ">
     
@@ -335,20 +335,20 @@
 
   
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://lucunji.github.io/2020/01/04/rift-with-mixin-setup/">
 
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="LucunJi">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="/avatar.jpg">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="LucunJi">
     </span>
 
@@ -445,7 +445,7 @@
       
 
       
-        <ul>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css"><ul>
 <li>2020/2/20 更新：懒人用开发环境 <a href="https://github.com/LucunJi/Rift-MDK-with-Mixin" target="_blank" rel="noopener">https://github.com/LucunJi/Rift-MDK-with-Mixin</a></li>
 </ul>
 <p>在 1.13.2 的 Minecraft 版本下，许多的模组并不依赖 Forge 或者 Fabric，而是 Rift。然而目前 1.13.2 现存的 MDK（Mod Develop Kit，模组开发包） 并不包含 Mixin。但是 Rift 提供的监听接口较少，很多功能都需要开发者自己利用 Mixin 来对原版代码（准确的说是字节码）进行修改。这里分享一下如何配置一个包含 Mixin 的 Rift 开发环境，帮有类似需求的人节约时间。</p>
@@ -455,10 +455,10 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">D:\RIFT-MDK-1.13.2</span><br><span class="line">│  .gitattributes</span><br><span class="line">│  .gitignore</span><br><span class="line">│  build.gradle</span><br><span class="line">│  gradlew</span><br><span class="line">│  gradlew.bat</span><br><span class="line">│  README.md</span><br><span class="line">│</span><br><span class="line">├─gradle</span><br><span class="line">│  └─wrapper</span><br><span class="line">│          gradle-wrapper.jar</span><br><span class="line">│          gradle-wrapper.properties</span><br><span class="line">│</span><br><span class="line">└─src</span><br><span class="line">    └─main</span><br><span class="line">        ├─java</span><br><span class="line">        │  └─example</span><br><span class="line">        │          ExampleListener.java</span><br><span class="line">        │</span><br><span class="line">        └─resources</span><br><span class="line">                pack.mcmeta</span><br><span class="line">                riftmod.json</span><br></pre></td></tr></table></figure>
 <p>这里使用 Intellij IDEA 为例子，选择 <code>build.gradle</code> 进行导入。导入完毕之后直接打开右侧 Gradle 面板，双击 <code>setupDecompWorkspace</code> 进行基本环境的配置。由于需要反编译并反混淆，可能会花上几分钟。等到显示 <code>BUILD SUCCESSFUL</code>，环境就搭建完毕了。</p>
 <p>在这一步可能会遇到提示 <code>Cannot find hunk target</code>。这时候运行 <code>cleanCache</code> 清空缓存，然后重新运行 <code>setupDecompWorkspace</code> 就好。</p>
-<p><img src="/2020/01/04/rift-with-mixin-setup/idea_gradlew.png" alt=""></p>
+<p><img src="/2020/01/04/rift-with-mixin-setup/idea_gradlew.png" alt></p>
 <p>接下来尝试启动 Minecraft。这里不能直接运行 <code>runClient</code>，应该运行 External Librarries（外部库）里的 <code>start/net.minecraftforge.gradle/GradleStart</code>，在 Program arguments 中填入 <code>--tweakClass org.dimdev.riftloader.launch.RiftLoaderClientTweaker</code>，并将 Use classpath of module 设置成 <code>Rift-MDK-1.13.2.main</code>。之后点击 Run，就可以运行 Minecraft 了。如果只运行服务端，那么可以把上面的 Program arguments 中的 Client 改成 Server。</p>
-<p><img src="/2020/01/04/rift-with-mixin-setup/idea_runclient.png" alt=""><br>
-<img src="/2020/01/04/rift-with-mixin-setup/idea_run_arguments.png" alt=""></p>
+<p><img src="/2020/01/04/rift-with-mixin-setup/idea_runclient.png" alt><br>
+<img src="/2020/01/04/rift-with-mixin-setup/idea_run_arguments.png" alt></p>
 <hr>
 <h2 id="配置-mixin"><a class="header-anchor" href="#配置-mixin">►</a>配置 Mixin<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></h2>
 <h3 id="修改-gradle-配置文件"><a class="header-anchor" href="#修改-gradle-配置文件">►</a>修改 Gradle 配置文件</h3>
@@ -650,7 +650,7 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <img class="site-author-image" itemprop="image" src="/avatar.jpg" alt="LucunJi">
             
@@ -665,7 +665,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">13</span>
+                    <span class="site-state-item-count">15</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -708,7 +708,11 @@
                     
                       
                     
-                    <span class="site-state-item-count">14</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">16</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -821,7 +825,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2021</span>
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
@@ -833,7 +837,7 @@
 </div>
 
 
-  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0</div>
 
 
 
