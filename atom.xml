@@ -136,7 +136,16 @@
     <updated>2021-04-28T18:22:42.063Z</updated>
     
     
-    <summary type="html">&lt;p&gt;在获得了20只农民和10只伐木工的时候，没有什么能阻挡你的发展了。&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;在获得了20只农民和10只伐木工的时候，没有什么能阻挡你的发展了。&lt;/p&gt;
+
+
+&lt;figure&gt;
+    &lt;picture&gt;
+                &lt;source srcset=&quot;/2020/08/22/tektopia-tutorial-2/b5a60f6f/title@1x.png&quot;media=&quot;(max-width: 39.99em)&quot;  type=&quot;image/png&quot; /&gt;
+                &lt;source srcset=&quot;/2020/08/22/tektopia-tutorial-2/b5a60f6f/title@2x.png&quot;media=&quot;(min-width: 40em)&quot;  type=&quot;image/png&quot; /&gt;
+            &lt;img src=&quot;/2020/08/22/tektopia-tutorial-2/b5a60f6f/title@2x.png&quot; alt=&quot;TekTopia 教程：当上土皇帝（中期 + 后期）&quot; /&gt;
+    &lt;/picture&gt;
+&lt;/figure&gt;</summary>
     
     
     
@@ -159,7 +168,16 @@
     
     <summary type="html">&lt;p&gt;一个刷铁塔大佬会做哪些事？&lt;/p&gt;
 &lt;p&gt;玩音游；烹饪；写 mod&lt;/p&gt;
-&lt;p&gt;答：以上全部&lt;a href=&quot;#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;</summary>
+&lt;p&gt;答：以上全部&lt;a href=&quot;#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+
+
+&lt;figure&gt;
+    &lt;picture&gt;
+                &lt;source srcset=&quot;/2020/08/19/tektopia-tutorial-1/b5a60f6f/title@1x.png&quot;media=&quot;(max-width: 39.99em)&quot;  type=&quot;image/png&quot; /&gt;
+                &lt;source srcset=&quot;/2020/08/19/tektopia-tutorial-1/b5a60f6f/title@2x.png&quot;media=&quot;(min-width: 40em)&quot;  type=&quot;image/png&quot; /&gt;
+            &lt;img src=&quot;/2020/08/19/tektopia-tutorial-1/b5a60f6f/title@2x.png&quot; alt=&quot;TekTopia 教程：开始打造你的桃花源（前期）&quot; /&gt;
+    &lt;/picture&gt;
+&lt;/figure&gt;</summary>
     
     
     
@@ -177,7 +195,7 @@
     <link href="https://lucunji.github.io/2020/07/22/can-tech-save-us-from-deepfakes/"/>
     <id>https://lucunji.github.io/2020/07/22/can-tech-save-us-from-deepfakes/</id>
     <published>2020-07-22T10:03:48.000Z</published>
-    <updated>2021-04-28T19:20:10.694Z</updated>
+    <updated>2021-04-28T21:01:15.364Z</updated>
     
     
     <summary type="html">&lt;figure&gt;

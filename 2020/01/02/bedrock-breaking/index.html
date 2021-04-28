@@ -32,12 +32,18 @@
 <meta property="og:site_name" content="LucunJi">
 <meta property="og:description" content="本文针对最早由 Myren Eario 提出的利用活塞移除基岩的方法所存在的不稳定性进行分析，并提出一种可行的解决方案。">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://lucunji.github.io/2020/01/02/bedrock-breaking/fdaaeeb2/method_myren@2x.png">
+<meta property="og:image" content="https://lucunji.github.io/2020/01/02/bedrock-breaking/9c9354c0/method_newcake_1@2x.png">
+<meta property="og:image" content="https://lucunji.github.io/2020/01/02/bedrock-breaking/4bfef929/method_newcake_2@2x.png">
+<meta property="og:image" content="https://lucunji.github.io/2020/01/02/bedrock-breaking/f4a977ca/method_fallen_1-413x262@2x.png">
+<meta property="og:image" content="https://lucunji.github.io/2020/01/02/bedrock-breaking/ad4e24ae/method_fallen_2-227x281@2x.png">
 <meta property="article:published_time" content="2020-01-02T22:28:59.000Z">
 <meta property="article:modified_time" content="2021-04-28T18:22:42.564Z">
 <meta property="article:author" content="LucunJi">
 <meta property="article:tag" content="minecraft">
 <meta property="article:tag" content="Java">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://lucunji.github.io/2020/01/02/bedrock-breaking/fdaaeeb2/method_myren@2x.png">
 
 
 <link rel="canonical" href="https://lucunji.github.io/2020/01/02/bedrock-breaking/">
@@ -195,7 +201,7 @@
         <a href="https://github.com/LucunJi" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;LucunJi" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
       </span>
       <span class="links-of-author-item">
-        <a href="https://space.bilibili.com/2117299/" title="Bilibili → https:&#x2F;&#x2F;space.bilibili.com&#x2F;2117299&#x2F;" rel="noopener" target="_blank"><i class="far fa-caret-square-right fa-fw"></i>Bilibili</a>
+        <a href="https://space.bilibili.com/2117299/" title="Bilibili → https:&#x2F;&#x2F;space.bilibili.com&#x2F;2117299&#x2F;" rel="noopener" target="_blank"><i class="fab bili-tv fa-fw"></i>Bilibili</a>
       </span>
   </div>
 
@@ -310,10 +316,40 @@
 <p>最早在 2016年5月3日，Myren Eario 在 YouTube 上发布了一个利用活塞和 TNT 移除基岩的方案<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>。不过由于这个方案存在随机性，并且当时还有稳定性更高的弱加载区块龙蛋移除法，该方案并没有受到较大的关注。但在 1.13 修复了龙蛋相关的漏洞之后，玩家只能利用活塞来移除基岩。本文中提到的这个方法的应用开始变得广泛了。</p>
 <h2 id="复现过程">复现过程</h2>
 
+
+<figure>
+    <picture>
+                <source srcset="/2020/01/02/bedrock-breaking/fdaaeeb2/method_myren@2x.png" type="image/png" />
+            <img src="/2020/01/02/bedrock-breaking/fdaaeeb2/method_myren@2x.png" alt="浅谈活塞破基岩法的不稳定性起源及解决方法" />
+    </picture>
+</figure>
+
+
+
 <p>如上图所示，使用该方法需要一个伸出的活塞（粘性或普通的均可）和一个 TNT（图中白色的即为点燃的 TNT 实体）。玩家需要不断尝试按下右键，在源活塞底座的位置放置一个朝向基岩的活塞。如果不使用辅助放置的模组的话，这里需要一个不会被爆炸破坏的方块（如黑曜石）作为放置的参照物。</p>
 <p>在保证右键点击的频率足够高的前提下有几率会将原先被活塞背对的基岩移除，并留下一个活塞方块。</p>
 
+
+<figure>
+    <picture>
+                <source srcset="/2020/01/02/bedrock-breaking/9c9354c0/method_newcake_1@2x.png" type="image/png" />
+            <img src="/2020/01/02/bedrock-breaking/9c9354c0/method_newcake_1@2x.png" alt="浅谈活塞破基岩法的不稳定性起源及解决方法" />
+    </picture>
+</figure>
+
+
+
 <p>这个方法的变体可以在其它的视频中看到。例如：活塞可以朝上放置以从上往下移除地狱上方的基岩层。<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>在右侧红石块上放置 TNT 后，装备鞘翅的玩家快速双击空格缩小碰撞体积，钻入楼梯下方（在 1.14 以及之后的版本中可以用活板门下压法替代）</p>
+
+
+<figure>
+    <picture>
+                <source srcset="/2020/01/02/bedrock-breaking/4bfef929/method_newcake_2@2x.png" type="image/png" />
+            <img src="/2020/01/02/bedrock-breaking/4bfef929/method_newcake_2@2x.png" alt="浅谈活塞破基岩法的不稳定性起源及解决方法" />
+    </picture>
+</figure>
+
+
 
 <p>之后对着黑曜石离自己最近的上棱角快速点击右键，就可以达到和 Myren 的方法相似的效果，移除基岩。</p>
 <h2 id="方法原理">方法原理</h2>
@@ -407,7 +443,27 @@ this.affectedBlockPositions.addAll(set); // 由集合产生便于遍历的列表
 <h2 id="其它可行方案">其它可行方案</h2>
 <p>在这里对另外两种可行方案进行简短介绍。两个都是由 Fallen_Breath 发现的。</p>
 
+
+<figure>
+    <picture>
+                <source srcset="/2020/01/02/bedrock-breaking/f4a977ca/method_fallen_1-413x262@2x.png" type="image/png" />
+            <img src="/2020/01/02/bedrock-breaking/f4a977ca/method_fallen_1-413x262@2x.png" alt="浅谈活塞破基岩法的不稳定性起源及解决方法" />
+    </picture>
+</figure>
+
+
+
 <p>其一是在同一游戏阶段激活两个 TNT，一个仅破坏红石块，另一个仅破坏活塞。这里用稳定的红石更新顺序所导致的多个 TNT 的先后爆炸顺序来替代不稳定的哈希表顺序，并且构造也比较简单。<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a></p>
+
+
+<figure>
+    <picture>
+                <source srcset="/2020/01/02/bedrock-breaking/ad4e24ae/method_fallen_2-227x281@2x.png" type="image/png" />
+            <img src="/2020/01/02/bedrock-breaking/ad4e24ae/method_fallen_2-227x281@2x.png" alt="浅谈活塞破基岩法的不稳定性起源及解决方法" />
+    </picture>
+</figure>
+
+
 
 <p>另一个方法是利用红石线达到多个信号源位置，并且只要其中一个最先被破坏，其余的就会熄灭，进而更新活塞。虽然这个方法依然存在一定的随机性，不能防止活塞先于所有红石线被破坏的情况，但对于彻底随机打乱了方块破坏顺序的 1.15 来说却是个不错的方法。<a href="#fn7" class="footnote-ref" id="fnref7"><sup>7</sup></a></p>
 <h2 id="感谢">感谢</h2>
@@ -433,6 +489,9 @@ this.affectedBlockPositions.addAll(set); // 由集合产生便于遍历的列表
     
 
     <footer class="post-footer">
+  <div class="addthis_inline_share_toolbox", style="text-align: center">
+    <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-6089b828ba6dc0ff" async="async"></script>
+  </div>
           
 
 <div class="post-copyright">
@@ -462,6 +521,16 @@ this.affectedBlockPositions.addAll(set); // 由集合产生便于遍历的列表
           </span>
 
           <span class="label">RSS</span>
+        </a>
+      </div>
+
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="https://space.bilibili.com/2117299">
+          <span class="icon">
+            <i class="fa bili-tv"></i>
+          </span>
+
+          <span class="label">Bilibili</span>
         </a>
       </div>
   </div>
@@ -543,6 +612,9 @@ this.affectedBlockPositions.addAll(set); // 由集合产生便于遍历的列表
   </span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+  <div class="addthis_inline_share_toolbox">
+    <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-6089b828ba6dc0ff" async="async"></script>
   </div>
 
     </div>

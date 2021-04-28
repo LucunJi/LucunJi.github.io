@@ -32,13 +32,35 @@
 <meta property="og:site_name" content="LucunJi">
 <meta property="og:description" content="类似编程语言的法术编排是 Noita 中的一大亮点，也是一大难点。《如何在&lt;Noita&gt;中打造爆款法术》（或曰《&lt;Noita&gt;法术编程指南》）一文较完整地讨论了法术编排和释放的机制，但依然存在不少失误。本文尝试在此基础上进行进一步的假设和实验，力图提出一个更加普适、更加易于理解和分析的理论，为 Noita 的游玩提供帮助。">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://lucunji.github.io/2020/09/12/noita-casting-mechanics/d9eaad0c/projectiles@2x.png">
+<meta property="og:image" content="https://lucunji.github.io/2020/09/12/noita-casting-mechanics/72cbaabb/projectile-modifiers@2x.png">
+<meta property="og:image" content="https://lucunji.github.io/2020/09/12/noita-casting-mechanics/422bd174/multicasts@2x.png">
+<meta property="og:image" content="https://lucunji.github.io/2020/09/12/noita-casting-mechanics/75577d29/passive-utility-material@2x.png">
+<meta property="og:image" content="https://lucunji.github.io/2020/09/12/noita-casting-mechanics/d51250bb/spell-tree@2x.png">
 <meta property="og:image" content="https://lucunji.github.io/2020/09/12/noita-casting-mechanics/noita-casting-mechanics/basic.png">
+<meta property="og:image" content="https://lucunji.github.io/2020/09/12/noita-casting-mechanics/a415673f/casts-change@2x.png">
+<meta property="og:image" content="https://lucunji.github.io/2020/09/12/noita-casting-mechanics/54bb0bbe/basic-trigger@2x.png">
+<meta property="og:image" content="https://lucunji.github.io/2020/09/12/noita-casting-mechanics/8c8dd99a/complex@2x.png">
+<meta property="og:image" content="https://lucunji.github.io/2020/09/12/noita-casting-mechanics/54bb0bbe/basic-trigger@2x.png">
+<meta property="og:image" content="https://lucunji.github.io/2020/09/12/noita-casting-mechanics/1f2cd109/separation@2x.png">
+<meta property="og:image" content="https://lucunji.github.io/2020/09/12/noita-casting-mechanics/857e1c03/separation-2@2x.png">
+<meta property="og:image" content="https://lucunji.github.io/2020/09/12/noita-casting-mechanics/fbf5926b/all-formations@2x.png">
+<meta property="og:image" content="https://lucunji.github.io/2020/09/12/noita-casting-mechanics/6ccf97e1/formation@2x.png">
+<meta property="og:image" content="https://lucunji.github.io/2020/09/12/noita-casting-mechanics/86678190/formation-priority1@2x.png">
+<meta property="og:image" content="https://lucunji.github.io/2020/09/12/noita-casting-mechanics/d544e42a/formation-priority2@2x.png">
+<meta property="og:image" content="https://lucunji.github.io/2020/09/12/noita-casting-mechanics/ccafef7b/spark-crit@2x.png">
+<meta property="og:image" content="https://lucunji.github.io/2020/09/12/noita-casting-mechanics/96eeba25/lightdrill@1x.png">
+<meta property="og:image" content="https://lucunji.github.io/2020/09/12/noita-casting-mechanics/63ae9ce7/overuse-test@2x.png">
+<meta property="og:image" content="https://lucunji.github.io/2020/09/12/noita-casting-mechanics/5649f4ab/shuffle@2x.png">
+<meta property="og:image" content="https://lucunji.github.io/2020/09/12/noita-casting-mechanics/8646be69/pool-simple@2x.png">
+<meta property="og:image" content="https://lucunji.github.io/2020/09/12/noita-casting-mechanics/40d4715e/final-example@2x.png">
+<meta property="og:image" content="https://lucunji.github.io/2020/09/12/noita-casting-mechanics/01c177ff/final-example-analysis@2x.png">
 <meta property="article:published_time" content="2020-09-13T02:24:55.000Z">
 <meta property="article:modified_time" content="2021-04-28T18:22:42.004Z">
 <meta property="article:author" content="LucunJi">
 <meta property="article:tag" content="noita">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://lucunji.github.io/2020/09/12/noita-casting-mechanics/noita-casting-mechanics/basic.png">
+<meta name="twitter:image" content="https://lucunji.github.io/2020/09/12/noita-casting-mechanics/d9eaad0c/projectiles@2x.png">
 
 
 <link rel="canonical" href="https://lucunji.github.io/2020/09/12/noita-casting-mechanics/">
@@ -196,7 +218,7 @@
         <a href="https://github.com/LucunJi" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;LucunJi" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
       </span>
       <span class="links-of-author-item">
-        <a href="https://space.bilibili.com/2117299/" title="Bilibili → https:&#x2F;&#x2F;space.bilibili.com&#x2F;2117299&#x2F;" rel="noopener" target="_blank"><i class="far fa-caret-square-right fa-fw"></i>Bilibili</a>
+        <a href="https://space.bilibili.com/2117299/" title="Bilibili → https:&#x2F;&#x2F;space.bilibili.com&#x2F;2117299&#x2F;" rel="noopener" target="_blank"><i class="fab bili-tv fa-fw"></i>Bilibili</a>
       </span>
   </div>
 
@@ -313,13 +335,46 @@
 <li><strong>投射物</strong>（projectile）：既包括从法杖中飞出后拥有初速度的法术，即火花弹、炸弹、链锯之类一般意义上的投射物；也包括一般情况下不拥有初速度的法术，即粘液雾、静止之环、雷霆爆炸等静态投射物（static projectile）。</li>
 </ul>
 
+
+<figure>
+    <picture>
+                <source srcset="/2020/09/12/noita-casting-mechanics/d9eaad0c/projectiles@2x.webp" type="image/webp" />
+                <source srcset="/2020/09/12/noita-casting-mechanics/d9eaad0c/projectiles@2x.png" type="image/png" />
+            <img src="/2020/09/12/noita-casting-mechanics/d9eaad0c/projectiles@2x.png" alt="Noita 施法机制分析" />
+    </picture>
+</figure>
+
+
+
 <ul>
 <li><strong>投射修正</strong>（projectile modifiers）：单独放置于法杖中不提供任何效果，需要和投射物以一定的先后顺序搭配，才能依附投射物产生效果的法术。如伤害增强、火焰轨迹、物质吞噬者、反重力等。</li>
 </ul>
 
+
+<figure>
+    <picture>
+                <source srcset="/2020/09/12/noita-casting-mechanics/72cbaabb/projectile-modifiers@2x.webp" type="image/webp" />
+                <source srcset="/2020/09/12/noita-casting-mechanics/72cbaabb/projectile-modifiers@2x.png" type="image/png" />
+            <img src="/2020/09/12/noita-casting-mechanics/72cbaabb/projectile-modifiers@2x.png" alt="Noita 施法机制分析" />
+    </picture>
+</figure>
+
+
+
 <ul>
 <li><strong>多重施放</strong>（multicast）：增加施放数量的法术。可以让一根法杖一次射出更多的投射物，或者人一个带有触发/定时的投射物施放更多的投射物。如x重法术，x重散射法术和阵型。</li>
 </ul>
+
+
+<figure>
+    <picture>
+                <source srcset="/2020/09/12/noita-casting-mechanics/422bd174/multicasts@2x.webp" type="image/webp" />
+                <source srcset="/2020/09/12/noita-casting-mechanics/422bd174/multicasts@2x.png" type="image/png" />
+            <img src="/2020/09/12/noita-casting-mechanics/422bd174/multicasts@2x.png" alt="Noita 施法机制分析" />
+    </picture>
+</figure>
+
+
 
 <p>以下法术不会深入讨论：</p>
 <ul>
@@ -327,6 +382,17 @@
 <li><strong>实用</strong>（utility）：如全知之眼，类似静态投射物，但仅仅在施法的一瞬间提供实用功能。</li>
 <li><strong>材料</strong>（material）：如点金（Touch of Gold）、酸液之海、水等，类似静态投射物，但仅仅在施法的一瞬间在世界内直接生成/转化物质。</li>
 </ul>
+
+
+<figure>
+    <picture>
+                <source srcset="/2020/09/12/noita-casting-mechanics/75577d29/passive-utility-material@2x.webp" type="image/webp" />
+                <source srcset="/2020/09/12/noita-casting-mechanics/75577d29/passive-utility-material@2x.png" type="image/png" />
+            <img src="/2020/09/12/noita-casting-mechanics/75577d29/passive-utility-material@2x.png" alt="Noita 施法机制分析" />
+    </picture>
+</figure>
+
+
 
 <p>关于魔杖 - 法杖的施放延迟、充能时间不会讨论。 - 始终施放的效果是：每次施法时最先施放始终施放的法术，并且不消耗魔力和施放数</p>
 <p>另外，本文不会过多解释各种法术的效果和使用时的注意事项、搭配技巧。</p>
@@ -343,6 +409,16 @@
 </blockquote>
 <blockquote>
 
+
+<figure>
+    <picture>
+                <source srcset="/2020/09/12/noita-casting-mechanics/d51250bb/spell-tree@2x.png" type="image/png" />
+            <img src="/2020/09/12/noita-casting-mechanics/d51250bb/spell-tree@2x.png" alt="Noita 施法机制分析" />
+    </picture>
+</figure>
+
+
+
 </blockquote>
 <p>图中的火焰轨迹应当同时修正能量球和带有触发的火花弹，然而在图中它与火花弹处于两条不同的分支，并且处于能量球的上方，容易让人误以为能量球是火焰轨迹的子法术，火花弹与火焰轨迹不相干，不接受修正。另外，这个法术树可以被搭建成多种完全等效的结构：火焰轨迹在带有触发的火花弹处，而不在能量球一侧；或者干脆将火焰轨迹置于阵型-分叉的上方。</p>
 <p>为了减少误导性，简化分析过程，这里提出了一种围绕触发/定时法术展开的，贴合横向编排思路的分段分析方式。</p>
@@ -351,17 +427,61 @@
 <p><img src="noita-casting-mechanics/basic.png" style="zoom: 80%;" /></p>
 <p>如果按照从左到右的思维去理解，可以认为法杖在“二重散射法术”这里消耗了法杖自带的 1 施放数，并且增加了多重施放的 2 施放数。随后从左到右涉及到燃烧轨迹、火花弹、伤害力场、能量球体。到能量球体处，施放数量被两个投射物法术消耗殆尽，于是后续的蛇形和魔法箭没有涉及到此次施法。</p>
 
+
+<figure>
+    <picture>
+                <source srcset="/2020/09/12/noita-casting-mechanics/a415673f/casts-change@2x.webp" type="image/webp" />
+                <source srcset="/2020/09/12/noita-casting-mechanics/a415673f/casts-change@2x.png" type="image/png" />
+            <img src="/2020/09/12/noita-casting-mechanics/a415673f/casts-change@2x.png" alt="Noita 施法机制分析" />
+    </picture>
+</figure>
+
+
+
 <p>以上是施法数的变化规律。可以看出，<strong>投射修正不消耗施法数，其它法术都会消耗 1 施法数，多重施放会在消耗 1 施法数的基础上再增加若干施放数</strong>。</p>
 <h3 id="触发与定时法术">触发与定时法术</h3>
 <p>带有触发/定时的投射物法术时，触发/定时法术会携带一部分法术。这些<strong>触发/定时法术会独立计算施放数</strong>。</p>
+
+
+<figure>
+    <picture>
+                <source srcset="/2020/09/12/noita-casting-mechanics/54bb0bbe/basic-trigger@1x.png"media="(max-width: 39.99em)"  type="image/png" />
+                <source srcset="/2020/09/12/noita-casting-mechanics/54bb0bbe/basic-trigger@2x.png"media="(min-width: 40em)"  type="image/png" />
+            <img src="/2020/09/12/noita-casting-mechanics/54bb0bbe/basic-trigger@2x.png" alt="Noita 施法机制分析" />
+    </picture>
+</figure>
+
+
 
 <p>在上面的例子中，“带有触发的火花弹”单独对施放数进行计算，从而能够在远处施放伤害力场和能量球体。这个行为使得<strong>外部的施放数在进行计算时跳过了伤害力场和能量球体</strong>，直接对魔法箭进行计算。</p>
 <p>另外，燃烧轨迹只对火花弹和魔法箭有效；伤害力场只对能量球体有效。这时候我们需要对投射修正的作用范围进行考虑。</p>
 <h3 id="投射修正的范围">投射修正的范围</h3>
 <p>当同时考虑多个投射修正、多重施放和带有触发/定时的法术时，情况会稍显复杂。为了探明这一点，我们需要对下面这个序列进行分析：</p>
 
+
+<figure>
+    <picture>
+                <source srcset="/2020/09/12/noita-casting-mechanics/8c8dd99a/complex@1x.png"media="(max-width: 39.99em)"  type="image/png" />
+                <source srcset="/2020/09/12/noita-casting-mechanics/8c8dd99a/complex@2x.png"media="(min-width: 40em)"  type="image/png" />
+            <img src="/2020/09/12/noita-casting-mechanics/8c8dd99a/complex@2x.png" alt="Noita 施法机制分析" />
+    </picture>
+</figure>
+
+
+
 <p>如果直接进行观察，很可能会误以为燃烧轨迹只对能量球体和火花弹有效。然而在分析后会发现，魔法箭、能量球体和火花弹都会享受燃烧轨迹和伤害力场的投射修正效果。可以说，<strong>多重施放只会造成施放数的增减，并不会产生如同定时/触发法术那样的嵌套关系</strong>。</p>
 <p>并且，由于沉重一击只对带有定时的火花弹有效；燃烧轨迹和伤害力场只对魔法箭、能量球体和火花弹有效。再结合之前的几个例子，可以推断出<strong>投射修正对且仅对嵌套关系中同一层的所有法术生效</strong>。在 <em>触发与定时法术</em> 段落中的例子里，由于魔法箭和带有触发的火花弹同属于施放数计算的最外层，都会享受到处于同一层的燃烧轨迹。</p>
+
+
+<figure>
+    <picture>
+                <source srcset="/2020/09/12/noita-casting-mechanics/54bb0bbe/basic-trigger@1x.png"media="(max-width: 39.99em)"  type="image/png" />
+                <source srcset="/2020/09/12/noita-casting-mechanics/54bb0bbe/basic-trigger@2x.png"media="(min-width: 40em)"  type="image/png" />
+            <img src="/2020/09/12/noita-casting-mechanics/54bb0bbe/basic-trigger@2x.png" alt="Noita 施法机制分析" />
+    </picture>
+</figure>
+
+
 
 <h3 id="快速分析法">快速分析法</h3>
 <p>根据之前提到的几个要点，这里归纳总结出一个快速分析法术嵌套关系、投射修正作用范围的方法：</p>
@@ -374,21 +494,98 @@
 </ol>
 <p>根据快速分析法，在《&lt;Noita&gt;法术编程指南》中提到的法术序列，可以在快速计算完施放数后，拆分成如下三部分：</p>
 
+
+<figure>
+    <picture>
+                <source srcset="/2020/09/12/noita-casting-mechanics/1f2cd109/separation@2x.webp" type="image/webp" />
+                <source srcset="/2020/09/12/noita-casting-mechanics/1f2cd109/separation@2x.png" type="image/png" />
+            <img src="/2020/09/12/noita-casting-mechanics/1f2cd109/separation@2x.png" alt="Noita 施法机制分析" />
+    </picture>
+</figure>
+
+
+
 <p>对分段进行整理，法术序列最终变成了这样的嵌套关系，一目了然：</p>
+
+
+<figure>
+    <picture>
+                <source srcset="/2020/09/12/noita-casting-mechanics/857e1c03/separation-2@2x.webp" type="image/webp" />
+                <source srcset="/2020/09/12/noita-casting-mechanics/857e1c03/separation-2@2x.png" type="image/png" />
+            <img src="/2020/09/12/noita-casting-mechanics/857e1c03/separation-2@2x.png" alt="Noita 施法机制分析" />
+    </picture>
+</figure>
+
+
 
 <h2 id="大家都是投射修正">大家都是投射修正！</h2>
 <h3 id="多重施放可以当投射修正">多重施放可以当投射修正</h3>
 
+
+<figure>
+    <picture>
+                <source srcset="/2020/09/12/noita-casting-mechanics/fbf5926b/all-formations@2x.webp" type="image/webp" />
+                <source srcset="/2020/09/12/noita-casting-mechanics/fbf5926b/all-formations@2x.png" type="image/png" />
+            <img src="/2020/09/12/noita-casting-mechanics/fbf5926b/all-formations@2x.png" alt="Noita 施法机制分析" />
+    </picture>
+</figure>
+
+
+
 <p>既然多重施放并不造成嵌套关系，那么阵型法术并不能将后方的法术单独囊括起来，组成一定的形状。</p>
 <p>因此，阵型类法术实际上<strong>以类似投射修正的方式在一定角度内均匀顺时针分布所处嵌套层中所有的投射物</strong>。例如，阵型-分叉能够作为一个投射修正，被修正的投射物在 ±45° 的范围内顺时针均匀施放：</p>
+
+
+<figure>
+    <picture>
+                <source srcset="/2020/09/12/noita-casting-mechanics/6ccf97e1/formation@1x.png"media="(max-width: 39.99em)"  type="image/png" />
+                <source srcset="/2020/09/12/noita-casting-mechanics/6ccf97e1/formation@2x.png"media="(min-width: 40em)"  type="image/png" />
+            <img src="/2020/09/12/noita-casting-mechanics/6ccf97e1/formation@2x.png" alt="Noita 施法机制分析" />
+    </picture>
+</figure>
+
+
 
 <p>以此类推，阵型-前后、阵型-五边形、阵型六边形是在 ±180°，即一整圈的范围内均匀分布投射物，阵型-上下的范围则是 ±180°。阵型-三叉的范围比阵型-分叉的范围稍小一点，约为 ±30°。</p>
 <p>当有多个阵型法术同时存在时，最左边的法术决定分布范围：</p>
 
 
+<figure>
+    <picture>
+                <source srcset="/2020/09/12/noita-casting-mechanics/86678190/formation-priority1@1x.png"media="(max-width: 39.99em)"  type="image/png" />
+                <source srcset="/2020/09/12/noita-casting-mechanics/86678190/formation-priority1@2x.png"media="(min-width: 40em)"  type="image/png" />
+            <img src="/2020/09/12/noita-casting-mechanics/86678190/formation-priority1@2x.png" alt="Noita 施法机制分析" />
+    </picture>
+</figure>
+
+
+
+
+
+<figure>
+    <picture>
+                <source srcset="/2020/09/12/noita-casting-mechanics/d544e42a/formation-priority2@1x.png"media="(max-width: 39.99em)"  type="image/png" />
+                <source srcset="/2020/09/12/noita-casting-mechanics/d544e42a/formation-priority2@2x.png"media="(min-width: 40em)"  type="image/png" />
+            <img src="/2020/09/12/noita-casting-mechanics/d544e42a/formation-priority2@2x.png" alt="Noita 施法机制分析" />
+    </picture>
+</figure>
+
+
+
 <h3 id="投射物也可以当投射修正">投射物也可以当投射修正</h3>
 <p>事实证明，投射修正的分类并没有那么明确——部分投射物也能提供类似的效果。</p>
 <p>例如玩家们喜闻乐见的火花弹，就提供了 +5% 暴击和 -1 度散射的修正效果。而这些修正效果，是对同一嵌套层内所有法术起效的。因此，当我们用丧心病狂的 20 个火花弹填满一个法杖，并让它们一次性发射出来的时候，每一发火花弹都有着 20 * 5% = 100% 的暴击加成，并且总共有 20 * (-1°) = -20° 的散射修正。每一发都精准而致命：</p>
+
+
+<figure>
+    <picture>
+                <source srcset="/2020/09/12/noita-casting-mechanics/ccafef7b/spark-crit@1x.png"media="(max-width: 39.99em)"  type="image/png" />
+                <source srcset="/2020/09/12/noita-casting-mechanics/ccafef7b/spark-crit@2x.png"media="(min-width: 40em)"  type="image/png" />
+            <img src="/2020/09/12/noita-casting-mechanics/ccafef7b/spark-crit@2x.png" alt="Noita 施法机制分析" />
+    </picture>
+</figure>
+
+
 
 <h2 id="法术池的透支">法术池的透支</h2>
 <p>《&lt;Noita&gt;法术编程指南》一文中也提到了“法术池”这个概念：在切换法杖和编辑法术时，法杖会刷新它的“法术池”。有序法杖的法术池中全部法术按照玩家设置的顺序排列；而乱序法杖的法术池中的法术是随机打乱的。游戏施法时并不直接从法杖中读取法术，而是从法术池读取。</p>
@@ -398,12 +595,44 @@
 </blockquote>
 <p>在法杖中放入两只带有定时的光剑。当游戏处理到第二个光剑时会发现：光剑还可以继续嵌套，而法术池已经耗尽。如果编程指南中的这段话属实，那么游戏会生成新的法术池，再次以相同的顺序供应两个光剑，用尽第二个法术池，强制终止施法。最终效果会是长度为四倍的光剑。然而 ，实际情况下射出的却是长度为二倍的光剑：</p>
 
+
+<figure>
+    <picture>
+                <source srcset="/2020/09/12/noita-casting-mechanics/96eeba25/lightdrill@2x.png"media="(min-width: 40em)"  type="image/png" />
+                <source srcset="/2020/09/12/noita-casting-mechanics/96eeba25/lightdrill@1x.png"media="(max-width: 39.99em)"  type="image/png" />
+            <img src="/2020/09/12/noita-casting-mechanics/96eeba25/lightdrill@1x.png" alt="Noita 施法机制分析" />
+    </picture>
+</figure>
+
+
+
 <h3 id="有限的透支">有限的透支</h3>
 <p>通过在以下法杖最前端填充 1~4 个火花弹并进行实验，会发现：带有触发的火花弹进行透支法术池时，总是会恰好发射出前端的所有火花弹；并不会透支到带有触发的火花弹本身。由此可以得出，<strong>每次施放的总法术数量不得超过法术池的法术数量</strong>。</p>
+
+
+<figure>
+    <picture>
+                <source srcset="/2020/09/12/noita-casting-mechanics/63ae9ce7/overuse-test@2x.png" type="image/png" />
+            <img src="/2020/09/12/noita-casting-mechanics/63ae9ce7/overuse-test@2x.png" alt="Noita 施法机制分析" />
+    </picture>
+</figure>
+
+
 
 <h3 id="法术池何时刷新">法术池何时刷新？</h3>
 <p>如果在一只乱序法杖中放入魔法弹和带有定时的火花弹，按照编程指南的理论，如果第一个法术池是｛魔法弹，带有定时的火花弹｝，在射出单发魔法弹后，下一次射出带有定时的火花弹时会进行透支。如果在透支前刷新了法术池，由于法杖时乱序的，将有概率刷新出｛带有定时的火花弹，魔法弹｝这样的法术池。结果是会出现两个嵌套的带有定时的火花弹。然而事实上并不会出现这样的射击效果。</p>
 <p>因此这里可以推导出关于法术池的第二条规律：<strong>当法术池透支出现时，游戏并不会立刻刷新法术池，而是从头再次使用原来的法术池。在计算完施放的所有法术后，再刷新法术池。</strong></p>
+
+
+<figure>
+    <picture>
+                <source srcset="/2020/09/12/noita-casting-mechanics/5649f4ab/shuffle@1x.png"media="(max-width: 39.99em)"  type="image/png" />
+                <source srcset="/2020/09/12/noita-casting-mechanics/5649f4ab/shuffle@2x.png"media="(min-width: 40em)"  type="image/png" />
+            <img src="/2020/09/12/noita-casting-mechanics/5649f4ab/shuffle@2x.png" alt="Noita 施法机制分析" />
+    </picture>
+</figure>
+
+
 
 <h3 id="用投射修正射出子弹">用投射修正射出子弹！</h3>
 <p>以下是一个简单却有实用性的例子：</p>
@@ -411,16 +640,57 @@
 <p>第二次点击鼠标，由于降低散射是投射修正，不减少施放数，游戏透支法杖，从头获取加速修正和霰弹。第二次的法术组合是｛降低散射，加速，霰弹｝。之后，法杖重新充能。</p>
 <p>这样编排法杖的好处量两个：如果充能时间大于施放延迟，适当将投射修正置后可以利用法术池透支机制，实现每次充能可以设计两次的效果。另外，这样编排可以让霰弹第一发保持散布，第二发降低散射，集中火力，并且同时具备加速的修正效果，可以同时打击体积小、数量多和高生命、数量少的怪物。</p>
 
+
+<figure>
+    <picture>
+                <source srcset="/2020/09/12/noita-casting-mechanics/8646be69/pool-simple@2x.png" type="image/png" />
+            <img src="/2020/09/12/noita-casting-mechanics/8646be69/pool-simple@2x.png" alt="Noita 施法机制分析" />
+    </picture>
+</figure>
+
+
+
 <h2 id="综合性例子">综合性例子</h2>
 <p>这里举一个综合性较强的例子，完整阐述一下这篇文章提到的机制：</p>
+
+
+<figure>
+    <picture>
+                <source srcset="/2020/09/12/noita-casting-mechanics/40d4715e/final-example@1x.png"media="(max-width: 39.99em)"  type="image/png" />
+                <source srcset="/2020/09/12/noita-casting-mechanics/40d4715e/final-example@2x.png"media="(min-width: 40em)"  type="image/png" />
+            <img src="/2020/09/12/noita-casting-mechanics/40d4715e/final-example@2x.png" alt="Noita 施法机制分析" />
+    </picture>
+</figure>
+
+
 
 <p>首先注意到法杖的施放数是 2，因此第一次施法会毫无悬念地发射出一发霰弹和一发火花弹（没有加速修正）。</p>
 <p>第二次施法从加速修正开始。三重施放与阵型-背后使定时火花弹的施放数量达到 1 + ( -1 + 3 ) + ( -1 + 2 ) = 4，但是定时火花弹的右侧只有三个普通火花弹，于是需要从头透支法术池。目前施放了 8 个法术，法术池有10个法术，因此可透支上法术池最开始的一颗火花弹，于是定时火花弹攒齐了四个投射物法术。</p>
 <p>这时候不要忘了法杖的施法数是 2。由于目前施放了 9 个法术，可以继续“透支”法术池。再加上霰弹，法杖的两个施法数也被满足了。</p>
 <p>将第二次施放的法术序列按照嵌套关系分段后，效果如下图所示：</p>
 
+
+<figure>
+    <picture>
+                <source srcset="/2020/09/12/noita-casting-mechanics/01c177ff/final-example-analysis@2x.webp" type="image/webp" />
+                <source srcset="/2020/09/12/noita-casting-mechanics/01c177ff/final-example-analysis@2x.png" type="image/png" />
+            <img src="/2020/09/12/noita-casting-mechanics/01c177ff/final-example-analysis@2x.png" alt="Noita 施法机制分析" />
+    </picture>
+</figure>
+
+
+
 <p>最后统计一下所有的投射修正：法杖直接发射的定时火花弹与霰弹都是有加速修正和火花弹的 +5% 暴击修正的；定时火花弹触发的四个火花弹都有沉重一击修正和四个火花弹提供的 4 * 5% = 20% 的暴击修正。另外，阵型-背后使得这四个火花弹会在 ±180° 内均匀散布。</p>
 <p>施放效果：</p>
+
+
+<figure>
+    <video autoplay="true" loop="true" muted="true">
+            <source src="/2020/09/12/noita-casting-mechanics/be5f6984/final@2x.mp4" type="video/mp4">
+    </video>
+</figure>
+
+
 
 <h2 id="鸣谢">鸣谢</h2>
 <p>Noita 贴吧交流1群的 <a target="_blank" rel="noopener" href="https://space.bilibili.com/7238810">谷戻り</a> 创作的 <a target="_blank" rel="noopener" href="https://www.bilibili.com/read/cv3761812">《如何在&lt;Noita&gt;中打造爆款法术》</a>（《&lt;Noita&gt;法术编程指南》）。没有这篇文章也就没有我今天想到的这些理论。 和他的交流也令我很受启发。</p>
@@ -433,6 +703,9 @@
     
 
     <footer class="post-footer">
+  <div class="addthis_inline_share_toolbox", style="text-align: center">
+    <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-6089b828ba6dc0ff" async="async"></script>
+  </div>
           
 
 <div class="post-copyright">
@@ -462,6 +735,16 @@
           </span>
 
           <span class="label">RSS</span>
+        </a>
+      </div>
+
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="https://space.bilibili.com/2117299">
+          <span class="icon">
+            <i class="fa bili-tv"></i>
+          </span>
+
+          <span class="label">Bilibili</span>
         </a>
       </div>
   </div>
@@ -542,6 +825,9 @@
   </span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+  <div class="addthis_inline_share_toolbox">
+    <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-6089b828ba6dc0ff" async="async"></script>
   </div>
 
     </div>

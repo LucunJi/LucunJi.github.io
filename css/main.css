@@ -2887,3 +2887,30 @@ body {
   color: #000;
   background-color: #000;
 }
+.footer>.footer-inner>.addthis_inline_share_toolbox {
+  display: none;
+  visibility: none;
+}
+/**
+ * register bili-icon since fontawesome don't have this
+ * Icon is from https://www.iconfont.cn/search/index?searchType=icon&q=bilibili
+ * Icon Author: CHENGNING
+ */
+@font-face {
+  font-family: bili-tv;
+  src: url("/fonts/bili-icon.ttf") format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+.bili-tv.fa,
+.bili-tv.fab,
+.bili-tv {
+  font-family: bili-tv;
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+.bili-tv:before {
+  content: "\e900";
+}
