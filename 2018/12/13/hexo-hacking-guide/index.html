@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css">
+  <script src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.js"></script>
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"lucunji.github.io","root":"/","images":"/images","scheme":"Gemini","version":"8.3.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"width":260},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
+  </script>
+<meta name="description" content="这里说几个魔改 Hexo 博客的方法，顺便水一贴。遇到问题欢迎评论区留言。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo 魔改指南">
+<meta property="og:url" content="https://lucunji.github.io/2018/12/13/hexo-hacking-guide/index.html">
+<meta property="og:site_name" content="LucunJi">
+<meta property="og:description" content="这里说几个魔改 Hexo 博客的方法，顺便水一贴。遇到问题欢迎评论区留言。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABcCAIAAAAeQie5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAIbSURBVHhe7dHRbuMwDETR/v9Pp4v0LuAipMewSUoF5jxaE5GafL3slAsSXJDgggQXJLggwQUJLkhwQYILElyQ4IKE9QV9HfBpJ4t3opgDDraxbCH6SBDawJpVqOEU0dWm9+D1l/GzdeY24MW3cMUKQ7N5aITEG58iJMa1D+Z9CUIHHCQIDeodybMiJBKEIiSmdM3jNQlCp4gmCPWrn8QLEoQu42cJQp2KZ7B4hMQtXBEh0aZsAPsmCD3ARQlCDf7Y6lyaIFTq6aWsFiHRgAEREnUe3chSERJtGBMhUeT+dazzgeMRjPzAcYXigjgbxODfOKtQVhBfF2GJ//hawQUJLkhwQYILElyQ4IIEFyS4IMEFCS5IcEGCCxJckOCCBBckuCDBBQkuSHBBggsSXJDgggQXJLggwQUJLkgoK+gfDsYx/oCDCpUF/eB4BCM/cFzh0V2sEyHRhjEREkWeXsdSERINGBAhUafgRlZLECrCpQlCpcouZccEoQe4KEGowdw/TOIWroiQaFM/gMUThC7jZwlCnbpm8IIIiQv4QYREv8ZJPCVBKEEoQWhE+zDelCB0wEGC0KChkbwvQuKNTxES4+YG89BbuGKF6dm8+DJ+ts6aDXj9KaKrLduDGhKENrB4Ffo44GAb6xeimDc+7WTHnbbiggQXJLggwQUJLkhwQYILElyQ4IIEFyS4IMEFCS5IcEGCCxJc0KnX6xsAxkPY/z4C3AAAAABJRU5ErkJggg==">
+<meta property="og:image" content="data:image/png;base64,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">
+<meta property="article:published_time" content="2018-12-14T03:12:50.000Z">
+<meta property="article:modified_time" content="2021-04-28T18:22:41.948Z">
+<meta property="article:author" content="LucunJi">
+<meta property="article:tag" content="Hexo">
+<meta property="article:tag" content="NexT">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABcCAIAAAAeQie5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAIbSURBVHhe7dHRbuMwDETR/v9Pp4v0LuAipMewSUoF5jxaE5GafL3slAsSXJDgggQXJLggwQUJLkhwQYILElyQ4IKE9QV9HfBpJ4t3opgDDraxbCH6SBDawJpVqOEU0dWm9+D1l/GzdeY24MW3cMUKQ7N5aITEG58iJMa1D+Z9CUIHHCQIDeodybMiJBKEIiSmdM3jNQlCp4gmCPWrn8QLEoQu42cJQp2KZ7B4hMQtXBEh0aZsAPsmCD3ARQlCDf7Y6lyaIFTq6aWsFiHRgAEREnUe3chSERJtGBMhUeT+dazzgeMRjPzAcYXigjgbxODfOKtQVhBfF2GJ//hawQUJLkhwQYILElyQ4IIEFyS4IMEFCS5IcEGCCxJckOCCBBckuCDBBQkuSHBBggsSXJDgggQXJLggwQUJLkgoK+gfDsYx/oCDCpUF/eB4BCM/cFzh0V2sEyHRhjEREkWeXsdSERINGBAhUafgRlZLECrCpQlCpcouZccEoQe4KEGowdw/TOIWroiQaFM/gMUThC7jZwlCnbpm8IIIiQv4QYREv8ZJPCVBKEEoQWhE+zDelCB0wEGC0KChkbwvQuKNTxES4+YG89BbuGKF6dm8+DJ+ts6aDXj9KaKrLduDGhKENrB4Ffo44GAb6xeimDc+7WTHnbbiggQXJLggwQUJLkhwQYILElyQ4IIEFyS4IMEFCS5IcEGCCxJc0KnX6xsAxkPY/z4C3AAAAABJRU5ErkJggg==">
+
+
+<link rel="canonical" href="https://lucunji.github.io/2018/12/13/hexo-hacking-guide/">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+<title>Hexo 魔改指南 | LucunJi</title>
+  
+
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="LucunJi" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">LucunJi</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档与标签</a></li>
+        <li class="menu-item menu-item-booklist"><a href="/booklist/" rel="section"><i class="fas fa-book-open fa-fw"></i>书单</a></li>
+        <li class="menu-item menu-item-gallery"><a href="/gallery/" rel="section"><i class="fas fa-images fa-fw"></i>相册</a></li>
+        <li class="menu-item menu-item-apps"><a href="/apps/" rel="section"><i class="fas fa-cogs fa-fw"></i>应用</a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%9C%80%E6%96%B0%E7%89%88next%E4%B8%BB%E9%A2%98%E4%B8%8B%E8%BD%BD"><span class="nav-number">1.</span> <span class="nav-text">最新版NexT主题下载</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE"><span class="nav-number">2.</span> <span class="nav-text">字体设置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%97%E4%BD%93%E7%89%88%E6%9D%83"><span class="nav-number">2.1.</span> <span class="nav-text">字体版权</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE-1"><span class="nav-number">2.2.</span> <span class="nav-text">字体设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%97%E4%BD%93%E7%9A%84%E5%8E%8B%E7%BC%A9"><span class="nav-number">2.3.</span> <span class="nav-text">字体的压缩</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E9%A1%B5%E9%9D%A2"><span class="nav-number">3.</span> <span class="nav-text">自定义页面</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A0%87%E7%AD%BE%E5%B9%B6%E5%85%A5%E5%BD%92%E6%A1%A3"><span class="nav-number">3.1.</span> <span class="nav-text">标签并入归档</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%AC%E5%9C%B0%E5%8C%96"><span class="nav-number">3.2.</span> <span class="nav-text">本地化</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A0%B7%E5%BC%8F%E8%A1%A8"><span class="nav-number">4.</span> <span class="nav-text">自定义样式表</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A2%9E%E5%8A%A0%E5%A8%B1%E4%B9%90%E6%95%88%E6%9E%9C"><span class="nav-number">4.1.</span> <span class="nav-text">增加娱乐效果</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%BC%A0%E6%A0%87%E6%82%AC%E5%81%9C%E6%B0%94%E6%B3%A1"><span class="nav-number">4.1.1.</span> <span class="nav-text">鼠标悬停气泡</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%AE%E5%88%AE%E4%B9%90"><span class="nav-number">4.1.2.</span> <span class="nav-text">刮刮乐</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%86%85%E5%B5%8C%E8%A7%86%E9%A2%91%E8%87%AA%E5%8A%A8%E7%BC%A9%E6%94%BE"><span class="nav-number">4.1.3.</span> <span class="nav-text">内嵌视频自动缩放</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BE%8E%E5%8C%96%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE"><span class="nav-number">4.1.4.</span> <span class="nav-text">美化代码高亮</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%A2%9E%E5%8A%A0-qq-%E5%A5%BD%E5%8F%8B%E5%88%86%E4%BA%AB"><span class="nav-number">5.</span> <span class="nav-text">增加 QQ 好友分享</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#leancloud"><span class="nav-number">6.</span> <span class="nav-text">LeanCloud</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E5%85%A8%E6%BC%8F%E6%B4%9E"><span class="nav-number">6.1.</span> <span class="nav-text">安全漏洞</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%95%E5%BC%80%E5%AE%9E%E5%90%8D%E9%AA%8C%E8%AF%81"><span class="nav-number">6.2.</span> <span class="nav-text">绕开实名验证</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="LucunJi"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">LucunJi</p>
+  <div class="site-description" itemprop="description">just a blog here</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">18</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">20</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/LucunJi" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;LucunJi" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://space.bilibili.com/2117299/" title="Bilibili → https:&#x2F;&#x2F;space.bilibili.com&#x2F;2117299&#x2F;" rel="noopener" target="_blank"><i class="far fa-caret-square-right fa-fw"></i>Bilibili</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll site-overview-item animated">
+    <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://tis.world/" title="https:&#x2F;&#x2F;tis.world" rel="noopener" target="_blank">TIS Union</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="http://cfpa.team/" title="http:&#x2F;&#x2F;cfpa.team" rel="noopener" target="_blank">CFPA 汉化组</a>
+        </li>
+    </ul>
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://lucunji.github.io/2018/12/13/hexo-hacking-guide/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="LucunJi">
+      <meta itemprop="description" content="just a blog here">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LucunJi">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Hexo 魔改指南
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2018-12-13 21:12:50" itemprop="dateCreated datePublished" datetime="2018-12-13T21:12:50-06:00">2018-12-13</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-04-28 13:22:41" itemprop="dateModified" datetime="2021-04-28T13:22:41-05:00">2021-04-28</time>
+      </span>
+
+  
+    <span id="/2018/12/13/hexo-hacking-guide/" class="post-meta-item leancloud_visitors" data-flag-title="Hexo 魔改指南" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>2.6k</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>这里说几个魔改 Hexo 博客的方法，顺便水一贴。遇到问题欢迎评论区留言。 <span id="more"></span></p>
+<h1 id="最新版next主题下载">最新版NexT主题下载</h1>
+<p><a target="_blank" rel="noopener" href="https://theme-next.org/docs/getting-started/">最新版本</a> 的 NexT 使用了一个不同于过往版本的 <a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next">GitHub repo.</a>。新版本的 NexT 在许多方面有着比旧版更方便的配置。安装时注意甄别。</p>
+<h1 id="字体设置">字体设置</h1>
+<h2 id="字体版权">字体版权</h2>
+<p><b>注意版权问题！！</b></p>
+<ul>
+<li>有的字体商用需要购买版权，有的字体免费商用；</li>
+<li>有的字体免费商用但是<b>禁止嵌入软件、网页中</b>；</li>
+<li>有的字体禁止二次发布；</li>
+<li>有的字体禁止修改名称和（或）修改内容后和（或）收取费用二次发布；</li>
+<li>…………</li>
+</ul>
+<p>以上每一条都可能单独成立。所以使用字体时记得看清楚发布源网页的信息、证书以及压缩包里附带的 readme（用户须知/使用声明） 文件。<b> 看说明书很重要！</b>（由于外文字体一般都只有英文声明，所以学好英文是很重要的） <del>一般来说大公司都会等韭菜长大了再割</del></p>
+<p>P.S.：我不太清楚重命名成英文会不会侵犯“禁止修改名称”这一条，所以就直接使用比较容易出编码问题的中文文件名了。</p>
+<h2 id="字体设置-1">字体设置</h2>
+<p>声明和设置字体可以在 <code>&lt;主题文件夹&gt;/source/css/_custom/custom.styl</code> 这里设置 声明字体：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@font-face</span> &#123;</span><br><span class="line">    <span class="attribute">font-family</span>: /*字体系列名*/;</span><br><span class="line">    <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">&#x27;../fonts/&lt;字体文件名&gt;&#x27;</span>);</span><br><span class="line">    <span class="comment">/*你可以指定多个 url ，中间用逗号隔开。前一个字体使用失败时会自动尝试使用下一个。*/</span></span><br><span class="line">    <span class="comment">/*就像这样：</span></span><br><span class="line"><span class="comment">    src: url(&#x27;file1.ttf&#x27;), url(&#x27;file2.svg&#x27;);*/</span></span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
+<p>使用字体：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.site-title</span> &#123;</span><br><span class="line">    <span class="attribute">font-family</span>: <span class="string">&#x27;&lt;字体系列名&gt;&#x27;</span> <span class="meta">!important</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>字体文件就丢在 <code>&lt;主题文件夹&gt;/source/css/fonts/</code> 在这个文件夹</p>
+<h2 id="字体的压缩">字体的压缩</h2>
+<p>如果不禁止修改内容，那么直接把字体文件上传是很蠢的行为。如果是五十几 KB 的英文字体还好，一个中文字体能够有几 MB 的大小。这是极其浪费流量资源和加载时间的——实际用到的字形可能只是九牛一毛。 在这里极度推荐使用 <a target="_blank" rel="noopener" href="http://font-spider.org/">字蛛（font-spider）</a> 来对字体进行压缩。它的原理就是遍历相关的文件，记录每个字体文件的使用情况，然后创建只保留用到的字形的新字体文件。 安装过程我就不说了，请参照官网。下面讲几个坑点：</p>
+<ul>
+<li>你应该对它输入 <code>&lt;博客文件夹&gt;/public/index.html</code></li>
+<li>记得打开 <code>--debug</code>， 否则出 Bug 以后它是不会报出来的</li>
+<li>它对于 url 指定的路径的区分很蠢
+<ul>
+<li>相对路径记得用 <code>./</code>（本层目录）和 <code>../</code>（上层目录）</li>
+<li>base64 以及网络上的资源用 <code>--map "&lt;url 地址&gt;,&lt;本地地址&gt;"</code> 来映射到本地的字体文件</li>
+<li>也可以在不需要处理的情况下把 <code>@font-face&#123;&#125;</code> 内容用 <code>/*&lt;内容&gt;*/</code> 给注释掉
+<ul>
+<li>或者用 <code>--ignore "文件路径"</code> 来指定需要忽略掉的文件</li>
+</ul></li>
+</ul></li>
+</ul>
+<p>反正我一个 4MB 的中英文字体文件给压成了 4KB，只保留 LucunJi 这些字符，效果很显著。</p>
+<h1 id="自定义页面">自定义页面</h1>
+<h2 id="标签并入归档">标签并入归档</h2>
+<p>标签、分类和归档单独分几个页面会导致类似的功能分散，特别是当自己的标签不多的时候。 具体操作是把 <code>page.swig</code> 里面的东西搬进 <code>archive.swig</code>。 把这些内容：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;post-block tag&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;tag-cloud&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;tag-cloud-title&quot;</span>&gt;</span></span><br><span class="line">        &#123;% set visibleTags = 0 %&#125;</span><br><span class="line">        &#123;% for tag in site.tags %&#125;</span><br><span class="line">          &#123;% if tag.length %&#125;</span><br><span class="line">            &#123;% set visibleTags += 1 %&#125;</span><br><span class="line">          &#123;% endif %&#125;</span><br><span class="line">        &#123;% endfor %&#125;</span><br><span class="line">        &#123;&#123; _p(&#x27;counter.tag_cloud&#x27;, visibleTags) &#125;&#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;tag-cloud-tags&quot;</span>&gt;</span></span><br><span class="line">        &#123;&#123; tagcloud(&#123;min_font: 12, max_font: 30, amount: 300, color: true, start_color: &#x27;#ccc&#x27;, end_color: &#x27;#111&#x27;&#125;) &#125;&#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>加入到这一行的后面。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% block content %&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="本地化">本地化</h2>
+<p>Hexo 博客可以进行本地化来方便不同语言的用户。 通过对作者代码的仿写，可以对自己新增的内容进行本地化。 语言文件都在 <code>./themes/&lt;主题&gt;/languages/</code> 这里，拿 <code>zh-CN.yml</code> 举例： 主题的 <code>_config.yml</code> 中的</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="attr">archives:</span> <span class="string">/archives/</span> <span class="string">||</span> <span class="string">archive</span></span><br></pre></td></tr></table></figure>
+<p>里面， <code>archives:</code> 对应了 <code>zh-CN.yml</code> 的</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="attr">archives:</span> <span class="string">归档</span></span><br></pre></td></tr></table></figure>
+<hr />
+<p>每个页面的标题，在 <code>./themes/next/layout/pages.swig</code> 被给出，例如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#&#125;&#123;% elif page.type &#x3D;&#x3D;&#x3D; &quot;tags&quot; and not page.title %&#125;&#123;#</span><br><span class="line">    #&#125;&#123;&#123; __(&#39;title.tag&#39;) + page_title_suffix &#125;&#125;&#123;#</span><br></pre></td></tr></table></figure>
+<p>这里的 <code>__('title.tag')</code> 就对应了语言文件里的</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">title:</span></span><br><span class="line">  <span class="attr">tag:</span> <span class="string">标签</span></span><br></pre></td></tr></table></figure>
+<h1 id="自定义样式表">自定义样式表</h1>
+<p>通过自定义 CSS 样式表，可以实现许多小功能来美化页面。</p>
+<h2 id="增加娱乐效果">增加娱乐效果</h2>
+<h3 id="鼠标悬停气泡">鼠标悬停气泡</h3>
+<p><a title="气泡内容">效果</a> 代码:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">title</span>=<span class="string">&quot;气泡内容&quot;</span>&gt;</span>效果<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 是的，追加href属性还能弄个超链接 --&gt;</span></span><br></pre></td></tr></table></figure>
+<p>一般人看不出来的 <font title="气泡内容">效果</font> 代码:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">font</span> <span class="attr">title</span>=<span class="string">&quot;气泡内容&quot;</span>&gt;</span>效果<span class="tag">&lt;/<span class="name">font</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>你可以给几乎所有标签加入 <code>title</code> 属性，甚至包括图片： <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABcCAIAAAAeQie5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAIbSURBVHhe7dHRbuMwDETR/v9Pp4v0LuAipMewSUoF5jxaE5GafL3slAsSXJDgggQXJLggwQUJLkhwQYILElyQ4IKE9QV9HfBpJ4t3opgDDraxbCH6SBDawJpVqOEU0dWm9+D1l/GzdeY24MW3cMUKQ7N5aITEG58iJMa1D+Z9CUIHHCQIDeodybMiJBKEIiSmdM3jNQlCp4gmCPWrn8QLEoQu42cJQp2KZ7B4hMQtXBEh0aZsAPsmCD3ARQlCDf7Y6lyaIFTq6aWsFiHRgAEREnUe3chSERJtGBMhUeT+dazzgeMRjPzAcYXigjgbxODfOKtQVhBfF2GJ//hawQUJLkhwQYILElyQ4IIEFyS4IMEFCS5IcEGCCxJckOCCBBckuCDBBQkuSHBBggsSXJDgggQXJLggwQUJLkgoK+gfDsYx/oCDCpUF/eB4BCM/cFzh0V2sEyHRhjEREkWeXsdSERINGBAhUafgRlZLECrCpQlCpcouZccEoQe4KEGowdw/TOIWroiQaFM/gMUThC7jZwlCnbpm8IIIiQv4QYREv8ZJPCVBKEEoQWhE+zDelCB0wEGC0KChkbwvQuKNTxES4+YG89BbuGKF6dm8+DJ+ts6aDXj9KaKrLduDGhKENrB4Ffo44GAb6xeimDc+7WTHnbbiggQXJLggwQUJLkhwQYILElyQ4IIEFyS4IMEFCS5IcEGCCxJc0KnX6xsAxkPY/z4C3AAAAABJRU5ErkJggg==" title="我觉得你应该知道怎么做了"></p>
+<h3 id="刮刮乐">刮刮乐</h3>
+<p>示例：<font class="hidden-black" title="刮开来试试OwO">刮刮乐</font> 因为每次都在 HTML 标签里面写 style太麻烦了，干脆写成 class 塞进 css 文件：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.hidden-black</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>:black;</span><br><span class="line">    <span class="attribute">background-color</span>:black;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>markdown 里面写这个</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">font</span> <span class="attr">class</span>=<span class="string">&quot;hidden-black&quot;</span> <span class="attr">title</span>=<span class="string">&quot;刮开来试试OwO&quot;</span>&gt;</span>刮刮乐<span class="tag">&lt;/<span class="name">font</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="内嵌视频自动缩放">内嵌视频自动缩放</h3>
+<p>批梨批梨之类傻批视频网站的内嵌代码是可以直接丢进 markdown 文件里面的，然而却不能自动缩放。 解决办法来自<b> <a target="_blank" rel="noopener" href="http://www.xiaoyunhua.com/2344.html">肖运华个人网站</a> </b>，非常感谢。 <code>&lt;iframe&gt;</code> 标签外边套一层 <code>&lt;div class="video"&gt;</code> 或者 <code>&lt;p class="video"&gt;</code> ，然后在之前说过的 <code>custom.styl</code> 里面加入如下样式代码：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.video</span> &#123;</span><br><span class="line">  <span class="attribute">position</span>: relative;</span><br><span class="line">  <span class="attribute">padding-bottom</span>: <span class="number">56.25%</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">overflow</span>: hidden;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.video</span> <span class="selector-tag">iframe</span>,</span><br><span class="line"><span class="selector-class">.video</span> <span class="selector-tag">object</span>,</span><br><span class="line"><span class="selector-class">.video</span> embed &#123;</span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  <span class="attribute">top</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">left</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100%</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>保存，刷新，完事 记得 <code>&lt;!-- more --&gt;</code> 标签前面加上压缩过的视频封面而不是内嵌视频本体，否则还在预览部分流量就没了。 当然你在一页上丢太多视频可能会卡爆，并且吞噬大量的流量。</p>
+<h3 id="美化代码高亮">美化代码高亮</h3>
+<p>（添加于 2021-04-27）</p>
+<p>暗色主题的代码高亮在亮色主题的博客上会显得比较突兀。 这里同样可以靠修改 <code>custom.styl</code> 来美化：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.highlight</span> &#123;</span><br><span class="line">  <span class="attribute">box-shadow</span>: <span class="number">3px</span> <span class="number">3px</span> <span class="number">15px</span> <span class="number">#000000</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>我这里的办法是加上阴影。只要让页面看起来更舒服，其它方法也是可行的。</p>
+<h1 id="增加-qq-好友分享">增加 QQ 好友分享</h1>
+<p>我分享系统用的是 needsharebutton2，配置起来很简单，官方文件应该就有，这里不再赘述。 要点在于加入“发送给QQ好友和群组”功能。如果用分享到QQ空间功能来替代这个的话会很麻烦的，更何况 TIM 用户一般很少看空间。 基本操作就是抄一下已有的代码，不过QQ好友分享必须要附带图片、标题 打开 <code>&lt;博客目录&gt;\themes\next\source\lib\needsharebutton\needsharebutton.css</code> ， 在</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.icon-qqzone</span>:before &#123; content: <span class="string">&#x27;\f1d6&#x27;</span>; &#125;</span><br></pre></td></tr></table></figure>
+<p>的下方添加</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.icon-qq</span>:before &#123; content: <span class="string">&#x27;\f1d6&#x27;</span>; &#125;</span><br></pre></td></tr></table></figure>
+<p>并且把</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.need-share-button_qqzone</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#ffce00</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.need-share-button_qqzone</span><span class="selector-class">.need-share-button_link-box</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#fff</span>;</span><br><span class="line"></span><br><span class="line">  <span class="attribute">background</span>: <span class="number">#ffce00</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>复制一份，改成这样：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.need-share-button_qq</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#00deff</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.need-share-button_qq</span><span class="selector-class">.need-share-button_link-box</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#fff</span>;</span><br><span class="line"></span><br><span class="line">  <span class="attribute">background</span>: <span class="number">#41d0ff</span>;<span class="comment">/*天蓝色背景色，方便区分*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这样 css 文件就配置好了，然后打开 <code>&lt;博客目录&gt;\themes\next\source\lib\needsharebutton\needsharebutton.js</code> 找到这一块代码：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;qqzone&quot;</span>: <span class="function"><span class="keyword">function</span> (<span class="params">el</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">var</span> myoptions = getOptions(el);</span><br><span class="line">        <span class="keyword">var</span> url = <span class="string">&quot;http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?title=&quot;</span> +</span><br><span class="line">          <span class="built_in">encodeURIComponent</span>(myoptions.title) +</span><br><span class="line">          <span class="string">&quot;&amp;url=&quot;</span> + <span class="built_in">encodeURIComponent</span>(myoptions.url) +</span><br><span class="line">          <span class="string">&quot;&amp;pics=&quot;</span> + <span class="built_in">encodeURIComponent</span>(myoptions.image) +</span><br><span class="line">          <span class="string">&quot;&amp;desc=&quot;</span> + <span class="built_in">encodeURIComponent</span>(myoptions.description);</span><br><span class="line">        root.popup(url);</span><br><span class="line">      &#125;,</span><br></pre></td></tr></table></figure>
+<p>在下面加入：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;qq&quot;</span>: <span class="function"><span class="keyword">function</span> (<span class="params">el</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">var</span> myoptions = getOptions(el);</span><br><span class="line">        <span class="keyword">var</span> url = <span class="string">&quot;https://connect.qq.com/widget/shareqq/index.html?url=&quot;</span> +</span><br><span class="line">        <span class="built_in">encodeURIComponent</span>(myoptions.url) +</span><br><span class="line">        <span class="string">&quot;&amp;title=&quot;</span> + <span class="built_in">encodeURIComponent</span>(myoptions.title) + </span><br><span class="line">        <span class="string">&quot;&amp;summary=&quot;</span> + <span class="built_in">encodeURIComponent</span>(myoptions.description) +</span><br><span class="line">        <span class="string">&quot;&amp;pics=&quot;</span> + <span class="string">&quot;&lt;你自己的博客头像之类的图片&gt;&quot;</span>; </span><br><span class="line">        <span class="comment">//没有图片就不能分享了，所以强制指定一个图片比较稳</span></span><br><span class="line">        root.popup(url)</span><br><span class="line">      &#125;,</span><br></pre></td></tr></table></figure>
+<p>然后找到这一行：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">networks: <span class="string">&quot;Weibo,Wechat,Douban,QQZone,Twitter,Pinterest,Facebook,GooglePlus,Reddit,Linkedin,Tumblr,Evernote&quot;</span></span><br></pre></td></tr></table></figure>
+<p>改成这个（加入 QQ 选项）：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">networks: <span class="string">&quot;Weibo,Wechat,Douban,QQZone,QQ,Twitter,Pinterest,Facebook,GooglePlus,Reddit,Linkedin,Tumblr,Evernote&quot;</span></span><br></pre></td></tr></table></figure>
+<p>最后修改此处,注意注释的地方:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">root.getDescription = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">      <span class="keyword">var</span> content;</span><br><span class="line">      <span class="comment">// check querySelector existance for old browsers</span></span><br><span class="line">      <span class="keyword">if</span> (<span class="built_in">document</span>.querySelector) &#123;</span><br><span class="line">        content = <span class="built_in">document</span>.querySelector(<span class="string">&quot;meta[property=\&quot;og:description\&quot;]&quot;</span>) ||</span><br><span class="line">                  <span class="built_in">document</span>.querySelector(<span class="string">&quot;meta[name=\&quot;twitter:description\&quot;]&quot;</span>) ||</span><br><span class="line">                  <span class="built_in">document</span>.querySelector(<span class="string">&quot;meta[name=\&quot;description\&quot;]&quot;</span>);</span><br><span class="line">        <span class="keyword">if</span> (content) &#123;</span><br><span class="line">          <span class="keyword">return</span> content.getAttribute(<span class="string">&quot;content&quot;</span>);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">          <span class="keyword">return</span> <span class="string">&quot;&quot;</span>;<span class="comment">/*在双引号的里面添点东西,例如“我的博客”*/</span></span><br><span class="line">        &#125;</span><br><span class="line">      &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        content = <span class="built_in">document</span>.getElementsByTagName(<span class="string">&quot;meta&quot;</span>).namedItem(<span class="string">&quot;description&quot;</span>);</span><br><span class="line">        <span class="keyword">if</span> (content) &#123;</span><br><span class="line">          <span class="keyword">return</span> content.getAttribute(<span class="string">&quot;content&quot;</span>);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">          <span class="keyword">return</span> <span class="string">&quot;LucunJi&#x27;s blog&quot;</span>;<span class="comment">/*同上一处注释*/</span></span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;;</span><br></pre></td></tr></table></figure>
+<p>这样就魔改完毕了，在主题的 _config.yml 文件里添加上 qq：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">networks:</span> <span class="string">Weibo,Wechat,Douban,QQZone,QQ,Twitter,Facebook</span></span><br></pre></td></tr></table></figure>
+<p>最终效果如下：<img src="data:image/png;base64,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" alt="image" /></p>
+<h1 id="leancloud">LeanCloud</h1>
+<h2 id="安全漏洞">安全漏洞</h2>
+<p>如果你用 LeanCloud 统计阅读数，记得看看<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_39345384/article/details/80787998">这里</a>。 另外，最后的 <code>deploy</code> 应该写成这样:</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">    <span class="attr">repo:</span> <span class="comment">#你的 repository</span></span><br><span class="line">    <span class="attr">branch:</span> <span class="string">master</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">type:</span> <span class="string">leancloud_counter_security_sync</span></span><br></pre></td></tr></table></figure>
+<p>不在 <code>type</code> 前面加短划线会报错。</p>
+<h2 id="绕开实名验证">绕开实名验证</h2>
+<p>（添加于 2021-04-27）</p>
+<p>LeanCloud 国内服务目前已经全部要求实名验证。没有实名验证的功能会受到限制。我的博客已经没法在无验证的情况下使用字数统计了。</p>
+<p>目前的解决方案是：</p>
+<ol type="1">
+<li>实名验证</li>
+<li>如果不想实名验证，可以在左上角选择国际服务（International）。</li>
+</ol>
+<p>需要注意：国际服务和国内服务的账号<strong>不通用</strong>，需要重新配置并迁移数据。如果想要删除、修改国内帐号，查看并修改，也需要实名验证。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>LucunJi
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://lucunji.github.io/2018/12/13/hexo-hacking-guide/" title="Hexo 魔改指南">https://lucunji.github.io/2018/12/13/hexo-hacking-guide/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="followme">
+  <span>欢迎关注我的其它发布渠道</span>
+
+  <div class="social-list">
+
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="/atom.xml">
+          <span class="icon">
+            <i class="fa fa-rss"></i>
+          </span>
+
+          <span class="label">RSS</span>
+        </a>
+      </div>
+  </div>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/Hexo/" rel="tag"># Hexo</a>
+              <a href="/tags/NexT/" rel="tag"># NexT</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2018/12/11/3Ws/" rel="prev" title="3Ws">
+                  <i class="fa fa-chevron-left"></i> 3Ws
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2019/02/24/minimalist-images/" rel="next" title="极简风描图">
+                  极简风描图 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2018 – 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fas fa-biohazard"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">LucunJi</span>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+      <span>站点总字数：</span>
+    <span title="站点总字数">53k</span>
+  </span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+  <script>
+    NProgress.configure({
+      showSpinner: false
+    });
+    NProgress.start();
+    document.addEventListener('readystatechange', () => {
+      if (document.readyState === 'interactive') {
+        NProgress.inc(0.8);
+      }
+      if (document.readyState === 'complete') {
+        NProgress.done();
+      }
+    });
+    document.addEventListener('pjax:send', () => {
+      NProgress.start();
+    });
+    document.addEventListener('pjax:success', () => {
+      NProgress.done();
+    });
+  </script>
+
+  
+
+
+<script>
+  (function() {
+    function leancloudSelector(url) {
+      url = encodeURI(url);
+      return document.getElementById(url).querySelector('.leancloud-visitors-count');
+    }
+
+    function addCount(Counter) {
+      const visitors = document.querySelector('.leancloud_visitors');
+      const url = decodeURI(visitors.id);
+      const title = visitors.dataset.flagTitle;
+
+      Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({ url })))
+        .then(response => response.json())
+        .then(({ results }) => {
+          if (results.length > 0) {
+            const counter = results[0];
+            leancloudSelector(url).innerText = counter.time + 1;
+            Counter('put', '/classes/Counter/' + counter.objectId, { time: { '__op': 'Increment', 'amount': 1 } })
+              .catch(error => {
+                console.error('Failed to save visitor count', error);
+              });
+          } else {
+              leancloudSelector(url).innerText = 'Counter not initialized! More info at console err msg.';
+              console.error('ATTENTION! LeanCloud counter has security bug, see how to solve it here: https://github.com/theme-next/hexo-leancloud-counter-security. \n However, you can still use LeanCloud without security, by setting `security` option to `false`.');
+            
+          }
+        })
+        .catch(error => {
+          console.error('LeanCloud Counter Error', error);
+        });
+    }
+
+    function showTime(Counter) {
+      const visitors = document.querySelectorAll('.leancloud_visitors');
+      const entries = [...visitors].map(element => {
+        return decodeURI(element.id);
+      });
+
+      Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({ url: { '$in': entries } })))
+        .then(response => response.json())
+        .then(({ results }) => {
+          for (let url of entries) {
+            const target = results.find(item => item.url === url);
+            leancloudSelector(url).innerText = target ? target.time : 0;
+          }
+        })
+        .catch(error => {
+          console.error('LeanCloud Counter Error', error);
+        });
+    }
+
+    const { app_id, app_key, server_url } = {"enable":true,"app_id":"GM3E9c3iav6Jjhwj4n9ktqIX-MdYXbMMI","app_key":"OIJ3z8gwKASYoJUUy3BQIFQU","server_url":null,"security":true};
+    function fetchData(api_server) {
+      const Counter = (method, url, data) => {
+        return fetch(`${api_server}/1.1${url}`, {
+          method,
+          headers: {
+            'X-LC-Id'     : app_id,
+            'X-LC-Key'    : app_key,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data)
+        });
+      };
+      if (CONFIG.page.isPost) {
+        if (CONFIG.hostname !== location.hostname) return;
+        addCount(Counter);
+      } else if (document.querySelectorAll('.post-title-link').length >= 1) {
+        showTime(Counter);
+      }
+    }
+
+    const api_server = app_id.slice(-9) === '-MdYXbMMI' ? `https://${app_id.slice(0, 8).toLowerCase()}.api.lncldglobal.com` : server_url;
+
+    if (api_server) {
+      fetchData(api_server);
+    } else {
+      fetch('https://app-router.leancloud.cn/2/route?appId=' + app_id)
+        .then(response => response.json())
+        .then(({ api_server }) => {
+          fetchData('https://' + api_server);
+        });
+    }
+  })();
+</script>
+
+
+  
+
+
+<script>
+let inner = document.getElementsByClassName("main-inner archive")[0];
+if (inner != null) {
+    inner.children[0].style.marginTop = 0;
+    inner.innerHTML = `
+<div class="post-block animated fadeIn">
+    <header class="post-header animated fadeInDown">
+        <h1 class="post-title" itemprop="name headline"
+        style="font-weight: normal;text-align: center;margin: initial">
+            标签 
+        </h1>
+    </header>
+    <div class="post-body animated fadeInDown">
+        <div class="tag-cloud">
+            <a href="/tags/CV-computer-vision/" style="font-size: 12px; color: #ccc">CV(computer vision)</a> <a href="/tags/Hexo/" style="font-size: 12px; color: #ccc">Hexo</a> <a href="/tags/Java/" style="font-size: 21px; color: #6f6f6f">Java</a> <a href="/tags/ML-machine-learning/" style="font-size: 12px; color: #ccc">ML(machine learning)</a> <a href="/tags/NexT/" style="font-size: 12px; color: #ccc">NexT</a> <a href="/tags/TekTopia/" style="font-size: 21px; color: #6f6f6f">TekTopia</a> <a href="/tags/ai/" style="font-size: 12px; color: #ccc">ai</a> <a href="/tags/anime-images/" style="font-size: 12px; color: #ccc">anime images</a> <a href="/tags/art/" style="font-size: 12px; color: #ccc">art</a> <a href="/tags/bytecode/" style="font-size: 12px; color: #ccc">bytecode</a> <a href="/tags/deepfake/" style="font-size: 12px; color: #ccc">deepfake</a> <a href="/tags/math/" style="font-size: 12px; color: #ccc">math</a> <a href="/tags/minecraft/" style="font-size: 30px; color: #111">minecraft</a> <a href="/tags/misc/" style="font-size: 12px; color: #ccc">misc</a> <a href="/tags/mod/" style="font-size: 21px; color: #6f6f6f">mod</a> <a href="/tags/noita/" style="font-size: 12px; color: #ccc">noita</a> <a href="/tags/paintings/" style="font-size: 12px; color: #ccc">paintings</a> <a href="/tags/tech/" style="font-size: 12px; color: #ccc">tech</a> <a href="/tags/translation/" style="font-size: 21px; color: #6f6f6f">translation</a> <a href="/tags/weird/" style="font-size: 12px; color: #ccc">weird</a>
+        </div>
+    </div>
+</div>` + inner.innerHTML;
+}
+</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.css">
+
+<script>
+NexT.utils.loadComments('.gitalk-container', () => {
+  NexT.utils.getScript('https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '8fd22f2eb6ea944a13c2',
+      clientSecret: '9ed843020c43682254a95859546418fa8d7d43a1',
+      repo        : 'LucunJi.github.io-gitalk',
+      owner       : 'LucunJi',
+      admin       : ['LucunJi'],
+      id          : '16afb2e3d726baaa3a45055e663c6f3d',
+      proxy       : 'https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token',
+        language: '',
+      distractionFreeMode: true
+    });
+    gitalk.render(document.querySelector('.gitalk-container'));
+  }, window.Gitalk);
+});
+</script>
+
+</body>
+</html>

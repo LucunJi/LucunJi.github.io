@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>LucunJi</title>
+  <icon>https://lucunji.github.io/images/favicon-32x32.png</icon>
+  
+  <link href="https://lucunji.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://lucunji.github.io/"/>
+  <updated>2021-04-28T18:22:42.564Z</updated>
+  <id>https://lucunji.github.io/</id>
+  
+  <author>
+    <name>LucunJi</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>线性颜色转移</title>
+    <link href="https://lucunji.github.io/2021/03/04/brief-on-linear-color-transfer/"/>
+    <id>https://lucunji.github.io/2021/03/04/brief-on-linear-color-transfer/</id>
+    <published>2021-03-05T01:27:03.000Z</published>
+    <updated>2021-04-28T18:22:42.564Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;前阵子做了一个关于线性颜色转移（Linear Color Transfer）的期末研究，准备闲下来把相关的东西发到在博客上面。相关的代码可以在&lt;a href=&quot;https://github.com/LucunJi/Linear-Color-Transfer-Methods&quot;&gt;这里&lt;/a&gt;看到。不把 paper 一起放上来是因为论文写得不算好，一些地方废话较多。博客还是尽量追求简洁比较好。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="CV(computer vision)" scheme="https://lucunji.github.io/tags/CV-computer-vision/"/>
+    
+    <category term="math" scheme="https://lucunji.github.io/tags/math/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>画展，米勒以及梵高等</title>
+    <link href="https://lucunji.github.io/2021/03/04/millet-van-gogh-and-dali/"/>
+    <id>https://lucunji.github.io/2021/03/04/millet-van-gogh-and-dali/</id>
+    <published>2021-03-04T21:15:47.000Z</published>
+    <updated>2021-04-28T18:22:41.948Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;去年发现本地的艺术博物馆刚好有米勒同代以及往后的艺术家的画展，去看了以后觉得挺不错。部分画作——其实是相当大一部分——是允许拍照的，这里就发一些自己喜欢的作品。拍摄技术不好，希望多多包涵。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="art" scheme="https://lucunji.github.io/tags/art/"/>
+    
+    <category term="paintings" scheme="https://lucunji.github.io/tags/paintings/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>译注——关于《为什么人们热爱战争》</title>
+    <link href="https://lucunji.github.io/2021/03/02/comments-on-why-men-love-war/"/>
+    <id>https://lucunji.github.io/2021/03/02/comments-on-why-men-love-war/</id>
+    <published>2021-03-02T10:05:22.000Z</published>
+    <updated>2021-04-28T18:22:41.947Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;起初</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>自动写作尝试</title>
+    <link href="https://lucunji.github.io/2021/02/03/automatic-writing/"/>
+    <id>https://lucunji.github.io/2021/02/03/automatic-writing/</id>
+    <published>2021-02-04T04:02:45.000Z</published>
+    <updated>2021-04-28T18:22:41.919Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p align=&quot;center&quot;&gt;
+水中的水花，是绿色的天底下的太阳。&lt;br&gt; 地面上的计算机和打字机是同构的化学品。&lt;br&gt; 灯泡挂钩和你的家人都在这个世界上快乐地进食。&lt;br&gt;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="weird" scheme="https://lucunji.github.io/tags/weird/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【译】为什么人们热爱战争</title>
+    <link href="https://lucunji.github.io/2020/09/21/why-men-love-war-translation/"/>
+    <id>https://lucunji.github.io/2020/09/21/why-men-love-war-translation/</id>
+    <published>2020-09-21T19:10:12.000Z</published>
+    <updated>2021-04-28T18:22:42.150Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;font color=gray size =2&gt;原文：&lt;em&gt;Why Men Love War&lt;/em&gt;&lt;a href=&quot;#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;&lt;/font&gt; &lt;font color=gray size=2&gt;翻译：&lt;a href=&quot;https://www.deepl.com/translator&quot;&gt;DeepL&lt;/a&gt;翻译 + 禄存天玑后期润色&lt;/font&gt; &lt;font color=gray size=2&gt;译者注：仅对原文进行翻译搬运，旨在拓宽大众视野，不代表译者立场。&lt;br&gt;能找到的原文有不少错误，且译者能力有限，不通顺之处还望多多包涵和提建议。若想要了解作者的精确含义，烦请查阅原文。&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;我上一次见到希尔斯是在越南的稻田里。他那时十九岁，是我的技艺高超又桀骜不驯的电报员。我们几个月形影不离。接着有一天他回家了，又过了十五年，我们才在去年冬天在华盛顿的越战老兵纪念馆意外相遇。几个月后，我去佛蒙特州拜访了希尔斯和他的妻子苏珊，他们在那里经营着一家民宿。第一天早上，我们天不亮就起床，试图拯救五只刚出生的兔子。希尔斯在棚子里用兔毛和稻草搭了个窝，并放了盏灯来抵御严寒。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="translation" scheme="https://lucunji.github.io/tags/translation/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Noita 施法机制分析</title>
+    <link href="https://lucunji.github.io/2020/09/12/noita-casting-mechanics/"/>
+    <id>https://lucunji.github.io/2020/09/12/noita-casting-mechanics/</id>
+    <published>2020-09-13T02:24:55.000Z</published>
+    <updated>2021-04-28T18:22:42.004Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;类似编程语言的法术编排是 Noita 中的一大亮点，也是一大难点。&lt;a href=&quot;https://www.bilibili.com/read/cv3761812&quot;&gt;《如何在&amp;lt;Noita&amp;gt;中打造爆款法术》&lt;/a&gt;（或曰《&amp;lt;Noita&amp;gt;法术编程指南》）一文较完整地讨论了法术编排和释放的机制，但依然存在不少失误。本文尝试在此基础上进行进一步的假设和实验，力图提出一个更加普适、更加易于理解和分析的理论，为 Noita 的游玩提供帮助。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="noita" scheme="https://lucunji.github.io/tags/noita/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>TekTopia 教程：当上土皇帝（中期 + 后期）</title>
+    <link href="https://lucunji.github.io/2020/08/22/tektopia-tutorial-2/"/>
+    <id>https://lucunji.github.io/2020/08/22/tektopia-tutorial-2/</id>
+    <published>2020-08-22T06:59:46.000Z</published>
+    <updated>2021-04-28T18:22:42.063Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;在获得了20只农民和10只伐木工的时候，没有什么能阻挡你的发展了。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="minecraft" scheme="https://lucunji.github.io/tags/minecraft/"/>
+    
+    <category term="mod" scheme="https://lucunji.github.io/tags/mod/"/>
+    
+    <category term="TekTopia" scheme="https://lucunji.github.io/tags/TekTopia/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>TekTopia 教程：开始打造你的桃花源（前期）</title>
+    <link href="https://lucunji.github.io/2020/08/19/tektopia-tutorial-1/"/>
+    <id>https://lucunji.github.io/2020/08/19/tektopia-tutorial-1/</id>
+    <published>2020-08-20T01:54:29.000Z</published>
+    <updated>2021-04-28T18:22:42.035Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;一个刷铁塔大佬会做哪些事？&lt;/p&gt;
+&lt;p&gt;玩音游；烹饪；写 mod&lt;/p&gt;
+&lt;p&gt;答：以上全部&lt;a href=&quot;#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="minecraft" scheme="https://lucunji.github.io/tags/minecraft/"/>
+    
+    <category term="mod" scheme="https://lucunji.github.io/tags/mod/"/>
+    
+    <category term="TekTopia" scheme="https://lucunji.github.io/tags/TekTopia/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【译】科技能救我们于深度伪造之中吗？</title>
+    <link href="https://lucunji.github.io/2020/07/22/can-tech-save-us-from-deepfakes/"/>
+    <id>https://lucunji.github.io/2020/07/22/can-tech-save-us-from-deepfakes/</id>
+    <published>2020-07-22T10:03:48.000Z</published>
+    <updated>2021-04-28T18:22:41.930Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">
+&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+&lt;p&gt;&lt;font color=gray size =2&gt;原文：&lt;em&gt;Can Tech Save Us From Deepfakes?&lt;/em&gt;&lt;a href=&quot;#fn1&quot; class=&quot;footnote-ref&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="tech" scheme="https://lucunji.github.io/tags/tech/"/>
+    
+    <category term="ai" scheme="https://lucunji.github.io/tags/ai/"/>
+    
+    <category term="deepfake" scheme="https://lucunji.github.io/tags/deepfake/"/>
+    
+    <category term="ML(machine learning)" scheme="https://lucunji.github.io/tags/ML-machine-learning/"/>
+    
+    <category term="translation" scheme="https://lucunji.github.io/tags/translation/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>电梯</title>
+    <link href="https://lucunji.github.io/2020/07/12/elevator/"/>
+    <id>https://lucunji.github.io/2020/07/12/elevator/</id>
+    <published>2020-07-12T08:22:17.000Z</published>
+    <updated>2021-04-28T18:22:41.947Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;没人能准确说出这台玻璃电梯前往的最高层是第几层。电梯井数倍高于商厦本身，而凭空高出商厦的那部分自然没有任何中间楼层。也就是说，从大厦本身的第五层到电梯顶端的终点之间没有任何的停靠层。&lt;/p&gt;
+&lt;p&gt;上升不可撤销，下降亦然。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="misc" scheme="https://lucunji.github.io/tags/misc/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于 Minecraft 社区规范</title>
+    <link href="https://lucunji.github.io/2020/04/18/on-minecraft-community-custom/"/>
+    <id>https://lucunji.github.io/2020/04/18/on-minecraft-community-custom/</id>
+    <published>2020-04-18T11:11:58.000Z</published>
+    <updated>2021-04-28T18:22:42.034Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;目前的 Minecraft 社区中，一直存在着关于红石、建筑、指令各领域用户作品归属、使用、再创作等问题的争论。这些争议短则一天，长则一周甚至一月。这些争议很少能够被较为圆满地解决，而由这些争议所引发的社区中的进步就更是凤毛麟角。</summary>
+    
+    
+    
+    
+    <category term="minecraft" scheme="https://lucunji.github.io/tags/minecraft/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>简易修改 Minecraft 字节码</title>
+    <link href="https://lucunji.github.io/2020/01/16/minecraft-bytecode-modding/"/>
+    <id>https://lucunji.github.io/2020/01/16/minecraft-bytecode-modding/</id>
+    <published>2020-01-16T08:13:34.000Z</published>
+    <updated>2021-04-28T18:22:41.989Z</updated>
+    
+    
+    <summary type="html">&lt;div data-align=&quot;center&quot;&gt;
+&lt;font size=6&gt;100% vanilla!&lt;/font&gt;
+&lt;/div&gt;</summary>
+    
+    
+    
+    
+    <category term="minecraft" scheme="https://lucunji.github.io/tags/minecraft/"/>
+    
+    <category term="Java" scheme="https://lucunji.github.io/tags/Java/"/>
+    
+    <category term="bytecode" scheme="https://lucunji.github.io/tags/bytecode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>附带 Mixin 的 Rift 开发环境配置方法</title>
+    <link href="https://lucunji.github.io/2020/01/04/rift-with-mixin-setup/"/>
+    <id>https://lucunji.github.io/2020/01/04/rift-with-mixin-setup/</id>
+    <published>2020-01-04T06:02:24.000Z</published>
+    <updated>2021-04-28T18:22:42.034Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;2020/2/20 更新：懒人用开发环境 https://github.com/LucunJi/Rift-MDK-with-Mixin&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;在 1.13.2 的 Minecraft 版本下，许多的模组并不依赖 Forge 或者 Fabric，而是 Rift。然而目前 1.13.2 现存的 MDK（Mod Develop Kit，模组开发包） 并不包含 Mixin。但是 Rift 提供的监听接口较少，很多功能都需要开发者自己利用 Mixin 来对原版代码（准确的说是字节码）进行修改。这里分享一下如何配置一个包含 Mixin 的 Rift 开发环境，帮有类似需求的人节约时间。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>浅谈活塞破基岩法的不稳定性起源及解决方法</title>
+    <link href="https://lucunji.github.io/2020/01/02/bedrock-breaking/"/>
+    <id>https://lucunji.github.io/2020/01/02/bedrock-breaking/</id>
+    <published>2020-01-02T22:28:59.000Z</published>
+    <updated>2021-04-28T18:22:42.564Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本文针对最早由 Myren Eario 提出的利用活塞移除基岩的方法所存在的不稳定性进行分析，并提出一种可行的解决方案。</summary>
+    
+    
+    
+    
+    <category term="minecraft" scheme="https://lucunji.github.io/tags/minecraft/"/>
+    
+    <category term="Java" scheme="https://lucunji.github.io/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>极简风描图</title>
+    <link href="https://lucunji.github.io/2019/02/24/minimalist-images/"/>
+    <id>https://lucunji.github.io/2019/02/24/minimalist-images/</id>
+    <published>2019-02-24T23:14:08.000Z</published>
+    <updated>2021-04-28T18:22:41.992Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;基本上就是PS用钢笔勾线然后涂色，分辨率很高。之前看到某位兄贵（不知道怎么称呼）的帖子 &lt;a href=&quot;http://tieba.baidu.com/p/5841920541&quot;&gt;极简主义样式化的hsi&lt;/a&gt;，觉得很nb，自己也做了些图，就把图堆在这里吧。</summary>
+    
+    
+    
+    
+    <category term="anime images" scheme="https://lucunji.github.io/tags/anime-images/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo 魔改指南</title>
+    <link href="https://lucunji.github.io/2018/12/13/hexo-hacking-guide/"/>
+    <id>https://lucunji.github.io/2018/12/13/hexo-hacking-guide/</id>
+    <published>2018-12-14T03:12:50.000Z</published>
+    <updated>2021-04-28T18:22:41.948Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;这里说几个魔改 Hexo 博客的方法，顺便水一贴。遇到问题欢迎评论区留言。</summary>
+    
+    
+    
+    
+    <category term="Hexo" scheme="https://lucunji.github.io/tags/Hexo/"/>
+    
+    <category term="NexT" scheme="https://lucunji.github.io/tags/NexT/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>3Ws</title>
+    <link href="https://lucunji.github.io/2018/12/11/3Ws/"/>
+    <id>https://lucunji.github.io/2018/12/11/3Ws/</id>
+    <published>2018-12-11T23:35:19.000Z</published>
+    <updated>2021-04-28T18:22:42.564Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;你好欢迎来到这里&quot;&gt;你好，欢迎来到这里：&lt;/h2&gt;
+&lt;p&gt;3Ws, 即英文里的三个“W”：为什么（Why），哪里（Where），谁（Who）。 在这里，我将回答建立这里的原因，我，以及这篇博客。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://lucunji.github.io/2018/12/10/hello-world/"/>
+    <id>https://lucunji.github.io/2018/12/10/hello-world/</id>
+    <published>2018-12-10T12:53:50.000Z</published>
+    <updated>2021-04-28T18:22:41.948Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.</summary>
+    
+    
+    
+    
+  </entry>
+  
+</feed>

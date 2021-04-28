@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css">
+  <script src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.js"></script>
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"lucunji.github.io","root":"/","images":"/images","scheme":"Gemini","version":"8.3.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"width":260},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
+  </script>
+<meta name="description" content="原文：Can Tech Save Us From Deepfakes?1 翻译：DeepL翻译 + 禄存天玑后期润色 译者注：仅对原文进行翻译搬运，旨在拓宽大众视野，不代表译者立场。以下的“deepfake”一律使用“深度伪造”作为译名。 当深度伪造变得越来越复杂，算法能够检测并排除它们吗？ 深度伪造比以往任何时候都要强大而普遍。依赖于逼真的图像与完美合成的人类语音，这些复杂的后期编辑的视频被">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【译】科技能救我们于深度伪造之中吗？">
+<meta property="og:url" content="https://lucunji.github.io/2020/07/22/can-tech-save-us-from-deepfakes/index.html">
+<meta property="og:site_name" content="LucunJi">
+<meta property="og:description" content="原文：Can Tech Save Us From Deepfakes?1 翻译：DeepL翻译 + 禄存天玑后期润色 译者注：仅对原文进行翻译搬运，旨在拓宽大众视野，不代表译者立场。以下的“deepfake”一律使用“深度伪造”作为译名。 当深度伪造变得越来越复杂，算法能够检测并排除它们吗？ 深度伪造比以往任何时候都要强大而普遍。依赖于逼真的图像与完美合成的人类语音，这些复杂的后期编辑的视频被">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-07-22T10:03:48.000Z">
+<meta property="article:modified_time" content="2021-04-28T18:22:41.930Z">
+<meta property="article:author" content="LucunJi">
+<meta property="article:tag" content="tech">
+<meta property="article:tag" content="ai">
+<meta property="article:tag" content="deepfake">
+<meta property="article:tag" content="ML(machine learning)">
+<meta property="article:tag" content="translation">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://lucunji.github.io/2020/07/22/can-tech-save-us-from-deepfakes/">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+<title>【译】科技能救我们于深度伪造之中吗？ | LucunJi</title>
+  
+
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="LucunJi" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">LucunJi</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档与标签</a></li>
+        <li class="menu-item menu-item-booklist"><a href="/booklist/" rel="section"><i class="fas fa-book-open fa-fw"></i>书单</a></li>
+        <li class="menu-item menu-item-gallery"><a href="/gallery/" rel="section"><i class="fas fa-images fa-fw"></i>相册</a></li>
+        <li class="menu-item menu-item-apps"><a href="/apps/" rel="section"><i class="fas fa-cogs fa-fw"></i>应用</a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BD%93%E6%B7%B1%E5%BA%A6%E4%BC%AA%E9%80%A0%E5%8F%98%E5%BE%97%E8%B6%8A%E6%9D%A5%E8%B6%8A%E5%A4%8D%E6%9D%82%E7%AE%97%E6%B3%95%E8%83%BD%E5%A4%9F%E6%A3%80%E6%B5%8B%E5%B9%B6%E6%8E%92%E9%99%A4%E5%AE%83%E4%BB%AC%E5%90%97"><span class="nav-number">1.</span> <span class="nav-text">当深度伪造变得越来越复杂，算法能够检测并排除它们吗？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A3%80%E6%B5%8B%E7%9A%84%E6%8C%91%E6%88%98"><span class="nav-number">2.</span> <span class="nav-text">检测的挑战</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%A5%E7%A7%91%E6%8A%80%E5%8F%8D%E7%A7%91%E6%8A%80"><span class="nav-number">3.</span> <span class="nav-text">以科技反科技？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%86%E7%A7%91%E6%8A%80%E4%B8%8D%E6%98%AF%E4%B8%87%E9%87%91%E6%B2%B9"><span class="nav-number">4.</span> <span class="nav-text">但科技不是万金油</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B7%B1%E5%BA%A6%E4%BC%AA%E9%80%A0%E4%B8%8E%E6%A3%80%E6%B5%8B%E6%8A%80%E6%9C%AF%E7%9A%84%E6%9C%AA%E6%9D%A5"><span class="nav-number">5.</span> <span class="nav-text">深度伪造与检测技术的未来</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="LucunJi"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">LucunJi</p>
+  <div class="site-description" itemprop="description">just a blog here</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">18</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">20</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/LucunJi" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;LucunJi" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://space.bilibili.com/2117299/" title="Bilibili → https:&#x2F;&#x2F;space.bilibili.com&#x2F;2117299&#x2F;" rel="noopener" target="_blank"><i class="far fa-caret-square-right fa-fw"></i>Bilibili</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll site-overview-item animated">
+    <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://tis.world/" title="https:&#x2F;&#x2F;tis.world" rel="noopener" target="_blank">TIS Union</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="http://cfpa.team/" title="http:&#x2F;&#x2F;cfpa.team" rel="noopener" target="_blank">CFPA 汉化组</a>
+        </li>
+    </ul>
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://lucunji.github.io/2020/07/22/can-tech-save-us-from-deepfakes/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="LucunJi">
+      <meta itemprop="description" content="just a blog here">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LucunJi">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          【译】科技能救我们于深度伪造之中吗？
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-07-22 05:03:48" itemprop="dateCreated datePublished" datetime="2020-07-22T05:03:48-05:00">2020-07-22</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-04-28 13:22:41" itemprop="dateModified" datetime="2021-04-28T13:22:41-05:00">2021-04-28</time>
+      </span>
+
+  
+    <span id="/2020/07/22/can-tech-save-us-from-deepfakes/" class="post-meta-item leancloud_visitors" data-flag-title="【译】科技能救我们于深度伪造之中吗？" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>4.6k</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        
+<span id="more"></span>
+<p><font color=gray size =2>原文：<em>Can Tech Save Us From Deepfakes?</em><a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></font> <font color=gray size=2>翻译：<a target="_blank" rel="noopener" href="https://www.deepl.com/translator">DeepL翻译</a> + 禄存天玑后期润色</font> <font color=gray size=2>译者注：仅对原文进行翻译搬运，旨在拓宽大众视野，不代表译者立场。以下的“deepfake”一律使用“深度伪造”作为译名。</font></p>
+<h2 id="当深度伪造变得越来越复杂算法能够检测并排除它们吗">当深度伪造变得越来越复杂，算法能够检测并排除它们吗？</h2>
+<p>深度伪造比以往任何时候都要强大而普遍。依赖于逼真的图像与完美合成的人类语音，这些复杂的后期编辑的视频被人工智能软件生成出来了。</p>
+<p>即使是迪士尼也在投资深度学习驱动的技术。在2020年初发表的一篇论文中，来自迪士尼研究工作室的科学家们声称，他们已经成功地训练了一种算法，来以前所未有的高分辨率质量在图像和视频中呈现照片般逼真的换脸。论文作者写道，这家娱乐巨头希望在需要将演员描绘得更年轻，无法使用演员使用这种特效，其他一些场合使用这项特效。</p>
+
+<p><font size=2 text-align=center color=grey> 在网飞（Netflix）最近的影片《爱尔兰人》（The Irishman）中，罗伯特·德尼罗（Robert De Niro）在倒叙片段中被“返老还童”了。（来源：卢卡斯影业有限公司）</font></p>
+<p>但即使在这种技术成为主流的时候，围绕着它的使用仍有未解决的忧虑。从网络上开始出现模仿、政治讽刺和假名人色情视频的那一刻起，人们就对深度伪造喜忧参半。据人工智能公司 <a target="_blank" rel="noopener" href="https://deeptracelabs.com/">Deeptrace Labs</a> 去年发布的一份报告估计，目前大约有4.9万个深度伪造在流传，但社交平台上的换脸滤镜和由面部识别引擎驱动的应用程序的快速增长意味着可能还有成千上万个。</p>
+<p>艺术家和记者最近一直在探索如何建设性地利用该技术来创造社会和政治评论，或保护边缘化和高危群体的隐私。例如，获得奥斯卡奖提名的纪录片制作人大卫·法兰西（David France）在上周于HBO上映的启示性影片《欢迎来到车臣》（Welcome to Chechneya）中，利用深层伪造技术掩盖了车臣同性恋者的身份。该技术甚至被一位星战超级粉丝用来“修饰"，以改善《星球大战：侠盗一号》中年轻的莱娅公主的客串。</p>
+<p>但即便是个人和迪士尼这样的大型媒体公司将这项技术用于非恶意的目的，深层造假技术也正在引发关于假新闻、个人隐私和视频证据权重的激烈辩论。</p>
+
+<p><font size=2 text-align=center color=grey>Youtube 上“derpfake”频道的建立者使用深度伪造技术来改善《星球大战：侠盗一号》中年轻的凯丽·费雪（Carrie Fisher）的外貌。建立者告诉卫报（The Guardian，英国著名日报），这个在上映几天就被观看了成千上万遍的工程，被在“用来看一季《辛普森》的时间里”做完了。（《辛普森》，即《辛普森一家》，The Simpsons，美国著名动画片，一季约20集，每集约20分钟）</font></p>
+<h2 id="检测的挑战">检测的挑战</h2>
+<p>1月，可能是为了在2020年大选前将问题解决在萌芽状态，Facebook 宣布将禁止扭曲现实或误导公众的操纵媒体。</p>
+<p>这包括“在调整清晰度或质量之外进行编辑或合成的视频，其方式对普通人来说并不明显，很可能会误导别人认为视频主角说了他们实际上没有说过的话，”Facebook 全球政策管理副总裁 Monika Bickert 在一篇博客文章中写道。她补充说，音频或视频，无论是否深度伪造，也会受到Facebook的社区标准管理。如果包含裸露、图形暴力、压制选民或仇恨言论，就会被删除。</p>
+<p>这个标准也适用于广告，不过《纽约时报》的报道指出，这一政策不会追溯标准制定以前的视频。</p>
+<p>在全州范围内，加州已经先发制人地禁止在选举后60天内传播模仿真实镜头、故意伪造政治候选人言行的“恶意”操纵的视频、音频和图片。针对一段<a target="_blank" rel="noopener" href="https://www.cbsnews.com/news/doctored-nancy-pelosi-video-highlights-threat-of-deepfake-tech-2019-05-25/">被篡改的南希·佩洛西（Nancy Pelosi）的，使美国众议院议长看起来像喝醉了酒的视频</a>，提出该法案的议员马克·伯曼（Marc Berman）称深度伪造是“一种强大而危险的新技术，可以作为武器，在已经过度党派化的选民中播撒错误信息和不和。”</p>
+
+<p><font size=2 text-align=center color=grey>华盛顿邮报对南希·佩洛西被操纵的视频进行分析。该视频被放慢了速度，使她看起来口齿不清。（来源：华盛顿邮报）</font></p>
+<p>去年，美国参议院通过了“<a target="_blank" rel="noopener" href="https://www.schatz.senate.gov/press-releases/schatz-portman-bipartisan-legislation-to-confront-rising-threat-of-disinformation-and-deepfakes-passes-senate#targetText=WASHINGTON%2C%20DC%20%E2%80%93%20Today%2C%20U.S.,other%20types%20of%20similar%20content.">深层假消息报告法</a>”，要求国土安全部每年对深层假消息和任何试图“破坏民主”的人工智能驱动的媒体进行研究。</p>
+<p>纽约大学法学兼职教授保罗·巴雷特（Paul Barrett）告诉NPR的“巨魔观察"（Troll Watch），虚假信息越来越多地针对图像，而不是文字。“任何具有基本编码知识和“渴望在选举中捣乱的人都可以开始拼凑这些非常令人信服但虚假的视频，”巴雷特说。“而这些公司也意识到了这一点，并且正在争先恐后地，试图对此做出也许迟到的回应。”</p>
+<p>现在知道立法能否成为阻止深层网络假货流传或病毒式传播的有效策略还为时过早，特别是考虑到搜索引擎无法进入深层网络的许多角落。另一个挑战是，这种法案可能会限制言论自由。因此，一些专家正在转向另一种遏制深度伪造浪潮的策略：以技术对抗技术。</p>
+<h2 id="以科技反科技">以科技反科技？</h2>
+<p>在识别深度伪造方面，技术专家和初创公司正在迎头赶上。然而，一些人正在投资开发面向未来的方法，以防范深度伪造的黑暗面。</p>
+<p>6月，Facebook 公布了一项深度伪造检测挑战赛的结果，该挑战赛汇集了2000多名技术专家和人工智能研究人员，以创建和测试算法来检测Facebook制作的操纵视频。</p>
+<p>在对 Facebook 的测试数据集进行测试时，表现最好的模型达到了 82.56% 的精度，但在对包含真实世界视频的“黑箱”数据集（这些视频通常是之前看不到的，而且更加复杂）进行测试时，准确率只有 65.18%。黑箱算法仍然是机器学习检测技术面临的最大挑战之一。</p>
+<p>利用视频和技术策略揭露腐败和援助人权活动的国际非营利组织 Witness 一直在游说对<a target="_blank" rel="noopener" href="https://blog.witness.org/2019/06/deepfakes-synthetic-media-updated-survey-solutions-malicious-usages/">媒体取证进行更好的投资</a>，并称<a target="_blank" rel="noopener" href="https://www.darpa.mil/program/media-forensics">美国DARPA的MediFor计划</a>是一个有希望的一步。</p>
+<p>华盛顿特区的智库布鲁金斯研究所（The Brookings Institute）正在<a target="_blank" rel="noopener" href="https://www.brookings.edu/research/fighting-deepfakes-when-detection-fails/">敦促政策制定者</a>建立一个 "额外的资金流，用于开发新的工具，如反向视频搜索或基于区块链的验证系统，这些工具可能更好地坚持面对无法检测的深层伪造。" 该研究所还鼓励政策制定者投资培训记者和事实核查员，并支持与基于人工智能的检测公司合作。</p>
+<p>Deeptrace Labs 就是这样一家检测公司。这是一家利用深度学习和计算机视觉来检测和监控深层伪造的初创公司，它将自己宣传为对抗基于人工智能的病毒式合成视频的 “杀毒软件”——这不失为深层技术前沿的智慧之战的证明。</p>
+<p>Deeptrace 正在开发分析检测假视频的后端系统。它可用于个人用户和媒体公司，帮助他们识别伪造。“这句标语很好地概括了我们如何看待这个问题的一些表现方式，以及我们如何看待预防这个问题的潜在技术解决方案。”Deeptrace实验室的传播和研究分析主管Henry Ajder说。</p>
+<p>Reality Defender 是另一款智能软件。它在你浏览网页时与你并肩作战，检测潜在的虚假媒体并提醒用户注意它的存在。</p>
+<p>科学家们也是这场战斗的一部分。加利福尼亚大学河滨分校电气和计算机工程教授、智能系统研究中心主任 Amit Roy-Chowdhury 开发了一种深度神经网络架构，可以识别被篡改的图像，并以前所未有的精度识别伪造品。</p>
+<p>Roy-Chowdhury 的系统可以通过检测物体周围边界每一个像素的质量，来分辨出被篡改的图像和未篡改的图像。如果图像被篡改或修改，这些边界可能会被“污染”，因此可以帮助研究人员精确地确定任何医生的位置。</p>
+<p>虽然他的系统适用于静态图像，但理论上，同样的原理——经过一些调整——可以应用于由数千帧和图像组成的深层伪造视频。</p>
+<p>但是，尽管做出了扎实的努力，大多数研究人员都认为，在外部环境检测深度伪造的过程是一个完全不同的比赛。另外，大体上，这些实验性的检测技术只掌握在专家手中，一般人无法接触到。</p>
+<h2 id="但科技不是万金油">但科技不是万金油</h2>
+<p>“随着我们的技术越来越好，打击深层假货将变得越来越困难，”麻省理工学院计算机科学副教授 Aleksander Madry 说，他的研究解决了计算和开发值得信赖的人工智能的关键算法挑战。“所以目前这更像是一场猫捉老鼠的游戏，人们可以尝试通过识别一些假象来检测它们，但随后对手可以改进他们的方法来避免这些假象。”</p>
+<p>“更好的方法可能会欺骗检测机制，” Roy-Chowdhury 同意。这位计算机科学家说：“我们极不可能有一个系统能够检测到每一个深层伪造的东西。通常情况下，安全系统是由链条中最薄弱的环节来定义的。”</p>
+<p>根据麻省理工学院计算机科学与人工智能实验室教授尼克-罗伊的说法，科学家们经常在黑暗中工作。Roy说：“在很多情况下，科学家不知道神经网络在做什么。”他对人工智能、机器学习和计算系统的研究主要集中在不确定性导致的问题上。</p>
+<p>科学家“不能总是在出错的时候进行解释。神经网络不是黑魔法。我们确实了解很多基础知识，但我们没有掌握极限的……我们需要了解极限是什么，”他解释说。</p>
+<p>随着基于深度学习技术的能力不断发展，Madry 说：“我担心的是，我们将不再能够自动依赖视频作为证明。”</p>
+<h2 id="深度伪造与检测技术的未来">深度伪造与检测技术的未来</h2>
+<p>对于生成较差的深层伪造视频——那种通常由粗制滥造的编辑导致的明显皱纹——智能软件和知情的眼睛很容易发现篡改。但是，随着合成视听媒体开发者对这些问题的解决，发现伪造的迹象将变得更加困难。</p>
+<p>前些年，研究人员通过监测眨眼频率来训练软件发现深层伪造。人类平均每分钟眨眼17次，但旧的深度伪造视频的眨眼频率往往远低于此。“如果你看的是2018年1月的视频，缺乏眨眼的情况很可能还适用于那里，”阿杰德说。“但比如说在接下来的一年，或两年，或五年，就无法依赖这一点进行衡量。”</p>
+<p>同样，随着深度伪造的发展，依靠训练人工智能的，针对对编辑错误（如移帧和灯光或肤色的变化）的检测工具可能很快就会过时。</p>
+<p>阿杰德说，他有信心，他所说的一些假媒体的“民间检测”方法，绝大部分“几乎肯定会被训练出高级版本。只有在谨慎应用并结合分析方法的情况下，它们才会有用。”</p>
+<p>另一个问题是社交媒体平台所使用的分享技术，它可以让深层假货在不被发现的情况下倍增。</p>
+<p>例如，德雷克塞尔大学助理教授马修·斯塔姆（Matthew Stamm）去年在西南偏南会议上表示，一些检测技术会寻找“非常微小的数字签名”，这些签名被嵌入到视频文件中。但当视频文件被分享到社交媒体上时，它被缩小和压缩，这就消除了所有被篡改的迹象。</p>
+<p>“有很多图像和视频认证技术存在，但有一处他们都失败了，就是在社交媒体上，” 斯塔姆说。</p>
+<p>同时，纽约大学法律系的巴雷特力劝人们“高度怀疑对他们所见”，并表示公司应该对虚假信息采取积极行动，或许可以“降级”这些帖子或视频。“我认为，他们应该完全从他们的网站上删除这种材料，”他补充道。</p>
+<p>最终，将需要新形式的集体行动来打击篡改视频的负面影响，特别是如果它们被用来制造虚假新闻，意图误导。这个问题已经很普遍，无法单独解决。人工智能公司、媒体监督机构、政府和个人必须分担责任，对事实进行核查，并决定什么是真相，什么不是。</p>
+<hr />
+<section class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Pakinam Amer. "Can Tech Save Us From Deepfakes?" In Event of Moon Disaster. Nov. 22, 2019. Revised for online publishcation on Jul. 3, 2020. https://moondisaster.org/can-tech-save-us-from-deepfakes/<a href="#fnref1" class="footnote-back">↩</a></p></li>
+</ol>
+</section>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>LucunJi
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://lucunji.github.io/2020/07/22/can-tech-save-us-from-deepfakes/" title="【译】科技能救我们于深度伪造之中吗？">https://lucunji.github.io/2020/07/22/can-tech-save-us-from-deepfakes/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="followme">
+  <span>欢迎关注我的其它发布渠道</span>
+
+  <div class="social-list">
+
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="/atom.xml">
+          <span class="icon">
+            <i class="fa fa-rss"></i>
+          </span>
+
+          <span class="label">RSS</span>
+        </a>
+      </div>
+  </div>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/tech/" rel="tag"># tech</a>
+              <a href="/tags/ai/" rel="tag"># ai</a>
+              <a href="/tags/deepfake/" rel="tag"># deepfake</a>
+              <a href="/tags/ML-machine-learning/" rel="tag"># ML(machine learning)</a>
+              <a href="/tags/translation/" rel="tag"># translation</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2020/07/12/elevator/" rel="prev" title="电梯">
+                  <i class="fa fa-chevron-left"></i> 电梯
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2020/08/19/tektopia-tutorial-1/" rel="next" title="TekTopia 教程：开始打造你的桃花源（前期）">
+                  TekTopia 教程：开始打造你的桃花源（前期） <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2018 – 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fas fa-biohazard"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">LucunJi</span>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+      <span>站点总字数：</span>
+    <span title="站点总字数">53k</span>
+  </span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+  <script>
+    NProgress.configure({
+      showSpinner: false
+    });
+    NProgress.start();
+    document.addEventListener('readystatechange', () => {
+      if (document.readyState === 'interactive') {
+        NProgress.inc(0.8);
+      }
+      if (document.readyState === 'complete') {
+        NProgress.done();
+      }
+    });
+    document.addEventListener('pjax:send', () => {
+      NProgress.start();
+    });
+    document.addEventListener('pjax:success', () => {
+      NProgress.done();
+    });
+  </script>
+
+  
+
+
+<script>
+  (function() {
+    function leancloudSelector(url) {
+      url = encodeURI(url);
+      return document.getElementById(url).querySelector('.leancloud-visitors-count');
+    }
+
+    function addCount(Counter) {
+      const visitors = document.querySelector('.leancloud_visitors');
+      const url = decodeURI(visitors.id);
+      const title = visitors.dataset.flagTitle;
+
+      Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({ url })))
+        .then(response => response.json())
+        .then(({ results }) => {
+          if (results.length > 0) {
+            const counter = results[0];
+            leancloudSelector(url).innerText = counter.time + 1;
+            Counter('put', '/classes/Counter/' + counter.objectId, { time: { '__op': 'Increment', 'amount': 1 } })
+              .catch(error => {
+                console.error('Failed to save visitor count', error);
+              });
+          } else {
+              leancloudSelector(url).innerText = 'Counter not initialized! More info at console err msg.';
+              console.error('ATTENTION! LeanCloud counter has security bug, see how to solve it here: https://github.com/theme-next/hexo-leancloud-counter-security. \n However, you can still use LeanCloud without security, by setting `security` option to `false`.');
+            
+          }
+        })
+        .catch(error => {
+          console.error('LeanCloud Counter Error', error);
+        });
+    }
+
+    function showTime(Counter) {
+      const visitors = document.querySelectorAll('.leancloud_visitors');
+      const entries = [...visitors].map(element => {
+        return decodeURI(element.id);
+      });
+
+      Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({ url: { '$in': entries } })))
+        .then(response => response.json())
+        .then(({ results }) => {
+          for (let url of entries) {
+            const target = results.find(item => item.url === url);
+            leancloudSelector(url).innerText = target ? target.time : 0;
+          }
+        })
+        .catch(error => {
+          console.error('LeanCloud Counter Error', error);
+        });
+    }
+
+    const { app_id, app_key, server_url } = {"enable":true,"app_id":"GM3E9c3iav6Jjhwj4n9ktqIX-MdYXbMMI","app_key":"OIJ3z8gwKASYoJUUy3BQIFQU","server_url":null,"security":true};
+    function fetchData(api_server) {
+      const Counter = (method, url, data) => {
+        return fetch(`${api_server}/1.1${url}`, {
+          method,
+          headers: {
+            'X-LC-Id'     : app_id,
+            'X-LC-Key'    : app_key,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data)
+        });
+      };
+      if (CONFIG.page.isPost) {
+        if (CONFIG.hostname !== location.hostname) return;
+        addCount(Counter);
+      } else if (document.querySelectorAll('.post-title-link').length >= 1) {
+        showTime(Counter);
+      }
+    }
+
+    const api_server = app_id.slice(-9) === '-MdYXbMMI' ? `https://${app_id.slice(0, 8).toLowerCase()}.api.lncldglobal.com` : server_url;
+
+    if (api_server) {
+      fetchData(api_server);
+    } else {
+      fetch('https://app-router.leancloud.cn/2/route?appId=' + app_id)
+        .then(response => response.json())
+        .then(({ api_server }) => {
+          fetchData('https://' + api_server);
+        });
+    }
+  })();
+</script>
+
+
+  
+
+
+<script>
+let inner = document.getElementsByClassName("main-inner archive")[0];
+if (inner != null) {
+    inner.children[0].style.marginTop = 0;
+    inner.innerHTML = `
+<div class="post-block animated fadeIn">
+    <header class="post-header animated fadeInDown">
+        <h1 class="post-title" itemprop="name headline"
+        style="font-weight: normal;text-align: center;margin: initial">
+            标签 
+        </h1>
+    </header>
+    <div class="post-body animated fadeInDown">
+        <div class="tag-cloud">
+            <a href="/tags/CV-computer-vision/" style="font-size: 12px; color: #ccc">CV(computer vision)</a> <a href="/tags/Hexo/" style="font-size: 12px; color: #ccc">Hexo</a> <a href="/tags/Java/" style="font-size: 21px; color: #6f6f6f">Java</a> <a href="/tags/ML-machine-learning/" style="font-size: 12px; color: #ccc">ML(machine learning)</a> <a href="/tags/NexT/" style="font-size: 12px; color: #ccc">NexT</a> <a href="/tags/TekTopia/" style="font-size: 21px; color: #6f6f6f">TekTopia</a> <a href="/tags/ai/" style="font-size: 12px; color: #ccc">ai</a> <a href="/tags/anime-images/" style="font-size: 12px; color: #ccc">anime images</a> <a href="/tags/art/" style="font-size: 12px; color: #ccc">art</a> <a href="/tags/bytecode/" style="font-size: 12px; color: #ccc">bytecode</a> <a href="/tags/deepfake/" style="font-size: 12px; color: #ccc">deepfake</a> <a href="/tags/math/" style="font-size: 12px; color: #ccc">math</a> <a href="/tags/minecraft/" style="font-size: 30px; color: #111">minecraft</a> <a href="/tags/misc/" style="font-size: 12px; color: #ccc">misc</a> <a href="/tags/mod/" style="font-size: 21px; color: #6f6f6f">mod</a> <a href="/tags/noita/" style="font-size: 12px; color: #ccc">noita</a> <a href="/tags/paintings/" style="font-size: 12px; color: #ccc">paintings</a> <a href="/tags/tech/" style="font-size: 12px; color: #ccc">tech</a> <a href="/tags/translation/" style="font-size: 21px; color: #6f6f6f">translation</a> <a href="/tags/weird/" style="font-size: 12px; color: #ccc">weird</a>
+        </div>
+    </div>
+</div>` + inner.innerHTML;
+}
+</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.css">
+
+<script>
+NexT.utils.loadComments('.gitalk-container', () => {
+  NexT.utils.getScript('https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '8fd22f2eb6ea944a13c2',
+      clientSecret: '9ed843020c43682254a95859546418fa8d7d43a1',
+      repo        : 'LucunJi.github.io-gitalk',
+      owner       : 'LucunJi',
+      admin       : ['LucunJi'],
+      id          : 'e293a7bf643ac1b1c865a1738bfae5c8',
+      proxy       : 'https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token',
+        language: '',
+      distractionFreeMode: true
+    });
+    gitalk.render(document.querySelector('.gitalk-container'));
+  }, window.Gitalk);
+});
+</script>
+
+</body>
+</html>
