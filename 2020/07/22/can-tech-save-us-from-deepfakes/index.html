@@ -25,15 +25,17 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"lucunji.github.io","root":"/","images":"/images","scheme":"Gemini","version":"8.3.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"width":260},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
   </script>
-<meta name="description" content="原文：Can Tech Save Us From Deepfakes?1 翻译：DeepL翻译 + 禄存天玑后期润色 译者注：仅对原文进行翻译搬运，旨在拓宽大众视野，不代表译者立场。以下的“deepfake”一律使用“深度伪造”作为译名。 当深度伪造变得越来越复杂，算法能够检测并排除它们吗？ 深度伪造比以往任何时候都要强大而普遍。依赖于逼真的图像与完美合成的人类语音，这些复杂的后期编辑的视频被">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【译】科技能救我们于深度伪造之中吗？">
 <meta property="og:url" content="https://lucunji.github.io/2020/07/22/can-tech-save-us-from-deepfakes/index.html">
 <meta property="og:site_name" content="LucunJi">
-<meta property="og:description" content="原文：Can Tech Save Us From Deepfakes?1 翻译：DeepL翻译 + 禄存天玑后期润色 译者注：仅对原文进行翻译搬运，旨在拓宽大众视野，不代表译者立场。以下的“deepfake”一律使用“深度伪造”作为译名。 当深度伪造变得越来越复杂，算法能够检测并排除它们吗？ 深度伪造比以往任何时候都要强大而普遍。依赖于逼真的图像与完美合成的人类语音，这些复杂的后期编辑的视频被">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://lucunji.github.io/2020/07/22/can-tech-save-us-from-deepfakes/c7f5c1c4/nasa-mission-control-a@2x.jpg">
+<meta property="og:image" content="https://lucunji.github.io/2020/07/22/can-tech-save-us-from-deepfakes/937a7f38/young-deniro-1030x540@2x.png">
+<meta property="og:image" content="https://lucunji.github.io/2020/07/22/can-tech-save-us-from-deepfakes/1f6c72cb/carrie-fisher@2x.jpg">
+<meta property="og:image" content="https://lucunji.github.io/2020/07/22/can-tech-save-us-from-deepfakes/beccd471/nancy-pelosi@2x.jpg">
 <meta property="article:published_time" content="2020-07-22T10:03:48.000Z">
-<meta property="article:modified_time" content="2021-04-28T18:22:41.930Z">
+<meta property="article:modified_time" content="2021-04-28T19:20:10.694Z">
 <meta property="article:author" content="LucunJi">
 <meta property="article:tag" content="tech">
 <meta property="article:tag" content="ai">
@@ -41,6 +43,7 @@
 <meta property="article:tag" content="ML(machine learning)">
 <meta property="article:tag" content="translation">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://lucunji.github.io/2020/07/22/can-tech-save-us-from-deepfakes/c7f5c1c4/nasa-mission-control-a@2x.jpg">
 
 
 <link rel="canonical" href="https://lucunji.github.io/2020/07/22/can-tech-save-us-from-deepfakes/">
@@ -280,7 +283,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-04-28 13:22:41" itemprop="dateModified" datetime="2021-04-28T13:22:41-05:00">2021-04-28</time>
+        <time title="修改时间：2021-04-28 14:20:10" itemprop="dateModified" datetime="2021-04-28T14:20:10-05:00">2021-04-28</time>
       </span>
 
   
@@ -308,16 +311,53 @@
     
     <div class="post-body" itemprop="articleBody">
         
+
+<figure>
+    <picture>
+                <source srcset="/2020/07/22/can-tech-save-us-from-deepfakes/c7f5c1c4/nasa-mission-control-a@1x.webp"media="(max-width: 39.99em)"  type="image/webp" />
+                <source srcset="/2020/07/22/can-tech-save-us-from-deepfakes/c7f5c1c4/nasa-mission-control-a@2x.webp"media="(min-width: 40em)"  type="image/webp" />
+                <source srcset="/2020/07/22/can-tech-save-us-from-deepfakes/c7f5c1c4/nasa-mission-control-a@1x.jpg"media="(max-width: 39.99em)"  type="image/jpg" />
+                <source srcset="/2020/07/22/can-tech-save-us-from-deepfakes/c7f5c1c4/nasa-mission-control-a@2x.jpg"media="(min-width: 40em)"  type="image/jpg" />
+            <img src="/2020/07/22/can-tech-save-us-from-deepfakes/c7f5c1c4/nasa-mission-control-a@2x.jpg" alt="【译】科技能救我们于深度伪造之中吗？" />
+    </picture>
+</figure>
+
+
+
 <span id="more"></span>
 <p><font color=gray size =2>原文：<em>Can Tech Save Us From Deepfakes?</em><a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></font> <font color=gray size=2>翻译：<a target="_blank" rel="noopener" href="https://www.deepl.com/translator">DeepL翻译</a> + 禄存天玑后期润色</font> <font color=gray size=2>译者注：仅对原文进行翻译搬运，旨在拓宽大众视野，不代表译者立场。以下的“deepfake”一律使用“深度伪造”作为译名。</font></p>
 <h2 id="当深度伪造变得越来越复杂算法能够检测并排除它们吗">当深度伪造变得越来越复杂，算法能够检测并排除它们吗？</h2>
 <p>深度伪造比以往任何时候都要强大而普遍。依赖于逼真的图像与完美合成的人类语音，这些复杂的后期编辑的视频被人工智能软件生成出来了。</p>
 <p>即使是迪士尼也在投资深度学习驱动的技术。在2020年初发表的一篇论文中，来自迪士尼研究工作室的科学家们声称，他们已经成功地训练了一种算法，来以前所未有的高分辨率质量在图像和视频中呈现照片般逼真的换脸。论文作者写道，这家娱乐巨头希望在需要将演员描绘得更年轻，无法使用演员使用这种特效，其他一些场合使用这项特效。</p>
 
+
+<figure>
+    <picture>
+                <source srcset="/2020/07/22/can-tech-save-us-from-deepfakes/937a7f38/young-deniro-1030x540@1x.png"media="(max-width: 39.99em)"  type="image/png" />
+                <source srcset="/2020/07/22/can-tech-save-us-from-deepfakes/937a7f38/young-deniro-1030x540@2x.png"media="(min-width: 40em)"  type="image/png" />
+            <img src="/2020/07/22/can-tech-save-us-from-deepfakes/937a7f38/young-deniro-1030x540@2x.png" alt="【译】科技能救我们于深度伪造之中吗？" />
+    </picture>
+</figure>
+
+
+
 <p><font size=2 text-align=center color=grey> 在网飞（Netflix）最近的影片《爱尔兰人》（The Irishman）中，罗伯特·德尼罗（Robert De Niro）在倒叙片段中被“返老还童”了。（来源：卢卡斯影业有限公司）</font></p>
 <p>但即使在这种技术成为主流的时候，围绕着它的使用仍有未解决的忧虑。从网络上开始出现模仿、政治讽刺和假名人色情视频的那一刻起，人们就对深度伪造喜忧参半。据人工智能公司 <a target="_blank" rel="noopener" href="https://deeptracelabs.com/">Deeptrace Labs</a> 去年发布的一份报告估计，目前大约有4.9万个深度伪造在流传，但社交平台上的换脸滤镜和由面部识别引擎驱动的应用程序的快速增长意味着可能还有成千上万个。</p>
 <p>艺术家和记者最近一直在探索如何建设性地利用该技术来创造社会和政治评论，或保护边缘化和高危群体的隐私。例如，获得奥斯卡奖提名的纪录片制作人大卫·法兰西（David France）在上周于HBO上映的启示性影片《欢迎来到车臣》（Welcome to Chechneya）中，利用深层伪造技术掩盖了车臣同性恋者的身份。该技术甚至被一位星战超级粉丝用来“修饰"，以改善《星球大战：侠盗一号》中年轻的莱娅公主的客串。</p>
 <p>但即便是个人和迪士尼这样的大型媒体公司将这项技术用于非恶意的目的，深层造假技术也正在引发关于假新闻、个人隐私和视频证据权重的激烈辩论。</p>
+
+
+<figure>
+    <picture>
+                <source srcset="/2020/07/22/can-tech-save-us-from-deepfakes/1f6c72cb/carrie-fisher@1x.webp"media="(max-width: 39.99em)"  type="image/webp" />
+                <source srcset="/2020/07/22/can-tech-save-us-from-deepfakes/1f6c72cb/carrie-fisher@2x.webp"media="(min-width: 40em)"  type="image/webp" />
+                <source srcset="/2020/07/22/can-tech-save-us-from-deepfakes/1f6c72cb/carrie-fisher@1x.jpg"media="(max-width: 39.99em)"  type="image/jpg" />
+                <source srcset="/2020/07/22/can-tech-save-us-from-deepfakes/1f6c72cb/carrie-fisher@2x.jpg"media="(min-width: 40em)"  type="image/jpg" />
+            <img src="/2020/07/22/can-tech-save-us-from-deepfakes/1f6c72cb/carrie-fisher@2x.jpg" alt="【译】科技能救我们于深度伪造之中吗？" />
+    </picture>
+</figure>
+
+
 
 <p><font size=2 text-align=center color=grey>Youtube 上“derpfake”频道的建立者使用深度伪造技术来改善《星球大战：侠盗一号》中年轻的凯丽·费雪（Carrie Fisher）的外貌。建立者告诉卫报（The Guardian，英国著名日报），这个在上映几天就被观看了成千上万遍的工程，被在“用来看一季《辛普森》的时间里”做完了。（《辛普森》，即《辛普森一家》，The Simpsons，美国著名动画片，一季约20集，每集约20分钟）</font></p>
 <h2 id="检测的挑战">检测的挑战</h2>
@@ -325,6 +365,19 @@
 <p>这包括“在调整清晰度或质量之外进行编辑或合成的视频，其方式对普通人来说并不明显，很可能会误导别人认为视频主角说了他们实际上没有说过的话，”Facebook 全球政策管理副总裁 Monika Bickert 在一篇博客文章中写道。她补充说，音频或视频，无论是否深度伪造，也会受到Facebook的社区标准管理。如果包含裸露、图形暴力、压制选民或仇恨言论，就会被删除。</p>
 <p>这个标准也适用于广告，不过《纽约时报》的报道指出，这一政策不会追溯标准制定以前的视频。</p>
 <p>在全州范围内，加州已经先发制人地禁止在选举后60天内传播模仿真实镜头、故意伪造政治候选人言行的“恶意”操纵的视频、音频和图片。针对一段<a target="_blank" rel="noopener" href="https://www.cbsnews.com/news/doctored-nancy-pelosi-video-highlights-threat-of-deepfake-tech-2019-05-25/">被篡改的南希·佩洛西（Nancy Pelosi）的，使美国众议院议长看起来像喝醉了酒的视频</a>，提出该法案的议员马克·伯曼（Marc Berman）称深度伪造是“一种强大而危险的新技术，可以作为武器，在已经过度党派化的选民中播撒错误信息和不和。”</p>
+
+
+<figure>
+    <picture>
+                <source srcset="/2020/07/22/can-tech-save-us-from-deepfakes/beccd471/nancy-pelosi@1x.webp"media="(max-width: 39.99em)"  type="image/webp" />
+                <source srcset="/2020/07/22/can-tech-save-us-from-deepfakes/beccd471/nancy-pelosi@2x.webp"media="(min-width: 40em)"  type="image/webp" />
+                <source srcset="/2020/07/22/can-tech-save-us-from-deepfakes/beccd471/nancy-pelosi@1x.jpg"media="(max-width: 39.99em)"  type="image/jpg" />
+                <source srcset="/2020/07/22/can-tech-save-us-from-deepfakes/beccd471/nancy-pelosi@2x.jpg"media="(min-width: 40em)"  type="image/jpg" />
+            <img src="/2020/07/22/can-tech-save-us-from-deepfakes/beccd471/nancy-pelosi@2x.jpg" alt="【译】科技能救我们于深度伪造之中吗？" />
+    </picture>
+</figure>
+
+
 
 <p><font size=2 text-align=center color=grey>华盛顿邮报对南希·佩洛西被操纵的视频进行分析。该视频被放慢了速度，使她看起来口齿不清。（来源：华盛顿邮报）</font></p>
 <p>去年，美国参议院通过了“<a target="_blank" rel="noopener" href="https://www.schatz.senate.gov/press-releases/schatz-portman-bipartisan-legislation-to-confront-rising-threat-of-disinformation-and-deepfakes-passes-senate#targetText=WASHINGTON%2C%20DC%20%E2%80%93%20Today%2C%20U.S.,other%20types%20of%20similar%20content.">深层假消息报告法</a>”，要求国土安全部每年对深层假消息和任何试图“破坏民主”的人工智能驱动的媒体进行研究。</p>
