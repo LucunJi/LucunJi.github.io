@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>自动写作尝试</title>
-    <url>/2021/02/03/automatic-writing/</url>
-    <content><![CDATA[<p align="center">
-水中的水花，是绿色的天底下的太阳。<br> 地面上的计算机和打字机是同构的化学品。<br> 灯泡挂钩和你的家人都在这个世界上快乐地进食。<br> 鞋子，歌唱机和手机是彻夜亮着的灯塔。
-</p>
-]]></content>
-      <tags>
-        <tag>weird</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>3Ws</title>
     <url>/2018/12/11/3Ws/</url>
     <content><![CDATA[<h2 id="你好欢迎来到这里">你好，欢迎来到这里：</h2>
@@ -60,6 +49,17 @@
 <li>于2018年12月建立了这个博客。</li>
 </ul>
 ]]></content>
+  </entry>
+  <entry>
+    <title>自动写作尝试</title>
+    <url>/2021/02/03/automatic-writing/</url>
+    <content><![CDATA[<p align="center">
+水中的水花，是绿色的天底下的太阳。<br> 地面上的计算机和打字机是同构的化学品。<br> 灯泡挂钩和你的家人都在这个世界上快乐地进食。<br> 鞋子，歌唱机和手机是彻夜亮着的灯塔。
+</p>
+]]></content>
+      <tags>
+        <tag>weird</tag>
+      </tags>
   </entry>
   <entry>
     <title>浅谈活塞破基岩法的不稳定性起源及解决方法</title>
@@ -242,26 +242,6 @@ this.affectedBlockPositions.addAll(set); // 由集合产生便于遍历的列表
       </tags>
   </entry>
   <entry>
-    <title>译注——关于《为什么人们热爱战争》</title>
-    <url>/2021/03/02/comments-on-why-men-love-war/</url>
-    <content><![CDATA[<p>起初<span id="more"></span>遇见这篇文章是因为在 Jreg 的视频 <a href="https://b23.tv/BV16f4y127nE">《我想死在一场战争里》</a> 的评论区看到有人推荐了这篇文章，读过以后感觉不错，就想翻译一下。</p>
-<p>翻译这篇文章遇到的困难有两个。其一，这篇文章的原文似乎是扫描件，除了不计其数不当使用的大小写和标点符号以外，有不少拼写错误的单词。更要命的是，这篇文章在网上的资源出人意料地少，只有 <a href="https://www.esquire.com/news-politics/news/a28718/why-men-love-war/">Esquire</a> 和 <a href="https://public.wsu.edu/~hughesc/why_men_love_war.htm">华盛顿州立大学</a> 两处能找到，而且这两处应该是完全一致的——也就是说，一旦在一处发现了错漏，另一处也会有相同的错误，几乎无法求证。 其二，这篇文章涉及到了不少军事用语，有越战相关的单词，国内还没记录的作家和书籍。这些都是在我知识领域之外的。</p>
-<p>虽然我经常把 <a href="https://www.deepl.com/translator">DeepL</a> 翻译器吹到飞起，但是它在针对上述问题常常无能为力。军事术语时不时还能弄对一两个，但遇上了错词、大小写标点混乱这些问题后，句意常常会不准确，需要手动对着原文修正。标点符号也常常会被转换为半角符号，而非中文文章使用的全角符号。</p>
-<p>这篇文章在二月初初步翻译完（主要是机翻）。当时急着做完，又有点过度信任了 DeepL，没有做过多的校对，就草草发布了。后来参考群里反间兄的意见，重新对全文进行了一次大修，重新考据了一些术语，修正了一些原文导致的错误，并且调整一些句子、段落的语序。在三月初终于完成了第二次校对。</p>
-<p>第二次校对结束后，所有国内没有翻译或翻译较少的人名、作品名都标注了原文，如沃尔特·斯科特（Walter Scott），菲利普·卡普托（Philip Caputo），《战争传闻》（<em>A Rumor of War</em>）等。基本上所有人名和作品都可以根据列出的中文或英文搜索到出处（当然要在国际互联网而非中文互联网）。术语、习语，例如“Praxiteles Swan”，“deuce-and-a-half truck”等基本修正完毕。一些地名、习语和原文中似乎有错漏的地方还加了额外的脚注，方便理解。面对最后的成品我可以说是尽力了。</p>
-<p>这篇文章本身带给我的感受很多，但是这些感受又难以下笔写成字句。不过我认为，读过这篇文章的人，只要不是丧失理智的战争疯子，都应该有类似的感受。</p>
-<p>作者从比较私人的角度描写了个体的心灵在战争中受到的冲击。当看到性与战争、创造与毁灭的时候，我想到的是《奇爱博士》里的各种讽刺的性暗示和性明示。性和爱终究是物极必反导致的伴生物，死亡、毁灭和荒谬仍旧是主旋律。文章中描写的性与爱，要么是病态般的感情投射，要么是病态般的填补空虚。想到这里，我想引用一段文字：</p>
-<blockquote>
-<p>但对人类和国家来说，压制人们热爱战争的原因，可能比承认它们更危险。在《现代启示录》中，罗伯特·杜瓦尔（Robert Duvall）饰演的旅长，打量着特别恐怖的战斗场面，非常悲壮地说：“你知道，总有一天这场战争会结束。”他显然是要做一个精神病患者，用扑克牌装饰敌人的尸体，在瓦格纳的乐曲中骑马上战场。我们嘲笑他——嘿！没有人是那样的人！但去年，在格林纳达，美国男孩们播放着瓦格纳冲向战场，新一代的人在模仿越战的电影，就像我们模仿二战的电影一样，什么也没学到，什么也没记住。</p>
-</blockquote>
-<p>在校对后半部分文章的时候，电脑播放的背景音乐还是瓦格纳的音乐，但实在难以感受到那种关于战争的狂热。不过如今的网络上充斥着那种对于战争，对于挺身而出战斗的幻想，让我不禁感到后怕：</p>
-<blockquote>
-<p>男孩子们并不是唯一容易产生这种幻想的人，它也攥住了那些从未参加过战争的老人。他们主持我们的葬礼时，也会流下和电影中士兵死亡时一样的眼泪——幻想的眼泪，廉价的眼泪。战争中对毁灭和杀戮的热爱，源于那种把战争当做游戏的幻想，但它因为在可怕的风险中被放纵而更具诱惑力。</p>
-</blockquote>
-<p>当然，这篇文章更多的是对于越战的描写。年轻人们从日常生活中脱离，为了某个目标而赶赴异国他乡，身边仅有几个未曾谋面的战友同胞。但是对于其他的战争，哪些情况会相同、哪些情况会不同，何为日常生活又何为战乱，都是可以议一议的。</p>
-]]></content>
-  </entry>
-  <entry>
     <title>线性颜色转移</title>
     <url>/2021/03/04/brief-on-linear-color-transfer/</url>
     <content><![CDATA[<p>前阵子做了一个关于线性颜色转移（Linear Color Transfer）的期末研究，准备闲下来把相关的东西发到在博客上面。相关的代码可以在<a href="https://github.com/LucunJi/Linear-Color-Transfer-Methods">这里</a>看到。不把 paper 一起放上来是因为论文写得不算好，一些地方废话较多。博客还是尽量追求简洁比较好。</p>
@@ -381,33 +361,6 @@ f_v(\mathbf{v}) \varpropto \exp(-\frac{1}{2} (\mathbf{v} - \mu_v)^T \mathbf{\Sig
       <tags>
         <tag>CV(computer vision)</tag>
         <tag>math</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>电梯</title>
-    <url>/2020/07/12/elevator/</url>
-    <content><![CDATA[<p>没人能准确说出这台玻璃电梯前往的最高层是第几层。电梯井数倍高于商厦本身，而凭空高出商厦的那部分自然没有任何中间楼层。也就是说，从大厦本身的第五层到电梯顶端的终点之间没有任何的停靠层。</p>
-<p>上升不可撤销，下降亦然。</p>
-<span id="more"></span>
-<p>全玻璃构造的轿厢在玻璃电梯井内被一根明显不够粗的缆绳悬着。缆绳刚好连着轿厢顶部的正中心。若是轿厢没人，它可以以轻微摇晃的态势有惊无险地保持平衡。</p>
-<p>这种设计的本意应该是让乘客在上升过程中饱览城市风景。可惜轿厢的地板也是玻璃的，再加上这摇摇欲坠的结构，很难想象乘客还能有心情去浏览风景。</p>
-<p>这座城市也没有什么风景。建筑都是式样较老，稀稀拉拉的。商厦——更确切地说是这个电梯井——算是附近唯一的高楼。而天空每天基本上都是凄惨的白色，佐以不多不少，刚好让人可以偷懒不带口罩的雾霾。</p>
-<p>这栋大厦不仅有这一部电梯。边上的另一部电梯的式样是在小区商场中随处可见的全金属结构，可惜它只在较低的楼层徘徊，并不通向几十层的高空。</p>
-<p>电梯的顶部确实存在着一个楼层，那是仅靠着电梯井悬在半空的真正意义上的空中楼阁。原本那里是废弃的，但最近有人在上面办了一个英语补习班。这座城市中一部分有着勉勉强强，还算殷实的家底的学生，让这座电梯开始忙碌起来。</p>
-<p>那个办补习班的人，想必是个万里挑一的优秀教师？并非如此，只是这座小城并无其他在英语水平上勉强称得上出众的人。边上的S城固然有不错的教育资源，可S城的生活开销太大，与小城之间也隔了几个小时的路途。也没有多少人称那个年轻人为某老师。家长们叫他小某，学生们则直呼姓名。</p>
-<p>电梯上去又下来了。电梯门打开的时候里面是空的，因此大致可以推断之前进入的那位成功登顶了。既然之前的人平安无事，那这一次应该也是安全的。不过如果上升到一半出了故障，后果是可想而知的。</p>
-<p>但在玻璃的移门在身后关上后，手不假思索地按下了最上面的那个按钮。</p>
-<p>电梯开始不紧不慢地上升。上升到一半的时候，由人导致的重心偏移使轿厢开始在电梯井里打旋。渐渐地，人开始用后背贴着玻璃壁，站也站不稳了。想在电梯里惊呼，但电梯里并没有其他人去听。两个人的重量对于这部电梯来说太过勉强了。又约莫过了半分钟，电梯终于到达顶端。晃动的轿厢和外面的地板间有三四十公分的空隙，但人终究还是迈过去了。</p>
-<p>这样的光景，每天要重复上下两遍，每个月总共有大约十次。并没有谁看到工人来维修过电梯，仿佛电梯对于这些学生以外的其它人来说是不存在的。电梯这么运行了将近半年，有过好几次在半空中卡住，又恢复过来继续运行的奇迹，从来没出过人命。至于办补习班的那位年轻人是怎么上去的，似乎没有多少人思考过。</p>
-<p>在数十米的高空乘坐如此摇摇欲坠的电梯，这似乎严重有悖于生命的本能。然而比起从数十米高空跌下来的后果，似乎有更加抽象而恐怖的东西在逼迫着这些灵长目动物。</p>
-<hr />
-<h1 id="后记">后记</h1>
-<p>这篇文章来源于做过的梦。后来添加上一些别的东西，就作成了这篇文章。写的时候尝试把字数尽量压缩，居然也写出了一千来字。这篇文章的一个更为完整的标题可以是《电梯-小城与那群妄想逃离的学生》。可以算是魔幻现实。艺术来源于生活，但是麻烦不要对号入座，qqqxx（3q谢谢）</p>
-<p>这篇文章的隐喻我觉得不难看出来。如果要我多说一点的话是这样的：这部电梯虽然有来有回，但是整个小城以及更大的环境使得这部电梯和它代指的一些东西变成了真正意义上的单行道。</p>
-<p>另外，这篇文章是以我的主观感受写的，如果有不同的想法，很正常，说，都可以说。</p>
-]]></content>
-      <tags>
-        <tag>misc</tag>
       </tags>
   </entry>
   <entry>
@@ -531,6 +484,53 @@ f_v(\mathbf{v}) \varpropto \exp(-\frac{1}{2} (\mathbf{v} - \mu_v)^T \mathbf{\Sig
       </tags>
   </entry>
   <entry>
+    <title>译注——关于《为什么人们热爱战争》</title>
+    <url>/2021/03/02/comments-on-why-men-love-war/</url>
+    <content><![CDATA[<p>起初<span id="more"></span>遇见这篇文章是因为在 Jreg 的视频 <a href="https://b23.tv/BV16f4y127nE">《我想死在一场战争里》</a> 的评论区看到有人推荐了这篇文章，读过以后感觉不错，就想翻译一下。</p>
+<p>翻译这篇文章遇到的困难有两个。其一，这篇文章的原文似乎是扫描件，除了不计其数不当使用的大小写和标点符号以外，有不少拼写错误的单词。更要命的是，这篇文章在网上的资源出人意料地少，只有 <a href="https://www.esquire.com/news-politics/news/a28718/why-men-love-war/">Esquire</a> 和 <a href="https://public.wsu.edu/~hughesc/why_men_love_war.htm">华盛顿州立大学</a> 两处能找到，而且这两处应该是完全一致的——也就是说，一旦在一处发现了错漏，另一处也会有相同的错误，几乎无法求证。 其二，这篇文章涉及到了不少军事用语，有越战相关的单词，国内还没记录的作家和书籍。这些都是在我知识领域之外的。</p>
+<p>虽然我经常把 <a href="https://www.deepl.com/translator">DeepL</a> 翻译器吹到飞起，但是它在针对上述问题常常无能为力。军事术语时不时还能弄对一两个，但遇上了错词、大小写标点混乱这些问题后，句意常常会不准确，需要手动对着原文修正。标点符号也常常会被转换为半角符号，而非中文文章使用的全角符号。</p>
+<p>这篇文章在二月初初步翻译完（主要是机翻）。当时急着做完，又有点过度信任了 DeepL，没有做过多的校对，就草草发布了。后来参考群里反间兄的意见，重新对全文进行了一次大修，重新考据了一些术语，修正了一些原文导致的错误，并且调整一些句子、段落的语序。在三月初终于完成了第二次校对。</p>
+<p>第二次校对结束后，所有国内没有翻译或翻译较少的人名、作品名都标注了原文，如沃尔特·斯科特（Walter Scott），菲利普·卡普托（Philip Caputo），《战争传闻》（<em>A Rumor of War</em>）等。基本上所有人名和作品都可以根据列出的中文或英文搜索到出处（当然要在国际互联网而非中文互联网）。术语、习语，例如“Praxiteles Swan”，“deuce-and-a-half truck”等基本修正完毕。一些地名、习语和原文中似乎有错漏的地方还加了额外的脚注，方便理解。面对最后的成品我可以说是尽力了。</p>
+<p>这篇文章本身带给我的感受很多，但是这些感受又难以下笔写成字句。不过我认为，读过这篇文章的人，只要不是丧失理智的战争疯子，都应该有类似的感受。</p>
+<p>作者从比较私人的角度描写了个体的心灵在战争中受到的冲击。当看到性与战争、创造与毁灭的时候，我想到的是《奇爱博士》里的各种讽刺的性暗示和性明示。性和爱终究是物极必反导致的伴生物，死亡、毁灭和荒谬仍旧是主旋律。文章中描写的性与爱，要么是病态般的感情投射，要么是病态般的填补空虚。想到这里，我想引用一段文字：</p>
+<blockquote>
+<p>但对人类和国家来说，压制人们热爱战争的原因，可能比承认它们更危险。在《现代启示录》中，罗伯特·杜瓦尔（Robert Duvall）饰演的旅长，打量着特别恐怖的战斗场面，非常悲壮地说：“你知道，总有一天这场战争会结束。”他显然是要做一个精神病患者，用扑克牌装饰敌人的尸体，在瓦格纳的乐曲中骑马上战场。我们嘲笑他——嘿！没有人是那样的人！但去年，在格林纳达，美国男孩们播放着瓦格纳冲向战场，新一代的人在模仿越战的电影，就像我们模仿二战的电影一样，什么也没学到，什么也没记住。</p>
+</blockquote>
+<p>在校对后半部分文章的时候，电脑播放的背景音乐还是瓦格纳的音乐，但实在难以感受到那种关于战争的狂热。不过如今的网络上充斥着那种对于战争，对于挺身而出战斗的幻想，让我不禁感到后怕：</p>
+<blockquote>
+<p>男孩子们并不是唯一容易产生这种幻想的人，它也攥住了那些从未参加过战争的老人。他们主持我们的葬礼时，也会流下和电影中士兵死亡时一样的眼泪——幻想的眼泪，廉价的眼泪。战争中对毁灭和杀戮的热爱，源于那种把战争当做游戏的幻想，但它因为在可怕的风险中被放纵而更具诱惑力。</p>
+</blockquote>
+<p>当然，这篇文章更多的是对于越战的描写。年轻人们从日常生活中脱离，为了某个目标而赶赴异国他乡，身边仅有几个未曾谋面的战友同胞。但是对于其他的战争，哪些情况会相同、哪些情况会不同，何为日常生活又何为战乱，都是可以议一议的。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>电梯</title>
+    <url>/2020/07/12/elevator/</url>
+    <content><![CDATA[<p>没人能准确说出这台玻璃电梯前往的最高层是第几层。电梯井数倍高于商厦本身，而凭空高出商厦的那部分自然没有任何中间楼层。也就是说，从大厦本身的第五层到电梯顶端的终点之间没有任何的停靠层。</p>
+<p>上升不可撤销，下降亦然。</p>
+<span id="more"></span>
+<p>全玻璃构造的轿厢在玻璃电梯井内被一根明显不够粗的缆绳悬着。缆绳刚好连着轿厢顶部的正中心。若是轿厢没人，它可以以轻微摇晃的态势有惊无险地保持平衡。</p>
+<p>这种设计的本意应该是让乘客在上升过程中饱览城市风景。可惜轿厢的地板也是玻璃的，再加上这摇摇欲坠的结构，很难想象乘客还能有心情去浏览风景。</p>
+<p>这座城市也没有什么风景。建筑都是式样较老，稀稀拉拉的。商厦——更确切地说是这个电梯井——算是附近唯一的高楼。而天空每天基本上都是凄惨的白色，佐以不多不少，刚好让人可以偷懒不带口罩的雾霾。</p>
+<p>这栋大厦不仅有这一部电梯。边上的另一部电梯的式样是在小区商场中随处可见的全金属结构，可惜它只在较低的楼层徘徊，并不通向几十层的高空。</p>
+<p>电梯的顶部确实存在着一个楼层，那是仅靠着电梯井悬在半空的真正意义上的空中楼阁。原本那里是废弃的，但最近有人在上面办了一个英语补习班。这座城市中一部分有着勉勉强强，还算殷实的家底的学生，让这座电梯开始忙碌起来。</p>
+<p>那个办补习班的人，想必是个万里挑一的优秀教师？并非如此，只是这座小城并无其他在英语水平上勉强称得上出众的人。边上的S城固然有不错的教育资源，可S城的生活开销太大，与小城之间也隔了几个小时的路途。也没有多少人称那个年轻人为某老师。家长们叫他小某，学生们则直呼姓名。</p>
+<p>电梯上去又下来了。电梯门打开的时候里面是空的，因此大致可以推断之前进入的那位成功登顶了。既然之前的人平安无事，那这一次应该也是安全的。不过如果上升到一半出了故障，后果是可想而知的。</p>
+<p>但在玻璃的移门在身后关上后，手不假思索地按下了最上面的那个按钮。</p>
+<p>电梯开始不紧不慢地上升。上升到一半的时候，由人导致的重心偏移使轿厢开始在电梯井里打旋。渐渐地，人开始用后背贴着玻璃壁，站也站不稳了。想在电梯里惊呼，但电梯里并没有其他人去听。两个人的重量对于这部电梯来说太过勉强了。又约莫过了半分钟，电梯终于到达顶端。晃动的轿厢和外面的地板间有三四十公分的空隙，但人终究还是迈过去了。</p>
+<p>这样的光景，每天要重复上下两遍，每个月总共有大约十次。并没有谁看到工人来维修过电梯，仿佛电梯对于这些学生以外的其它人来说是不存在的。电梯这么运行了将近半年，有过好几次在半空中卡住，又恢复过来继续运行的奇迹，从来没出过人命。至于办补习班的那位年轻人是怎么上去的，似乎没有多少人思考过。</p>
+<p>在数十米的高空乘坐如此摇摇欲坠的电梯，这似乎严重有悖于生命的本能。然而比起从数十米高空跌下来的后果，似乎有更加抽象而恐怖的东西在逼迫着这些灵长目动物。</p>
+<hr />
+<h1 id="后记">后记</h1>
+<p>这篇文章来源于做过的梦。后来添加上一些别的东西，就作成了这篇文章。写的时候尝试把字数尽量压缩，居然也写出了一千来字。这篇文章的一个更为完整的标题可以是《电梯-小城与那群妄想逃离的学生》。可以算是魔幻现实。艺术来源于生活，但是麻烦不要对号入座，qqqxx（3q谢谢）</p>
+<p>这篇文章的隐喻我觉得不难看出来。如果要我多说一点的话是这样的：这部电梯虽然有来有回，但是整个小城以及更大的环境使得这部电梯和它代指的一些东西变成了真正意义上的单行道。</p>
+<p>另外，这篇文章是以我的主观感受写的，如果有不同的想法，很正常，说，都可以说。</p>
+]]></content>
+      <tags>
+        <tag>misc</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2018/12/10/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>. <span id="more"></span></p>
@@ -548,71 +548,6 @@ f_v(\mathbf{v}) \varpropto \exp(-\frac{1}{2} (\mathbf{v} - \mu_v)^T \mathbf{\Sig
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/deployment.html">Deployment</a></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>简易修改 Minecraft 字节码</title>
-    <url>/2020/01/16/minecraft-bytecode-modding/</url>
-    <content><![CDATA[<div data-align="center">
-<font size=6>100% vanilla!</font>
-</div>
-<span id="more"></span>
-<h2 id="简介">简介</h2>
-<p>之前看到 1.15.2-pre1 更新了玩家种植树木也会刷新蜂巢的特性，研究完机制以后想着修改一下蜂巢刷新几率来方便测试。</p>
-<p>可是这时候 fabric 啥的还没更新，于是想到了之前 EDDExample 说过的修改字节码大法。顺便用上 Mojang 1.14.4 以来的官方反混淆表。</p>
-<p>EDDExample 在视频里用的是 JByteMod 来修改字节码。可以在 https://github.com/GraxCode/JByteMod-Beta/releases 下载到。</p>
-<h2 id="反混淆">反混淆</h2>
-<p>前往 https://github.com/hube12/DecompilerMC/releases ，在 Releases for lazy users 下面下载适合操作系统的版本，这里就选择 Windows.zip。</p>
-<p>将压缩包解压，会看到有一个 McDecompiler.exe 文件，运行后根据提示选择，依次输入 <code>y</code>，<code>cfr</code>，<code>1.15.2-pre1</code> 以及 <code>y</code>。</p>
-<p>等待几分钟，程序运行完毕后就可以在 <code>src</code> 文件夹里看到反混淆好的源码；在 <code>mappings</code> 里看到反混淆表。</p>
-<h2 id="查找修改目标">查找修改目标</h2>
-<p>通过在反混淆的源码中搜索，可以找到负责在树上生成蜂巢的装饰器 <code>net.minecraft.world.level.levelgen.feature.treedecorators.BeehiveDecorator</code></p>
-<p>这里通过产生一个随机的单精度浮点数，实现了蜂巢生成概率的随机化： <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">place</span><span class="params">(LevelAccessor var1, Random var2, List var3, List var4, Set var5, BoundingBox var6)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (var2.nextFloat() &lt; <span class="keyword">this</span>.probability) &#123;</span><br><span class="line">        <span class="comment">//...</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>由于 Minecraft 中的类名、方法名是经过混淆的，我们无法直接查看字节码。在反混淆表中搜索类名 <code>BeehiveDecorator</code>，会发现它的混淆后的类名是 <code>ciq</code>，方法 <code>place</code> 混淆后的名称是 <code>a</code>。值得注意的是，一个混淆的类会包含多个同名但不同参数的方法，因此需要额外留心方法的参数数量和类型。</p>
-<h2 id="修改字节码">修改字节码</h2>
-<p>用解压软件打开版本文件 <code>1.15.2-pre1.jar</code>，单独拖出 <code>ciq.class</code> 文件，用 JByteMod 打开这个类文件，开始修改。</p>
-<p>之前我试过直接打开整个 jar，结果修改后无法正常启动游戏。后来折腾了半天才发现单独拖出来修改类文件就好了。</p>
-<p>首先定位到要修改的方法。之前找到的方法拥有6个参数，其中第2、3、4、5个参数的类型分别是 <code>Random</code>，<code>List</code>，<code>List</code> 以及 <code>Set</code>（Java 自带的类型一般不会被反混淆）。点开这个方法，发现开头的几行字节码分别是：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">aload 2</span><br><span class="line">invokevirtual float Random.nextFloat()</span><br><span class="line">aload 0</span><br><span class="line">getfield float ciq.b</span><br><span class="line">fcmpl</span><br><span class="line">iflt 2</span><br><span class="line">label 1</span><br><span class="line">return</span><br><span class="line">label 2</span><br><span class="line">......</span><br></pre></td></tr></table></figure>
-<p>通过翻阅 <a href="https://docs.oracle.com/javase/specs/jvms/se12/html/jvms-6.html">JVM 指令集</a>，可以得知这几行指令的效果：</p>
-<ol type="1">
-<li>加载下标为 2，即类型为 <code>Random</code> 的传入参数的引用；</li>
-<li>调用该对象的 <code>nextFloat()</code> 方法，返回一个 <code>float</code>；</li>
-<li>加载下标为 0 的传入参数，即 <code>this</code> 的引用；</li>
-<li>获取该对象的成员变量，对象属于类 <code>ciq</code>，对象名是 <code>b</code>，变量类型是 <code>float</code>；</li>
-<li>比较 (2) (3) 两处的 <code>float</code> 值；</li>
-<li>如果 (3) 处小于 (2) 处，跳转到标签 2 处执行剩余指令，否则继续往下执行 <code>return</code> 退出方法。</li>
-</ol>
-<p>这几行描述的内容和反编译出来的 <code>if (var2.nextFloat() &lt; this.probability) &#123;&#125;</code> 对应。没问题，接着进行下一步。把前两行删去，替换成 <code>ldc Float 0.0</code> 就可以变成每次尝试必定成功的 <code>if (0.0f &lt; this.probability) &#123;&#125;</code>。</p>
-<p>删除前两行 -&gt; 右键点击 <code>getfield</code> -&gt; 插入之前 -&gt; LdcInsnNode -&gt; 类型选择 <code>Float</code>，值输入 <code>0.0</code>。</p>
-<p>完成后保存类文件，准备替换。</p>
-<h2 id="核心-jar-替换法">核心 jar 替换法</h2>
-<p>核心 jar 替换法，顾名思义就是直接替换 <code>versions</code> 文件夹中核心版本文件 <code>1.15.2-pre1.jar</code> 的类。为了防止游戏对 jar 进行完整性检测，需要删除 jar 中的 <code>META-INF</code> 文件夹，并且删除 <code>1.15.2-pre1.json</code> 中的下载链接。具体链接内容因版本而异，并且注意逗号： <figure class="highlight"><table><tr><td class="code"><pre><span class="line">&quot;downloads&quot;: &#123;&quot;client&quot;: &#123;&quot;sha1&quot;: &quot;9f28455f9f9d09294e0ba19beb13dc26b39a9582&quot;, &quot;size&quot;: 15531212, &quot;url&quot;: &quot;https://launcher.mojang.com/v1/objects/9f28455f9f9d09294e0ba19beb13dc26b39a9582/client.jar&quot;&#125;, &quot;client_mappings&quot;: &#123;&quot;sha1&quot;: &quot;6c81c6f2e6ff0c3a2795f5d336c63b0740a60a45&quot;, &quot;size&quot;: 4971880, &quot;url&quot;: &quot;https://launcher.mojang.com/v1/objects/6c81c6f2e6ff0c3a2795f5d336c63b0740a60a45/client.txt&quot;&#125;, &quot;server&quot;: &#123;&quot;sha1&quot;: &quot;5db50a719dc40d63aa95c6bdc5b302e425f673f2&quot;, &quot;size&quot;: 36175423, &quot;url&quot;: &quot;https://launcher.mojang.com/v1/objects/5db50a719dc40d63aa95c6bdc5b302e425f673f2/server.jar&quot;&#125;, &quot;server_mappings&quot;: &#123;&quot;sha1&quot;: &quot;f59bfc0ebb62bc7802af0567ad79592274c56943&quot;, &quot;size&quot;: 3737013, &quot;url&quot;: &quot;https://launcher.mojang.com/v1/objects/f59bfc0ebb62bc7802af0567ad79592274c56943/server.txt&quot;&#125;&#125;,</span><br></pre></td></tr></table></figure></p>
-<h2 id="运行">运行</h2>
-<p>如果一切操作都没有问题，那么游戏将能够正常的启动。</p>
-<p>创建一个新的世界，在花的边上种下一棵白桦树或橡树，必定会产生一个蜂巢。</p>
-
-
-<figure>
-    <picture>
-                <source srcset="/2020/01/16/minecraft-bytecode-modding/a7616155/2020-01-16_15.02.29@1x.png"media="(max-width: 39.99em)"  type="image/png" />
-                <source srcset="/2020/01/16/minecraft-bytecode-modding/a7616155/2020-01-16_15.02.29@2x.png"media="(min-width: 40em)"  type="image/png" />
-            <img src="/2020/01/16/minecraft-bytecode-modding/a7616155/2020-01-16_15.02.29@2x.png" alt="简易修改 Minecraft 字节码" />
-    </picture>
-</figure>
-
-
-
-<h2 id="multimc-配置方法">MultiMC 配置方法</h2>
-<p>MultiMC 提供了方便的 Jar mod 安装方式。只要删除 <code>META-INF</code> 文件夹，就可以在 Edit Instance 中选择 Add to Minecraft.jar 或者 Replace Minecraft.jar，选择修改后的 jar 载入就可以了。</p>
-<p>需要注意的是，再次修改 jar 过后，需要在列表中移除并重新加入修改后的 jar。</p>
-<h2 id="感谢">感谢</h2>
-<p>EDDxample，他在 YouTube 上有不错的关于代码和模组制作的视频 https://youtu.be/T_658BztqVE ，使用 JByteMod 的点子也是从这个视频里学到的。</p>
-]]></content>
-      <tags>
-        <tag>minecraft</tag>
-        <tag>Java</tag>
-        <tag>bytecode</tag>
-      </tags>
   </entry>
   <entry>
     <title>画展，米勒以及梵高等</title>
@@ -733,6 +668,102 @@ Van Gogh, <i>The Sower</i>
       <tags>
         <tag>art</tag>
         <tag>paintings</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>简易修改 Minecraft 字节码</title>
+    <url>/2020/01/16/minecraft-bytecode-modding/</url>
+    <content><![CDATA[<div data-align="center">
+<font size=6>100% vanilla!</font>
+</div>
+<span id="more"></span>
+<h2 id="简介">简介</h2>
+<p>之前看到 1.15.2-pre1 更新了玩家种植树木也会刷新蜂巢的特性，研究完机制以后想着修改一下蜂巢刷新几率来方便测试。</p>
+<p>可是这时候 fabric 啥的还没更新，于是想到了之前 EDDExample 说过的修改字节码大法。顺便用上 Mojang 1.14.4 以来的官方反混淆表。</p>
+<p>EDDExample 在视频里用的是 JByteMod 来修改字节码。可以在 https://github.com/GraxCode/JByteMod-Beta/releases 下载到。</p>
+<h2 id="反混淆">反混淆</h2>
+<p>前往 https://github.com/hube12/DecompilerMC/releases ，在 Releases for lazy users 下面下载适合操作系统的版本，这里就选择 Windows.zip。</p>
+<p>将压缩包解压，会看到有一个 McDecompiler.exe 文件，运行后根据提示选择，依次输入 <code>y</code>，<code>cfr</code>，<code>1.15.2-pre1</code> 以及 <code>y</code>。</p>
+<p>等待几分钟，程序运行完毕后就可以在 <code>src</code> 文件夹里看到反混淆好的源码；在 <code>mappings</code> 里看到反混淆表。</p>
+<h2 id="查找修改目标">查找修改目标</h2>
+<p>通过在反混淆的源码中搜索，可以找到负责在树上生成蜂巢的装饰器 <code>net.minecraft.world.level.levelgen.feature.treedecorators.BeehiveDecorator</code></p>
+<p>这里通过产生一个随机的单精度浮点数，实现了蜂巢生成概率的随机化： <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">place</span><span class="params">(LevelAccessor var1, Random var2, List var3, List var4, Set var5, BoundingBox var6)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (var2.nextFloat() &lt; <span class="keyword">this</span>.probability) &#123;</span><br><span class="line">        <span class="comment">//...</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>由于 Minecraft 中的类名、方法名是经过混淆的，我们无法直接查看字节码。在反混淆表中搜索类名 <code>BeehiveDecorator</code>，会发现它的混淆后的类名是 <code>ciq</code>，方法 <code>place</code> 混淆后的名称是 <code>a</code>。值得注意的是，一个混淆的类会包含多个同名但不同参数的方法，因此需要额外留心方法的参数数量和类型。</p>
+<h2 id="修改字节码">修改字节码</h2>
+<p>用解压软件打开版本文件 <code>1.15.2-pre1.jar</code>，单独拖出 <code>ciq.class</code> 文件，用 JByteMod 打开这个类文件，开始修改。</p>
+<p>之前我试过直接打开整个 jar，结果修改后无法正常启动游戏。后来折腾了半天才发现单独拖出来修改类文件就好了。</p>
+<p>首先定位到要修改的方法。之前找到的方法拥有6个参数，其中第2、3、4、5个参数的类型分别是 <code>Random</code>，<code>List</code>，<code>List</code> 以及 <code>Set</code>（Java 自带的类型一般不会被反混淆）。点开这个方法，发现开头的几行字节码分别是：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">aload 2</span><br><span class="line">invokevirtual float Random.nextFloat()</span><br><span class="line">aload 0</span><br><span class="line">getfield float ciq.b</span><br><span class="line">fcmpl</span><br><span class="line">iflt 2</span><br><span class="line">label 1</span><br><span class="line">return</span><br><span class="line">label 2</span><br><span class="line">......</span><br></pre></td></tr></table></figure>
+<p>通过翻阅 <a href="https://docs.oracle.com/javase/specs/jvms/se12/html/jvms-6.html">JVM 指令集</a>，可以得知这几行指令的效果：</p>
+<ol type="1">
+<li>加载下标为 2，即类型为 <code>Random</code> 的传入参数的引用；</li>
+<li>调用该对象的 <code>nextFloat()</code> 方法，返回一个 <code>float</code>；</li>
+<li>加载下标为 0 的传入参数，即 <code>this</code> 的引用；</li>
+<li>获取该对象的成员变量，对象属于类 <code>ciq</code>，对象名是 <code>b</code>，变量类型是 <code>float</code>；</li>
+<li>比较 (2) (3) 两处的 <code>float</code> 值；</li>
+<li>如果 (3) 处小于 (2) 处，跳转到标签 2 处执行剩余指令，否则继续往下执行 <code>return</code> 退出方法。</li>
+</ol>
+<p>这几行描述的内容和反编译出来的 <code>if (var2.nextFloat() &lt; this.probability) &#123;&#125;</code> 对应。没问题，接着进行下一步。把前两行删去，替换成 <code>ldc Float 0.0</code> 就可以变成每次尝试必定成功的 <code>if (0.0f &lt; this.probability) &#123;&#125;</code>。</p>
+<p>删除前两行 -&gt; 右键点击 <code>getfield</code> -&gt; 插入之前 -&gt; LdcInsnNode -&gt; 类型选择 <code>Float</code>，值输入 <code>0.0</code>。</p>
+<p>完成后保存类文件，准备替换。</p>
+<h2 id="核心-jar-替换法">核心 jar 替换法</h2>
+<p>核心 jar 替换法，顾名思义就是直接替换 <code>versions</code> 文件夹中核心版本文件 <code>1.15.2-pre1.jar</code> 的类。为了防止游戏对 jar 进行完整性检测，需要删除 jar 中的 <code>META-INF</code> 文件夹，并且删除 <code>1.15.2-pre1.json</code> 中的下载链接。具体链接内容因版本而异，并且注意逗号： <figure class="highlight"><table><tr><td class="code"><pre><span class="line">&quot;downloads&quot;: &#123;&quot;client&quot;: &#123;&quot;sha1&quot;: &quot;9f28455f9f9d09294e0ba19beb13dc26b39a9582&quot;, &quot;size&quot;: 15531212, &quot;url&quot;: &quot;https://launcher.mojang.com/v1/objects/9f28455f9f9d09294e0ba19beb13dc26b39a9582/client.jar&quot;&#125;, &quot;client_mappings&quot;: &#123;&quot;sha1&quot;: &quot;6c81c6f2e6ff0c3a2795f5d336c63b0740a60a45&quot;, &quot;size&quot;: 4971880, &quot;url&quot;: &quot;https://launcher.mojang.com/v1/objects/6c81c6f2e6ff0c3a2795f5d336c63b0740a60a45/client.txt&quot;&#125;, &quot;server&quot;: &#123;&quot;sha1&quot;: &quot;5db50a719dc40d63aa95c6bdc5b302e425f673f2&quot;, &quot;size&quot;: 36175423, &quot;url&quot;: &quot;https://launcher.mojang.com/v1/objects/5db50a719dc40d63aa95c6bdc5b302e425f673f2/server.jar&quot;&#125;, &quot;server_mappings&quot;: &#123;&quot;sha1&quot;: &quot;f59bfc0ebb62bc7802af0567ad79592274c56943&quot;, &quot;size&quot;: 3737013, &quot;url&quot;: &quot;https://launcher.mojang.com/v1/objects/f59bfc0ebb62bc7802af0567ad79592274c56943/server.txt&quot;&#125;&#125;,</span><br></pre></td></tr></table></figure></p>
+<h2 id="运行">运行</h2>
+<p>如果一切操作都没有问题，那么游戏将能够正常的启动。</p>
+<p>创建一个新的世界，在花的边上种下一棵白桦树或橡树，必定会产生一个蜂巢。</p>
+
+
+<figure>
+    <picture>
+                <source srcset="/2020/01/16/minecraft-bytecode-modding/a7616155/2020-01-16_15.02.29@1x.png"media="(max-width: 39.99em)"  type="image/png" />
+                <source srcset="/2020/01/16/minecraft-bytecode-modding/a7616155/2020-01-16_15.02.29@2x.png"media="(min-width: 40em)"  type="image/png" />
+            <img src="/2020/01/16/minecraft-bytecode-modding/a7616155/2020-01-16_15.02.29@2x.png" alt="简易修改 Minecraft 字节码" />
+    </picture>
+</figure>
+
+
+
+<h2 id="multimc-配置方法">MultiMC 配置方法</h2>
+<p>MultiMC 提供了方便的 Jar mod 安装方式。只要删除 <code>META-INF</code> 文件夹，就可以在 Edit Instance 中选择 Add to Minecraft.jar 或者 Replace Minecraft.jar，选择修改后的 jar 载入就可以了。</p>
+<p>需要注意的是，再次修改 jar 过后，需要在列表中移除并重新加入修改后的 jar。</p>
+<h2 id="感谢">感谢</h2>
+<p>EDDxample，他在 YouTube 上有不错的关于代码和模组制作的视频 https://youtu.be/T_658BztqVE ，使用 JByteMod 的点子也是从这个视频里学到的。</p>
+]]></content>
+      <tags>
+        <tag>minecraft</tag>
+        <tag>Java</tag>
+        <tag>bytecode</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>极简风描图</title>
+    <url>/2019/02/24/minimalist-images/</url>
+    <content><![CDATA[<p>基本上就是PS用钢笔勾线然后涂色，分辨率很高。之前看到某位兄贵（不知道怎么称呼）的帖子 <a href="http://tieba.baidu.com/p/5841920541">极简主义样式化的hsi</a>，觉得很nb，自己也做了些图，就把图堆在这里吧。 <span id="more"></span> --- 《不吉波普不笑》的ED基本上都是这种极简的风格，自己挺喜欢的，于是就描了一张。 <a href="./boogiepop.png">点此查看高清大图(7680*4320)</a> | <a href="./boogiepop_wb.png">白色背景版本(7680*4320)</a> 
+
+<figure>
+    <picture>
+                <source srcset="/2019/02/24/minimalist-images/697804b4/boogiepop_small@1x.png"media="(max-width: 39.99em)"  type="image/png" />
+                <source srcset="/2019/02/24/minimalist-images/697804b4/boogiepop_small@2x.png"media="(min-width: 40em)"  type="image/png" />
+            <img src="/2019/02/24/minimalist-images/697804b4/boogiepop_small@2x.png" alt="极简风描图" />
+    </picture>
+</figure>
+
+
+ 原图： 
+
+<figure>
+    <picture>
+                <source srcset="/2019/02/24/minimalist-images/b84aac27/boogiepop_original@1x.png"media="(max-width: 39.99em)"  type="image/png" />
+                <source srcset="/2019/02/24/minimalist-images/b84aac27/boogiepop_original@2x.png"media="(min-width: 40em)"  type="image/png" />
+            <img src="/2019/02/24/minimalist-images/b84aac27/boogiepop_original@2x.png" alt="极简风描图" />
+    </picture>
+</figure>
+
+
+ 《不吉波普不笑》给我的感觉挺惊艳的，Boogiepop 跟我在中二时期的人设挺像的： - 能遮盖身体 95% 的长袍/披风/卫衣 √ - 平时没事的时候当一个普通的中学生 √ - 出场时恰到好处的笛声/口哨声 √ - 很强并且能恰到好处又独到地处理事件 √ 反正挺喜欢的，就用来作头像吧</p>
+]]></content>
+      <tags>
+        <tag>anime images</tag>
       </tags>
   </entry>
   <entry>
@@ -1112,37 +1143,6 @@ Van Gogh, <i>The Sower</i>
       </tags>
   </entry>
   <entry>
-    <title>极简风描图</title>
-    <url>/2019/02/24/minimalist-images/</url>
-    <content><![CDATA[<p>基本上就是PS用钢笔勾线然后涂色，分辨率很高。之前看到某位兄贵（不知道怎么称呼）的帖子 <a href="http://tieba.baidu.com/p/5841920541">极简主义样式化的hsi</a>，觉得很nb，自己也做了些图，就把图堆在这里吧。 <span id="more"></span> --- 《不吉波普不笑》的ED基本上都是这种极简的风格，自己挺喜欢的，于是就描了一张。 <a href="./boogiepop.png">点此查看高清大图(7680*4320)</a> | <a href="./boogiepop_wb.png">白色背景版本(7680*4320)</a> 
-
-<figure>
-    <picture>
-                <source srcset="/2019/02/24/minimalist-images/697804b4/boogiepop_small@1x.png"media="(max-width: 39.99em)"  type="image/png" />
-                <source srcset="/2019/02/24/minimalist-images/697804b4/boogiepop_small@2x.png"media="(min-width: 40em)"  type="image/png" />
-            <img src="/2019/02/24/minimalist-images/697804b4/boogiepop_small@2x.png" alt="极简风描图" />
-    </picture>
-</figure>
-
-
- 原图： 
-
-<figure>
-    <picture>
-                <source srcset="/2019/02/24/minimalist-images/b84aac27/boogiepop_original@1x.png"media="(max-width: 39.99em)"  type="image/png" />
-                <source srcset="/2019/02/24/minimalist-images/b84aac27/boogiepop_original@2x.png"media="(min-width: 40em)"  type="image/png" />
-            <img src="/2019/02/24/minimalist-images/b84aac27/boogiepop_original@2x.png" alt="极简风描图" />
-    </picture>
-</figure>
-
-
- 《不吉波普不笑》给我的感觉挺惊艳的，Boogiepop 跟我在中二时期的人设挺像的： - 能遮盖身体 95% 的长袍/披风/卫衣 √ - 平时没事的时候当一个普通的中学生 √ - 出场时恰到好处的笛声/口哨声 √ - 很强并且能恰到好处又独到地处理事件 √ 反正挺喜欢的，就用来作头像吧</p>
-]]></content>
-      <tags>
-        <tag>anime images</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>关于 Minecraft 社区规范</title>
     <url>/2020/04/18/on-minecraft-community-custom/</url>
     <content><![CDATA[<p>目前的 Minecraft 社区中，一直存在着关于红石、建筑、指令各领域用户作品归属、使用、再创作等问题的争论。这些争议短则一天，长则一周甚至一月。这些争议很少能够被较为圆满地解决，而由这些争议所引发的社区中的进步就更是凤毛麟角。 <span id="more"></span></p>
@@ -1242,6 +1242,230 @@ Van Gogh, <i>The Sower</i>
 </ol>
 </section>
 ]]></content>
+  </entry>
+  <entry>
+    <title>TekTopia 教程：开始打造你的桃花源（前期）</title>
+    <url>/2020/08/19/tektopia-tutorial-1/</url>
+    <content><![CDATA[<p>一个刷铁塔大佬会做哪些事？</p>
+<p>玩音游；烹饪；写 mod</p>
+<p>答：以上全部<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
+
+
+<figure>
+    <picture>
+                <source srcset="/2020/08/19/tektopia-tutorial-1/b5a60f6f/title@1x.png"media="(max-width: 39.99em)"  type="image/png" />
+                <source srcset="/2020/08/19/tektopia-tutorial-1/b5a60f6f/title@2x.png"media="(min-width: 40em)"  type="image/png" />
+            <img src="/2020/08/19/tektopia-tutorial-1/b5a60f6f/title@2x.png" alt="TekTopia 教程：开始打造你的桃花源（前期）" />
+    </picture>
+</figure>
+
+
+
+<span id="more"></span>
+<p>也许是天天和原版的村庄机制打交道从而获得了灵感，又或者是受到了村民机制更新的启发，总之，Tango Tek 在 2019 年推出了自己的村庄 mod：TekTopia。由于这个模组的名字是 Tango Tek 的昵称加乌托邦（Utopia）的复合词，他的中文译名就成了：桃花源记/特克托皮亚。</p>
+<p>与其说这个模组是 1.14 的村庄改版的另一种可能性，不如说它完全改变了原版村庄的设计思路。它不像原版那样结构松散又有很高的可玩性和魔改余地，也不像千年村庄（Millénaire）模组那样做成了类似 RPG 的样子，而是采用了一种类似经营游戏的概念：你需要监测村民的粮食、健康以及心情，并且进行交易，发展村庄。</p>
+<h1 id="模组搭配">模组搭配</h1>
+<p>TekTopia 这个模组并没有对其它模组做出任何兼容，并且这个模组里只有有村民自产<font color=green><strong>绿色名字</strong></font>物品才能参与绿宝石交易。所以其它模组的选择要从这几个方面考虑：</p>
+<ul>
+<li>加快跑图速度，减少跑图时间。如各种点对点传送和快速移动装置；</li>
+<li>方便搬运村民。例如大师球、套索、召唤师灵摆甚至最无脑的水桶（Get In The Bucket Mod）；</li>
+<li>方便建造建筑以及让建筑变得美观，例如建筑小帮手、建筑之杖和凿子；</li>
+<li>加载区块。</li>
+</ul>
+<p>另外以下类型的模组虽然能加速游戏进度，但是可能对游戏体验造成破坏：</p>
+<ul>
+<li><del>加速火把</del></li>
+<li>高效产出铁、钻石甚至铁镐、钻石镐，为村民提供高效的工具；</li>
+<li>高效产出原版的食物；</li>
+<li>高效产出绿宝石；</li>
+<li><del>直接把村民塞进各种刷怪装置然后接上电无限刷村民</del></li>
+</ul>
+<p>除此之外，可以安装 <a href="https://www.curseforge.com/minecraft/mc-mods/tektopia-harvestcraft-compat">Tektopia Harvestcraft Compact</a> 来提供对 HarvestCraft 的兼容。并且在 <a href="https://www.mcbbs.net/thread-980572-1-1.html">mcbbs 的介绍帖子</a>里下载到使用中文姓氏版本的翻译文件。</p>
+<p>另外，类似潘马斯模组的菜园这样的不完整方块可能会干扰村民的寻路系统。</p>
+<h1 id="进入村庄">进入村庄</h1>
+<p>首先你需要找到或者创建一个村庄。游戏生成的村庄已经有一定的人口基数和特殊职业，但是发展势必需要拆除并重建部分建筑。重新创建一个村庄不需要重新规划，并且对环境选择的自由度比较高，但是初始人口很少。</p>
+<p>一个合适的地理位置需要一大片比较平坦的地理环境，并且周围没有森林。同时，你应当收集了甜菜、小麦、萝卜、土豆四种作物，以及云杉、橡树、白化、丛林（丛林不做硬性要求）这四种树。</p>
+<h2 id="自然生成的村庄">自然生成的村庄</h2>
+<p>自然生成的村庄最好有一只吟游诗人。牧师类似吟游诗人，但由于作息时间和农民不同步以及技能不是群体的，只能是吟游诗人的下位替代。德鲁伊不是必须但是后期会很用得着。卫兵和无业游民（也就是绿衣服的“傻子”）完全用不着。铁匠职业前期会干扰交易选项，完全不需要，可以用道具收进背包，移出村庄或者杀掉。</p>
+<h2 id="从零创建村庄">从零创建村庄</h2>
+<p>首先合成一个村庄大厅的标志（以下简称为“门牌”），然后把它贴在一个封闭且有门的建筑物的门边上，然后稍作等待。 
+
+<figure>
+    <picture>
+                <source srcset="/2020/08/19/tektopia-tutorial-1/6f5433d4/townhall-craft@2x.png" type="image/png" />
+            <img src="/2020/08/19/tektopia-tutorial-1/6f5433d4/townhall-craft@2x.png" alt="TekTopia 教程：开始打造你的桃花源（前期）" />
+    </picture>
+</figure>
+
+
+ 
+
+<figure>
+    <picture>
+                <source srcset="/2020/08/19/tektopia-tutorial-1/e87e3e26/townhall-sign@1x.png"media="(max-width: 39.99em)"  type="image/png" />
+                <source srcset="/2020/08/19/tektopia-tutorial-1/e87e3e26/townhall-sign@2x.png"media="(min-width: 40em)"  type="image/png" />
+            <img src="/2020/08/19/tektopia-tutorial-1/e87e3e26/townhall-sign@2x.png" alt="TekTopia 教程：开始打造你的桃花源（前期）" />
+    </picture>
+</figure>
+
+
+</p>
+<p>然后大厅里就会出现两个村民，并且赠送一个奖励箱。奖励箱包含两个门牌和两个职业标志。</p>
+<h1 id="前期发展">前期发展</h1>
+<h2 id="村庄大厅">村庄大厅</h2>
+<p>刚才提到的村庄大厅是整个村子的地理中心。村庄的范围就是以它为中心的，边长两百多格的一个正方形。当走近村庄边缘的时候会出现蓝色的无遮挡作用的屏障提示。</p>
+<p>村庄大厅里有两个人，分别可以用绿宝石交易到门牌和职业标志。随着交易次数的增多，交易的价格也会上升。</p>
+<p>在没有做好应对死灵法师这种比较强大的怪物时，对着大厅门牌右键将它在展示框里旋转一下，就可以防止死灵法师刷出。等到准备充分以后可以摆正门牌，死灵法师会恢复刷新。 
+
+<figure>
+    <picture>
+                <source srcset="/2020/08/19/tektopia-tutorial-1/947f7169/townhall-sign-rotate@1x.png"media="(max-width: 39.99em)"  type="image/png" />
+                <source srcset="/2020/08/19/tektopia-tutorial-1/947f7169/townhall-sign-rotate@2x.png"media="(min-width: 40em)"  type="image/png" />
+            <img src="/2020/08/19/tektopia-tutorial-1/947f7169/townhall-sign-rotate@2x.png" alt="TekTopia 教程：开始打造你的桃花源（前期）" />
+    </picture>
+</figure>
+
+
+</p>
+<h2 id="仓库">仓库</h2>
+<p>仓库是一个有着箱子门牌的封闭建筑，内部放有箱子和工作台。自然生成的箱子有绿宝石、命名牌之类的奖励。你应该增添一些箱子、工作台和熔炉。村民会在工具损坏并且箱子里没有存货的时候用箱子里的木头在合成台自己合成工具。</p>
+<p>物品在村民之间流动的唯一方式就是通过仓库：一个村民把产品存进去，另一个再按需拿取。因此，它应当尽量贴近村庄中心放置，缩短村民路上行走花费的时间。</p>
+<p>你也可以在仓库里放入你的物资，例如工具、食物和煤炭等。虽然这些物资不是村民自产的，他们也会按需拿取。 
+
+<figure>
+    <picture>
+                <source srcset="/2020/08/19/tektopia-tutorial-1/b2ce8dd0/storage@1x.png"media="(max-width: 39.99em)"  type="image/png" />
+                <source srcset="/2020/08/19/tektopia-tutorial-1/b2ce8dd0/storage@2x.png"media="(min-width: 40em)"  type="image/png" />
+            <img src="/2020/08/19/tektopia-tutorial-1/b2ce8dd0/storage@2x.png" alt="TekTopia 教程：开始打造你的桃花源（前期）" />
+    </picture>
+</figure>
+
+
+</p>
+<h2 id="招募人员">招募人员</h2>
+<p>获得村民的方法有三种，对着在村庄四个角落生成并移动到村庄中心的流浪者右键使用职业标志；从其它村庄把村民搬运过来；快乐值较高的村民会自动繁殖（比较繁琐）。前期一般只会使用前两个，并且主动搬运村民不消耗职业标志，更加经济。</p>
+<p>招募人员时优先考虑智慧等级。职业等级在低于智慧的时候提升很快，超过智慧等级后提升很缓慢。前期没有图书馆时智慧没法提升。因此一个高智慧但是没有职业等级的村民会明显优于另一个高职业等级，低智慧的村民。</p>
+<h2 id="住房">住房</h2>
+<p>住房是村民恢复快乐值的重要场所。有三种门牌：双人间、四人间、六人间。为了减少占地面积提高效率，尽量造大房间，但是也没有必要在已有小房间门牌的情况下强行购买大房间门牌。在别的村庄要记得收集六人间的门牌这种免费的资源。房子应该建得集中来提高效率。你甚至可以建设多层房屋进一步节约用地。 
+
+<figure>
+    <picture>
+                <source srcset="/2020/08/19/tektopia-tutorial-1/0e42645c/double-floor@1x.png"media="(max-width: 39.99em)"  type="image/png" />
+                <source srcset="/2020/08/19/tektopia-tutorial-1/0e42645c/double-floor@2x.png"media="(min-width: 40em)"  type="image/png" />
+            <img src="/2020/08/19/tektopia-tutorial-1/0e42645c/double-floor@2x.png" alt="TekTopia 教程：开始打造你的桃花源（前期）" />
+    </picture>
+</figure>
+
+
+</p>
+<p>房间内根据门牌放下对应数量的床。每张床边上附带一个椅子以提高快乐值回复效率。另外房间内平均每个村民要有12格的地面空间。</p>
+<h2 id="防止房屋过于拥挤">防止房屋过于拥挤！</h2>
+<p>各种住房、仓库、学校、酒馆等封闭建筑需要避免拥挤。建筑内的每个村民要保证 12 格的地面空间。工作台、熔炉、床、椅子、书架、铁砧、附魔台等特殊方块不占据地面空间。如果建筑内的人均占地面积小于十二格，村民会减少快乐值。人均面基越小，快乐值减少越快。</p>
+<p>例如：一个6人间应该是 12*6=72 的大小。仓库不是专用空间，人口流动性较大，前期可以按照 4~6 个人来计算（游戏生成的仓库面积前期够用了），后期再进行扩建。学校、酒馆、图书馆等中后期建筑是聚集性场所，需要特别大的面积。 
+
+<figure>
+    <picture>
+                <source srcset="/2020/08/19/tektopia-tutorial-1/1a1b9851/bedroom-inner@1x.png"media="(max-width: 39.99em)"  type="image/png" />
+                <source srcset="/2020/08/19/tektopia-tutorial-1/1a1b9851/bedroom-inner@2x.png"media="(min-width: 40em)"  type="image/png" />
+            <img src="/2020/08/19/tektopia-tutorial-1/1a1b9851/bedroom-inner@2x.png" alt="TekTopia 教程：开始打造你的桃花源（前期）" />
+    </picture>
+</figure>
+
+
+</p>
+<h2 id="农民">农民</h2>
+<p>农民推荐从其它村庄直接搬过来，但是记得要安排住房。</p>
+<p><strong>农民是整个村庄里最核心、最重要的人员。</strong> 村庄的发展程度可以单凭农民的数量断定。农民生产的作物要用来养活整个村子的人并且参与交易。前期以拥有 10 只农民为佳，当然农民永远也不嫌多。</p>
+<h2 id="农田">农田</h2>
+<p>农田需要一个有水的，足够亮的（自然光或人工光源均可）区域。之后村民会自动开垦，但是比玩家手动开垦慢得多。应该用非泥土材料把农田圈出来，防止村民一直扩展农田。除非农田上已经有作物播种，村民不会自动去种植作物。村民种下作物的种类是根据周围种植的作物进行判断的，只要不同种作物的耕地隔开，一块田的作物种类就永远不会变。</p>
+<p><strong>农田应当大而集中</strong> 较好的方案是大量建设中央一格水的 9x9 农田。每种作物至少占据一块 9x9 的农田，最好占据两块。自然生成的小块农田都可以通过填上水源并移除作物的方法予以拆除。农民会优先选择更大、离中心更近的农田进行耕种。农民白天主要待在农田劳作，因此农田不用离中心太近。 
+
+<figure>
+    <picture>
+                <source srcset="/2020/08/19/tektopia-tutorial-1/2037a11e/farmland@1x.png"media="(max-width: 39.99em)"  type="image/png" />
+                <source srcset="/2020/08/19/tektopia-tutorial-1/2037a11e/farmland@2x.png"media="(min-width: 40em)"  type="image/png" />
+            <img src="/2020/08/19/tektopia-tutorial-1/2037a11e/farmland@2x.png" alt="TekTopia 教程：开始打造你的桃花源（前期）" />
+    </picture>
+</figure>
+
+
+</p>
+<h2 id="伐木工">伐木工</h2>
+<p>伐木工用斧子砍伐村庄范围内的树木。他会在砍倒树木后收集木头、树苗并补种（如果有同类树苗的话）。由于模组算法限制，他们不会砍伐 2*2 的大型树木以及金合欢树。最下面一格木头不接触泥土的话，伐木工不会砍伐。</p>
+<p>由于伐木工每砍下一棵树木都要返回仓库存放，树场应该尽量靠经仓库设计。每种树都要大量种植。树苗间隔一格基本可以同时保证种植密度和树苗产出。记得清理村庄附近的树，防止伐木工就为了砍一棵树走半天路。 
+
+<figure>
+    <picture>
+                <source srcset="/2020/08/19/tektopia-tutorial-1/073dde5c/lumberjack@2x.png"media="(min-width: 40em)"  type="image/png" />
+                <source srcset="/2020/08/19/tektopia-tutorial-1/073dde5c/lumberjack@1x.png"media="(max-width: 39.99em)"  type="image/png" />
+            <img src="/2020/08/19/tektopia-tutorial-1/073dde5c/lumberjack@1x.png" alt="TekTopia 教程：开始打造你的桃花源（前期）" />
+    </picture>
+</figure>
+
+
+</p>
+<h2 id="吟游诗人">吟游诗人</h2>
+<p>吟游诗人可以在村庄各处演奏，并且恢复自己的与周围村民的快乐值。村民的快乐值过低会减少工作效率，所以前期拥有一只吟游诗人会有极大的帮助。 
+
+<figure>
+    <picture>
+                <source srcset="/2020/08/19/tektopia-tutorial-1/3b5c73b7/bard@1x.png"media="(max-width: 39.99em)"  type="image/png" />
+                <source srcset="/2020/08/19/tektopia-tutorial-1/3b5c73b7/bard@2x.png"media="(min-width: 40em)"  type="image/png" />
+            <img src="/2020/08/19/tektopia-tutorial-1/3b5c73b7/bard@2x.png" alt="TekTopia 教程：开始打造你的桃花源（前期）" />
+    </picture>
+</figure>
+
+
+</p>
+<p><strong>吟游诗人并不需要酒馆！</strong> 前期并不需要去建造酒馆，酒馆严格意义上并不是吟游诗人的工作场所。</p>
+<h2 id="商人交易">商人交易</h2>
+<p>在早上，商人会和流浪者一样从村庄的四个角落刷出。如果商人无法刷出或刷出后无法找到前往村庄中心的路，游戏会在聊天栏作出提示。 
+
+<figure>
+    <picture>
+                <source srcset="/2020/08/19/tektopia-tutorial-1/d35c1c11/merchant@1x.png"media="(max-width: 39.99em)"  type="image/png" />
+                <source srcset="/2020/08/19/tektopia-tutorial-1/d35c1c11/merchant@2x.png"media="(min-width: 40em)"  type="image/png" />
+            <img src="/2020/08/19/tektopia-tutorial-1/d35c1c11/merchant@2x.png" alt="TekTopia 教程：开始打造你的桃花源（前期）" />
+    </picture>
+</figure>
+
+
+</p>
+<p>如果商人和流浪者一直不刷出或者刷出后不走动，地形也足够平坦，那可能是区块加载的问题，建议提高视距甚至放区块加载器。</p>
+<p>商人会根据村庄内村民的类型随机提供一些能换取绿宝石交易。在前期自然就是四种作物和四种木头的交易。他会记住最近的 30 次交易。同一种物品过多地卖给商人会导致收购价下跌，甚至交易消失。这时需要出售其它物品来刷新最近的交易记录。这是这个模组发展的另一个要点：<strong>在保证大批量生产的同时增加产物多样性</strong>。</p>
+<p>同一种商品一次可以交易五六次，因此较好的策略是将同一物品攒够多次交易的量后一口气卖出，防止价格下跌。</p>
+<p>另一种技巧则是前往其它村落进行交易。由于商人的交易是根据村庄而定的，所以前往其它村落进行倾销也是个不错的选择。</p>
+<h1 id="前期的发展">前期的发展</h1>
+<p>根据上文建设好建筑物并招募了一定量的村民以后，可以开始发展了。要记得保持农民的数量，同时慢慢攒出好几组村民自产的物资进行交易。</p>
+<p>可以选择离地面至少128格的高空挂机，这样可以防止刷怪又不用大范围插火把。</p>
+<p>在有了绿宝石后，如果没有吟游诗人优先补充一只，然后逐步增加农民和伐木工的量。</p>
+<p>在这期间，农民和伐木工以外的其它职业都不要考虑。</p>
+<p>等到有 10 个伐木工和 20 个农民的时候，就从前期基本过渡的了中期。 
+
+<figure>
+    <picture>
+                <source srcset="/2020/08/19/tektopia-tutorial-1/ca3b61c6/halfway@1x.png"media="(max-width: 39.99em)"  type="image/png" />
+                <source srcset="/2020/08/19/tektopia-tutorial-1/ca3b61c6/halfway@2x.png"media="(min-width: 40em)"  type="image/png" />
+            <img src="/2020/08/19/tektopia-tutorial-1/ca3b61c6/halfway@2x.png" alt="TekTopia 教程：开始打造你的桃花源（前期）" />
+    </picture>
+</figure>
+
+
+</p>
+<h1 id="主要参考">主要参考</h1>
+<p>本文主要参考了<a href="https://sites.google.com/view/tektopia">官方维基</a>和 <a href="https://www.mcmod.cn/post/1373.html">mcmod 上的教程</a>，不再在文章仔细列出引用。</p>
+<section class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>玩音游：<a href="https://space.bilibili.com/10209699">红云</a>；烹饪：<a href="https://space.bilibili.com/56877433">小墨</a><a href="#fnref1" class="footnote-back">↩</a></p></li>
+</ol>
+</section>
+]]></content>
+      <tags>
+        <tag>minecraft</tag>
+        <tag>mod</tag>
+        <tag>TekTopia</tag>
+      </tags>
   </entry>
   <entry>
     <title>TekTopia 教程：当上土皇帝（中期 + 后期）</title>
@@ -1472,230 +1696,6 @@ Van Gogh, <i>The Sower</i>
       </tags>
   </entry>
   <entry>
-    <title>TekTopia 教程：开始打造你的桃花源（前期）</title>
-    <url>/2020/08/19/tektopia-tutorial-1/</url>
-    <content><![CDATA[<p>一个刷铁塔大佬会做哪些事？</p>
-<p>玩音游；烹饪；写 mod</p>
-<p>答：以上全部<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
-
-
-<figure>
-    <picture>
-                <source srcset="/2020/08/19/tektopia-tutorial-1/b5a60f6f/title@1x.png"media="(max-width: 39.99em)"  type="image/png" />
-                <source srcset="/2020/08/19/tektopia-tutorial-1/b5a60f6f/title@2x.png"media="(min-width: 40em)"  type="image/png" />
-            <img src="/2020/08/19/tektopia-tutorial-1/b5a60f6f/title@2x.png" alt="TekTopia 教程：开始打造你的桃花源（前期）" />
-    </picture>
-</figure>
-
-
-
-<span id="more"></span>
-<p>也许是天天和原版的村庄机制打交道从而获得了灵感，又或者是受到了村民机制更新的启发，总之，Tango Tek 在 2019 年推出了自己的村庄 mod：TekTopia。由于这个模组的名字是 Tango Tek 的昵称加乌托邦（Utopia）的复合词，他的中文译名就成了：桃花源记/特克托皮亚。</p>
-<p>与其说这个模组是 1.14 的村庄改版的另一种可能性，不如说它完全改变了原版村庄的设计思路。它不像原版那样结构松散又有很高的可玩性和魔改余地，也不像千年村庄（Millénaire）模组那样做成了类似 RPG 的样子，而是采用了一种类似经营游戏的概念：你需要监测村民的粮食、健康以及心情，并且进行交易，发展村庄。</p>
-<h1 id="模组搭配">模组搭配</h1>
-<p>TekTopia 这个模组并没有对其它模组做出任何兼容，并且这个模组里只有有村民自产<font color=green><strong>绿色名字</strong></font>物品才能参与绿宝石交易。所以其它模组的选择要从这几个方面考虑：</p>
-<ul>
-<li>加快跑图速度，减少跑图时间。如各种点对点传送和快速移动装置；</li>
-<li>方便搬运村民。例如大师球、套索、召唤师灵摆甚至最无脑的水桶（Get In The Bucket Mod）；</li>
-<li>方便建造建筑以及让建筑变得美观，例如建筑小帮手、建筑之杖和凿子；</li>
-<li>加载区块。</li>
-</ul>
-<p>另外以下类型的模组虽然能加速游戏进度，但是可能对游戏体验造成破坏：</p>
-<ul>
-<li><del>加速火把</del></li>
-<li>高效产出铁、钻石甚至铁镐、钻石镐，为村民提供高效的工具；</li>
-<li>高效产出原版的食物；</li>
-<li>高效产出绿宝石；</li>
-<li><del>直接把村民塞进各种刷怪装置然后接上电无限刷村民</del></li>
-</ul>
-<p>除此之外，可以安装 <a href="https://www.curseforge.com/minecraft/mc-mods/tektopia-harvestcraft-compat">Tektopia Harvestcraft Compact</a> 来提供对 HarvestCraft 的兼容。并且在 <a href="https://www.mcbbs.net/thread-980572-1-1.html">mcbbs 的介绍帖子</a>里下载到使用中文姓氏版本的翻译文件。</p>
-<p>另外，类似潘马斯模组的菜园这样的不完整方块可能会干扰村民的寻路系统。</p>
-<h1 id="进入村庄">进入村庄</h1>
-<p>首先你需要找到或者创建一个村庄。游戏生成的村庄已经有一定的人口基数和特殊职业，但是发展势必需要拆除并重建部分建筑。重新创建一个村庄不需要重新规划，并且对环境选择的自由度比较高，但是初始人口很少。</p>
-<p>一个合适的地理位置需要一大片比较平坦的地理环境，并且周围没有森林。同时，你应当收集了甜菜、小麦、萝卜、土豆四种作物，以及云杉、橡树、白化、丛林（丛林不做硬性要求）这四种树。</p>
-<h2 id="自然生成的村庄">自然生成的村庄</h2>
-<p>自然生成的村庄最好有一只吟游诗人。牧师类似吟游诗人，但由于作息时间和农民不同步以及技能不是群体的，只能是吟游诗人的下位替代。德鲁伊不是必须但是后期会很用得着。卫兵和无业游民（也就是绿衣服的“傻子”）完全用不着。铁匠职业前期会干扰交易选项，完全不需要，可以用道具收进背包，移出村庄或者杀掉。</p>
-<h2 id="从零创建村庄">从零创建村庄</h2>
-<p>首先合成一个村庄大厅的标志（以下简称为“门牌”），然后把它贴在一个封闭且有门的建筑物的门边上，然后稍作等待。 
-
-<figure>
-    <picture>
-                <source srcset="/2020/08/19/tektopia-tutorial-1/6f5433d4/townhall-craft@2x.png" type="image/png" />
-            <img src="/2020/08/19/tektopia-tutorial-1/6f5433d4/townhall-craft@2x.png" alt="TekTopia 教程：开始打造你的桃花源（前期）" />
-    </picture>
-</figure>
-
-
- 
-
-<figure>
-    <picture>
-                <source srcset="/2020/08/19/tektopia-tutorial-1/e87e3e26/townhall-sign@1x.png"media="(max-width: 39.99em)"  type="image/png" />
-                <source srcset="/2020/08/19/tektopia-tutorial-1/e87e3e26/townhall-sign@2x.png"media="(min-width: 40em)"  type="image/png" />
-            <img src="/2020/08/19/tektopia-tutorial-1/e87e3e26/townhall-sign@2x.png" alt="TekTopia 教程：开始打造你的桃花源（前期）" />
-    </picture>
-</figure>
-
-
-</p>
-<p>然后大厅里就会出现两个村民，并且赠送一个奖励箱。奖励箱包含两个门牌和两个职业标志。</p>
-<h1 id="前期发展">前期发展</h1>
-<h2 id="村庄大厅">村庄大厅</h2>
-<p>刚才提到的村庄大厅是整个村子的地理中心。村庄的范围就是以它为中心的，边长两百多格的一个正方形。当走近村庄边缘的时候会出现蓝色的无遮挡作用的屏障提示。</p>
-<p>村庄大厅里有两个人，分别可以用绿宝石交易到门牌和职业标志。随着交易次数的增多，交易的价格也会上升。</p>
-<p>在没有做好应对死灵法师这种比较强大的怪物时，对着大厅门牌右键将它在展示框里旋转一下，就可以防止死灵法师刷出。等到准备充分以后可以摆正门牌，死灵法师会恢复刷新。 
-
-<figure>
-    <picture>
-                <source srcset="/2020/08/19/tektopia-tutorial-1/947f7169/townhall-sign-rotate@1x.png"media="(max-width: 39.99em)"  type="image/png" />
-                <source srcset="/2020/08/19/tektopia-tutorial-1/947f7169/townhall-sign-rotate@2x.png"media="(min-width: 40em)"  type="image/png" />
-            <img src="/2020/08/19/tektopia-tutorial-1/947f7169/townhall-sign-rotate@2x.png" alt="TekTopia 教程：开始打造你的桃花源（前期）" />
-    </picture>
-</figure>
-
-
-</p>
-<h2 id="仓库">仓库</h2>
-<p>仓库是一个有着箱子门牌的封闭建筑，内部放有箱子和工作台。自然生成的箱子有绿宝石、命名牌之类的奖励。你应该增添一些箱子、工作台和熔炉。村民会在工具损坏并且箱子里没有存货的时候用箱子里的木头在合成台自己合成工具。</p>
-<p>物品在村民之间流动的唯一方式就是通过仓库：一个村民把产品存进去，另一个再按需拿取。因此，它应当尽量贴近村庄中心放置，缩短村民路上行走花费的时间。</p>
-<p>你也可以在仓库里放入你的物资，例如工具、食物和煤炭等。虽然这些物资不是村民自产的，他们也会按需拿取。 
-
-<figure>
-    <picture>
-                <source srcset="/2020/08/19/tektopia-tutorial-1/b2ce8dd0/storage@1x.png"media="(max-width: 39.99em)"  type="image/png" />
-                <source srcset="/2020/08/19/tektopia-tutorial-1/b2ce8dd0/storage@2x.png"media="(min-width: 40em)"  type="image/png" />
-            <img src="/2020/08/19/tektopia-tutorial-1/b2ce8dd0/storage@2x.png" alt="TekTopia 教程：开始打造你的桃花源（前期）" />
-    </picture>
-</figure>
-
-
-</p>
-<h2 id="招募人员">招募人员</h2>
-<p>获得村民的方法有三种，对着在村庄四个角落生成并移动到村庄中心的流浪者右键使用职业标志；从其它村庄把村民搬运过来；快乐值较高的村民会自动繁殖（比较繁琐）。前期一般只会使用前两个，并且主动搬运村民不消耗职业标志，更加经济。</p>
-<p>招募人员时优先考虑智慧等级。职业等级在低于智慧的时候提升很快，超过智慧等级后提升很缓慢。前期没有图书馆时智慧没法提升。因此一个高智慧但是没有职业等级的村民会明显优于另一个高职业等级，低智慧的村民。</p>
-<h2 id="住房">住房</h2>
-<p>住房是村民恢复快乐值的重要场所。有三种门牌：双人间、四人间、六人间。为了减少占地面积提高效率，尽量造大房间，但是也没有必要在已有小房间门牌的情况下强行购买大房间门牌。在别的村庄要记得收集六人间的门牌这种免费的资源。房子应该建得集中来提高效率。你甚至可以建设多层房屋进一步节约用地。 
-
-<figure>
-    <picture>
-                <source srcset="/2020/08/19/tektopia-tutorial-1/0e42645c/double-floor@1x.png"media="(max-width: 39.99em)"  type="image/png" />
-                <source srcset="/2020/08/19/tektopia-tutorial-1/0e42645c/double-floor@2x.png"media="(min-width: 40em)"  type="image/png" />
-            <img src="/2020/08/19/tektopia-tutorial-1/0e42645c/double-floor@2x.png" alt="TekTopia 教程：开始打造你的桃花源（前期）" />
-    </picture>
-</figure>
-
-
-</p>
-<p>房间内根据门牌放下对应数量的床。每张床边上附带一个椅子以提高快乐值回复效率。另外房间内平均每个村民要有12格的地面空间。</p>
-<h2 id="防止房屋过于拥挤">防止房屋过于拥挤！</h2>
-<p>各种住房、仓库、学校、酒馆等封闭建筑需要避免拥挤。建筑内的每个村民要保证 12 格的地面空间。工作台、熔炉、床、椅子、书架、铁砧、附魔台等特殊方块不占据地面空间。如果建筑内的人均占地面积小于十二格，村民会减少快乐值。人均面基越小，快乐值减少越快。</p>
-<p>例如：一个6人间应该是 12*6=72 的大小。仓库不是专用空间，人口流动性较大，前期可以按照 4~6 个人来计算（游戏生成的仓库面积前期够用了），后期再进行扩建。学校、酒馆、图书馆等中后期建筑是聚集性场所，需要特别大的面积。 
-
-<figure>
-    <picture>
-                <source srcset="/2020/08/19/tektopia-tutorial-1/1a1b9851/bedroom-inner@1x.png"media="(max-width: 39.99em)"  type="image/png" />
-                <source srcset="/2020/08/19/tektopia-tutorial-1/1a1b9851/bedroom-inner@2x.png"media="(min-width: 40em)"  type="image/png" />
-            <img src="/2020/08/19/tektopia-tutorial-1/1a1b9851/bedroom-inner@2x.png" alt="TekTopia 教程：开始打造你的桃花源（前期）" />
-    </picture>
-</figure>
-
-
-</p>
-<h2 id="农民">农民</h2>
-<p>农民推荐从其它村庄直接搬过来，但是记得要安排住房。</p>
-<p><strong>农民是整个村庄里最核心、最重要的人员。</strong> 村庄的发展程度可以单凭农民的数量断定。农民生产的作物要用来养活整个村子的人并且参与交易。前期以拥有 10 只农民为佳，当然农民永远也不嫌多。</p>
-<h2 id="农田">农田</h2>
-<p>农田需要一个有水的，足够亮的（自然光或人工光源均可）区域。之后村民会自动开垦，但是比玩家手动开垦慢得多。应该用非泥土材料把农田圈出来，防止村民一直扩展农田。除非农田上已经有作物播种，村民不会自动去种植作物。村民种下作物的种类是根据周围种植的作物进行判断的，只要不同种作物的耕地隔开，一块田的作物种类就永远不会变。</p>
-<p><strong>农田应当大而集中</strong> 较好的方案是大量建设中央一格水的 9x9 农田。每种作物至少占据一块 9x9 的农田，最好占据两块。自然生成的小块农田都可以通过填上水源并移除作物的方法予以拆除。农民会优先选择更大、离中心更近的农田进行耕种。农民白天主要待在农田劳作，因此农田不用离中心太近。 
-
-<figure>
-    <picture>
-                <source srcset="/2020/08/19/tektopia-tutorial-1/2037a11e/farmland@1x.png"media="(max-width: 39.99em)"  type="image/png" />
-                <source srcset="/2020/08/19/tektopia-tutorial-1/2037a11e/farmland@2x.png"media="(min-width: 40em)"  type="image/png" />
-            <img src="/2020/08/19/tektopia-tutorial-1/2037a11e/farmland@2x.png" alt="TekTopia 教程：开始打造你的桃花源（前期）" />
-    </picture>
-</figure>
-
-
-</p>
-<h2 id="伐木工">伐木工</h2>
-<p>伐木工用斧子砍伐村庄范围内的树木。他会在砍倒树木后收集木头、树苗并补种（如果有同类树苗的话）。由于模组算法限制，他们不会砍伐 2*2 的大型树木以及金合欢树。最下面一格木头不接触泥土的话，伐木工不会砍伐。</p>
-<p>由于伐木工每砍下一棵树木都要返回仓库存放，树场应该尽量靠经仓库设计。每种树都要大量种植。树苗间隔一格基本可以同时保证种植密度和树苗产出。记得清理村庄附近的树，防止伐木工就为了砍一棵树走半天路。 
-
-<figure>
-    <picture>
-                <source srcset="/2020/08/19/tektopia-tutorial-1/073dde5c/lumberjack@2x.png"media="(min-width: 40em)"  type="image/png" />
-                <source srcset="/2020/08/19/tektopia-tutorial-1/073dde5c/lumberjack@1x.png"media="(max-width: 39.99em)"  type="image/png" />
-            <img src="/2020/08/19/tektopia-tutorial-1/073dde5c/lumberjack@1x.png" alt="TekTopia 教程：开始打造你的桃花源（前期）" />
-    </picture>
-</figure>
-
-
-</p>
-<h2 id="吟游诗人">吟游诗人</h2>
-<p>吟游诗人可以在村庄各处演奏，并且恢复自己的与周围村民的快乐值。村民的快乐值过低会减少工作效率，所以前期拥有一只吟游诗人会有极大的帮助。 
-
-<figure>
-    <picture>
-                <source srcset="/2020/08/19/tektopia-tutorial-1/3b5c73b7/bard@1x.png"media="(max-width: 39.99em)"  type="image/png" />
-                <source srcset="/2020/08/19/tektopia-tutorial-1/3b5c73b7/bard@2x.png"media="(min-width: 40em)"  type="image/png" />
-            <img src="/2020/08/19/tektopia-tutorial-1/3b5c73b7/bard@2x.png" alt="TekTopia 教程：开始打造你的桃花源（前期）" />
-    </picture>
-</figure>
-
-
-</p>
-<p><strong>吟游诗人并不需要酒馆！</strong> 前期并不需要去建造酒馆，酒馆严格意义上并不是吟游诗人的工作场所。</p>
-<h2 id="商人交易">商人交易</h2>
-<p>在早上，商人会和流浪者一样从村庄的四个角落刷出。如果商人无法刷出或刷出后无法找到前往村庄中心的路，游戏会在聊天栏作出提示。 
-
-<figure>
-    <picture>
-                <source srcset="/2020/08/19/tektopia-tutorial-1/d35c1c11/merchant@1x.png"media="(max-width: 39.99em)"  type="image/png" />
-                <source srcset="/2020/08/19/tektopia-tutorial-1/d35c1c11/merchant@2x.png"media="(min-width: 40em)"  type="image/png" />
-            <img src="/2020/08/19/tektopia-tutorial-1/d35c1c11/merchant@2x.png" alt="TekTopia 教程：开始打造你的桃花源（前期）" />
-    </picture>
-</figure>
-
-
-</p>
-<p>如果商人和流浪者一直不刷出或者刷出后不走动，地形也足够平坦，那可能是区块加载的问题，建议提高视距甚至放区块加载器。</p>
-<p>商人会根据村庄内村民的类型随机提供一些能换取绿宝石交易。在前期自然就是四种作物和四种木头的交易。他会记住最近的 30 次交易。同一种物品过多地卖给商人会导致收购价下跌，甚至交易消失。这时需要出售其它物品来刷新最近的交易记录。这是这个模组发展的另一个要点：<strong>在保证大批量生产的同时增加产物多样性</strong>。</p>
-<p>同一种商品一次可以交易五六次，因此较好的策略是将同一物品攒够多次交易的量后一口气卖出，防止价格下跌。</p>
-<p>另一种技巧则是前往其它村落进行交易。由于商人的交易是根据村庄而定的，所以前往其它村落进行倾销也是个不错的选择。</p>
-<h1 id="前期的发展">前期的发展</h1>
-<p>根据上文建设好建筑物并招募了一定量的村民以后，可以开始发展了。要记得保持农民的数量，同时慢慢攒出好几组村民自产的物资进行交易。</p>
-<p>可以选择离地面至少128格的高空挂机，这样可以防止刷怪又不用大范围插火把。</p>
-<p>在有了绿宝石后，如果没有吟游诗人优先补充一只，然后逐步增加农民和伐木工的量。</p>
-<p>在这期间，农民和伐木工以外的其它职业都不要考虑。</p>
-<p>等到有 10 个伐木工和 20 个农民的时候，就从前期基本过渡的了中期。 
-
-<figure>
-    <picture>
-                <source srcset="/2020/08/19/tektopia-tutorial-1/ca3b61c6/halfway@1x.png"media="(max-width: 39.99em)"  type="image/png" />
-                <source srcset="/2020/08/19/tektopia-tutorial-1/ca3b61c6/halfway@2x.png"media="(min-width: 40em)"  type="image/png" />
-            <img src="/2020/08/19/tektopia-tutorial-1/ca3b61c6/halfway@2x.png" alt="TekTopia 教程：开始打造你的桃花源（前期）" />
-    </picture>
-</figure>
-
-
-</p>
-<h1 id="主要参考">主要参考</h1>
-<p>本文主要参考了<a href="https://sites.google.com/view/tektopia">官方维基</a>和 <a href="https://www.mcmod.cn/post/1373.html">mcmod 上的教程</a>，不再在文章仔细列出引用。</p>
-<section class="footnotes">
-<hr />
-<ol>
-<li id="fn1"><p>玩音游：<a href="https://space.bilibili.com/10209699">红云</a>；烹饪：<a href="https://space.bilibili.com/56877433">小墨</a><a href="#fnref1" class="footnote-back">↩</a></p></li>
-</ol>
-</section>
-]]></content>
-      <tags>
-        <tag>minecraft</tag>
-        <tag>mod</tag>
-        <tag>TekTopia</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hexo 魔改指南</title>
     <url>/2018/12/13/hexo-hacking-guide/</url>
     <content><![CDATA[<p>这里说几个魔改 Hexo 博客的方法，顺便水一贴。遇到问题欢迎评论区留言。 <span id="more"></span></p>
@@ -1905,6 +1905,16 @@ Van Gogh, <i>The Sower</i>
       </tags>
   </entry>
   <entry>
+    <title>应用</title>
+    <url>/apps/index.html</url>
+    <content><![CDATA[<p>这里是一些小应用。由于博客是静态网页，所以这些应用无需上传任何数据。</p>
+<h3 id="应用列表">应用列表</h3>
+<ul>
+<li><a href="webp_converter">WEBP 转换器 / WEBP Converter</a></li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
     <title>书单</title>
     <url>/booklist/index.html</url>
     <content><![CDATA[<div style="text-align: center">
@@ -1939,16 +1949,6 @@ Van Gogh, <i>The Sower</i>
 </tr>
 </table>
 </div>
-]]></content>
-  </entry>
-  <entry>
-    <title>应用</title>
-    <url>/apps/index.html</url>
-    <content><![CDATA[<p>这里是一些小应用。由于博客是静态网页，所以这些应用无需上传任何数据。</p>
-<h3 id="应用列表">应用列表</h3>
-<ul>
-<li><a href="webp_converter">WEBP 转换器 / WEBP Converter</a></li>
-</ul>
 ]]></content>
   </entry>
   <entry>
