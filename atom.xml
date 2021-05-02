@@ -6,7 +6,7 @@
   <link href="https://lucunji.github.io/atom.xml" rel="self"/>
   
   <link href="https://lucunji.github.io/"/>
-  <updated>2021-04-28T18:22:42.564Z</updated>
+  <updated>2021-05-02T07:32:43.960Z</updated>
   <id>https://lucunji.github.io/</id>
   
   <author>
@@ -21,10 +21,10 @@
     <link href="https://lucunji.github.io/2021/03/04/brief-on-linear-color-transfer/"/>
     <id>https://lucunji.github.io/2021/03/04/brief-on-linear-color-transfer/</id>
     <published>2021-03-05T01:27:03.000Z</published>
-    <updated>2021-04-28T18:22:42.564Z</updated>
+    <updated>2021-05-02T07:32:43.960Z</updated>
     
     
-    <summary type="html">&lt;p&gt;前阵子做了一个关于线性颜色转移（Linear Color Transfer）的期末研究，准备闲下来把相关的东西发到在博客上面。相关的代码可以在&lt;a href=&quot;https://github.com/LucunJi/Linear-Color-Transfer-Methods&quot;&gt;这里&lt;/a&gt;看到。不把 paper 一起放上来是因为论文写得不算好，一些地方废话较多。博客还是尽量追求简洁比较好。&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;前阵子做了一个关于线性颜色转移（Linear Color Transfer）的期末研究，准备闲下来把相关的东西发到在博客上面，分享的同时顺便帮自己巩固一下知识点。相关的代码可以在&lt;a href=&quot;https://github.com/LucunJi/Linear-Color-Transfer-Methods&quot;&gt;这里&lt;/a&gt;看到。当时写的 paper 为了充字数写得比较繁琐，也有一些不严谨的问题，因此就不放上来了。这篇博文相当于根据当初 paper 的思路重新梳理一遍。如有錯漏之处烦请斧正。&lt;/p&gt;</summary>
     
     
     

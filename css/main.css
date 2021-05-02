@@ -3056,3 +3056,8 @@ body {
     margin-bottom: 0;
 }
  */
+/* fix text alignment of figure caption */
+figcaption {
+  text-align: center;
+  color: #808080;
+}

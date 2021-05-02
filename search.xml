@@ -62,248 +62,6 @@
       </tags>
   </entry>
   <entry>
-    <title>【译】科技能救我们于深度伪造之中吗？</title>
-    <url>/2020/07/22/can-tech-save-us-from-deepfakes/</url>
-    <content><![CDATA[
-
-<figure>
-    <picture>
-                <source srcset="/2020/07/22/can-tech-save-us-from-deepfakes/c7f5c1c4/nasa-mission-control-a@1x.webp"media="(max-width: 39.99em)"  type="image/webp" />
-                <source srcset="/2020/07/22/can-tech-save-us-from-deepfakes/c7f5c1c4/nasa-mission-control-a@2x.webp"media="(min-width: 40em)"  type="image/webp" />
-                <source srcset="/2020/07/22/can-tech-save-us-from-deepfakes/c7f5c1c4/nasa-mission-control-a@1x.jpg"media="(max-width: 39.99em)"  type="image/jpg" />
-                <source srcset="/2020/07/22/can-tech-save-us-from-deepfakes/c7f5c1c4/nasa-mission-control-a@2x.jpg"media="(min-width: 40em)"  type="image/jpg" />
-            <img src="/2020/07/22/can-tech-save-us-from-deepfakes/c7f5c1c4/nasa-mission-control-a@2x.jpg" alt="【译】科技能救我们于深度伪造之中吗？" />
-    </picture>
-</figure>
-
-
-
-<span id="more"></span>
-<p><font color=gray size =2>原文：<em>Can Tech Save Us From Deepfakes?</em><a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></font> <font color=gray size=2>翻译：<a href="https://www.deepl.com/translator">DeepL翻译</a> + 禄存天玑后期润色</font> <font color=gray size=2>译者注：仅对原文进行翻译搬运，旨在拓宽大众视野，不代表译者立场。以下的“deepfake”一律使用“深度伪造”作为译名。</font></p>
-<h2 id="当深度伪造变得越来越复杂算法能够检测并排除它们吗">当深度伪造变得越来越复杂，算法能够检测并排除它们吗？</h2>
-<p>深度伪造比以往任何时候都要强大而普遍。依赖于逼真的图像与完美合成的人类语音，这些复杂的后期编辑的视频被人工智能软件生成出来了。</p>
-<p>即使是迪士尼也在投资深度学习驱动的技术。在2020年初发表的一篇论文中，来自迪士尼研究工作室的科学家们声称，他们已经成功地训练了一种算法，来以前所未有的高分辨率质量在图像和视频中呈现照片般逼真的换脸。论文作者写道，这家娱乐巨头希望在需要将演员描绘得更年轻，无法使用演员使用这种特效，其他一些场合使用这项特效。</p>
-
-
-<figure>
-    <picture>
-                <source srcset="/2020/07/22/can-tech-save-us-from-deepfakes/937a7f38/young-deniro-1030x540@1x.png"media="(max-width: 39.99em)"  type="image/png" />
-                <source srcset="/2020/07/22/can-tech-save-us-from-deepfakes/937a7f38/young-deniro-1030x540@2x.png"media="(min-width: 40em)"  type="image/png" />
-            <img src="/2020/07/22/can-tech-save-us-from-deepfakes/937a7f38/young-deniro-1030x540@2x.png" alt="【译】科技能救我们于深度伪造之中吗？" />
-    </picture>
-</figure>
-
-
-
-<p><font size=2 text-align=center color=grey> 在网飞（Netflix）最近的影片《爱尔兰人》（The Irishman）中，罗伯特·德尼罗（Robert De Niro）在倒叙片段中被“返老还童”了。（来源：卢卡斯影业有限公司）</font></p>
-<p>但即使在这种技术成为主流的时候，围绕着它的使用仍有未解决的忧虑。从网络上开始出现模仿、政治讽刺和假名人色情视频的那一刻起，人们就对深度伪造喜忧参半。据人工智能公司 <a href="https://deeptracelabs.com/">Deeptrace Labs</a> 去年发布的一份报告估计，目前大约有4.9万个深度伪造在流传，但社交平台上的换脸滤镜和由面部识别引擎驱动的应用程序的快速增长意味着可能还有成千上万个。</p>
-<p>艺术家和记者最近一直在探索如何建设性地利用该技术来创造社会和政治评论，或保护边缘化和高危群体的隐私。例如，获得奥斯卡奖提名的纪录片制作人大卫·法兰西（David France）在上周于HBO上映的启示性影片《欢迎来到车臣》（Welcome to Chechneya）中，利用深层伪造技术掩盖了车臣同性恋者的身份。该技术甚至被一位星战超级粉丝用来“修饰"，以改善《星球大战：侠盗一号》中年轻的莱娅公主的客串。</p>
-<p>但即便是个人和迪士尼这样的大型媒体公司将这项技术用于非恶意的目的，深层造假技术也正在引发关于假新闻、个人隐私和视频证据权重的激烈辩论。</p>
-
-
-<figure>
-    <picture>
-                <source srcset="/2020/07/22/can-tech-save-us-from-deepfakes/1f6c72cb/carrie-fisher@1x.webp"media="(max-width: 39.99em)"  type="image/webp" />
-                <source srcset="/2020/07/22/can-tech-save-us-from-deepfakes/1f6c72cb/carrie-fisher@2x.webp"media="(min-width: 40em)"  type="image/webp" />
-                <source srcset="/2020/07/22/can-tech-save-us-from-deepfakes/1f6c72cb/carrie-fisher@1x.jpg"media="(max-width: 39.99em)"  type="image/jpg" />
-                <source srcset="/2020/07/22/can-tech-save-us-from-deepfakes/1f6c72cb/carrie-fisher@2x.jpg"media="(min-width: 40em)"  type="image/jpg" />
-            <img src="/2020/07/22/can-tech-save-us-from-deepfakes/1f6c72cb/carrie-fisher@2x.jpg" alt="【译】科技能救我们于深度伪造之中吗？" />
-    </picture>
-</figure>
-
-
-
-<p><font size=2 text-align=center color=grey>Youtube 上“derpfake”频道的建立者使用深度伪造技术来改善《星球大战：侠盗一号》中年轻的凯丽·费雪（Carrie Fisher）的外貌。建立者告诉卫报（The Guardian，英国著名日报），这个在上映几天就被观看了成千上万遍的工程，被在“用来看一季《辛普森》的时间里”做完了。（《辛普森》，即《辛普森一家》，The Simpsons，美国著名动画片，一季约20集，每集约20分钟）</font></p>
-<h2 id="检测的挑战">检测的挑战</h2>
-<p>1月，可能是为了在2020年大选前将问题解决在萌芽状态，Facebook 宣布将禁止扭曲现实或误导公众的操纵媒体。</p>
-<p>这包括“在调整清晰度或质量之外进行编辑或合成的视频，其方式对普通人来说并不明显，很可能会误导别人认为视频主角说了他们实际上没有说过的话，”Facebook 全球政策管理副总裁 Monika Bickert 在一篇博客文章中写道。她补充说，音频或视频，无论是否深度伪造，也会受到Facebook的社区标准管理。如果包含裸露、图形暴力、压制选民或仇恨言论，就会被删除。</p>
-<p>这个标准也适用于广告，不过《纽约时报》的报道指出，这一政策不会追溯标准制定以前的视频。</p>
-<p>在全州范围内，加州已经先发制人地禁止在选举后60天内传播模仿真实镜头、故意伪造政治候选人言行的“恶意”操纵的视频、音频和图片。针对一段<a href="https://www.cbsnews.com/news/doctored-nancy-pelosi-video-highlights-threat-of-deepfake-tech-2019-05-25/">被篡改的南希·佩洛西（Nancy Pelosi）的，使美国众议院议长看起来像喝醉了酒的视频</a>，提出该法案的议员马克·伯曼（Marc Berman）称深度伪造是“一种强大而危险的新技术，可以作为武器，在已经过度党派化的选民中播撒错误信息和不和。”</p>
-
-
-<figure>
-    <picture>
-                <source srcset="/2020/07/22/can-tech-save-us-from-deepfakes/beccd471/nancy-pelosi@1x.webp"media="(max-width: 39.99em)"  type="image/webp" />
-                <source srcset="/2020/07/22/can-tech-save-us-from-deepfakes/beccd471/nancy-pelosi@2x.webp"media="(min-width: 40em)"  type="image/webp" />
-                <source srcset="/2020/07/22/can-tech-save-us-from-deepfakes/beccd471/nancy-pelosi@1x.jpg"media="(max-width: 39.99em)"  type="image/jpg" />
-                <source srcset="/2020/07/22/can-tech-save-us-from-deepfakes/beccd471/nancy-pelosi@2x.jpg"media="(min-width: 40em)"  type="image/jpg" />
-            <img src="/2020/07/22/can-tech-save-us-from-deepfakes/beccd471/nancy-pelosi@2x.jpg" alt="【译】科技能救我们于深度伪造之中吗？" />
-    </picture>
-</figure>
-
-
-
-<p><font size=2 text-align=center color=grey>华盛顿邮报对南希·佩洛西被操纵的视频进行分析。该视频被放慢了速度，使她看起来口齿不清。（来源：华盛顿邮报）</font></p>
-<p>去年，美国参议院通过了“<a href="https://www.schatz.senate.gov/press-releases/schatz-portman-bipartisan-legislation-to-confront-rising-threat-of-disinformation-and-deepfakes-passes-senate#targetText=WASHINGTON%2C%20DC%20%E2%80%93%20Today%2C%20U.S.,other%20types%20of%20similar%20content.">深层假消息报告法</a>”，要求国土安全部每年对深层假消息和任何试图“破坏民主”的人工智能驱动的媒体进行研究。</p>
-<p>纽约大学法学兼职教授保罗·巴雷特（Paul Barrett）告诉NPR的“巨魔观察"（Troll Watch），虚假信息越来越多地针对图像，而不是文字。“任何具有基本编码知识和“渴望在选举中捣乱的人都可以开始拼凑这些非常令人信服但虚假的视频，”巴雷特说。“而这些公司也意识到了这一点，并且正在争先恐后地，试图对此做出也许迟到的回应。”</p>
-<p>现在知道立法能否成为阻止深层网络假货流传或病毒式传播的有效策略还为时过早，特别是考虑到搜索引擎无法进入深层网络的许多角落。另一个挑战是，这种法案可能会限制言论自由。因此，一些专家正在转向另一种遏制深度伪造浪潮的策略：以技术对抗技术。</p>
-<h2 id="以科技反科技">以科技反科技？</h2>
-<p>在识别深度伪造方面，技术专家和初创公司正在迎头赶上。然而，一些人正在投资开发面向未来的方法，以防范深度伪造的黑暗面。</p>
-<p>6月，Facebook 公布了一项深度伪造检测挑战赛的结果，该挑战赛汇集了2000多名技术专家和人工智能研究人员，以创建和测试算法来检测Facebook制作的操纵视频。</p>
-<p>在对 Facebook 的测试数据集进行测试时，表现最好的模型达到了 82.56% 的精度，但在对包含真实世界视频的“黑箱”数据集（这些视频通常是之前看不到的，而且更加复杂）进行测试时，准确率只有 65.18%。黑箱算法仍然是机器学习检测技术面临的最大挑战之一。</p>
-<p>利用视频和技术策略揭露腐败和援助人权活动的国际非营利组织 Witness 一直在游说对<a href="https://blog.witness.org/2019/06/deepfakes-synthetic-media-updated-survey-solutions-malicious-usages/">媒体取证进行更好的投资</a>，并称<a href="https://www.darpa.mil/program/media-forensics">美国DARPA的MediFor计划</a>是一个有希望的一步。</p>
-<p>华盛顿特区的智库布鲁金斯研究所（The Brookings Institute）正在<a href="https://www.brookings.edu/research/fighting-deepfakes-when-detection-fails/">敦促政策制定者</a>建立一个 "额外的资金流，用于开发新的工具，如反向视频搜索或基于区块链的验证系统，这些工具可能更好地坚持面对无法检测的深层伪造。" 该研究所还鼓励政策制定者投资培训记者和事实核查员，并支持与基于人工智能的检测公司合作。</p>
-<p>Deeptrace Labs 就是这样一家检测公司。这是一家利用深度学习和计算机视觉来检测和监控深层伪造的初创公司，它将自己宣传为对抗基于人工智能的病毒式合成视频的 “杀毒软件”——这不失为深层技术前沿的智慧之战的证明。</p>
-<p>Deeptrace 正在开发分析检测假视频的后端系统。它可用于个人用户和媒体公司，帮助他们识别伪造。“这句标语很好地概括了我们如何看待这个问题的一些表现方式，以及我们如何看待预防这个问题的潜在技术解决方案。”Deeptrace实验室的传播和研究分析主管Henry Ajder说。</p>
-<p>Reality Defender 是另一款智能软件。它在你浏览网页时与你并肩作战，检测潜在的虚假媒体并提醒用户注意它的存在。</p>
-<p>科学家们也是这场战斗的一部分。加利福尼亚大学河滨分校电气和计算机工程教授、智能系统研究中心主任 Amit Roy-Chowdhury 开发了一种深度神经网络架构，可以识别被篡改的图像，并以前所未有的精度识别伪造品。</p>
-<p>Roy-Chowdhury 的系统可以通过检测物体周围边界每一个像素的质量，来分辨出被篡改的图像和未篡改的图像。如果图像被篡改或修改，这些边界可能会被“污染”，因此可以帮助研究人员精确地确定任何医生的位置。</p>
-<p>虽然他的系统适用于静态图像，但理论上，同样的原理——经过一些调整——可以应用于由数千帧和图像组成的深层伪造视频。</p>
-<p>但是，尽管做出了扎实的努力，大多数研究人员都认为，在外部环境检测深度伪造的过程是一个完全不同的比赛。另外，大体上，这些实验性的检测技术只掌握在专家手中，一般人无法接触到。</p>
-<h2 id="但科技不是万金油">但科技不是万金油</h2>
-<p>“随着我们的技术越来越好，打击深层假货将变得越来越困难，”麻省理工学院计算机科学副教授 Aleksander Madry 说，他的研究解决了计算和开发值得信赖的人工智能的关键算法挑战。“所以目前这更像是一场猫捉老鼠的游戏，人们可以尝试通过识别一些假象来检测它们，但随后对手可以改进他们的方法来避免这些假象。”</p>
-<p>“更好的方法可能会欺骗检测机制，” Roy-Chowdhury 同意。这位计算机科学家说：“我们极不可能有一个系统能够检测到每一个深层伪造的东西。通常情况下，安全系统是由链条中最薄弱的环节来定义的。”</p>
-<p>根据麻省理工学院计算机科学与人工智能实验室教授尼克-罗伊的说法，科学家们经常在黑暗中工作。Roy说：“在很多情况下，科学家不知道神经网络在做什么。”他对人工智能、机器学习和计算系统的研究主要集中在不确定性导致的问题上。</p>
-<p>科学家“不能总是在出错的时候进行解释。神经网络不是黑魔法。我们确实了解很多基础知识，但我们没有掌握极限的……我们需要了解极限是什么，”他解释说。</p>
-<p>随着基于深度学习技术的能力不断发展，Madry 说：“我担心的是，我们将不再能够自动依赖视频作为证明。”</p>
-<h2 id="深度伪造与检测技术的未来">深度伪造与检测技术的未来</h2>
-<p>对于生成较差的深层伪造视频——那种通常由粗制滥造的编辑导致的明显皱纹——智能软件和知情的眼睛很容易发现篡改。但是，随着合成视听媒体开发者对这些问题的解决，发现伪造的迹象将变得更加困难。</p>
-<p>前些年，研究人员通过监测眨眼频率来训练软件发现深层伪造。人类平均每分钟眨眼17次，但旧的深度伪造视频的眨眼频率往往远低于此。“如果你看的是2018年1月的视频，缺乏眨眼的情况很可能还适用于那里，”阿杰德说。“但比如说在接下来的一年，或两年，或五年，就无法依赖这一点进行衡量。”</p>
-<p>同样，随着深度伪造的发展，依靠训练人工智能的，针对对编辑错误（如移帧和灯光或肤色的变化）的检测工具可能很快就会过时。</p>
-<p>阿杰德说，他有信心，他所说的一些假媒体的“民间检测”方法，绝大部分“几乎肯定会被训练出高级版本。只有在谨慎应用并结合分析方法的情况下，它们才会有用。”</p>
-<p>另一个问题是社交媒体平台所使用的分享技术，它可以让深层假货在不被发现的情况下倍增。</p>
-<p>例如，德雷克塞尔大学助理教授马修·斯塔姆（Matthew Stamm）去年在西南偏南会议上表示，一些检测技术会寻找“非常微小的数字签名”，这些签名被嵌入到视频文件中。但当视频文件被分享到社交媒体上时，它被缩小和压缩，这就消除了所有被篡改的迹象。</p>
-<p>“有很多图像和视频认证技术存在，但有一处他们都失败了，就是在社交媒体上，” 斯塔姆说。</p>
-<p>同时，纽约大学法律系的巴雷特力劝人们“高度怀疑对他们所见”，并表示公司应该对虚假信息采取积极行动，或许可以“降级”这些帖子或视频。“我认为，他们应该完全从他们的网站上删除这种材料，”他补充道。</p>
-<p>最终，将需要新形式的集体行动来打击篡改视频的负面影响，特别是如果它们被用来制造虚假新闻，意图误导。这个问题已经很普遍，无法单独解决。人工智能公司、媒体监督机构、政府和个人必须分担责任，对事实进行核查，并决定什么是真相，什么不是。</p>
-<section class="footnotes">
-<hr />
-<ol>
-<li id="fn1"><p>Pakinam Amer. "Can Tech Save Us From Deepfakes?" In Event of Moon Disaster. Nov. 22, 2019. Revised for online publishcation on Jul. 3, 2020. https://moondisaster.org/can-tech-save-us-from-deepfakes/<a href="#fnref1" class="footnote-back">↩</a></p></li>
-</ol>
-</section>
-]]></content>
-      <tags>
-        <tag>tech</tag>
-        <tag>ai</tag>
-        <tag>deepfake</tag>
-        <tag>ML(machine learning)</tag>
-        <tag>translation</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>线性颜色转移</title>
-    <url>/2021/03/04/brief-on-linear-color-transfer/</url>
-    <content><![CDATA[<p>前阵子做了一个关于线性颜色转移（Linear Color Transfer）的期末研究，准备闲下来把相关的东西发到在博客上面。相关的代码可以在<a href="https://github.com/LucunJi/Linear-Color-Transfer-Methods">这里</a>看到。不把 paper 一起放上来是因为论文写得不算好，一些地方废话较多。博客还是尽量追求简洁比较好。</p>
-<span id="more"></span>
-<h2 id="简介">简介</h2>
-<p>首先说明一下这个线性颜色转移，Linear Color Transfer 是个什么东西。所谓“颜色转移”，就是将一幅图片里的色调、明暗、对比、调色板（palette）等颜色特征，通过一种映射转移到第二幅图片上，从而是第二幅图片拥有与第一幅图片相似的颜色特征。</p>
-<p>上文所说的第一幅图片，即拥有想要的颜色特征的图片，被称作<strong>目标图片</strong>（target image）。有着想要的内容的图片，被称作<strong>源图片</strong>（original image/source image）。最终的输出成功是<strong>转换后图片</strong>（transferred image）。</p>
-<table>
-<tr>
-<td>
-目标图片
-</td>
-<td>
-目标图片
-</td>
-<td>
-源图片
-</td>
-<td>
-转换后图片
-</td>
-</tr>
-<tr>
-<td>
-<img src="https://github.com/LucunJi/Linear-Color-Transfer-Methods/raw/main/code/inputs/Sundown-behind-Bredelem.jpg" width="320">
-</td>
-<td>
-<img src="https://github.com/LucunJi/Linear-Color-Transfer-Methods/raw/main/code/inputs/Wide-sky-over-green-fields-in-Harz-region.jpg" width="320">
-</td>
-<td>
-<img src="https://github.com/LucunJi/Linear-Color-Transfer-Methods/raw/main/code/outputs/landscape/indep.jpg" width="320">
-</td>
-</tr>
-</table>
-<p>如果这种颜色转移是<strong>线性</strong>的，那么说明这种颜色转换等价于一个在色彩空间中的线性映射，也可以等价于一个 3x3 的矩阵（因为一个颜色通常用 3 个实数表示）。</p>
-<h2 id="求解思路1">求解思路<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></h2>
-<p>如果将颜色特征当作一个多变量随机分布，每个像素都是一个三维向量，例如<span class="math inline">\([R, G, B]\)</span>。 设向量 <span class="math inline">\(\mathbf{u}\in\mathbb{R}^3\)</span> 为源图片的随机变量，向量 <span class="math inline">\(\mathbf{v}\in\mathbb{R}^3\)</span> 为转换后的随机变量， 那么可以将颜色转移问题看作一个变量变换：</p>
-<p><span class="math display">\[t(\mathbf{u}) = \mathbf{v}\]</span></p>
-<p>于是我们可以列出关于随机分布函数的等式：</p>
-<p><span class="math display">\[F_u(\mathbf{u}) = F_v(\mathbf{v}) = F_v(t(\mathbf{u}))\]</span></p>
-<p>然后微分，得出密度函数的关系：</p>
-<p><span class="math display">\[f_u(\mathbf{u}) = f_v(t(\mathbf{u}))|\det J_t(\mathbf{u})|\]</span></p>
-<p>通过将问题被简化到线性变量变换，雅可比矩阵会与转换矩阵相等，其行列式的值会变为常数。</p>
-<p><span class="math display">\[
-t(\mathbf{u}) = \mathbf{Tu+t_0} \Rightarrow |\det J_t(\mathbf{u})| = |\det \mathbf{T}| = c \Rightarrow f_u(\mathbf{u}) \varpropto f_v(t(\mathbf{u}))
-\]</span></p>
-<p>为了能近似地求出转换矩阵 <span class="math inline">\(\mathbf{T}\)</span>，假设变量 <span class="math inline">\(\mathbf{u}\)</span>，<span class="math inline">\(\mathbf{v}\)</span> 都遵循多变量高斯分布。 <span class="math inline">\(\mathbf{\Sigma}\)</span> 为下标对应的变量的协方差矩阵，<span class="math inline">\(\mu\)</span> 为对应的平均值。<span class="math inline">\(exp()\)</span> 是自然底数 <span class="math inline">\(e\)</span> 的幂。</p>
-<p><span class="math display">\[
-f_u(\mathbf{u}) \varpropto \exp(-\frac{1}{2} (\mathbf{u} - \mu_u)^T \mathbf{\Sigma}^{-1}_u (\mathbf{u} - \mu_u))
-\]</span></p>
-<p><span class="math display">\[
-f_v(\mathbf{v}) \varpropto \exp(-\frac{1}{2} (\mathbf{v} - \mu_v)^T \mathbf{\Sigma}^{-1}_v (\mathbf{v} - \mu_v))
-\]</span></p>
-<p>整理以上的式子，可解出线性变换函数 <span class="math inline">\(t()\)</span> 和它的转换矩阵：</p>
-<p><span class="math display">\[
-(\mathbf{u} - \mu_u)^T \mathbf{\Sigma}^{-1}_u (\mathbf{u} - \mu_u) = (t(\mathbf{u}) - \mu_v)^T \mathbf{\Sigma}^{-1}_v (t(\mathbf{u}) - \mu_v)
-\]</span></p>
-<p><span class="math display">\[
-\Rightarrow \begin{cases}
-    t(\mathbf{u}) = \mathbf{T}(\mathbf{u} - \mu_u) + \mu_v\\
-    \mathbf{T}\mathbf{\Sigma}_u\mathbf{T}^T = \mathbf{\Sigma}_v
-\end{cases}
-\]</span></p>
-<p>当然，在实际操作中，我们不知道转换后图片的协方差和平均值。我们这里就要用到目标图片的协方差和平均值作为近似。</p>
-<p>上面的介绍基本只涉及源图片和转换后图片，但是在后面的讨论中还会经常涉及到目标图片。因此下文会分别用下标 tgt, src, trans 来代表目标图片、源图片和转换后图片。</p>
-<h2 id="reinhard-方法2">Reinhard 方法<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></h2>
-<p>Reinhard 提出的方法简易，色彩转换的强度比较柔和，一般更适用于自然风景的图片。</p>
-<p>上个式子中的协方差的矩阵给求解带来了较大的问题。但如果假设三个通道互相独立，那么协方差矩阵会变成一个对角矩阵，问题就能进一步简化成三个独立的高斯变量转换问题，可以不考虑协方差矩阵。下面的等式中， <strong>c</strong> 表示一个独立的颜色通道，可以是红、绿、蓝，也可以是 L、M、S 等其它通道。</p>
-<p><span class="math display">\[
-\mathbf{c}_{trans}[n] = \frac{\sigma^c_{tgt}}{\sigma^c_{src}}(\mathbf{c}_{src}[n] - \mu^c_{src}) + \mu^c_{tgt}
-\]</span></p>
-<p>如果用之前解出来的线性变换函数来书写这个关系，那么转换矩阵就等于：</p>
-<p><span class="math display">\[
-\mathbf{T} = \begin{bmatrix}
-    \sqrt{\frac{Var(\mathbf{c}_{tgt, 1})}{Var(\mathbf{c}_{src, 1})}} &amp;0 &amp;0\\
-    0 &amp;\sqrt{\frac{Var(\mathbf{c}_{tgt, 2})}{Var(\mathbf{c}_{src, 2})}} &amp;0\\
-    0 &amp;0 &amp;\sqrt{\frac{Var(\mathbf{c}_{tgt, 3})}{Var(\mathbf{c}_{src,3})}}\\
-\end{bmatrix}
-\]</span></p>
-<p>RGB 色彩空间中，红绿蓝三个通道相关性较大。忽略不计会导致较差的颜色转移效果。如果先把颜色转换到三个通道相关性较小的色彩空间中，效果会好很多。Reinhard 在他的论文中用的是他以前提出的 lαβ 色彩空间。<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>这个色彩空间是根据人眼锥细胞对自然风景反应的统计数据得出的，因此使用在自然风景图片上更容易得到较好的效果。</p>
-<p>可以先从 RGB 色彩空间转换到常见的 LMS 色彩空间，再转换到 lαβ 色彩空间。由于这里取了对数，色彩转换是非线性的。具体转换方式如下：</p>
-<p><span class="math display">\[
-\begin{bmatrix}
-    l\\
-    \alpha\\
-    \beta
-\end{bmatrix} = \begin{bmatrix}
-    \frac{1}{\sqrt{3}} &amp; 0 &amp; 0 \\
-    0 &amp; \frac{1}{\sqrt{6}} &amp; 0 \\
-    0 &amp; 0 &amp; \frac{1}{\sqrt{2}}
-\end{bmatrix} \begin{bmatrix}
-    1 &amp; 1 &amp; 1 \\
-    1 &amp; 1 &amp; -2\\
-    1 &amp; -1 &amp; 0
-\end{bmatrix} \begin{bmatrix}
-    \log L\\
-    \log M\\
-    \log S
-\end{bmatrix}
-\]</span></p>
-<h2 id="奇异值分解法4和其它一些矩阵分解">奇异值分解法<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a>和其它一些矩阵分解</h2>
-<h2 id="monge-kantorovitch-解法1">Monge-Kantorovitch 解法<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a></h2>
-<p>之前的几种解法多多少少都对色彩通道有一定的依赖性，而且当色彩通道顺序变换时，也有可能得到完全不同的转换结果。例如 Python 的 cv2 库会把图片打开为 BGR 通道，而非 RGB 通道。</p>
-<h2 id="其它解法">其它解法</h2>
-<p>除了上文介绍道的几个简单的线性解法以外，还有根据图片梯度和分区优化的线性解法，以及使用机器学习、语义识别的颜色转移。这些更为复杂，这里就不过多介绍了。</p>
-<section class="footnotes">
-<hr />
-<ol>
-<li id="fn1"><p>F. Pitiee and A. Kokaram. The linear monge-kantorovitch linear colour mapping for example-based colour transfer. In Visual Media poduction, 2007. CVMP 2007. 4th European Conference on, pages 1–9, Nov 2007.<a href="#fnref1" class="footnote-back">↩</a></p></li>
-<li id="fn2"><p>E. Reinhard, M. Ashikhmin, B. Gooch, and P. Shirley. Color transfer between images. IEEE Comput. Graph. Appl., 21(5):34–41, Sept. 2001.<a href="#fnref2" class="footnote-back">↩</a></p></li>
-<li id="fn3"><p>D. L. Ruderman, T. W. Cronin, and C.-C. Chiao. Statistics of cone responses to natural images: implications for visual coding. J. Opt. Soc. Am. A, 15(8):2036–2045, Aug 1998.<a href="#fnref3" class="footnote-back">↩</a></p></li>
-<li id="fn4"><p>X. Xiao and L. Ma. Color transfer in correlated color space. In Proceedings of the 2006 ACM International Conference on Virtual Reality Continuum and Its Applications, VRCIA’06, page 305–309, New York, NY, USA, 2006. Association for Computing Machinery.<a href="#fnref4" class="footnote-back">↩</a></p></li>
-<li id="fn5"><p>F. Pitiee and A. Kokaram. The linear monge-kantorovitch linear colour mapping for example-based colour transfer. In Visual Media poduction, 2007. CVMP 2007. 4th European Conference on, pages 1–9, Nov 2007.<a href="#fnref5" class="footnote-back">↩</a></p></li>
-</ol>
-</section>
-]]></content>
-      <tags>
-        <tag>CV(computer vision)</tag>
-        <tag>math</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>浅谈活塞破基岩法的不稳定性起源及解决方法</title>
     <url>/2020/01/02/bedrock-breaking/</url>
     <content><![CDATA[<p>本文针对最早由 Myren Eario 提出的利用活塞移除基岩的方法所存在的不稳定性进行分析，并提出一种可行的解决方案。 <span id="more"></span></p>
@@ -484,6 +242,126 @@ this.affectedBlockPositions.addAll(set); // 由集合产生便于遍历的列表
       </tags>
   </entry>
   <entry>
+    <title>【译】科技能救我们于深度伪造之中吗？</title>
+    <url>/2020/07/22/can-tech-save-us-from-deepfakes/</url>
+    <content><![CDATA[
+
+<figure>
+    <picture>
+                <source srcset="/2020/07/22/can-tech-save-us-from-deepfakes/c7f5c1c4/nasa-mission-control-a@1x.webp"media="(max-width: 39.99em)"  type="image/webp" />
+                <source srcset="/2020/07/22/can-tech-save-us-from-deepfakes/c7f5c1c4/nasa-mission-control-a@2x.webp"media="(min-width: 40em)"  type="image/webp" />
+                <source srcset="/2020/07/22/can-tech-save-us-from-deepfakes/c7f5c1c4/nasa-mission-control-a@1x.jpg"media="(max-width: 39.99em)"  type="image/jpg" />
+                <source srcset="/2020/07/22/can-tech-save-us-from-deepfakes/c7f5c1c4/nasa-mission-control-a@2x.jpg"media="(min-width: 40em)"  type="image/jpg" />
+            <img src="/2020/07/22/can-tech-save-us-from-deepfakes/c7f5c1c4/nasa-mission-control-a@2x.jpg" alt="【译】科技能救我们于深度伪造之中吗？" />
+    </picture>
+</figure>
+
+
+
+<span id="more"></span>
+<p><font color=gray size =2>原文：<em>Can Tech Save Us From Deepfakes?</em><a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></font> <font color=gray size=2>翻译：<a href="https://www.deepl.com/translator">DeepL翻译</a> + 禄存天玑后期润色</font> <font color=gray size=2>译者注：仅对原文进行翻译搬运，旨在拓宽大众视野，不代表译者立场。以下的“deepfake”一律使用“深度伪造”作为译名。</font></p>
+<h2 id="当深度伪造变得越来越复杂算法能够检测并排除它们吗">当深度伪造变得越来越复杂，算法能够检测并排除它们吗？</h2>
+<p>深度伪造比以往任何时候都要强大而普遍。依赖于逼真的图像与完美合成的人类语音，这些复杂的后期编辑的视频被人工智能软件生成出来了。</p>
+<p>即使是迪士尼也在投资深度学习驱动的技术。在2020年初发表的一篇论文中，来自迪士尼研究工作室的科学家们声称，他们已经成功地训练了一种算法，来以前所未有的高分辨率质量在图像和视频中呈现照片般逼真的换脸。论文作者写道，这家娱乐巨头希望在需要将演员描绘得更年轻，无法使用演员使用这种特效，其他一些场合使用这项特效。</p>
+
+
+<figure>
+    <picture>
+                <source srcset="/2020/07/22/can-tech-save-us-from-deepfakes/937a7f38/young-deniro-1030x540@1x.png"media="(max-width: 39.99em)"  type="image/png" />
+                <source srcset="/2020/07/22/can-tech-save-us-from-deepfakes/937a7f38/young-deniro-1030x540@2x.png"media="(min-width: 40em)"  type="image/png" />
+            <img src="/2020/07/22/can-tech-save-us-from-deepfakes/937a7f38/young-deniro-1030x540@2x.png" alt="【译】科技能救我们于深度伪造之中吗？" />
+    </picture>
+</figure>
+
+
+
+<p><font size=2 text-align=center color=grey> 在网飞（Netflix）最近的影片《爱尔兰人》（The Irishman）中，罗伯特·德尼罗（Robert De Niro）在倒叙片段中被“返老还童”了。（来源：卢卡斯影业有限公司）</font></p>
+<p>但即使在这种技术成为主流的时候，围绕着它的使用仍有未解决的忧虑。从网络上开始出现模仿、政治讽刺和假名人色情视频的那一刻起，人们就对深度伪造喜忧参半。据人工智能公司 <a href="https://deeptracelabs.com/">Deeptrace Labs</a> 去年发布的一份报告估计，目前大约有4.9万个深度伪造在流传，但社交平台上的换脸滤镜和由面部识别引擎驱动的应用程序的快速增长意味着可能还有成千上万个。</p>
+<p>艺术家和记者最近一直在探索如何建设性地利用该技术来创造社会和政治评论，或保护边缘化和高危群体的隐私。例如，获得奥斯卡奖提名的纪录片制作人大卫·法兰西（David France）在上周于HBO上映的启示性影片《欢迎来到车臣》（Welcome to Chechneya）中，利用深层伪造技术掩盖了车臣同性恋者的身份。该技术甚至被一位星战超级粉丝用来“修饰"，以改善《星球大战：侠盗一号》中年轻的莱娅公主的客串。</p>
+<p>但即便是个人和迪士尼这样的大型媒体公司将这项技术用于非恶意的目的，深层造假技术也正在引发关于假新闻、个人隐私和视频证据权重的激烈辩论。</p>
+
+
+<figure>
+    <picture>
+                <source srcset="/2020/07/22/can-tech-save-us-from-deepfakes/1f6c72cb/carrie-fisher@1x.webp"media="(max-width: 39.99em)"  type="image/webp" />
+                <source srcset="/2020/07/22/can-tech-save-us-from-deepfakes/1f6c72cb/carrie-fisher@2x.webp"media="(min-width: 40em)"  type="image/webp" />
+                <source srcset="/2020/07/22/can-tech-save-us-from-deepfakes/1f6c72cb/carrie-fisher@1x.jpg"media="(max-width: 39.99em)"  type="image/jpg" />
+                <source srcset="/2020/07/22/can-tech-save-us-from-deepfakes/1f6c72cb/carrie-fisher@2x.jpg"media="(min-width: 40em)"  type="image/jpg" />
+            <img src="/2020/07/22/can-tech-save-us-from-deepfakes/1f6c72cb/carrie-fisher@2x.jpg" alt="【译】科技能救我们于深度伪造之中吗？" />
+    </picture>
+</figure>
+
+
+
+<p><font size=2 text-align=center color=grey>Youtube 上“derpfake”频道的建立者使用深度伪造技术来改善《星球大战：侠盗一号》中年轻的凯丽·费雪（Carrie Fisher）的外貌。建立者告诉卫报（The Guardian，英国著名日报），这个在上映几天就被观看了成千上万遍的工程，被在“用来看一季《辛普森》的时间里”做完了。（《辛普森》，即《辛普森一家》，The Simpsons，美国著名动画片，一季约20集，每集约20分钟）</font></p>
+<h2 id="检测的挑战">检测的挑战</h2>
+<p>1月，可能是为了在2020年大选前将问题解决在萌芽状态，Facebook 宣布将禁止扭曲现实或误导公众的操纵媒体。</p>
+<p>这包括“在调整清晰度或质量之外进行编辑或合成的视频，其方式对普通人来说并不明显，很可能会误导别人认为视频主角说了他们实际上没有说过的话，”Facebook 全球政策管理副总裁 Monika Bickert 在一篇博客文章中写道。她补充说，音频或视频，无论是否深度伪造，也会受到Facebook的社区标准管理。如果包含裸露、图形暴力、压制选民或仇恨言论，就会被删除。</p>
+<p>这个标准也适用于广告，不过《纽约时报》的报道指出，这一政策不会追溯标准制定以前的视频。</p>
+<p>在全州范围内，加州已经先发制人地禁止在选举后60天内传播模仿真实镜头、故意伪造政治候选人言行的“恶意”操纵的视频、音频和图片。针对一段<a href="https://www.cbsnews.com/news/doctored-nancy-pelosi-video-highlights-threat-of-deepfake-tech-2019-05-25/">被篡改的南希·佩洛西（Nancy Pelosi）的，使美国众议院议长看起来像喝醉了酒的视频</a>，提出该法案的议员马克·伯曼（Marc Berman）称深度伪造是“一种强大而危险的新技术，可以作为武器，在已经过度党派化的选民中播撒错误信息和不和。”</p>
+
+
+<figure>
+    <picture>
+                <source srcset="/2020/07/22/can-tech-save-us-from-deepfakes/beccd471/nancy-pelosi@1x.webp"media="(max-width: 39.99em)"  type="image/webp" />
+                <source srcset="/2020/07/22/can-tech-save-us-from-deepfakes/beccd471/nancy-pelosi@2x.webp"media="(min-width: 40em)"  type="image/webp" />
+                <source srcset="/2020/07/22/can-tech-save-us-from-deepfakes/beccd471/nancy-pelosi@1x.jpg"media="(max-width: 39.99em)"  type="image/jpg" />
+                <source srcset="/2020/07/22/can-tech-save-us-from-deepfakes/beccd471/nancy-pelosi@2x.jpg"media="(min-width: 40em)"  type="image/jpg" />
+            <img src="/2020/07/22/can-tech-save-us-from-deepfakes/beccd471/nancy-pelosi@2x.jpg" alt="【译】科技能救我们于深度伪造之中吗？" />
+    </picture>
+</figure>
+
+
+
+<p><font size=2 text-align=center color=grey>华盛顿邮报对南希·佩洛西被操纵的视频进行分析。该视频被放慢了速度，使她看起来口齿不清。（来源：华盛顿邮报）</font></p>
+<p>去年，美国参议院通过了“<a href="https://www.schatz.senate.gov/press-releases/schatz-portman-bipartisan-legislation-to-confront-rising-threat-of-disinformation-and-deepfakes-passes-senate#targetText=WASHINGTON%2C%20DC%20%E2%80%93%20Today%2C%20U.S.,other%20types%20of%20similar%20content.">深层假消息报告法</a>”，要求国土安全部每年对深层假消息和任何试图“破坏民主”的人工智能驱动的媒体进行研究。</p>
+<p>纽约大学法学兼职教授保罗·巴雷特（Paul Barrett）告诉NPR的“巨魔观察"（Troll Watch），虚假信息越来越多地针对图像，而不是文字。“任何具有基本编码知识和“渴望在选举中捣乱的人都可以开始拼凑这些非常令人信服但虚假的视频，”巴雷特说。“而这些公司也意识到了这一点，并且正在争先恐后地，试图对此做出也许迟到的回应。”</p>
+<p>现在知道立法能否成为阻止深层网络假货流传或病毒式传播的有效策略还为时过早，特别是考虑到搜索引擎无法进入深层网络的许多角落。另一个挑战是，这种法案可能会限制言论自由。因此，一些专家正在转向另一种遏制深度伪造浪潮的策略：以技术对抗技术。</p>
+<h2 id="以科技反科技">以科技反科技？</h2>
+<p>在识别深度伪造方面，技术专家和初创公司正在迎头赶上。然而，一些人正在投资开发面向未来的方法，以防范深度伪造的黑暗面。</p>
+<p>6月，Facebook 公布了一项深度伪造检测挑战赛的结果，该挑战赛汇集了2000多名技术专家和人工智能研究人员，以创建和测试算法来检测Facebook制作的操纵视频。</p>
+<p>在对 Facebook 的测试数据集进行测试时，表现最好的模型达到了 82.56% 的精度，但在对包含真实世界视频的“黑箱”数据集（这些视频通常是之前看不到的，而且更加复杂）进行测试时，准确率只有 65.18%。黑箱算法仍然是机器学习检测技术面临的最大挑战之一。</p>
+<p>利用视频和技术策略揭露腐败和援助人权活动的国际非营利组织 Witness 一直在游说对<a href="https://blog.witness.org/2019/06/deepfakes-synthetic-media-updated-survey-solutions-malicious-usages/">媒体取证进行更好的投资</a>，并称<a href="https://www.darpa.mil/program/media-forensics">美国DARPA的MediFor计划</a>是一个有希望的一步。</p>
+<p>华盛顿特区的智库布鲁金斯研究所（The Brookings Institute）正在<a href="https://www.brookings.edu/research/fighting-deepfakes-when-detection-fails/">敦促政策制定者</a>建立一个 "额外的资金流，用于开发新的工具，如反向视频搜索或基于区块链的验证系统，这些工具可能更好地坚持面对无法检测的深层伪造。" 该研究所还鼓励政策制定者投资培训记者和事实核查员，并支持与基于人工智能的检测公司合作。</p>
+<p>Deeptrace Labs 就是这样一家检测公司。这是一家利用深度学习和计算机视觉来检测和监控深层伪造的初创公司，它将自己宣传为对抗基于人工智能的病毒式合成视频的 “杀毒软件”——这不失为深层技术前沿的智慧之战的证明。</p>
+<p>Deeptrace 正在开发分析检测假视频的后端系统。它可用于个人用户和媒体公司，帮助他们识别伪造。“这句标语很好地概括了我们如何看待这个问题的一些表现方式，以及我们如何看待预防这个问题的潜在技术解决方案。”Deeptrace实验室的传播和研究分析主管Henry Ajder说。</p>
+<p>Reality Defender 是另一款智能软件。它在你浏览网页时与你并肩作战，检测潜在的虚假媒体并提醒用户注意它的存在。</p>
+<p>科学家们也是这场战斗的一部分。加利福尼亚大学河滨分校电气和计算机工程教授、智能系统研究中心主任 Amit Roy-Chowdhury 开发了一种深度神经网络架构，可以识别被篡改的图像，并以前所未有的精度识别伪造品。</p>
+<p>Roy-Chowdhury 的系统可以通过检测物体周围边界每一个像素的质量，来分辨出被篡改的图像和未篡改的图像。如果图像被篡改或修改，这些边界可能会被“污染”，因此可以帮助研究人员精确地确定任何医生的位置。</p>
+<p>虽然他的系统适用于静态图像，但理论上，同样的原理——经过一些调整——可以应用于由数千帧和图像组成的深层伪造视频。</p>
+<p>但是，尽管做出了扎实的努力，大多数研究人员都认为，在外部环境检测深度伪造的过程是一个完全不同的比赛。另外，大体上，这些实验性的检测技术只掌握在专家手中，一般人无法接触到。</p>
+<h2 id="但科技不是万金油">但科技不是万金油</h2>
+<p>“随着我们的技术越来越好，打击深层假货将变得越来越困难，”麻省理工学院计算机科学副教授 Aleksander Madry 说，他的研究解决了计算和开发值得信赖的人工智能的关键算法挑战。“所以目前这更像是一场猫捉老鼠的游戏，人们可以尝试通过识别一些假象来检测它们，但随后对手可以改进他们的方法来避免这些假象。”</p>
+<p>“更好的方法可能会欺骗检测机制，” Roy-Chowdhury 同意。这位计算机科学家说：“我们极不可能有一个系统能够检测到每一个深层伪造的东西。通常情况下，安全系统是由链条中最薄弱的环节来定义的。”</p>
+<p>根据麻省理工学院计算机科学与人工智能实验室教授尼克-罗伊的说法，科学家们经常在黑暗中工作。Roy说：“在很多情况下，科学家不知道神经网络在做什么。”他对人工智能、机器学习和计算系统的研究主要集中在不确定性导致的问题上。</p>
+<p>科学家“不能总是在出错的时候进行解释。神经网络不是黑魔法。我们确实了解很多基础知识，但我们没有掌握极限的……我们需要了解极限是什么，”他解释说。</p>
+<p>随着基于深度学习技术的能力不断发展，Madry 说：“我担心的是，我们将不再能够自动依赖视频作为证明。”</p>
+<h2 id="深度伪造与检测技术的未来">深度伪造与检测技术的未来</h2>
+<p>对于生成较差的深层伪造视频——那种通常由粗制滥造的编辑导致的明显皱纹——智能软件和知情的眼睛很容易发现篡改。但是，随着合成视听媒体开发者对这些问题的解决，发现伪造的迹象将变得更加困难。</p>
+<p>前些年，研究人员通过监测眨眼频率来训练软件发现深层伪造。人类平均每分钟眨眼17次，但旧的深度伪造视频的眨眼频率往往远低于此。“如果你看的是2018年1月的视频，缺乏眨眼的情况很可能还适用于那里，”阿杰德说。“但比如说在接下来的一年，或两年，或五年，就无法依赖这一点进行衡量。”</p>
+<p>同样，随着深度伪造的发展，依靠训练人工智能的，针对对编辑错误（如移帧和灯光或肤色的变化）的检测工具可能很快就会过时。</p>
+<p>阿杰德说，他有信心，他所说的一些假媒体的“民间检测”方法，绝大部分“几乎肯定会被训练出高级版本。只有在谨慎应用并结合分析方法的情况下，它们才会有用。”</p>
+<p>另一个问题是社交媒体平台所使用的分享技术，它可以让深层假货在不被发现的情况下倍增。</p>
+<p>例如，德雷克塞尔大学助理教授马修·斯塔姆（Matthew Stamm）去年在西南偏南会议上表示，一些检测技术会寻找“非常微小的数字签名”，这些签名被嵌入到视频文件中。但当视频文件被分享到社交媒体上时，它被缩小和压缩，这就消除了所有被篡改的迹象。</p>
+<p>“有很多图像和视频认证技术存在，但有一处他们都失败了，就是在社交媒体上，” 斯塔姆说。</p>
+<p>同时，纽约大学法律系的巴雷特力劝人们“高度怀疑对他们所见”，并表示公司应该对虚假信息采取积极行动，或许可以“降级”这些帖子或视频。“我认为，他们应该完全从他们的网站上删除这种材料，”他补充道。</p>
+<p>最终，将需要新形式的集体行动来打击篡改视频的负面影响，特别是如果它们被用来制造虚假新闻，意图误导。这个问题已经很普遍，无法单独解决。人工智能公司、媒体监督机构、政府和个人必须分担责任，对事实进行核查，并决定什么是真相，什么不是。</p>
+<section class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Pakinam Amer. "Can Tech Save Us From Deepfakes?" In Event of Moon Disaster. Nov. 22, 2019. Revised for online publishcation on Jul. 3, 2020. https://moondisaster.org/can-tech-save-us-from-deepfakes/<a href="#fnref1" class="footnote-back">↩</a></p></li>
+</ol>
+</section>
+]]></content>
+      <tags>
+        <tag>tech</tag>
+        <tag>ai</tag>
+        <tag>deepfake</tag>
+        <tag>ML(machine learning)</tag>
+        <tag>translation</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>译注——关于《为什么人们热爱战争》</title>
     <url>/2021/03/02/comments-on-why-men-love-war/</url>
     <content><![CDATA[<p>起初<span id="more"></span>遇见这篇文章是因为在 Jreg 的视频 <a href="https://b23.tv/BV16f4y127nE">《我想死在一场战争里》</a> 的评论区看到有人推荐了这篇文章，读过以后感觉不错，就想翻译一下。</p>
@@ -548,6 +426,71 @@ this.affectedBlockPositions.addAll(set); // 由集合产生便于遍历的列表
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/deployment.html">Deployment</a></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>简易修改 Minecraft 字节码</title>
+    <url>/2020/01/16/minecraft-bytecode-modding/</url>
+    <content><![CDATA[<div data-align="center">
+<font size=6>100% vanilla!</font>
+</div>
+<span id="more"></span>
+<h2 id="简介">简介</h2>
+<p>之前看到 1.15.2-pre1 更新了玩家种植树木也会刷新蜂巢的特性，研究完机制以后想着修改一下蜂巢刷新几率来方便测试。</p>
+<p>可是这时候 fabric 啥的还没更新，于是想到了之前 EDDExample 说过的修改字节码大法。顺便用上 Mojang 1.14.4 以来的官方反混淆表。</p>
+<p>EDDExample 在视频里用的是 JByteMod 来修改字节码。可以在 https://github.com/GraxCode/JByteMod-Beta/releases 下载到。</p>
+<h2 id="反混淆">反混淆</h2>
+<p>前往 https://github.com/hube12/DecompilerMC/releases ，在 Releases for lazy users 下面下载适合操作系统的版本，这里就选择 Windows.zip。</p>
+<p>将压缩包解压，会看到有一个 McDecompiler.exe 文件，运行后根据提示选择，依次输入 <code>y</code>，<code>cfr</code>，<code>1.15.2-pre1</code> 以及 <code>y</code>。</p>
+<p>等待几分钟，程序运行完毕后就可以在 <code>src</code> 文件夹里看到反混淆好的源码；在 <code>mappings</code> 里看到反混淆表。</p>
+<h2 id="查找修改目标">查找修改目标</h2>
+<p>通过在反混淆的源码中搜索，可以找到负责在树上生成蜂巢的装饰器 <code>net.minecraft.world.level.levelgen.feature.treedecorators.BeehiveDecorator</code></p>
+<p>这里通过产生一个随机的单精度浮点数，实现了蜂巢生成概率的随机化： <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">place</span><span class="params">(LevelAccessor var1, Random var2, List var3, List var4, Set var5, BoundingBox var6)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (var2.nextFloat() &lt; <span class="keyword">this</span>.probability) &#123;</span><br><span class="line">        <span class="comment">//...</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>由于 Minecraft 中的类名、方法名是经过混淆的，我们无法直接查看字节码。在反混淆表中搜索类名 <code>BeehiveDecorator</code>，会发现它的混淆后的类名是 <code>ciq</code>，方法 <code>place</code> 混淆后的名称是 <code>a</code>。值得注意的是，一个混淆的类会包含多个同名但不同参数的方法，因此需要额外留心方法的参数数量和类型。</p>
+<h2 id="修改字节码">修改字节码</h2>
+<p>用解压软件打开版本文件 <code>1.15.2-pre1.jar</code>，单独拖出 <code>ciq.class</code> 文件，用 JByteMod 打开这个类文件，开始修改。</p>
+<p>之前我试过直接打开整个 jar，结果修改后无法正常启动游戏。后来折腾了半天才发现单独拖出来修改类文件就好了。</p>
+<p>首先定位到要修改的方法。之前找到的方法拥有6个参数，其中第2、3、4、5个参数的类型分别是 <code>Random</code>，<code>List</code>，<code>List</code> 以及 <code>Set</code>（Java 自带的类型一般不会被反混淆）。点开这个方法，发现开头的几行字节码分别是：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">aload 2</span><br><span class="line">invokevirtual float Random.nextFloat()</span><br><span class="line">aload 0</span><br><span class="line">getfield float ciq.b</span><br><span class="line">fcmpl</span><br><span class="line">iflt 2</span><br><span class="line">label 1</span><br><span class="line">return</span><br><span class="line">label 2</span><br><span class="line">......</span><br></pre></td></tr></table></figure>
+<p>通过翻阅 <a href="https://docs.oracle.com/javase/specs/jvms/se12/html/jvms-6.html">JVM 指令集</a>，可以得知这几行指令的效果：</p>
+<ol type="1">
+<li>加载下标为 2，即类型为 <code>Random</code> 的传入参数的引用；</li>
+<li>调用该对象的 <code>nextFloat()</code> 方法，返回一个 <code>float</code>；</li>
+<li>加载下标为 0 的传入参数，即 <code>this</code> 的引用；</li>
+<li>获取该对象的成员变量，对象属于类 <code>ciq</code>，对象名是 <code>b</code>，变量类型是 <code>float</code>；</li>
+<li>比较 (2) (3) 两处的 <code>float</code> 值；</li>
+<li>如果 (3) 处小于 (2) 处，跳转到标签 2 处执行剩余指令，否则继续往下执行 <code>return</code> 退出方法。</li>
+</ol>
+<p>这几行描述的内容和反编译出来的 <code>if (var2.nextFloat() &lt; this.probability) &#123;&#125;</code> 对应。没问题，接着进行下一步。把前两行删去，替换成 <code>ldc Float 0.0</code> 就可以变成每次尝试必定成功的 <code>if (0.0f &lt; this.probability) &#123;&#125;</code>。</p>
+<p>删除前两行 -&gt; 右键点击 <code>getfield</code> -&gt; 插入之前 -&gt; LdcInsnNode -&gt; 类型选择 <code>Float</code>，值输入 <code>0.0</code>。</p>
+<p>完成后保存类文件，准备替换。</p>
+<h2 id="核心-jar-替换法">核心 jar 替换法</h2>
+<p>核心 jar 替换法，顾名思义就是直接替换 <code>versions</code> 文件夹中核心版本文件 <code>1.15.2-pre1.jar</code> 的类。为了防止游戏对 jar 进行完整性检测，需要删除 jar 中的 <code>META-INF</code> 文件夹，并且删除 <code>1.15.2-pre1.json</code> 中的下载链接。具体链接内容因版本而异，并且注意逗号： <figure class="highlight"><table><tr><td class="code"><pre><span class="line">&quot;downloads&quot;: &#123;&quot;client&quot;: &#123;&quot;sha1&quot;: &quot;9f28455f9f9d09294e0ba19beb13dc26b39a9582&quot;, &quot;size&quot;: 15531212, &quot;url&quot;: &quot;https://launcher.mojang.com/v1/objects/9f28455f9f9d09294e0ba19beb13dc26b39a9582/client.jar&quot;&#125;, &quot;client_mappings&quot;: &#123;&quot;sha1&quot;: &quot;6c81c6f2e6ff0c3a2795f5d336c63b0740a60a45&quot;, &quot;size&quot;: 4971880, &quot;url&quot;: &quot;https://launcher.mojang.com/v1/objects/6c81c6f2e6ff0c3a2795f5d336c63b0740a60a45/client.txt&quot;&#125;, &quot;server&quot;: &#123;&quot;sha1&quot;: &quot;5db50a719dc40d63aa95c6bdc5b302e425f673f2&quot;, &quot;size&quot;: 36175423, &quot;url&quot;: &quot;https://launcher.mojang.com/v1/objects/5db50a719dc40d63aa95c6bdc5b302e425f673f2/server.jar&quot;&#125;, &quot;server_mappings&quot;: &#123;&quot;sha1&quot;: &quot;f59bfc0ebb62bc7802af0567ad79592274c56943&quot;, &quot;size&quot;: 3737013, &quot;url&quot;: &quot;https://launcher.mojang.com/v1/objects/f59bfc0ebb62bc7802af0567ad79592274c56943/server.txt&quot;&#125;&#125;,</span><br></pre></td></tr></table></figure></p>
+<h2 id="运行">运行</h2>
+<p>如果一切操作都没有问题，那么游戏将能够正常的启动。</p>
+<p>创建一个新的世界，在花的边上种下一棵白桦树或橡树，必定会产生一个蜂巢。</p>
+
+
+<figure>
+    <picture>
+                <source srcset="/2020/01/16/minecraft-bytecode-modding/a7616155/2020-01-16_15.02.29@1x.png"media="(max-width: 39.99em)"  type="image/png" />
+                <source srcset="/2020/01/16/minecraft-bytecode-modding/a7616155/2020-01-16_15.02.29@2x.png"media="(min-width: 40em)"  type="image/png" />
+            <img src="/2020/01/16/minecraft-bytecode-modding/a7616155/2020-01-16_15.02.29@2x.png" alt="简易修改 Minecraft 字节码" />
+    </picture>
+</figure>
+
+
+
+<h2 id="multimc-配置方法">MultiMC 配置方法</h2>
+<p>MultiMC 提供了方便的 Jar mod 安装方式。只要删除 <code>META-INF</code> 文件夹，就可以在 Edit Instance 中选择 Add to Minecraft.jar 或者 Replace Minecraft.jar，选择修改后的 jar 载入就可以了。</p>
+<p>需要注意的是，再次修改 jar 过后，需要在列表中移除并重新加入修改后的 jar。</p>
+<h2 id="感谢">感谢</h2>
+<p>EDDxample，他在 YouTube 上有不错的关于代码和模组制作的视频 https://youtu.be/T_658BztqVE ，使用 JByteMod 的点子也是从这个视频里学到的。</p>
+]]></content>
+      <tags>
+        <tag>minecraft</tag>
+        <tag>Java</tag>
+        <tag>bytecode</tag>
+      </tags>
   </entry>
   <entry>
     <title>画展，米勒以及梵高等</title>
@@ -668,71 +611,6 @@ Van Gogh, <i>The Sower</i>
       <tags>
         <tag>art</tag>
         <tag>paintings</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>简易修改 Minecraft 字节码</title>
-    <url>/2020/01/16/minecraft-bytecode-modding/</url>
-    <content><![CDATA[<div data-align="center">
-<font size=6>100% vanilla!</font>
-</div>
-<span id="more"></span>
-<h2 id="简介">简介</h2>
-<p>之前看到 1.15.2-pre1 更新了玩家种植树木也会刷新蜂巢的特性，研究完机制以后想着修改一下蜂巢刷新几率来方便测试。</p>
-<p>可是这时候 fabric 啥的还没更新，于是想到了之前 EDDExample 说过的修改字节码大法。顺便用上 Mojang 1.14.4 以来的官方反混淆表。</p>
-<p>EDDExample 在视频里用的是 JByteMod 来修改字节码。可以在 https://github.com/GraxCode/JByteMod-Beta/releases 下载到。</p>
-<h2 id="反混淆">反混淆</h2>
-<p>前往 https://github.com/hube12/DecompilerMC/releases ，在 Releases for lazy users 下面下载适合操作系统的版本，这里就选择 Windows.zip。</p>
-<p>将压缩包解压，会看到有一个 McDecompiler.exe 文件，运行后根据提示选择，依次输入 <code>y</code>，<code>cfr</code>，<code>1.15.2-pre1</code> 以及 <code>y</code>。</p>
-<p>等待几分钟，程序运行完毕后就可以在 <code>src</code> 文件夹里看到反混淆好的源码；在 <code>mappings</code> 里看到反混淆表。</p>
-<h2 id="查找修改目标">查找修改目标</h2>
-<p>通过在反混淆的源码中搜索，可以找到负责在树上生成蜂巢的装饰器 <code>net.minecraft.world.level.levelgen.feature.treedecorators.BeehiveDecorator</code></p>
-<p>这里通过产生一个随机的单精度浮点数，实现了蜂巢生成概率的随机化： <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">place</span><span class="params">(LevelAccessor var1, Random var2, List var3, List var4, Set var5, BoundingBox var6)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (var2.nextFloat() &lt; <span class="keyword">this</span>.probability) &#123;</span><br><span class="line">        <span class="comment">//...</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>由于 Minecraft 中的类名、方法名是经过混淆的，我们无法直接查看字节码。在反混淆表中搜索类名 <code>BeehiveDecorator</code>，会发现它的混淆后的类名是 <code>ciq</code>，方法 <code>place</code> 混淆后的名称是 <code>a</code>。值得注意的是，一个混淆的类会包含多个同名但不同参数的方法，因此需要额外留心方法的参数数量和类型。</p>
-<h2 id="修改字节码">修改字节码</h2>
-<p>用解压软件打开版本文件 <code>1.15.2-pre1.jar</code>，单独拖出 <code>ciq.class</code> 文件，用 JByteMod 打开这个类文件，开始修改。</p>
-<p>之前我试过直接打开整个 jar，结果修改后无法正常启动游戏。后来折腾了半天才发现单独拖出来修改类文件就好了。</p>
-<p>首先定位到要修改的方法。之前找到的方法拥有6个参数，其中第2、3、4、5个参数的类型分别是 <code>Random</code>，<code>List</code>，<code>List</code> 以及 <code>Set</code>（Java 自带的类型一般不会被反混淆）。点开这个方法，发现开头的几行字节码分别是：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">aload 2</span><br><span class="line">invokevirtual float Random.nextFloat()</span><br><span class="line">aload 0</span><br><span class="line">getfield float ciq.b</span><br><span class="line">fcmpl</span><br><span class="line">iflt 2</span><br><span class="line">label 1</span><br><span class="line">return</span><br><span class="line">label 2</span><br><span class="line">......</span><br></pre></td></tr></table></figure>
-<p>通过翻阅 <a href="https://docs.oracle.com/javase/specs/jvms/se12/html/jvms-6.html">JVM 指令集</a>，可以得知这几行指令的效果：</p>
-<ol type="1">
-<li>加载下标为 2，即类型为 <code>Random</code> 的传入参数的引用；</li>
-<li>调用该对象的 <code>nextFloat()</code> 方法，返回一个 <code>float</code>；</li>
-<li>加载下标为 0 的传入参数，即 <code>this</code> 的引用；</li>
-<li>获取该对象的成员变量，对象属于类 <code>ciq</code>，对象名是 <code>b</code>，变量类型是 <code>float</code>；</li>
-<li>比较 (2) (3) 两处的 <code>float</code> 值；</li>
-<li>如果 (3) 处小于 (2) 处，跳转到标签 2 处执行剩余指令，否则继续往下执行 <code>return</code> 退出方法。</li>
-</ol>
-<p>这几行描述的内容和反编译出来的 <code>if (var2.nextFloat() &lt; this.probability) &#123;&#125;</code> 对应。没问题，接着进行下一步。把前两行删去，替换成 <code>ldc Float 0.0</code> 就可以变成每次尝试必定成功的 <code>if (0.0f &lt; this.probability) &#123;&#125;</code>。</p>
-<p>删除前两行 -&gt; 右键点击 <code>getfield</code> -&gt; 插入之前 -&gt; LdcInsnNode -&gt; 类型选择 <code>Float</code>，值输入 <code>0.0</code>。</p>
-<p>完成后保存类文件，准备替换。</p>
-<h2 id="核心-jar-替换法">核心 jar 替换法</h2>
-<p>核心 jar 替换法，顾名思义就是直接替换 <code>versions</code> 文件夹中核心版本文件 <code>1.15.2-pre1.jar</code> 的类。为了防止游戏对 jar 进行完整性检测，需要删除 jar 中的 <code>META-INF</code> 文件夹，并且删除 <code>1.15.2-pre1.json</code> 中的下载链接。具体链接内容因版本而异，并且注意逗号： <figure class="highlight"><table><tr><td class="code"><pre><span class="line">&quot;downloads&quot;: &#123;&quot;client&quot;: &#123;&quot;sha1&quot;: &quot;9f28455f9f9d09294e0ba19beb13dc26b39a9582&quot;, &quot;size&quot;: 15531212, &quot;url&quot;: &quot;https://launcher.mojang.com/v1/objects/9f28455f9f9d09294e0ba19beb13dc26b39a9582/client.jar&quot;&#125;, &quot;client_mappings&quot;: &#123;&quot;sha1&quot;: &quot;6c81c6f2e6ff0c3a2795f5d336c63b0740a60a45&quot;, &quot;size&quot;: 4971880, &quot;url&quot;: &quot;https://launcher.mojang.com/v1/objects/6c81c6f2e6ff0c3a2795f5d336c63b0740a60a45/client.txt&quot;&#125;, &quot;server&quot;: &#123;&quot;sha1&quot;: &quot;5db50a719dc40d63aa95c6bdc5b302e425f673f2&quot;, &quot;size&quot;: 36175423, &quot;url&quot;: &quot;https://launcher.mojang.com/v1/objects/5db50a719dc40d63aa95c6bdc5b302e425f673f2/server.jar&quot;&#125;, &quot;server_mappings&quot;: &#123;&quot;sha1&quot;: &quot;f59bfc0ebb62bc7802af0567ad79592274c56943&quot;, &quot;size&quot;: 3737013, &quot;url&quot;: &quot;https://launcher.mojang.com/v1/objects/f59bfc0ebb62bc7802af0567ad79592274c56943/server.txt&quot;&#125;&#125;,</span><br></pre></td></tr></table></figure></p>
-<h2 id="运行">运行</h2>
-<p>如果一切操作都没有问题，那么游戏将能够正常的启动。</p>
-<p>创建一个新的世界，在花的边上种下一棵白桦树或橡树，必定会产生一个蜂巢。</p>
-
-
-<figure>
-    <picture>
-                <source srcset="/2020/01/16/minecraft-bytecode-modding/a7616155/2020-01-16_15.02.29@1x.png"media="(max-width: 39.99em)"  type="image/png" />
-                <source srcset="/2020/01/16/minecraft-bytecode-modding/a7616155/2020-01-16_15.02.29@2x.png"media="(min-width: 40em)"  type="image/png" />
-            <img src="/2020/01/16/minecraft-bytecode-modding/a7616155/2020-01-16_15.02.29@2x.png" alt="简易修改 Minecraft 字节码" />
-    </picture>
-</figure>
-
-
-
-<h2 id="multimc-配置方法">MultiMC 配置方法</h2>
-<p>MultiMC 提供了方便的 Jar mod 安装方式。只要删除 <code>META-INF</code> 文件夹，就可以在 Edit Instance 中选择 Add to Minecraft.jar 或者 Replace Minecraft.jar，选择修改后的 jar 载入就可以了。</p>
-<p>需要注意的是，再次修改 jar 过后，需要在列表中移除并重新加入修改后的 jar。</p>
-<h2 id="感谢">感谢</h2>
-<p>EDDxample，他在 YouTube 上有不错的关于代码和模组制作的视频 https://youtu.be/T_658BztqVE ，使用 JByteMod 的点子也是从这个视频里学到的。</p>
-]]></content>
-      <tags>
-        <tag>minecraft</tag>
-        <tag>Java</tag>
-        <tag>bytecode</tag>
       </tags>
   </entry>
   <entry>
@@ -1696,6 +1574,654 @@ Van Gogh, <i>The Sower</i>
       </tags>
   </entry>
   <entry>
+    <title>线性颜色转移</title>
+    <url>/2021/03/04/brief-on-linear-color-transfer/</url>
+    <content><![CDATA[<p>前阵子做了一个关于线性颜色转移（Linear Color Transfer）的期末研究，准备闲下来把相关的东西发到在博客上面，分享的同时顺便帮自己巩固一下知识点。相关的代码可以在<a href="https://github.com/LucunJi/Linear-Color-Transfer-Methods">这里</a>看到。当时写的 paper 为了充字数写得比较繁琐，也有一些不严谨的问题，因此就不放上来了。这篇博文相当于根据当初 paper 的思路重新梳理一遍。如有錯漏之处烦请斧正。</p>
+<span id="more"></span>
+<h2 id="简介">简介</h2>
+<style>
+    td {
+        text-align: center;
+    }
+    .post-body>figure>picture>* {
+        max-width: 70%;
+    }
+</style>
+<p>首先说明一下线性颜色转移，即 Linear Color Transfer 是什么。</p>
+<p>所谓“颜色转移”，就是将一幅图片里的色调、明暗、对比、调色板（palette）等颜色特征，通过一种映射转移到第二幅图片上，从而使第二幅图片拥有与第一幅图片相似的颜色特征。颜色转换的应用场合有色彩修正，黑白图片的染色，调色盘预览等。</p>
+<p>上文所说的第一幅图片，即拥有想要的颜色特征的图片，被称作<strong>目标图片</strong>（target image）。有着想要的内容的图片，被称作<strong>源图片</strong>（original image/source image）。最终的输出成功是<strong>转换后图片</strong>（transferred image）。</p>
+<table>
+<tr>
+<td>
+
+
+<figure>
+    <picture>
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/6dbd611d/sundown-behind-bredelem@2x.webp"media="(min-width: 40em)"  type="image/webp" />
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/6dbd611d/sundown-behind-bredelem@1x.webp"media="(max-width: 39.99em)"  type="image/webp" />
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/6dbd611d/sundown-behind-bredelem@2x.jpg"media="(min-width: 40em)"  type="image/jpg" />
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/6dbd611d/sundown-behind-bredelem@1x.jpg"media="(max-width: 39.99em)"  type="image/jpg" />
+            <img src="/2021/03/04/brief-on-linear-color-transfer/6dbd611d/sundown-behind-bredelem@1x.jpg" alt="目标图片" />
+    </picture>
+        <figcaption>目标图片</figcaption>
+</figure>
+
+
+
+</td>
+<td>
+
+
+<figure>
+    <picture>
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/a6d5fb52/wide-sky-over-green-fields-in-harz-region@1x.webp"media="(max-width: 39.99em)"  type="image/webp" />
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/a6d5fb52/wide-sky-over-green-fields-in-harz-region@2x.webp"media="(min-width: 40em)"  type="image/webp" />
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/a6d5fb52/wide-sky-over-green-fields-in-harz-region@1x.jpg"media="(max-width: 39.99em)"  type="image/jpg" />
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/a6d5fb52/wide-sky-over-green-fields-in-harz-region@2x.jpg"media="(min-width: 40em)"  type="image/jpg" />
+            <img src="/2021/03/04/brief-on-linear-color-transfer/a6d5fb52/wide-sky-over-green-fields-in-harz-region@2x.jpg" alt="源图片" />
+    </picture>
+        <figcaption>源图片</figcaption>
+</figure>
+
+
+
+</td>
+<td>
+
+
+<figure>
+    <picture>
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/41ee6d18/indep_lab@2x.webp"media="(min-width: 40em)"  type="image/webp" />
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/41ee6d18/indep_lab@1x.webp"media="(max-width: 39.99em)"  type="image/webp" />
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/41ee6d18/indep_lab@1x.jpg"media="(max-width: 39.99em)"  type="image/jpg" />
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/41ee6d18/indep_lab@2x.jpg"media="(min-width: 40em)"  type="image/jpg" />
+            <img src="/2021/03/04/brief-on-linear-color-transfer/41ee6d18/indep_lab@2x.jpg" alt="转换后图片（Reinhard）" />
+    </picture>
+        <figcaption>转换后图片（Reinhard）</figcaption>
+</figure>
+
+
+
+</td>
+</tr>
+</table>
+<p>如果这种颜色转移是<strong>线性</strong>的，那么说明这种颜色转换等价于一个在色彩空间中的线性映射 <span class="math inline">\(\mathbf{u} \rightarrow \mathbf{Tu}\)</span>。</p>
+<h2 id="求解思路1">求解思路<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></h2>
+<p>如果将颜色特征当作一个多元随机分布，每个像素都是一个三维向量，例如<span class="math inline">\([r, g, b]\)</span>。 设向量 <span class="math inline">\(\mathbf{u}\in\mathbb{R}^3\)</span> 为源图片的随机变量，向量 <span class="math inline">\(\mathbf{v}\in\mathbb{R}^3\)</span> 为转换后的随机变量， 那么可以将颜色转移问题看作一个变量变换： <span class="math display">\[
+t(\mathbf{u}) = \mathbf{v}
+\]</span> 并列出关于随机分布函数的等式：</p>
+<p><span class="math display">\[
+\begin{gather}
+&amp;P(\mathbf{U} \le \mathbf{u}) = P(t(\mathbf{U}) \le t(\mathbf{u})) = P(\mathbf{V} \le t(\mathbf{u})) = P(\mathbf{V} \le \mathbf{v})\\
+\nonumber\Downarrow\\
+&amp;F_u(\mathbf{u}) = F_v(t(\mathbf{u})) = F_v(\mathbf{v})
+\end{gather}
+\]</span> 然后微分，得出密度函数的关系：</p>
+<p><span class="math display">\[
+\begin{equation}
+f_u(\mathbf{u}) = f_v(t(\mathbf{u}))|\det J_t(\mathbf{u})|
+\end{equation}
+\]</span> 进一步将问题简化到线性变换 <span class="math inline">\(t(\mathbf{u}) = \mathbf{Tu+t_0}\)</span>，雅可比矩阵会与 <span class="math inline">\(3\times3\)</span> 的转换矩阵 <span class="math inline">\(\mathbf{T}\)</span> 相等，其行列式的值会变为常数。<span class="math inline">\(\mathbf{t_0}\in\mathbb{R^3}\)</span> 是一个表示色彩平移量的向量。</p>
+<p><span class="math display">\[
+\begin{gather}
+&amp;|\det J_t(\mathbf{u})| = |\det \mathbf{T}| = c\\
+\nonumber\Downarrow\\
+&amp;f_u(\mathbf{u}) \varpropto f_v(t(\mathbf{u}))
+\label{eq:proportional_1}
+\end{gather}
+\]</span></p>
+<p>为了能近似地求出转换矩阵 <span class="math inline">\(\mathbf{T}\)</span>，假设变量 <span class="math inline">\(\mathbf{U},\mathbf{V}\)</span> 都遵循多元高斯分布。由此可得以下两个新的正比例关系。<span class="math inline">\(\mathbf{\Sigma}\)</span> 为下标对应的变量的协方差矩阵，<span class="math inline">\(\mu\)</span> 为对应的平均值。<span class="math inline">\(exp()\)</span> 是自然底数 <span class="math inline">\(e\)</span> 的幂。 <span class="math display">\[
+\begin{gather}
+f_u(\mathbf{u}) \varpropto \exp(-\frac{1}{2} (\mathbf{u} - \mu_u)^T \mathbf{\Sigma}^{-1}_u (\mathbf{u} - \mu_u))\label{eq:proportional_2}\\
+f_v(\mathbf{v}) \varpropto \exp(-\frac{1}{2} (\mathbf{v} - \mu_v)^T \mathbf{\Sigma}^{-1}_v (\mathbf{v} - \mu_v))
+\label{eq:proportional_3}
+\end{gather}
+\]</span></p>
+<p>整理以上的式子<span class="math inline">\((\ref{eq:proportional_1}),(\ref{eq:proportional_2}), (\ref{eq:proportional_3})\)</span>，可解出线性变换函数 <span class="math inline">\(t()\)</span> 和它的转换矩阵 <span class="math inline">\(\mathbf{T}\)</span>：</p>
+<p><span class="math display">\[
+\begin{gather}
+&amp;(\mathbf{u} - \mu_u)^T \mathbf{\Sigma}^{-1}_u (\mathbf{u} - \mu_u) = (t(\mathbf{u}) - \mu_v)^T \mathbf{\Sigma}^{-1}_v (t(\mathbf{u}) - \mu_v)\\
+\nonumber\Downarrow\\
+&amp;\color{green}\begin{cases}
+    t(\mathbf{u}) = \mathbf{T}(\mathbf{u} - \mu_u) + \mu_v\\
+    \mathbf{T}\mathbf{\Sigma}_u\mathbf{T}^T = \mathbf{\Sigma}_v
+\end{cases}
+\label{eq:key_equations}
+\end{gather}
+\]</span></p>
+<p>利用分配率不难看出，<span class="math inline">\(\mathbf{T}(\mathbf{u} - \mu_u) + \mu_v = \mathbf{T}\mathbf{u} - \mathbf{T}\mu_u + \mu_v\)</span>，因此上面推导出的关系式完全符合之前假设的方程形式 <span class="math inline">\(t(\mathbf{u}) = \mathbf{Tu+t_0}\)</span>，并且 <span class="math inline">\(\mathbf{t_0} = - \mathbf{T}\mu_u + \mu_v\)</span></p>
+<p>严格意义上，<span class="math inline">\(+\mathbf{t_0}\)</span> 进行的平移变换使得 <span class="math inline">\(\mathbf{Tu} + \mathbf{t_0}\)</span> 并不是线性变换。但是如果将三维的颜色向量转换到齐次坐标系 <span class="math inline">\([x, y, z]^T \rightarrow [x, y, z, 1]^T\)</span> 那么就可以将平移变换看作线性变换了： <span class="math display">\[
+\begin{gather}
+\begin{bmatrix}
+    1 &amp; 0 &amp; 0 &amp; t_{01}\\
+    0 &amp; 1 &amp; 0 &amp; t_{02}\\
+    0 &amp; 0 &amp; 1 &amp; t_{03}\\
+    0 &amp; 0 &amp; 0 &amp; 1
+\end{bmatrix}\begin{bmatrix}
+    x\\ y\\ z\\ 1
+\end{bmatrix} = \begin{bmatrix}
+    x + t_{01}\\ y + t_{02}\\ z + t_{03}\\ 1
+\end{bmatrix} \Longleftarrow \text{等价于} \Longrightarrow \begin{bmatrix}
+    x\\ y\\ z
+\end{bmatrix} + \begin{bmatrix}
+    t_{01}\\ t_{02}\\ t_{03}
+\end{bmatrix} = \begin{bmatrix}
+    x + t_{01}\\ y + t_{02}\\ z + t_{03}
+\end{bmatrix}
+\end{gather}
+\]</span></p>
+<p>在实际操作中，我们不知道转换后图片的协方差和平均值。这里就要用到目标图片了。目标图片相当于提供了一个色彩分布的“范本”。通过计算目标图片的协方差和平均值，可以获取到转换后图片参数的近似值。</p>
+<p>至此，我们推导出了关键的关系式 <span class="math inline">\((\ref{eq:key_equations})\)</span>，并同时涉及到了目标图片、源图片和转换后图片。接下来，本文会介绍几种方法来计算出关系式中的矩阵 <span class="math inline">\(\mathbf{T}\)</span>，即对 <span class="math inline">\(\mathbf{T}\mathbf{\Sigma}_u\mathbf{T}^T = \mathbf{\Sigma}_v\)</span> 一式进行求解。为了方便讨论并尽量减少混淆，下文会分别用下标<span class="math inline">\(tgt, src, trans\)</span>来代表目标图片、源图片和转换后图片。</p>
+<h2 id="reinhard-方法2">Reinhard 方法<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></h2>
+<p>Reinhard 在他的论文中提出的颜色转移方法简易，色彩转换比较柔和，一般更适用于自然风景的图片。</p>
+<p>上个式子中的协方差的矩阵给求解带来了较大的问题。但如果假设三个通道互相独立，那么协方差矩阵会变成一个对角矩阵，问题能被进一步简化成三个独立的高斯变量转换问题。</p>
+<p>单变量高斯分布，或者说正态分布的标准化计算为 <span class="math inline">\(z = \frac{x-\mu}{\sigma}\)</span>。那么先用一组平均值和标准差，<span class="math inline">\(\mu, \sigma\)</span>，将源图片单一通道的色彩分布进行正态化，再用另一组 <span class="math inline">\(\mu, \sigma\)</span> 参数进行反向操作，就能进行变换。下面的等式中， <span class="math inline">\(c\)</span> 表示任意一个独立的颜色通道，即 channel 的缩写；<span class="math inline">\(n\)</span> 是被操作的像素在图片中的序号。 <span class="math display">\[
+\begin{equation}
+\mathbf{c}_{trans}[n] = \frac{\sigma^c_{tgt}}{\sigma^c_{src}}(\mathbf{c}_{src}[n] - \mu^c_{src}) + \mu^c_{tgt}
+\end{equation}
+\]</span></p>
+<p>如果用之前的关系式 <span class="math inline">\((\ref{eq:key_equations})\)</span> 来书写，那么转换矩阵 <span class="math inline">\(\mathbf{T}\)</span> 就等于：</p>
+<p><span class="math display">\[
+\begin{equation}
+\mathbf{T} = \begin{bmatrix}
+    \sqrt{\frac{Var(\mathbf{c}_{tgt, 1})}{Var(\mathbf{c}_{src, 1})}} &amp;0 &amp;0\\
+    0 &amp;\sqrt{\frac{Var(\mathbf{c}_{tgt, 2})}{Var(\mathbf{c}_{src, 2})}} &amp;0\\
+    0 &amp;0 &amp;\sqrt{\frac{Var(\mathbf{c}_{tgt, 3})}{Var(\mathbf{c}_{src,3})}}\\
+\end{bmatrix}
+\end{equation}
+\]</span></p>
+<p>RGB 色彩空间中，红绿蓝三个通道相关性较大，上文所说的简化会导致较差的颜色转移效果。但是如果先把颜色转换到三个通道相关性较小的色彩空间中，效果会好很多。Reinhard 在他的论文中使用了他以前提出的 lαβ 色彩空间。<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>这个色彩空间是根据人眼锥细胞对自然风景反应的统计数据得出的，因此使用在自然风景图片上更容易得到较好的效果。</p>
+<p>可以先从 RGB 色彩空间变换到常见的 LMS 色彩空间，再变换到 lαβ 色彩空间。由于这里取了对数，色彩空间变换本身是非线性的。具体如下：</p>
+<p><span class="math display">\[
+\begin{equation}
+\begin{bmatrix}
+    l\\
+    \alpha\\
+    \beta
+\end{bmatrix} = \begin{bmatrix}
+    \frac{1}{\sqrt{3}} &amp; 0 &amp; 0 \\
+    0 &amp; \frac{1}{\sqrt{6}} &amp; 0 \\
+    0 &amp; 0 &amp; \frac{1}{\sqrt{2}}
+\end{bmatrix} \begin{bmatrix}
+    1 &amp; 1 &amp; 1 \\
+    1 &amp; 1 &amp; -2\\
+    1 &amp; -1 &amp; 0
+\end{bmatrix} \begin{bmatrix}
+    \log L\\
+    \log M\\
+    \log S
+\end{bmatrix}
+\end{equation}
+\]</span></p>
+<table>
+<tr>
+<td>
+
+
+<figure>
+    <picture>
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/6dbd611d/sundown-behind-bredelem@2x.webp"media="(min-width: 40em)"  type="image/webp" />
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/6dbd611d/sundown-behind-bredelem@1x.webp"media="(max-width: 39.99em)"  type="image/webp" />
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/6dbd611d/sundown-behind-bredelem@2x.jpg"media="(min-width: 40em)"  type="image/jpg" />
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/6dbd611d/sundown-behind-bredelem@1x.jpg"media="(max-width: 39.99em)"  type="image/jpg" />
+            <img src="/2021/03/04/brief-on-linear-color-transfer/6dbd611d/sundown-behind-bredelem@1x.jpg" alt="目标图片" />
+    </picture>
+        <figcaption>目标图片</figcaption>
+</figure>
+
+
+
+</td>
+<td>
+
+
+<figure>
+    <picture>
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/a6d5fb52/wide-sky-over-green-fields-in-harz-region@1x.webp"media="(max-width: 39.99em)"  type="image/webp" />
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/a6d5fb52/wide-sky-over-green-fields-in-harz-region@2x.webp"media="(min-width: 40em)"  type="image/webp" />
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/a6d5fb52/wide-sky-over-green-fields-in-harz-region@1x.jpg"media="(max-width: 39.99em)"  type="image/jpg" />
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/a6d5fb52/wide-sky-over-green-fields-in-harz-region@2x.jpg"media="(min-width: 40em)"  type="image/jpg" />
+            <img src="/2021/03/04/brief-on-linear-color-transfer/a6d5fb52/wide-sky-over-green-fields-in-harz-region@2x.jpg" alt="源图片" />
+    </picture>
+        <figcaption>源图片</figcaption>
+</figure>
+
+
+
+</td>
+</tr>
+<tr>
+<td>
+
+
+<figure>
+    <picture>
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/1439d81f/indep_rgb@2x.webp"media="(min-width: 40em)"  type="image/webp" />
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/1439d81f/indep_rgb@1x.webp"media="(max-width: 39.99em)"  type="image/webp" />
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/1439d81f/indep_rgb@1x.jpg"media="(max-width: 39.99em)"  type="image/jpg" />
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/1439d81f/indep_rgb@2x.jpg"media="(min-width: 40em)"  type="image/jpg" />
+            <img src="/2021/03/04/brief-on-linear-color-transfer/1439d81f/indep_rgb@2x.jpg" alt="转换后图片（Reinhard，RGB 空间中）" />
+    </picture>
+        <figcaption>转换后图片（Reinhard，RGB 空间中）</figcaption>
+</figure>
+
+
+
+</td>
+<td>
+
+
+<figure>
+    <picture>
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/41ee6d18/indep_lab@2x.webp"media="(min-width: 40em)"  type="image/webp" />
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/41ee6d18/indep_lab@1x.webp"media="(max-width: 39.99em)"  type="image/webp" />
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/41ee6d18/indep_lab@1x.jpg"media="(max-width: 39.99em)"  type="image/jpg" />
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/41ee6d18/indep_lab@2x.jpg"media="(min-width: 40em)"  type="image/jpg" />
+            <img src="/2021/03/04/brief-on-linear-color-transfer/41ee6d18/indep_lab@2x.jpg" alt="转换后图片（Reinhard，lαβ 空间中）" />
+    </picture>
+        <figcaption>转换后图片（Reinhard，lαβ 空间中）</figcaption>
+</figure>
+
+
+
+</td>
+</tr>
+</table>
+<h2 id="奇异值分解法4和其它一些矩阵分解">奇异值分解法<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a>和其它一些矩阵分解</h2>
+<p>Reinhard 的近似方法虽然计算简单，但是会导致色彩转换力度偏低，并且对非自然场景的照片效果较差。<span class="math inline">\(\mathbf{T}\mathbf{\Sigma}_u\mathbf{T}^T = \mathbf{\Sigma}_v\)</span> 的精确解通常会用到矩阵分解。这里主要介绍奇异值分解法，即 SVD(Singular Value Decomposition)。其它一些类似的解法会一笔带过。</p>
+<p>SVD 类似更加常见的特征值分解，但是对非方阵也能使用。对矩阵 <span class="math inline">\(\mathbf{A}\)</span> 使用 SVD 能够将其分解为三个处理起来更加简单的矩阵： <span class="math display">\[
+\begin{equation}
+\mathbf{A} = \mathbf{U}\mathbf{\Lambda}\mathbf{V}^T
+\end{equation}
+\]</span> 如果 <span class="math inline">\(\mathbf{A}\)</span> 是一个 <span class="math inline">\(m \times n\)</span> 的矩阵，那么 <span class="math inline">\(\mathbf{U}, \mathbf{\Lambda}, \mathbf{V}^T\)</span> 三者的大小分别是 <span class="math inline">\(m \times m, m \times n, n \times n\)</span>。<span class="math inline">\(\mathbf{\Lambda}\)</span> 是一个对角矩阵，对角线上的元素是矩阵 <span class="math inline">\(\mathbf{A}\)</span> 的奇异值（类似特征值）。由于协方差矩阵 <span class="math inline">\(\mathbf{\Sigma}\)</span> 是一个 <span class="math inline">\(3 \times 3\)</span> 且对称的正半定方阵，<span class="math inline">\(\mathbf{V} = \mathbf{U}\)</span>，于是有以下特殊情况：</p>
+<p><span class="math display">\[
+\begin{equation}
+\mathbf{\Sigma} = \mathbf{U\Lambda U}^T
+\label{eq:svd_special}
+\end{equation}
+\]</span> 对特征值分解的一个较好的理解方法是将其与二维空间中的椭圆做对比。当对一个单位圆上的点进行变换操作 <span class="math inline">\(\mathbf{v} \rightarrow \mathbf{Av} = \mathbf{U}\mathbf{\Lambda}\mathbf{V}^T\mathbf{v}\)</span> 时（<span class="math inline">\(\mathbf{A}\)</span> 当然是 <span class="math inline">\(2 \times 2\)</span>矩阵），相当于先用 <span class="math inline">\(\mathbf{V}^T\)</span> 对整个椭圆进行一次旋转，再用对角矩阵 <span class="math inline">\(\mathbf{\Lambda}\)</span> 在 <span class="math inline">\(x, y\)</span> 轴上进行缩放，最后用 <span class="math inline">\(\mathbf{U}\)</span> 再进行一次旋转。观察最终得出的椭圆，会发现它的两个半轴的长度分别为 <span class="math inline">\(\mathbf{\Lambda}\)</span> 中对角线上的两个奇异值。</p>
+
+
+<figure>
+    <picture>
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/69833ddd/svd-wiki@1x.png"media="(max-width: 39.99em)"  type="image/png" />
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/69833ddd/svd-wiki@2x.png"media="(min-width: 40em)"  type="image/png" />
+            <img src="/2021/03/04/brief-on-linear-color-transfer/69833ddd/svd-wiki@2x.png" alt="奇异值分解图示。图片来自 Wikipedia，作者 Georg-Johann。以 CC BY-SA 3.0 证书发布。图中所用的符号和文中略有不同。" />
+    </picture>
+        <figcaption>奇异值分解图示。图片来自 Wikipedia，作者 Georg-Johann。以 CC BY-SA 3.0 证书发布。图中所用的符号和文中略有不同。</figcaption>
+</figure>
+
+
+
+<p>以上的观察在理解 SVD 转换多元高斯分布时非常有帮助。当对一个高斯分布的协方差矩阵进行分解后，<span class="math inline">\(\mathbf{\Lambda}\)</span> 矩阵对角线上的每个特征值都是该分布的拟合椭球体的半轴长度之平方。那么 <span class="math inline">\(\mathbf{U\Lambda U}^T = \mathbf{U\Lambda U}^T\mathbf{I}\)</span> 可以看作对一个标准的多元正态分布进行一次旋转，一次缩放，再进行一次旋转。那么如果要进行变量变换，可以先将源图片的数据转换回标准的多元高斯分布，然后再将这一标准分布转换到与目标图片的分布一致。</p>
+<p>下面的式子来自上海交大的论文《Color Transfer in Correlated Color Space》<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a>其中介绍的就是这里描述的 SVD 分解法和对高斯分布拟合椭球体进行变换的思路。<span class="math inline">\(\mathbf{I}[n] \in \mathbb{R}^4\)</span> 表示的是图片 <span class="math inline">\(\mathbf{I}\)</span> 中的第 <span class="math inline">\(n\)</span> 个像素。变换都在齐次坐标系中进行。 <span class="math display">\[
+\begin{equation}
+    \mathbf{I}_{trans}[n] = (\mathbf{T}_{tgt}\mathbf{R}_{tgt}\mathbf{S}_{tgt}\mathbf{S}_{src}\mathbf{R}_{src}\mathbf{T}_{src})\mathbf{I}_{src}[n]
+    \label{equ:svd_operation}
+\end{equation}
+\]</span> 其中， <span class="math inline">\(\mathbf{S}_{src}\mathbf{R}_{src}\mathbf{T}_{src}\)</span> 负责将原图片的色彩分布反向变换回去，<span class="math inline">\(\mathbf{T}_{tgt}\mathbf{R}_{tgt}\mathbf{S}_{tgt}\)</span> 负责将色彩分布变换到目标图片的分布。可以将 <span class="math inline">\(\mathbf{S, R, T}\)</span> 看作是缩放、旋转、平移矩阵。这些矩阵都为 <span class="math inline">\(4 \times 4\)</span> 的方阵，定义如下： <span class="math display">\[
+\begin{gather}
+    \mathbf{T}_{tgt} = \begin{bmatrix}
+        1 &amp; 0 &amp; 0 &amp; \mu_{tgt}^r\\
+        0 &amp; 1 &amp; 0 &amp; \mu_{tgt}^g\\
+        0 &amp; 0 &amp; 1 &amp; \mu_{tgt}^b\\
+        0 &amp; 0 &amp; 0 &amp; 1
+    \end{bmatrix}, \mathbf{T}_{src} = \begin{bmatrix}
+        1 &amp; 0 &amp; 0 &amp; -\mu_{src}^r\\
+        0 &amp; 1 &amp; 0 &amp; -\mu_{src}^g\\
+        0 &amp; 0 &amp; 1 &amp; -\mu_{src}^b\\
+        0 &amp; 0 &amp; 0 &amp; 1
+    \end{bmatrix}\\
+    \mathbf{R}_{tgt} = \mathbf{U}_{tgt}, \mathbf{R}_{src} = \mathbf{U}^{-1}_{src}\\
+    \mathbf{S}_{tgt} = \begin{bmatrix}
+        \mathbf{\Lambda}^{1/2}_{tgt} &amp; | &amp; \mathbf{0}\\
+        \hline
+        \mathbf{0}       &amp; | &amp; 1
+    \end{bmatrix}, \mathbf{S}_{src} = \begin{bmatrix}
+        \mathbf{\Lambda}^{-1/2}_{src} &amp; | &amp; \mathbf{0}\\
+        \hline
+        \mathbf{0}       &amp; | &amp; 1
+    \end{bmatrix}
+\end{gather}
+\]</span> 
+
+<figure>
+    <picture>
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/f91d486b/ellipsoid_approx@1x.png"media="(max-width: 39.99em)"  type="image/png" />
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/f91d486b/ellipsoid_approx@2x.png"media="(min-width: 40em)"  type="image/png" />
+            <img src="/2021/03/04/brief-on-linear-color-transfer/f91d486b/ellipsoid_approx@2x.png" alt="经过变换，图中红色的像素点拥有了与绿色像素点类似的拟合椭球体" />
+    </picture>
+        <figcaption>经过变换，图中红色的像素点拥有了与绿色像素点类似的拟合椭球体</figcaption>
+</figure>
+
+
+ 这些操作也可以用 <span class="math inline">\((\ref{eq:key_equations})\)</span> 的格式来表示： <span class="math display">\[
+\begin{gather}
+    t(\mathbf{u}) = \mathbf{T}(\mathbf{u} - \mu_{src}) + \mu_{tgt}\\
+    \mathbf{T} = \mathbf{U}_{tgt}\mathbf{\Lambda}_{tgt}^{1/2}\mathbf{\Lambda}_{src}^{-1/2}\mathbf{U}_{src}^{-1}
+    \label{eq:svd_t}
+\end{gather}
+\]</span> 代入等式 <span class="math inline">\((\ref{eq:svd_t})\)</span> 和 <span class="math inline">\((\ref{eq:svd_special})\)</span> ，可以证明上面的等式是 <span class="math inline">\(\mathbf{T}\)</span> 在 <span class="math inline">\(\mathbf{T}\mathbf{\Sigma}_u\mathbf{T}^T = \mathbf{\Sigma}_v\)</span> 中的精确解： <span class="math display">\[
+\begin{gather}
+    \begin{split}
+      &amp;\mathbf{T}\mathbf{\Sigma}_{src}\mathbf{T}^T\\
+      = &amp;(\mathbf{U}_{tgt}\mathbf{\Lambda}_{tgt}^{1/2}\mathbf{\Lambda}_{src}^{-1/2}\mathbf{U}_{src}^{-1})(\mathbf{U}_{src}\mathbf{\Lambda}_{src}\mathbf{U}_{src}^T) (\mathbf{U}_{tgt}\mathbf{\Lambda}_{tgt}^{1/2}\mathbf{\Lambda}_{src}^{-1/2}\mathbf{U}_{src}^{-1})^T\\
+    = &amp;(\mathbf{U}_{tgt}\mathbf{\Lambda}_{tgt}^{1/2}\mathbf{\Lambda}_{src}^{-1/2}\mathbf{U}_{src}^{-1})(\mathbf{U}_{src}\mathbf{\Lambda}_{src}\mathbf{U}_{src}^T) ((\mathbf{U}_{src}^{-1})^T(\mathbf{\Lambda}_{src}^{-1/2})^T(\mathbf{\Lambda}_{tgt}^{1/2})^T\mathbf{U}_{tgt}^T)\\
+    = &amp;(\mathbf{U}_{tgt}\mathbf{\Lambda}_{tgt}^{1/2}\mathbf{\Lambda}_{src}^{-1/2}\mathbf{\Lambda}_{src}(\mathbf{\Lambda}_{src}^{-1/2})^T(\mathbf{\Lambda}_{tgt}^{1/2})^T\mathbf{U}_{tgt}^T)\\
+    = &amp;(\mathbf{U}_{tgt}\mathbf{\Lambda}_{tgt}^{1/2}(\mathbf{\Lambda}_{tgt}^{1/2})^T\mathbf{U}_{tgt}^T)\\
+    = &amp;\mathbf{U}_{tgt}\mathbf{\Lambda}_{tgt}\mathbf{U}_{tgt}^T = \mathbf{\Sigma}_{tgt}
+    \end{split}
+\end{gather}
+\]</span></p>
+<p>值得注意的是，变换 <span class="math inline">\((\ref{eq:svd_t})\)</span> 在<em>把源图片的高斯分布标准化</em> 和 <em>把标准化的高斯分布转换到目标图片的高斯分布</em> 这两步中分别只进行了一次旋转。更完整的转换应该是 <span class="math display">\[
+\begin{equation}
+\mathbf{T} = \mathbf{U}_{tgt}\mathbf{\Lambda}_{tgt}^{1/2}\mathbf{U}_{tgt}^T(\mathbf{U}_{src}^T)^{-1}\mathbf{\Lambda}_{src}^{-1/2}\mathbf{U}_{src}^{-1}
+\label{eq:svd_t_full}
+\end{equation}
+\]</span> 不过考虑到进行 <span class="math inline">\(\mathbf{\Lambda}_{src}^{-1/2}\mathbf{U}_{src}^{-1}\)</span> 变换后，源图片的高斯分布的拟合椭球体已经是一个正球体了，可以当作标准化已经结束。由于额外的旋转，完整的转换 <span class="math inline">\((\ref{eq:svd_t})\)</span> 和不完整的转换 <span class="math inline">\((\ref{eq:svd_t_full})\)</span> 产生的效果不同，这里不多赘述，有兴趣的可以自行尝试比对。总的来说，更精确的变换使得 SVD 能够进行差异更大的变换。从下图中不难看出，在将彩色照片转换成黑白照片的应用场景中， SVD 有着比 Reinhard 方法更强的变换能力。</p>
+<table>
+<tr>
+<td>
+
+
+<figure>
+    <picture>
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/3ba3190e/trafo-galerie-in-prague@1x.webp"media="(max-width: 39.99em)"  type="image/webp" />
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/3ba3190e/trafo-galerie-in-prague@2x.webp"media="(min-width: 40em)"  type="image/webp" />
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/3ba3190e/trafo-galerie-in-prague@1x.jpg"media="(max-width: 39.99em)"  type="image/jpg" />
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/3ba3190e/trafo-galerie-in-prague@2x.jpg"media="(min-width: 40em)"  type="image/jpg" />
+            <img src="/2021/03/04/brief-on-linear-color-transfer/3ba3190e/trafo-galerie-in-prague@2x.jpg" alt="目标图片" />
+    </picture>
+        <figcaption>目标图片</figcaption>
+</figure>
+
+
+
+</td>
+<td>
+
+
+<figure>
+    <picture>
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/8e583c9b/stained-glass-window-in-st.-vitus-cathedral@2x.webp"media="(min-width: 40em)"  type="image/webp" />
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/8e583c9b/stained-glass-window-in-st.-vitus-cathedral@1x.webp"media="(max-width: 39.99em)"  type="image/webp" />
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/8e583c9b/stained-glass-window-in-st.-vitus-cathedral@2x.jpg"media="(min-width: 40em)"  type="image/jpg" />
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/8e583c9b/stained-glass-window-in-st.-vitus-cathedral@1x.jpg"media="(max-width: 39.99em)"  type="image/jpg" />
+            <img src="/2021/03/04/brief-on-linear-color-transfer/8e583c9b/stained-glass-window-in-st.-vitus-cathedral@1x.jpg" alt="源图片" />
+    </picture>
+        <figcaption>源图片</figcaption>
+</figure>
+
+
+
+</td>
+<td>
+
+
+<figure>
+    <picture>
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/e5c510b4/cathedral_indep@1x.jpg"media="(max-width: 39.99em)"  type="image/jpg" />
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/e5c510b4/cathedral_indep@2x.jpg"media="(min-width: 40em)"  type="image/jpg" />
+            <img src="/2021/03/04/brief-on-linear-color-transfer/e5c510b4/cathedral_indep@2x.jpg" alt="转换后图片（Reinhard）" />
+    </picture>
+        <figcaption>转换后图片（Reinhard）</figcaption>
+</figure>
+
+
+
+</td>
+<td>
+
+
+<figure>
+    <picture>
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/a5b21c67/cathedral_svd@1x.webp"media="(max-width: 39.99em)"  type="image/webp" />
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/a5b21c67/cathedral_svd@2x.webp"media="(min-width: 40em)"  type="image/webp" />
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/a5b21c67/cathedral_svd@1x.jpg"media="(max-width: 39.99em)"  type="image/jpg" />
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/a5b21c67/cathedral_svd@2x.jpg"media="(min-width: 40em)"  type="image/jpg" />
+            <img src="/2021/03/04/brief-on-linear-color-transfer/a5b21c67/cathedral_svd@2x.jpg" alt="转换后图片（SVD）" />
+    </picture>
+        <figcaption>转换后图片（SVD）</figcaption>
+</figure>
+
+
+
+</td>
+</tr>
+</table>
+<h3 id="其它的矩阵分解法">其它的矩阵分解法</h3>
+<p>除 SVD 以外，还有很多其它的矩阵分解法可以用于解决颜色转移问题。这里额外介绍两种在 F. Pitiee 的论文<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a>中与他提出的新方法一并介绍的，效果较为一般的方法。</p>
+<p><strong>乔累斯基分解法</strong>（Cholesky Decomposition）可以将协方差矩阵分解为两个三角矩阵。我们可以通过三角矩阵构建出变换矩阵。 <span class="math display">\[
+\begin{gather}
+\mathbf{\Sigma} = \mathbf{LL}^T\\
+\mathbf{T} = \mathbf{L}_{tgt}\mathbf{L}_{src}^{-1}
+\end{gather}
+\]</span> 易证： <span class="math display">\[
+\begin{gather}
+\mathbf{T}\mathbf{\Sigma}_{src}\mathbf{T}^T = (\mathbf{L}_{tgt}\mathbf{L}_{src}^{-1})(\mathbf{L}_{src}\mathbf{L}_{src}^T)(\mathbf{L}_{tgt}\mathbf{L}_{src}^{-1})^T = \mathbf{L}_{tgt}\mathbf{L}_{src}^{-1}\mathbf{L}_{src}\mathbf{L}_{src}^T(\mathbf{L}_{src}^{-1})^T\mathbf{L}_{tgt}^T = \mathbf{L}_{tgt}\mathbf{L}_{tgt}^T = \mathbf{\Sigma}_{tgt}
+\end{gather}
+\]</span> <strong>平方根分解法</strong>是通过先将对称的协方差矩阵进行特征值分解，来算出每个协方差矩阵的平方，由此构建出变换矩阵。 <span class="math display">\[
+\begin{gather}
+&amp;\mathbf{\Sigma} = \mathbf{Q\Lambda Q}^{-1}\\
+\nonumber\Downarrow\\
+&amp;\mathbf{\Sigma}^{1/2} = \mathbf{Q\Lambda}^{1/2}\mathbf{Q}^{-1}\label{eq:sqrt}\\
+&amp;\mathbf{T} = \mathbf{\Sigma}^{1/2}_{tgt}\mathbf{\Sigma}^{-1/2}_{src}
+\end{gather}
+\]</span> 同样易证出 <span class="math inline">\(\mathbf{T}\)</span> 的正确性，这里就略去证明过程。需要注意的是，由于协方差矩阵的对称性，<span class="math inline">\(\mathbf{Q}^{-1} = \mathbf{Q}^T\)</span>。</p>
+<h2 id="蒙日-康托罗维奇解法1">蒙日-康托罗维奇解法<a href="#fn7" class="footnote-ref" id="fnref7"><sup>7</sup></a></h2>
+<p>之前的几种解法比较“瞎”——它们容易导致色差过大的转换结果。而且在进行特征值分解、奇异值分解时，特征值、奇异值的不同顺序，或者颜色通道的不同顺序可能会导致完全不同的结果。为了解决这些问题，F. Pitiee 在他的论文中提出，康托罗维奇为苏联经济规划提出的最优化问题解法也可以被用在色彩转移上。</p>
+<p>蒙日-康托罗维奇转移问题（Monge-Kantorovitch transportation problem）被描述为在进行变换 <span class="math inline">\(t:\mathbb{R}^n \rightarrow \mathbb{R}^n\)</span> 的同时尽可能减少总共的转移花费。单次花费以一个函数 <span class="math inline">\(c()\)</span> 定义。 <span class="math display">\[
+\begin{gather}
+c(\mathbf{u}, t(\mathbf{u})) \text{（单次）}\\
+c(t) = \sum_{\text{all } u} c(\mathbf{u}, t(\mathbf{u})) \text{（总共）}
+\end{gather}
+\]</span> 如果将花费函数定义为向量差的模长平方，并且对随机分布进行积分求出期望值，那么可以将这个问题的解应用在颜色转移上。 <span class="math display">\[
+\begin{gather}
+c(\mathbf{u}, t(\mathbf{u})) = ||\mathbf{u} - t(\mathbf{u})||^2 \text{（单次）}\\
+c(t) = E[c(\mathbf{U})] = \int_{\text{all } u} ||\mathbf{u} - t(\mathbf{u})||^2 f_u(\mathbf{u}) du \text{（总共）}
+\end{gather}
+\]</span> 据此能解出变换矩阵。其中的求平方根操作与平方根分解法中的算法 <span class="math inline">\((\ref{eq:sqrt})\)</span> 一致。 <span class="math display">\[
+\begin{equation}
+\mathbf{T} = \mathbf{\Sigma}_{src}^{-1/2}(\mathbf{\Sigma}_{src}^{1/2}\mathbf{\Sigma}_{tgt}\mathbf{\Sigma}_{src}^{1/2})^{1/2}\mathbf{\Sigma}_{src}^{-1/2}
+\end{equation}
+\]</span></p>
+<p>我没有去了解求解过程，因此就不给出具体过程和证明了。在 F. Pitiee 的论文中介绍了这个解的两个特征：</p>
+<ol type="1">
+<li>蒙-康解法总是给出一个唯一解，因此没有涉及奇异值分解、特征值分解时遇到的不稳定问题</li>
+<li>通过计算总花费最优化，实现了转换的单调性：例如怪异最亮的区域在转换后依然是最亮的区域</li>
+</ol>
+<table>
+<tr>
+<td>
+
+
+<figure>
+    <picture>
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/26e3cc77/scotland_plain@2x.jpg" type="image/jpg" />
+            <img src="/2021/03/04/brief-on-linear-color-transfer/26e3cc77/scotland_plain@2x.jpg" alt="目标图片" />
+    </picture>
+        <figcaption>目标图片</figcaption>
+</figure>
+
+
+
+</td>
+<td>
+
+
+<figure>
+    <picture>
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/cf1397b6/svd_rgb@2x.webp" type="image/webp" />
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/cf1397b6/svd_rgb@2x.jpg" type="image/jpg" />
+            <img src="/2021/03/04/brief-on-linear-color-transfer/cf1397b6/svd_rgb@2x.jpg" alt="SVD，RGB 空间中" />
+    </picture>
+        <figcaption>SVD，RGB 空间中</figcaption>
+</figure>
+
+
+
+</td>
+<td>
+
+
+<figure>
+    <picture>
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/5a726a1d/mk_rgb@2x.webp" type="image/webp" />
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/5a726a1d/mk_rgb@2x.jpg" type="image/jpg" />
+            <img src="/2021/03/04/brief-on-linear-color-transfer/5a726a1d/mk_rgb@2x.jpg" alt="蒙-康，RGB 空间中" />
+    </picture>
+        <figcaption>蒙-康，RGB 空间中</figcaption>
+</figure>
+
+
+
+</td>
+</tr>
+<tr>
+<td>
+
+
+<figure>
+    <picture>
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/16c452c4/scotland_house@2x.webp" type="image/webp" />
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/16c452c4/scotland_house@2x.jpg" type="image/jpg" />
+            <img src="/2021/03/04/brief-on-linear-color-transfer/16c452c4/scotland_house@2x.jpg" alt="源图片" />
+    </picture>
+        <figcaption>源图片</figcaption>
+</figure>
+
+
+
+</td>
+<td>
+
+
+<figure>
+    <picture>
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/f1cc08cf/svd_bgr@2x.webp" type="image/webp" />
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/f1cc08cf/svd_bgr@2x.jpg" type="image/jpg" />
+            <img src="/2021/03/04/brief-on-linear-color-transfer/f1cc08cf/svd_bgr@2x.jpg" alt="SVD，BGR 空间中" />
+    </picture>
+        <figcaption>SVD，BGR 空间中</figcaption>
+</figure>
+
+
+
+</td>
+<td>
+
+
+<figure>
+    <picture>
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/6c8b57b4/mk_bgr@2x.webp" type="image/webp" />
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/6c8b57b4/mk_bgr@2x.jpg" type="image/jpg" />
+            <img src="/2021/03/04/brief-on-linear-color-transfer/6c8b57b4/mk_bgr@2x.jpg" alt="蒙-康，BGR 空间中" />
+    </picture>
+        <figcaption>蒙-康，BGR 空间中</figcaption>
+</figure>
+
+
+
+</td>
+</tr>
+<tr>
+</table>
+<p>这两个特征保证了颜色转换的稳定性。但是也带来了一个问题：在进行变化较大的转换时，蒙-康解法可能会显得更为保守。例如将白花转换成红花时，SVD 能较好地完成任务。但是蒙-康解法则会导致粉色大部分被转移到源图片右上角的红花上，图片整体更加怪异。</p>
+<table>
+<tr>
+<td>
+
+
+<figure>
+    <picture>
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/d2e69174/pink-rose-flower@1x.webp"media="(max-width: 39.99em)"  type="image/webp" />
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/d2e69174/pink-rose-flower@2x.webp"media="(min-width: 40em)"  type="image/webp" />
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/d2e69174/pink-rose-flower@1x.jpg"media="(max-width: 39.99em)"  type="image/jpg" />
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/d2e69174/pink-rose-flower@2x.jpg"media="(min-width: 40em)"  type="image/jpg" />
+            <img src="/2021/03/04/brief-on-linear-color-transfer/d2e69174/pink-rose-flower@2x.jpg" alt="目标图片" />
+    </picture>
+        <figcaption>目标图片</figcaption>
+</figure>
+
+
+
+</td>
+<td>
+
+
+<figure>
+    <picture>
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/7d1f2441/deep-white-rose-blossom@1x.webp"media="(max-width: 39.99em)"  type="image/webp" />
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/7d1f2441/deep-white-rose-blossom@2x.webp"media="(min-width: 40em)"  type="image/webp" />
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/7d1f2441/deep-white-rose-blossom@1x.jpg"media="(max-width: 39.99em)"  type="image/jpg" />
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/7d1f2441/deep-white-rose-blossom@2x.jpg"media="(min-width: 40em)"  type="image/jpg" />
+            <img src="/2021/03/04/brief-on-linear-color-transfer/7d1f2441/deep-white-rose-blossom@2x.jpg" alt="源图片" />
+    </picture>
+        <figcaption>源图片</figcaption>
+</figure>
+
+
+
+</td>
+<td>
+
+
+<figure>
+    <picture>
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/f56b11b0/flower_svd@1x.webp"media="(max-width: 39.99em)"  type="image/webp" />
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/f56b11b0/flower_svd@2x.webp"media="(min-width: 40em)"  type="image/webp" />
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/f56b11b0/flower_svd@1x.jpg"media="(max-width: 39.99em)"  type="image/jpg" />
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/f56b11b0/flower_svd@2x.jpg"media="(min-width: 40em)"  type="image/jpg" />
+            <img src="/2021/03/04/brief-on-linear-color-transfer/f56b11b0/flower_svd@2x.jpg" alt="转换后图片（SVD）" />
+    </picture>
+        <figcaption>转换后图片（SVD）</figcaption>
+</figure>
+
+
+
+</td>
+<td>
+
+
+<figure>
+    <picture>
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/9a91ac1b/flower_mk@1x.webp"media="(max-width: 39.99em)"  type="image/webp" />
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/9a91ac1b/flower_mk@2x.webp"media="(min-width: 40em)"  type="image/webp" />
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/9a91ac1b/flower_mk@1x.jpg"media="(max-width: 39.99em)"  type="image/jpg" />
+                <source srcset="/2021/03/04/brief-on-linear-color-transfer/9a91ac1b/flower_mk@2x.jpg"media="(min-width: 40em)"  type="image/jpg" />
+            <img src="/2021/03/04/brief-on-linear-color-transfer/9a91ac1b/flower_mk@2x.jpg" alt="转换后图片（蒙-康）" />
+    </picture>
+        <figcaption>转换后图片（蒙-康）</figcaption>
+</figure>
+
+
+
+</td>
+</tr>
+</table>
+<h2 id="结语">结语</h2>
+<p>以上介绍了三种比较简单的颜色转移方法的推导和理解。它们分别着重考虑了色彩空间的优化、概率分布的操作和最优化问题的求解，在实际应用上各有优劣。除此之外，还有很多非线性的转换法，例如根据图片梯度和分区优化的方法，以及使用机器学习、语义识别的颜色转移。这些方法更为复杂，功能更加强大。</p>
+<p>这篇文章写好的时候，已经离当初的 paper 间隔了一个学期。撰写博文的时候常常会因为弄不懂原 paper 中自己当初亲自写下的公式，或是对自己当初的论述有所怀疑而去查阅其它论文和网络资料。本文中的第二个等式，随机变量转换，本来是只有第二行的。然而在连续两忘记推导过程后只好把第一行的推导过程老老实实写了下来。全篇写完，发现不仅帮自己复习了数学知识，还查出了原 paper 中的一些错误。“验证学习效果的最好方法是教给别人”，这句话诚不欺我。只是可惜原本准备将文章写得简明扼要，最后完整论述下来还是写出了几千字。现在想来，也许把一整篇博文分成三份撰写发布会更好一些。</p>
+<p>最后还是再提起一下这篇博文介绍到的颜色转移的<a href="https://github.com/LucunJi/Linear-Color-Transfer-Methods">代码实现</a>。主要使用的库是 Python 的 numpy。</p>
+<section class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>F. Pitiee and A. Kokaram. The linear monge-kantorovitch linear colour mapping for example-based colour transfer. In Visual Media poduction, 2007. CVMP 2007. 4th European Conference on, pages 1–9, Nov 2007.<a href="#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p>E. Reinhard, M. Ashikhmin, B. Gooch, and P. Shirley. Color transfer between images. IEEE Comput. Graph. Appl., 21(5):34–41, Sept. 2001.<a href="#fnref2" class="footnote-back">↩</a></p></li>
+<li id="fn3"><p>D. L. Ruderman, T. W. Cronin, and C.-C. Chiao. Statistics of cone responses to natural images: implications for visual coding. J. Opt. Soc. Am. A, 15(8):2036–2045, Aug 1998.<a href="#fnref3" class="footnote-back">↩</a></p></li>
+<li id="fn4"><p>X. Xiao and L. Ma. Color transfer in correlated color space. In Proceedings of the 2006 ACM International Conference on Virtual Reality Continuum and Its Applications, VRCIA’06, page 305–309, New York, NY, USA, 2006. Association for Computing Machinery.<a href="#fnref4" class="footnote-back">↩</a></p></li>
+<li id="fn5"><p>X. Xiao and L. Ma. Color transfer in correlated color space. In Proceedings of the 2006 ACM International Conference on Virtual Reality Continuum and Its Applications, VRCIA’06, page 305–309, New York, NY, USA, 2006. Association for Computing Machinery.<a href="#fnref5" class="footnote-back">↩</a></p></li>
+<li id="fn6"><p>F. Pitiee and A. Kokaram. The linear monge-kantorovitch linear colour mapping for example-based colour transfer. In Visual Media poduction, 2007. CVMP 2007. 4th European Conference on, pages 1–9, Nov 2007.<a href="#fnref6" class="footnote-back">↩</a></p></li>
+<li id="fn7"><p>F. Pitiee and A. Kokaram. The linear monge-kantorovitch linear colour mapping for example-based colour transfer. In Visual Media poduction, 2007. CVMP 2007. 4th European Conference on, pages 1–9, Nov 2007.<a href="#fnref7" class="footnote-back">↩</a></p></li>
+</ol>
+</section>
+]]></content>
+      <tags>
+        <tag>CV(computer vision)</tag>
+        <tag>math</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo 魔改指南</title>
     <url>/2018/12/13/hexo-hacking-guide/</url>
     <content><![CDATA[<p>这里说几个魔改 Hexo 博客的方法，顺便水一贴。遇到问题欢迎评论区留言。 <span id="more"></span></p>
@@ -1905,13 +2431,11 @@ Van Gogh, <i>The Sower</i>
       </tags>
   </entry>
   <entry>
-    <title>应用</title>
-    <url>/apps/index.html</url>
-    <content><![CDATA[<p>这里是一些小应用。由于博客是静态网页，所以这些应用无需上传任何数据。</p>
-<h3 id="应用列表">应用列表</h3>
-<ul>
-<li><a href="webp_converter">WEBP 转换器 / WEBP Converter</a></li>
-</ul>
+    <title>相册</title>
+    <url>/gallery/index.html</url>
+    <content><![CDATA[<div style="text-align: center; font-size: 2em">
+<span style="color: #ffdd00; font-size: 2em">⚠ </span> <span style="color: #ffdd00; font-size: 2em; ">施=====工=====中</span> <span style="color: #ffdd00; font-size: 2em"> ⚠</span>
+</div>
 ]]></content>
   </entry>
   <entry>
@@ -1952,11 +2476,13 @@ Van Gogh, <i>The Sower</i>
 ]]></content>
   </entry>
   <entry>
-    <title>相册</title>
-    <url>/gallery/index.html</url>
-    <content><![CDATA[<div style="text-align: center; font-size: 2em">
-<span style="color: #ffdd00; font-size: 2em">⚠ </span> <span style="color: #ffdd00; font-size: 2em; ">施=====工=====中</span> <span style="color: #ffdd00; font-size: 2em"> ⚠</span>
-</div>
+    <title>应用</title>
+    <url>/apps/index.html</url>
+    <content><![CDATA[<p>这里是一些小应用。由于博客是静态网页，所以这些应用无需上传任何数据。</p>
+<h3 id="应用列表">应用列表</h3>
+<ul>
+<li><a href="webp_converter">WEBP 转换器 / WEBP Converter</a></li>
+</ul>
 ]]></content>
   </entry>
 </search>
