@@ -428,71 +428,6 @@ this.affectedBlockPositions.addAll(set); // 由集合产生便于遍历的列表
 ]]></content>
   </entry>
   <entry>
-    <title>简易修改 Minecraft 字节码</title>
-    <url>/2020/01/16/minecraft-bytecode-modding/</url>
-    <content><![CDATA[<div data-align="center">
-<font size=6>100% vanilla!</font>
-</div>
-<span id="more"></span>
-<h2 id="简介">简介</h2>
-<p>之前看到 1.15.2-pre1 更新了玩家种植树木也会刷新蜂巢的特性，研究完机制以后想着修改一下蜂巢刷新几率来方便测试。</p>
-<p>可是这时候 fabric 啥的还没更新，于是想到了之前 EDDExample 说过的修改字节码大法。顺便用上 Mojang 1.14.4 以来的官方反混淆表。</p>
-<p>EDDExample 在视频里用的是 JByteMod 来修改字节码。可以在 https://github.com/GraxCode/JByteMod-Beta/releases 下载到。</p>
-<h2 id="反混淆">反混淆</h2>
-<p>前往 https://github.com/hube12/DecompilerMC/releases ，在 Releases for lazy users 下面下载适合操作系统的版本，这里就选择 Windows.zip。</p>
-<p>将压缩包解压，会看到有一个 McDecompiler.exe 文件，运行后根据提示选择，依次输入 <code>y</code>，<code>cfr</code>，<code>1.15.2-pre1</code> 以及 <code>y</code>。</p>
-<p>等待几分钟，程序运行完毕后就可以在 <code>src</code> 文件夹里看到反混淆好的源码；在 <code>mappings</code> 里看到反混淆表。</p>
-<h2 id="查找修改目标">查找修改目标</h2>
-<p>通过在反混淆的源码中搜索，可以找到负责在树上生成蜂巢的装饰器 <code>net.minecraft.world.level.levelgen.feature.treedecorators.BeehiveDecorator</code></p>
-<p>这里通过产生一个随机的单精度浮点数，实现了蜂巢生成概率的随机化： <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">place</span><span class="params">(LevelAccessor var1, Random var2, List var3, List var4, Set var5, BoundingBox var6)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (var2.nextFloat() &lt; <span class="keyword">this</span>.probability) &#123;</span><br><span class="line">        <span class="comment">//...</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>由于 Minecraft 中的类名、方法名是经过混淆的，我们无法直接查看字节码。在反混淆表中搜索类名 <code>BeehiveDecorator</code>，会发现它的混淆后的类名是 <code>ciq</code>，方法 <code>place</code> 混淆后的名称是 <code>a</code>。值得注意的是，一个混淆的类会包含多个同名但不同参数的方法，因此需要额外留心方法的参数数量和类型。</p>
-<h2 id="修改字节码">修改字节码</h2>
-<p>用解压软件打开版本文件 <code>1.15.2-pre1.jar</code>，单独拖出 <code>ciq.class</code> 文件，用 JByteMod 打开这个类文件，开始修改。</p>
-<p>之前我试过直接打开整个 jar，结果修改后无法正常启动游戏。后来折腾了半天才发现单独拖出来修改类文件就好了。</p>
-<p>首先定位到要修改的方法。之前找到的方法拥有6个参数，其中第2、3、4、5个参数的类型分别是 <code>Random</code>，<code>List</code>，<code>List</code> 以及 <code>Set</code>（Java 自带的类型一般不会被反混淆）。点开这个方法，发现开头的几行字节码分别是：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">aload 2</span><br><span class="line">invokevirtual float Random.nextFloat()</span><br><span class="line">aload 0</span><br><span class="line">getfield float ciq.b</span><br><span class="line">fcmpl</span><br><span class="line">iflt 2</span><br><span class="line">label 1</span><br><span class="line">return</span><br><span class="line">label 2</span><br><span class="line">......</span><br></pre></td></tr></table></figure>
-<p>通过翻阅 <a href="https://docs.oracle.com/javase/specs/jvms/se12/html/jvms-6.html">JVM 指令集</a>，可以得知这几行指令的效果：</p>
-<ol type="1">
-<li>加载下标为 2，即类型为 <code>Random</code> 的传入参数的引用；</li>
-<li>调用该对象的 <code>nextFloat()</code> 方法，返回一个 <code>float</code>；</li>
-<li>加载下标为 0 的传入参数，即 <code>this</code> 的引用；</li>
-<li>获取该对象的成员变量，对象属于类 <code>ciq</code>，对象名是 <code>b</code>，变量类型是 <code>float</code>；</li>
-<li>比较 (2) (3) 两处的 <code>float</code> 值；</li>
-<li>如果 (3) 处小于 (2) 处，跳转到标签 2 处执行剩余指令，否则继续往下执行 <code>return</code> 退出方法。</li>
-</ol>
-<p>这几行描述的内容和反编译出来的 <code>if (var2.nextFloat() &lt; this.probability) &#123;&#125;</code> 对应。没问题，接着进行下一步。把前两行删去，替换成 <code>ldc Float 0.0</code> 就可以变成每次尝试必定成功的 <code>if (0.0f &lt; this.probability) &#123;&#125;</code>。</p>
-<p>删除前两行 -&gt; 右键点击 <code>getfield</code> -&gt; 插入之前 -&gt; LdcInsnNode -&gt; 类型选择 <code>Float</code>，值输入 <code>0.0</code>。</p>
-<p>完成后保存类文件，准备替换。</p>
-<h2 id="核心-jar-替换法">核心 jar 替换法</h2>
-<p>核心 jar 替换法，顾名思义就是直接替换 <code>versions</code> 文件夹中核心版本文件 <code>1.15.2-pre1.jar</code> 的类。为了防止游戏对 jar 进行完整性检测，需要删除 jar 中的 <code>META-INF</code> 文件夹，并且删除 <code>1.15.2-pre1.json</code> 中的下载链接。具体链接内容因版本而异，并且注意逗号： <figure class="highlight"><table><tr><td class="code"><pre><span class="line">&quot;downloads&quot;: &#123;&quot;client&quot;: &#123;&quot;sha1&quot;: &quot;9f28455f9f9d09294e0ba19beb13dc26b39a9582&quot;, &quot;size&quot;: 15531212, &quot;url&quot;: &quot;https://launcher.mojang.com/v1/objects/9f28455f9f9d09294e0ba19beb13dc26b39a9582/client.jar&quot;&#125;, &quot;client_mappings&quot;: &#123;&quot;sha1&quot;: &quot;6c81c6f2e6ff0c3a2795f5d336c63b0740a60a45&quot;, &quot;size&quot;: 4971880, &quot;url&quot;: &quot;https://launcher.mojang.com/v1/objects/6c81c6f2e6ff0c3a2795f5d336c63b0740a60a45/client.txt&quot;&#125;, &quot;server&quot;: &#123;&quot;sha1&quot;: &quot;5db50a719dc40d63aa95c6bdc5b302e425f673f2&quot;, &quot;size&quot;: 36175423, &quot;url&quot;: &quot;https://launcher.mojang.com/v1/objects/5db50a719dc40d63aa95c6bdc5b302e425f673f2/server.jar&quot;&#125;, &quot;server_mappings&quot;: &#123;&quot;sha1&quot;: &quot;f59bfc0ebb62bc7802af0567ad79592274c56943&quot;, &quot;size&quot;: 3737013, &quot;url&quot;: &quot;https://launcher.mojang.com/v1/objects/f59bfc0ebb62bc7802af0567ad79592274c56943/server.txt&quot;&#125;&#125;,</span><br></pre></td></tr></table></figure></p>
-<h2 id="运行">运行</h2>
-<p>如果一切操作都没有问题，那么游戏将能够正常的启动。</p>
-<p>创建一个新的世界，在花的边上种下一棵白桦树或橡树，必定会产生一个蜂巢。</p>
-
-
-<figure>
-    <picture>
-                <source srcset="/2020/01/16/minecraft-bytecode-modding/a7616155/2020-01-16_15.02.29@1x.png"media="(max-width: 39.99em)"  type="image/png" />
-                <source srcset="/2020/01/16/minecraft-bytecode-modding/a7616155/2020-01-16_15.02.29@2x.png"media="(min-width: 40em)"  type="image/png" />
-            <img src="/2020/01/16/minecraft-bytecode-modding/a7616155/2020-01-16_15.02.29@2x.png" alt="简易修改 Minecraft 字节码" />
-    </picture>
-</figure>
-
-
-
-<h2 id="multimc-配置方法">MultiMC 配置方法</h2>
-<p>MultiMC 提供了方便的 Jar mod 安装方式。只要删除 <code>META-INF</code> 文件夹，就可以在 Edit Instance 中选择 Add to Minecraft.jar 或者 Replace Minecraft.jar，选择修改后的 jar 载入就可以了。</p>
-<p>需要注意的是，再次修改 jar 过后，需要在列表中移除并重新加入修改后的 jar。</p>
-<h2 id="感谢">感谢</h2>
-<p>EDDxample，他在 YouTube 上有不错的关于代码和模组制作的视频 https://youtu.be/T_658BztqVE ，使用 JByteMod 的点子也是从这个视频里学到的。</p>
-]]></content>
-      <tags>
-        <tag>minecraft</tag>
-        <tag>Java</tag>
-        <tag>bytecode</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>画展，米勒以及梵高等</title>
     <url>/2021/03/04/millet-van-gogh-and-dali/</url>
     <content><![CDATA[<p>去年发现本地的艺术博物馆刚好有米勒同代以及往后的艺术家的画展，去看了以后觉得挺不错。部分画作——其实是相当大一部分——是允许拍照的，这里就发一些自己喜欢的作品。拍摄技术不好，希望多多包涵。</p>
@@ -611,6 +546,71 @@ Van Gogh, <i>The Sower</i>
       <tags>
         <tag>art</tag>
         <tag>paintings</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>简易修改 Minecraft 字节码</title>
+    <url>/2020/01/16/minecraft-bytecode-modding/</url>
+    <content><![CDATA[<div data-align="center">
+<font size=6>100% vanilla!</font>
+</div>
+<span id="more"></span>
+<h2 id="简介">简介</h2>
+<p>之前看到 1.15.2-pre1 更新了玩家种植树木也会刷新蜂巢的特性，研究完机制以后想着修改一下蜂巢刷新几率来方便测试。</p>
+<p>可是这时候 fabric 啥的还没更新，于是想到了之前 EDDExample 说过的修改字节码大法。顺便用上 Mojang 1.14.4 以来的官方反混淆表。</p>
+<p>EDDExample 在视频里用的是 JByteMod 来修改字节码。可以在 https://github.com/GraxCode/JByteMod-Beta/releases 下载到。</p>
+<h2 id="反混淆">反混淆</h2>
+<p>前往 https://github.com/hube12/DecompilerMC/releases ，在 Releases for lazy users 下面下载适合操作系统的版本，这里就选择 Windows.zip。</p>
+<p>将压缩包解压，会看到有一个 McDecompiler.exe 文件，运行后根据提示选择，依次输入 <code>y</code>，<code>cfr</code>，<code>1.15.2-pre1</code> 以及 <code>y</code>。</p>
+<p>等待几分钟，程序运行完毕后就可以在 <code>src</code> 文件夹里看到反混淆好的源码；在 <code>mappings</code> 里看到反混淆表。</p>
+<h2 id="查找修改目标">查找修改目标</h2>
+<p>通过在反混淆的源码中搜索，可以找到负责在树上生成蜂巢的装饰器 <code>net.minecraft.world.level.levelgen.feature.treedecorators.BeehiveDecorator</code></p>
+<p>这里通过产生一个随机的单精度浮点数，实现了蜂巢生成概率的随机化： <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">place</span><span class="params">(LevelAccessor var1, Random var2, List var3, List var4, Set var5, BoundingBox var6)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (var2.nextFloat() &lt; <span class="keyword">this</span>.probability) &#123;</span><br><span class="line">        <span class="comment">//...</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>由于 Minecraft 中的类名、方法名是经过混淆的，我们无法直接查看字节码。在反混淆表中搜索类名 <code>BeehiveDecorator</code>，会发现它的混淆后的类名是 <code>ciq</code>，方法 <code>place</code> 混淆后的名称是 <code>a</code>。值得注意的是，一个混淆的类会包含多个同名但不同参数的方法，因此需要额外留心方法的参数数量和类型。</p>
+<h2 id="修改字节码">修改字节码</h2>
+<p>用解压软件打开版本文件 <code>1.15.2-pre1.jar</code>，单独拖出 <code>ciq.class</code> 文件，用 JByteMod 打开这个类文件，开始修改。</p>
+<p>之前我试过直接打开整个 jar，结果修改后无法正常启动游戏。后来折腾了半天才发现单独拖出来修改类文件就好了。</p>
+<p>首先定位到要修改的方法。之前找到的方法拥有6个参数，其中第2、3、4、5个参数的类型分别是 <code>Random</code>，<code>List</code>，<code>List</code> 以及 <code>Set</code>（Java 自带的类型一般不会被反混淆）。点开这个方法，发现开头的几行字节码分别是：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">aload 2</span><br><span class="line">invokevirtual float Random.nextFloat()</span><br><span class="line">aload 0</span><br><span class="line">getfield float ciq.b</span><br><span class="line">fcmpl</span><br><span class="line">iflt 2</span><br><span class="line">label 1</span><br><span class="line">return</span><br><span class="line">label 2</span><br><span class="line">......</span><br></pre></td></tr></table></figure>
+<p>通过翻阅 <a href="https://docs.oracle.com/javase/specs/jvms/se12/html/jvms-6.html">JVM 指令集</a>，可以得知这几行指令的效果：</p>
+<ol type="1">
+<li>加载下标为 2，即类型为 <code>Random</code> 的传入参数的引用；</li>
+<li>调用该对象的 <code>nextFloat()</code> 方法，返回一个 <code>float</code>；</li>
+<li>加载下标为 0 的传入参数，即 <code>this</code> 的引用；</li>
+<li>获取该对象的成员变量，对象属于类 <code>ciq</code>，对象名是 <code>b</code>，变量类型是 <code>float</code>；</li>
+<li>比较 (2) (3) 两处的 <code>float</code> 值；</li>
+<li>如果 (3) 处小于 (2) 处，跳转到标签 2 处执行剩余指令，否则继续往下执行 <code>return</code> 退出方法。</li>
+</ol>
+<p>这几行描述的内容和反编译出来的 <code>if (var2.nextFloat() &lt; this.probability) &#123;&#125;</code> 对应。没问题，接着进行下一步。把前两行删去，替换成 <code>ldc Float 0.0</code> 就可以变成每次尝试必定成功的 <code>if (0.0f &lt; this.probability) &#123;&#125;</code>。</p>
+<p>删除前两行 -&gt; 右键点击 <code>getfield</code> -&gt; 插入之前 -&gt; LdcInsnNode -&gt; 类型选择 <code>Float</code>，值输入 <code>0.0</code>。</p>
+<p>完成后保存类文件，准备替换。</p>
+<h2 id="核心-jar-替换法">核心 jar 替换法</h2>
+<p>核心 jar 替换法，顾名思义就是直接替换 <code>versions</code> 文件夹中核心版本文件 <code>1.15.2-pre1.jar</code> 的类。为了防止游戏对 jar 进行完整性检测，需要删除 jar 中的 <code>META-INF</code> 文件夹，并且删除 <code>1.15.2-pre1.json</code> 中的下载链接。具体链接内容因版本而异，并且注意逗号： <figure class="highlight"><table><tr><td class="code"><pre><span class="line">&quot;downloads&quot;: &#123;&quot;client&quot;: &#123;&quot;sha1&quot;: &quot;9f28455f9f9d09294e0ba19beb13dc26b39a9582&quot;, &quot;size&quot;: 15531212, &quot;url&quot;: &quot;https://launcher.mojang.com/v1/objects/9f28455f9f9d09294e0ba19beb13dc26b39a9582/client.jar&quot;&#125;, &quot;client_mappings&quot;: &#123;&quot;sha1&quot;: &quot;6c81c6f2e6ff0c3a2795f5d336c63b0740a60a45&quot;, &quot;size&quot;: 4971880, &quot;url&quot;: &quot;https://launcher.mojang.com/v1/objects/6c81c6f2e6ff0c3a2795f5d336c63b0740a60a45/client.txt&quot;&#125;, &quot;server&quot;: &#123;&quot;sha1&quot;: &quot;5db50a719dc40d63aa95c6bdc5b302e425f673f2&quot;, &quot;size&quot;: 36175423, &quot;url&quot;: &quot;https://launcher.mojang.com/v1/objects/5db50a719dc40d63aa95c6bdc5b302e425f673f2/server.jar&quot;&#125;, &quot;server_mappings&quot;: &#123;&quot;sha1&quot;: &quot;f59bfc0ebb62bc7802af0567ad79592274c56943&quot;, &quot;size&quot;: 3737013, &quot;url&quot;: &quot;https://launcher.mojang.com/v1/objects/f59bfc0ebb62bc7802af0567ad79592274c56943/server.txt&quot;&#125;&#125;,</span><br></pre></td></tr></table></figure></p>
+<h2 id="运行">运行</h2>
+<p>如果一切操作都没有问题，那么游戏将能够正常的启动。</p>
+<p>创建一个新的世界，在花的边上种下一棵白桦树或橡树，必定会产生一个蜂巢。</p>
+
+
+<figure>
+    <picture>
+                <source srcset="/2020/01/16/minecraft-bytecode-modding/a7616155/2020-01-16_15.02.29@1x.png"media="(max-width: 39.99em)"  type="image/png" />
+                <source srcset="/2020/01/16/minecraft-bytecode-modding/a7616155/2020-01-16_15.02.29@2x.png"media="(min-width: 40em)"  type="image/png" />
+            <img src="/2020/01/16/minecraft-bytecode-modding/a7616155/2020-01-16_15.02.29@2x.png" alt="简易修改 Minecraft 字节码" />
+    </picture>
+</figure>
+
+
+
+<h2 id="multimc-配置方法">MultiMC 配置方法</h2>
+<p>MultiMC 提供了方便的 Jar mod 安装方式。只要删除 <code>META-INF</code> 文件夹，就可以在 Edit Instance 中选择 Add to Minecraft.jar 或者 Replace Minecraft.jar，选择修改后的 jar 载入就可以了。</p>
+<p>需要注意的是，再次修改 jar 过后，需要在列表中移除并重新加入修改后的 jar。</p>
+<h2 id="感谢">感谢</h2>
+<p>EDDxample，他在 YouTube 上有不错的关于代码和模组制作的视频 https://youtu.be/T_658BztqVE ，使用 JByteMod 的点子也是从这个视频里学到的。</p>
+]]></content>
+      <tags>
+        <tag>minecraft</tag>
+        <tag>Java</tag>
+        <tag>bytecode</tag>
       </tags>
   </entry>
   <entry>
@@ -2202,7 +2202,7 @@ c(t) = E[c(\mathbf{U})] = \int_{\text{all } u} ||\mathbf{u} - t(\mathbf{u})||^2 
 <h2 id="结语">结语</h2>
 <p>以上介绍了三种比较简单的颜色转移方法的推导和理解。它们分别着重考虑了色彩空间的优化、概率分布的操作和最优化问题的求解，在实际应用上各有优劣。除此之外，还有很多非线性的转换法，例如根据图片梯度和分区优化的方法，以及使用机器学习、语义识别的颜色转移。这些方法更为复杂，功能更加强大。</p>
 <p>这篇文章写好的时候，已经离当初的 paper 间隔了一个学期。撰写博文的时候常常会因为弄不懂原 paper 中自己当初亲自写下的公式，或是对自己当初的论述有所怀疑而去查阅其它论文和网络资料。本文中的第二个等式，随机变量转换，本来是只有第二行的。然而在连续两忘记推导过程后只好把第一行的推导过程老老实实写了下来。全篇写完，发现不仅帮自己复习了数学知识，还查出了原 paper 中的一些错误。“验证学习效果的最好方法是教给别人”，这句话诚不欺我。只是可惜原本准备将文章写得简明扼要，最后完整论述下来还是写出了几千字。现在想来，也许把一整篇博文分成三份撰写发布会更好一些。</p>
-<p>最后还是再提起一下这篇博文介绍到的颜色转移的<a href="https://github.com/LucunJi/Linear-Color-Transfer-Methods">代码实现</a>。主要使用的库是 Python 的 numpy。</p>
+<p>文中用到的图片主要来自于 F. Pitiee 在<a href="https://github.com/frcs/colour-transfer">他的颜色转移代码仓库</a>里发布的测试用图片，以及 <a href="https://cc0.photo/">https://cc0.photo/</a> 提供的 CC-0 无版权图片。感谢他们的贡献。</p>
 <section class="footnotes">
 <hr />
 <ol>
@@ -2431,11 +2431,13 @@ c(t) = E[c(\mathbf{U})] = \int_{\text{all } u} ||\mathbf{u} - t(\mathbf{u})||^2 
       </tags>
   </entry>
   <entry>
-    <title>相册</title>
-    <url>/gallery/index.html</url>
-    <content><![CDATA[<div style="text-align: center; font-size: 2em">
-<span style="color: #ffdd00; font-size: 2em">⚠ </span> <span style="color: #ffdd00; font-size: 2em; ">施=====工=====中</span> <span style="color: #ffdd00; font-size: 2em"> ⚠</span>
-</div>
+    <title>应用</title>
+    <url>/apps/index.html</url>
+    <content><![CDATA[<p>这里是一些小应用。由于博客是静态网页，所以这些应用无需上传任何数据。</p>
+<h3 id="应用列表">应用列表</h3>
+<ul>
+<li><a href="webp_converter">WEBP 转换器 / WEBP Converter</a></li>
+</ul>
 ]]></content>
   </entry>
   <entry>
@@ -2476,13 +2478,11 @@ c(t) = E[c(\mathbf{U})] = \int_{\text{all } u} ||\mathbf{u} - t(\mathbf{u})||^2 
 ]]></content>
   </entry>
   <entry>
-    <title>应用</title>
-    <url>/apps/index.html</url>
-    <content><![CDATA[<p>这里是一些小应用。由于博客是静态网页，所以这些应用无需上传任何数据。</p>
-<h3 id="应用列表">应用列表</h3>
-<ul>
-<li><a href="webp_converter">WEBP 转换器 / WEBP Converter</a></li>
-</ul>
+    <title>相册</title>
+    <url>/gallery/index.html</url>
+    <content><![CDATA[<div style="text-align: center; font-size: 2em">
+<span style="color: #ffdd00; font-size: 2em">⚠ </span> <span style="color: #ffdd00; font-size: 2em; ">施=====工=====中</span> <span style="color: #ffdd00; font-size: 2em"> ⚠</span>
+</div>
 ]]></content>
   </entry>
 </search>

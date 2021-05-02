@@ -6,7 +6,7 @@
   <link href="https://lucunji.github.io/atom.xml" rel="self"/>
   
   <link href="https://lucunji.github.io/"/>
-  <updated>2021-05-02T07:32:43.960Z</updated>
+  <updated>2021-05-02T08:13:27.722Z</updated>
   <id>https://lucunji.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://lucunji.github.io/2021/03/04/brief-on-linear-color-transfer/"/>
     <id>https://lucunji.github.io/2021/03/04/brief-on-linear-color-transfer/</id>
     <published>2021-03-05T01:27:03.000Z</published>
-    <updated>2021-05-02T07:32:43.960Z</updated>
+    <updated>2021-05-02T08:13:27.722Z</updated>
     
     
     <summary type="html">&lt;p&gt;前阵子做了一个关于线性颜色转移（Linear Color Transfer）的期末研究，准备闲下来把相关的东西发到在博客上面，分享的同时顺便帮自己巩固一下知识点。相关的代码可以在&lt;a href=&quot;https://github.com/LucunJi/Linear-Color-Transfer-Methods&quot;&gt;这里&lt;/a&gt;看到。当时写的 paper 为了充字数写得比较繁琐，也有一些不严谨的问题，因此就不放上来了。这篇博文相当于根据当初 paper 的思路重新梳理一遍。如有錯漏之处烦请斧正。&lt;/p&gt;</summary>
@@ -195,7 +195,7 @@
     <link href="https://lucunji.github.io/2020/07/22/can-tech-save-us-from-deepfakes/"/>
     <id>https://lucunji.github.io/2020/07/22/can-tech-save-us-from-deepfakes/</id>
     <published>2020-07-22T10:03:48.000Z</published>
-    <updated>2021-04-28T21:01:15.364Z</updated>
+    <updated>2021-05-02T07:32:43.739Z</updated>
     
     
     <summary type="html">&lt;figure&gt;
@@ -304,7 +304,7 @@
     <link href="https://lucunji.github.io/2020/01/02/bedrock-breaking/"/>
     <id>https://lucunji.github.io/2020/01/02/bedrock-breaking/</id>
     <published>2020-01-02T22:28:59.000Z</published>
-    <updated>2021-04-28T18:22:42.564Z</updated>
+    <updated>2021-05-02T07:32:39.166Z</updated>
     
     
     <summary type="html">&lt;p&gt;本文针对最早由 Myren Eario 提出的利用活塞移除基岩的方法所存在的不稳定性进行分析，并提出一种可行的解决方案。</summary>
@@ -359,7 +359,7 @@
     <link href="https://lucunji.github.io/2018/12/11/3Ws/"/>
     <id>https://lucunji.github.io/2018/12/11/3Ws/</id>
     <published>2018-12-11T23:35:19.000Z</published>
-    <updated>2021-04-28T18:22:42.564Z</updated>
+    <updated>2021-05-02T07:32:39.166Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;你好欢迎来到这里&quot;&gt;你好，欢迎来到这里：&lt;/h2&gt;
