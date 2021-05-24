@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css">
+  <script src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.js"></script>
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"lucunji.github.io","root":"/","images":"/images","scheme":"Gemini","version":"8.3.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":6,"width":260},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
+  </script>
+<meta name="description" content="现有物品一览">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Uusi Aurinko 模组开发日志（第一周）">
+<meta property="og:url" content="https://lucunji.github.io/2021/05/23/uusi-aurinko-devlog-1/index.html">
+<meta property="og:site_name" content="LucunJi">
+<meta property="og:description" content="现有物品一览">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://lucunji.github.io/2021/05/23/uusi-aurinko-devlog-1/d36cb0cb/stone_item_display@2x.png">
+<meta property="og:image" content="https://lucunji.github.io/2021/05/23/uusi-aurinko-devlog-1/3dd33604/noita_items@2x.png">
+<meta property="og:image" content="https://lucunji.github.io/2021/05/23/uusi-aurinko-devlog-1/21da1d31/stone_textures@1x.png">
+<meta property="og:image" content="https://lucunji.github.io/2021/05/23/uusi-aurinko-devlog-1/41465053/fire_and_water_stone_item_display@2x.png">
+<meta property="og:image" content="https://lucunji.github.io/2021/05/23/uusi-aurinko-devlog-1/385a2f35/item_info_1@2x.png">
+<meta property="og:image" content="https://lucunji.github.io/2021/05/23/uusi-aurinko-devlog-1/402df7ed/item_info_2@2x.png">
+<meta property="og:image" content="https://lucunji.github.io/2021/05/23/uusi-aurinko-devlog-1/6a33ef08/throw_item@2x.png">
+<meta property="og:image" content="https://lucunji.github.io/2021/05/23/uusi-aurinko-devlog-1/f1a4258d/fire_and_water_stone_effects@2x.png">
+<meta property="og:image" content="https://lucunji.github.io/2021/05/23/uusi-aurinko-devlog-1/d93256c3/lightning_dfs@2x.png">
+<meta property="article:published_time" content="2021-05-23T05:35:08.000Z">
+<meta property="article:modified_time" content="2021-05-24T08:56:09.941Z">
+<meta property="article:author" content="LucunJi">
+<meta property="article:tag" content="minecraft">
+<meta property="article:tag" content="mod">
+<meta property="article:tag" content="forge">
+<meta property="article:tag" content="UusiAurinko">
+<meta property="article:tag" content="devlog">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://lucunji.github.io/2021/05/23/uusi-aurinko-devlog-1/d36cb0cb/stone_item_display@2x.png">
+
+
+<link rel="canonical" href="https://lucunji.github.io/2021/05/23/uusi-aurinko-devlog-1/">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+<title>Uusi Aurinko 模组开发日志（第一周） | LucunJi</title>
+  
+
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="LucunJi" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">LucunJi</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档与标签</a></li>
+        <li class="menu-item menu-item-booklist"><a href="/booklist/" rel="section"><i class="fas fa-book-open fa-fw"></i>书单</a></li>
+        <li class="menu-item menu-item-gallery"><a href="/gallery/" rel="section"><i class="fas fa-images fa-fw"></i>相册</a></li>
+        <li class="menu-item menu-item-apps"><a href="/apps/" rel="section"><i class="fas fa-cogs fa-fw"></i>应用</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A6%82%E5%86%B5"><span class="nav-number">2.</span> <span class="nav-text">概况</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BE%8E%E6%9C%AF%E8%AE%BE%E8%AE%A1"><span class="nav-number">3.</span> <span class="nav-text">美术设计</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%89%A9%E5%93%81%E8%AE%BE%E8%AE%A1%E7%90%86%E5%BF%B5"><span class="nav-number">4.</span> <span class="nav-text">物品设计理念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1"><span class="nav-number">5.</span> <span class="nav-text">程序设计</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%94%BE%E5%BC%83%E8%8D%AF%E6%B0%B4%E5%8A%A0%E9%80%9F%E6%B6%88%E9%80%80%E6%95%88%E6%9E%9C"><span class="nav-number">5.1.</span> <span class="nav-text">放弃药水加速消退效果</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%8D%E5%B0%84access-transformer-%E5%92%8C-mixin"><span class="nav-number">5.2.</span> <span class="nav-text">反射，Access Transformer 和 Mixin</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%8D%E5%B0%84"><span class="nav-number">5.2.1.</span> <span class="nav-text">反射</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#access-transformer-%E4%B8%8E-mixin"><span class="nav-number">5.2.2.</span> <span class="nav-text">Access Transformer 与 Mixin</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BB%93%E8%AE%BA"><span class="nav-number">5.2.3.</span> <span class="nav-text">结论</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8E%9F%E7%89%88%E7%9A%84%E7%81%AB%E7%84%B0-bug"><span class="nav-number">5.3.</span> <span class="nav-text">原版的火焰 bug</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%8E%E7%BB%AD%E8%AE%A1%E5%88%92"><span class="nav-number">6.</span> <span class="nav-text">后续计划</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B6%E4%BB%96%E4%B8%8D%E6%88%90%E7%86%9F%E6%83%B3%E6%B3%95"><span class="nav-number">7.</span> <span class="nav-text">其他不成熟想法</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="LucunJi"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">LucunJi</p>
+  <div class="site-description" itemprop="description">“祝我们新年痛苦”</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">19</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">23</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/LucunJi" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;LucunJi" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://space.bilibili.com/2117299/" title="Bilibili → https:&#x2F;&#x2F;space.bilibili.com&#x2F;2117299&#x2F;" rel="noopener" target="_blank"><i class="fab bili-tv fa-fw"></i>Bilibili</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll site-overview-item animated">
+    <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://tis.world/" title="https:&#x2F;&#x2F;tis.world" rel="noopener" target="_blank">TIS Union</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="http://cfpa.team/" title="http:&#x2F;&#x2F;cfpa.team" rel="noopener" target="_blank">CFPA 汉化组</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://xiaoyuan-xyz.github.io/" title="https:&#x2F;&#x2F;xiaoyuan-xyz.github.io" rel="noopener" target="_blank">小渊的博客</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://fallenbreath.me/" title="https:&#x2F;&#x2F;fallenbreath.me" rel="noopener" target="_blank">Fallen的博客</a>
+        </li>
+    </ul>
+  </div>
+
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="返回顶部">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://lucunji.github.io/2021/05/23/uusi-aurinko-devlog-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="LucunJi">
+      <meta itemprop="description" content="“祝我们新年痛苦”">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LucunJi">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Uusi Aurinko 模组开发日志（第一周）
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-05-23 00:35:08" itemprop="dateCreated datePublished" datetime="2021-05-23T00:35:08-05:00">2021-05-23</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-05-24 03:56:09" itemprop="dateModified" datetime="2021-05-24T03:56:09-05:00">2021-05-24</time>
+      </span>
+
+  
+    <span id="/2021/05/23/uusi-aurinko-devlog-1/" class="post-meta-item leancloud_visitors" data-flag-title="Uusi Aurinko 模组开发日志（第一周）" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        
+
+<figure>
+    <picture>
+                <source srcset="/2021/05/23/uusi-aurinko-devlog-1/d36cb0cb/stone_item_display@1x.png"media="(max-width: 39.99em)"  type="image/png" />
+                <source srcset="/2021/05/23/uusi-aurinko-devlog-1/d36cb0cb/stone_item_display@2x.png"media="(min-width: 40em)"  type="image/png" />
+            <img src="/2021/05/23/uusi-aurinko-devlog-1/d36cb0cb/stone_item_display@2x.png" alt="现有物品一览" />
+    </picture>
+        <figcaption>现有物品一览</figcaption>
+</figure>
+
+
+
+<span id="more"></span>
+<h2 id="前言">前言</h2>
+<p>事实证明，在完全熟练之前，遵循业界中的共识的能极大帮助一个新手。就拿模组开发举例，如果在开始制作之前先草拟一份企划案，既可以方便小组内的各成员交流想法，也可以方便自己在制作时查阅自己先前的想法。这样的一份企划案不用太细致，只要能传达清楚自己的点子，就能起到很大的帮助作用。</p>
+<p>出于同样的原因，我决定每周在我的博客撰写一篇开发日志（devlog）。目的有二：一是把开发过程中零散的思路、遇到的困难和对应的解决方案记录下来，方便自己或其他人以后参考；二是对外公布阶段性的成果，接受评论和建议并且给自己继续做下去的动力。</p>
+<h2 id="概况">概况</h2>
+<p>模组的名字已经被选定为 Uusi Aurinko。小组的名字是 Ilmarinen（伊尔玛利宁），取自于芬兰神话中能锻造与发明任何东西的不死者。目前小组里有三个人：我（程序），XeKr（美工），Neubulaeko（吉祥物）。</p>
+<p>在第一周里，模组的<a target="_blank" rel="noopener" href="https://github.com/LucunJi/uusi-aurinko/blob/master/documents/ModDesign.pdf">企划案</a> 已经完成。参赛队伍与作品也在 <a target="_blank" rel="noopener" href="https://www.teacon.cn/2021/">TeaCon 网站</a> 上完成了注册（可以在<a target="_blank" rel="noopener" href="https://www.teacon.cn/2021/teams.html">这里</a> 看到）。<a target="_blank" rel="noopener" href="https://github.com/LucunJi/uusi-aurinko">代码仓库</a> 已经公开发布到了 GitHub 上面。大部分模组物品已经拥有了贴图并加入了游戏，并且其中两个物品的代码已经大致完成。</p>
+<h2 id="美术设计">美术设计</h2>
+
+
+<figure>
+    <picture>
+                <source srcset="/2021/05/23/uusi-aurinko-devlog-1/3dd33604/noita_items@1x.png"media="(max-width: 39.99em)"  type="image/png" />
+                <source srcset="/2021/05/23/uusi-aurinko-devlog-1/3dd33604/noita_items@2x.png"media="(min-width: 40em)"  type="image/png" />
+            <img src="/2021/05/23/uusi-aurinko-devlog-1/3dd33604/noita_items@2x.png" alt="Noita 原作中的物品材质" />
+    </picture>
+        <figcaption>Noita 原作中的物品材质</figcaption>
+</figure>
+
+
+
+
+
+<figure>
+    <picture>
+                <source srcset="/2021/05/23/uusi-aurinko-devlog-1/21da1d31/stone_textures@2x.png"media="(min-width: 40em)"  type="image/png" />
+                <source srcset="/2021/05/23/uusi-aurinko-devlog-1/21da1d31/stone_textures@1x.png"media="(max-width: 39.99em)"  type="image/png" />
+            <img src="/2021/05/23/uusi-aurinko-devlog-1/21da1d31/stone_textures@1x.png" alt="由 XeKr 绘制的模组物品材质" />
+    </picture>
+        <figcaption>由 XeKr 绘制的模组物品材质</figcaption>
+</figure>
+
+
+
+<p>目前所有元素石头和太阳种子、太阳石头的贴图已经由 XeKr 制作完成。这些贴图在参考 Noita原作贴图的基础上做了一些改进。原作中的水石、火石、太阳种子和太阳石的轮廓都是完全一致的；而且太阳石和地石上画有符号，而其它石头没有。模组中的贴图则做了统一化和差异化，移除了太阳种子、太阳石和地石上面的符号，并且重置了外形。</p>
+
+
+<figure>
+    <picture>
+                <source srcset="/2021/05/23/uusi-aurinko-devlog-1/41465053/fire_and_water_stone_item_display@1x.png"media="(max-width: 39.99em)"  type="image/png" />
+                <source srcset="/2021/05/23/uusi-aurinko-devlog-1/41465053/fire_and_water_stone_item_display@2x.png"media="(min-width: 40em)"  type="image/png" />
+            <img src="/2021/05/23/uusi-aurinko-devlog-1/41465053/fire_and_water_stone_item_display@2x.png" alt="元素石头的粒子特效" />
+    </picture>
+        <figcaption>元素石头的粒子特效</figcaption>
+</figure>
+
+
+
+<p>以掉落物实体存在的元素石头会拥有粒子特效。例如火石会有火焰粒子，水石会有滴水粒子。</p>
+<p>邪眼和微型月球的贴图已经完成，但还没有加入游戏中。贴图都会比较类似原作中的形象。微型月球还会额外拥有一个正方体的实体建模。</p>
+<p>太阳的贴图和模型还没有开始动工，但是初步确定为一个正方体的，会缓慢自转的实体。</p>
+<h2 id="物品设计理念">物品设计理念</h2>
+<p>企划案中有少量关于物品设计理念的叙述，这里详细地说一下。</p>
+<p>模组中的物品虽然有着诸多特殊效果，但这些效果大多是为了增加难度，让模组游玩流程更加难以控制。除了基本只有正面效果的水石以外，物品都会或多或少地增加麻烦：火石会烧掉你的建筑物、掉落物和生物；电石会伤害饲养的动物并且可以在水中杀死没有电石的玩家；地石会将方块变成泥土并有可能造成方块坍塌；粪石使持有者中毒，反胃，还将液体转化为难以利用的粪水。太阳种子和太阳石则更加混沌：直接将随处可见的方块引爆或替换成火焰。微型月球也可能将怪物快速吸到身边造成麻烦。</p>
+<h2 id="程序设计">程序设计</h2>
+<p>鼠标悬浮在模组中绝大部分的物品上面时，除了会显示黄色高亮的物品名以外，还会有“更多信息：按下 &lt;Shift&gt;”的字样。当玩家按下 Shift 按键时，则会显示详细的物品描述。这个设计借鉴自 tetra 模组，可以防止玩家移动物品时被较长的物品描述干扰。</p>
+
+
+<figure>
+    <picture>
+                <source srcset="/2021/05/23/uusi-aurinko-devlog-1/385a2f35/item_info_1@1x.png"media="(max-width: 39.99em)"  type="image/png" />
+                <source srcset="/2021/05/23/uusi-aurinko-devlog-1/385a2f35/item_info_1@2x.png"media="(min-width: 40em)"  type="image/png" />
+            <img src="/2021/05/23/uusi-aurinko-devlog-1/385a2f35/item_info_1@2x.png" alt="未按下 Shift 时的物品描述" />
+    </picture>
+        <figcaption>未按下 Shift 时的物品描述</figcaption>
+</figure>
+
+
+
+
+
+<figure>
+    <picture>
+                <source srcset="/2021/05/23/uusi-aurinko-devlog-1/402df7ed/item_info_2@1x.png"media="(max-width: 39.99em)"  type="image/png" />
+                <source srcset="/2021/05/23/uusi-aurinko-devlog-1/402df7ed/item_info_2@2x.png"media="(min-width: 40em)"  type="image/png" />
+            <img src="/2021/05/23/uusi-aurinko-devlog-1/402df7ed/item_info_2@2x.png" alt="按下 Shift 时的物品描述" />
+    </picture>
+        <figcaption>按下 Shift 时的物品描述</figcaption>
+</figure>
+
+
+
+<p>模组中的大部分物品既能够在玩家的手中生效，又能够以掉落物的形式在世界中生效。这一类物品在代码中被称为 ItemRadiative，即“放射性物品”。为了方便玩家在养成太阳的时候将物品远距离投入太阳，这些物品都有右键远距离投掷功能。它们的代码框架基本搭建完毕：在手中或世界产生特效，在世界中产生粒子效果，以及右键投掷。</p>
+
+
+<figure>
+    <picture>
+                <source srcset="/2021/05/23/uusi-aurinko-devlog-1/6a33ef08/throw_item@1x.png"media="(max-width: 39.99em)"  type="image/png" />
+                <source srcset="/2021/05/23/uusi-aurinko-devlog-1/6a33ef08/throw_item@2x.png"media="(min-width: 40em)"  type="image/png" />
+            <img src="/2021/05/23/uusi-aurinko-devlog-1/6a33ef08/throw_item@2x.png" alt="右键远距离投掷物品" />
+    </picture>
+        <figcaption>右键远距离投掷物品</figcaption>
+</figure>
+
+
+
+<p>火石和水石在游戏中的效果基本制作完成。火石的效果与企划案中的设计相差无几，只是进行了一些细化，提高了可燃方块的着火概率并能直接点燃附近实体。水石则根据游戏性和代码实现难度做出了一些额外的修改。水石将岩浆源和流动的岩浆分别变成黑曜石和圆石的设计可能导致玩家将地狱的岩浆海完全铺上黑曜石，因此被削弱为将岩浆源变成类似岩浆块 + 霜冰的半凝固岩浆方块。半凝固岩浆会随时间变回岩浆，并且在地狱中这一过程会被大大加速。“身上非信标效果双倍速度消退”的设计也因为代码难以较好实现而放弃。</p>
+<p>在参考原版霜冰编写半凝固岩浆方块代码的时候，我发现了维基百科上这行字所描述的特性的实际作用。</p>
+<blockquote>
+<p>当霜冰融化或被摧毁时，任何相邻的霜冰，在它相邻的6个面剩余的霜冰少于2个时就会立即融化。</p>
+</blockquote>
+<p>假如没有这个设计，或将“立即融化”变更为 age 加 1,都会导致残留下大量消融极慢且孤立的霜冰方块。虽然立即融化显得比较突兀，但是却能解决这一问题。</p>
+
+
+<figure>
+    <picture>
+                <source srcset="/2021/05/23/uusi-aurinko-devlog-1/f1a4258d/fire_and_water_stone_effects@1x.png"media="(max-width: 39.99em)"  type="image/png" />
+                <source srcset="/2021/05/23/uusi-aurinko-devlog-1/f1a4258d/fire_and_water_stone_effects@2x.png"media="(min-width: 40em)"  type="image/png" />
+            <img src="/2021/05/23/uusi-aurinko-devlog-1/f1a4258d/fire_and_water_stone_effects@2x.png" alt="已经完成的特效" />
+    </picture>
+        <figcaption>已经完成的特效</figcaption>
+</figure>
+
+
+
+<p>电石只完成了很小一部分。它的闪电传播特效初步确定为在一定范围内相邻的导电方块与空气接触的表面上生成闪电的粒子效果。导电方块的连续判定采用了从电石坐标开始的广度优先搜索，耗时不是很大。闪电粒子效果还没有绘制，麻痹和闪电免疫效果也没有制作。</p>
+
+
+<figure>
+    <picture>
+                <source srcset="/2021/05/23/uusi-aurinko-devlog-1/d93256c3/lightning_dfs@1x.png"media="(max-width: 39.99em)"  type="image/png" />
+                <source srcset="/2021/05/23/uusi-aurinko-devlog-1/d93256c3/lightning_dfs@2x.png"media="(min-width: 40em)"  type="image/png" />
+            <img src="/2021/05/23/uusi-aurinko-devlog-1/d93256c3/lightning_dfs@2x.png" alt="电流传播特效，闪电粒子用火焰替代" />
+    </picture>
+        <figcaption>电流传播特效，闪电粒子用火焰替代</figcaption>
+</figure>
+
+
+
+<h3 id="放弃药水加速消退效果">放弃药水加速消退效果</h3>
+<p>水石原来有“身上非信标效果双倍速度消退”的设计，但是由于原版药水效果的底层代码原因作罢。周期性生效的效果，诸如生命恢复、中毒等，是通过对剩余时间模运算（<span class="math inline">\(\%\)</span>）来判断是否需要生效一次的。因此如果让它以双倍速度消退，仅仅会加快药水的生效速度。</p>
+<p>如果略微修改原版代码，让药水每 tick 最多生效一次，依然有以下 bug：当生效间隔与每 tick 消退速度的最小公倍数小于两者之积的时候，生效次数依然不符合预期。举个例子：当剩余时间最初为 <span class="math inline">\(200\)</span>,生效间隔为 <span class="math inline">\(50\)</span> 的时候,如果每 tick 剩余时间减少 <span class="math inline">\(1\)</span>,有 <span class="math inline">\(200, 150, 100, 50, 0\)</span> 四个时间点可能触发效果（实际上 <span class="math inline">\(200, 0\)</span> 这两个时间点不会触发）。如果每 tick 减少 <span class="math inline">\(2\)</span>，由于 <span class="math inline">\(50\)</span> 和 <span class="math inline">\(2\)</span> 的最小公倍数也是 <span class="math inline">\(50\)</span>，依然有 <span class="math inline">\(200, 150, 100, 50, 0\)</span>四个可能的触发时间点。</p>
+<p>最后的挣扎是将药水的剩余时间粗暴减半，然而这也有问题。玩家可以通过反复拿出水石将药水剩余时间多次减半。只是短暂地拿出放下水石就能减半药水效果，平衡性也会受到影响。</p>
+<p>综上所述，唯一的方案是增加一个单独的“下次生效倒计时”标签然后利用 Mixin 重写原版药水生效机制的全部代码。这样会极大地修改原版代码，改变药水效果的底层行为。导致其它一些可能依赖原版底层行为的模组、数据包出错。因此考虑过这些代价之后，我选择暂时放弃这部分功能的实现。以后如果与多余时间或者更好的方法也许会重新实现这个功能。</p>
+<h3 id="反射access-transformer-和-mixin">反射，Access Transformer 和 Mixin</h3>
+<p>当需要调用或修改原版 Minecraft 代码中一些 <code>private</code> 方法、参数时，常见的方法有三个：反射，Access Transformer 和 Mixin。在询问了 TeaCon 群的 3Tusk，CrispyChips 等前辈，再加上自己的理解，基本上总结出了这三种方法的利弊。</p>
+<h4 id="反射">反射</h4>
+<p>反射是 Java 本身自带的一种技术。它允许程序员通过获取并操作类、方法和变量的对象进行修改 <code>private</code> 变量，调用 <code>private</code> 方法，甚至将 <code>final</code> 变量进行修改。</p>
+<p>但是这里并不推荐修改声明为 <code>final</code> 的变量。详细原因可以在 <a target="_blank" rel="noopener" href="https://github.com/SpongePowered/Mixin/issues/217#issuecomment-338484972">这里</a> 看到，我这里简述一二。对于一个变量来说，<code>final</code> 关键字不仅代表无法修改，还涉及由此延伸的一系列与 JVM 有关的特性。如果一个变量无法修改，那么 JVM 可以直接进行缓存，无视可能的修改。即使 <code>final</code> 变量被修改，JVM 中的缓存可能不会变化，导致代码无法产生预期的效果。</p>
+<p>另外，在使用反射时应当对第一次反射操作获取到的变量、方法对象进行缓存，并在后续的操作中尽可能直接使用缓存的对象。获取这些反射对象的性能消耗较大，且可能产生一些错误（因此还需要有额外耗时的 <code>try-catch</code> 语句），进行缓存可以提升性能。</p>
+<p>编写 Minecraft mod 时还会涉及到源码的混淆：开发时使用的是反混淆的变量、方法名，但一般使用时使用的是未反混淆的名称。反射时还应该使用 Forge 提供的 <code>ObfuscationReflectionHelper</code> 类中的方法，来避免造成不必要的麻烦。</p>
+<h4 id="access-transformer-与-mixin">Access Transformer 与 Mixin</h4>
+<p>Access Transformer（简称AT）与 Mixin 都是通过两种直接修改 Minecraft 字节码或代码，制作 Coremod ，达成操作 <code>private</code> 方法与变量的效果。由于被这两种方法修改的类在被 ClassLoader 加载前就已经变化，可以避免反射修改 <code>final</code> 变量时的一些问题。这两种方法的实际运行效率相差不多并都快于反射。但是我个人并不推荐 AT，原因主要有三。</p>
+<p>首先，虽然 AT 是 Forge 自带的一种修改方法，配置起来比 Mixin 方便许多，但是每次编辑配置文件后都需要重新反编译、反混淆 MC 源码，实际使用的时候反而会比 Mixin 麻烦。</p>
+<p>其次，由于 AT 是通过直接修改反编译后的代码来使编译器将私有的变量、方法看作公有的变量、方法，程序员可能会难以直接看出哪些操作涉及了 AT，程序员可能会将修改过的原版类当作未修改的。而 Mixin 是通过注解、Mixin 类进行修改的，因此在使用被修改的类时看到形如 <code>((MinecraftClassMixin) MinecraftClass).modifiedMethod()</code> 的调用形式，不会污染 Minecraft 源码。</p>
+<p>另外，Mixin 还可以注入、重定向、重写原版的方法，实现比 AT 更多样且强大的功能。</p>
+<p>虽然 Forge 现已支持 Mixin，但使用前还需要一些配置，主要用来添加 Mixin 插件并告诉 Mixin 反混淆映射表和配置文件地址。这里也放上这些配置方便大家参考：</p>
+<p><code>build.gradle</code> 中（只列出新增项）： <figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 添加依赖与库</span></span><br><span class="line"><span class="keyword">buildscript</span> &#123;</span><br><span class="line">    <span class="keyword">repositories</span> &#123;</span><br><span class="line">        maven &#123; url = <span class="string">&quot;https://repo.spongepowered.org/maven&quot;</span> &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">dependencies</span> &#123;</span><br><span class="line">        <span class="keyword">classpath</span> <span class="keyword">group</span>: <span class="string">&#x27;org.spongepowered&#x27;</span>, name: <span class="string">&#x27;mixingradle&#x27;</span>, version: <span class="string">&#x27;0.7-SNAPSHOT&#x27;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Mixin 插件</span></span><br><span class="line">apply plugin: <span class="string">&#x27;org.spongepowered.mixin&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 这里是你的 modid，应该本来就有，不用添加。这里列出是为了完整性</span></span><br><span class="line">archivesBaseName = <span class="string">&#x27;modid&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// Mixin 反混淆表命名</span></span><br><span class="line">mixin &#123;</span><br><span class="line">    add <span class="keyword">sourceSets</span>.main, archivesBaseName + <span class="string">&quot;.refmap.json&quot;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 用运行参数告诉 Mixin 配置文件</span></span><br><span class="line">minecraft &#123;</span><br><span class="line">    runs &#123;</span><br><span class="line">        client &#123;</span><br><span class="line">            arg <span class="string">&quot;-mixin.config=&quot;</span> + archivesBaseName + <span class="string">&quot;.mixins.json&quot;</span></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        server &#123;</span><br><span class="line">            arg <span class="string">&quot;-mixin.config=&quot;</span> + archivesBaseName + <span class="string">&quot;.mixins.json&quot;</span></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        data &#123;</span><br><span class="line">            <span class="comment">// 这里只需要加入 &#x27;-mixin.config=&#x27; + archivesBaseName + &#x27;.mixins.json&#x27; 这一额外的参数就行</span></span><br><span class="line">            args <span class="string">&#x27;--mod&#x27;</span>, <span class="string">&#x27;uusiaurinko&#x27;</span>, <span class="string">&#x27;--all&#x27;</span>, <span class="string">&#x27;--output&#x27;</span>, <span class="keyword">file</span>(<span class="string">&#x27;src/generated/resources/&#x27;</span>), <span class="string">&#x27;--existing&#x27;</span>, <span class="keyword">file</span>(<span class="string">&#x27;src/main/resources/&#x27;</span>)， <span class="string">&#x27;-mixin.config=&#x27;</span> + archivesBaseName + <span class="string">&#x27;.mixins.json&#x27;</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 额外的 jar 打包参数</span></span><br><span class="line">jar &#123;</span><br><span class="line">    manifest &#123;</span><br><span class="line">        attributes([</span><br><span class="line">                <span class="string">&quot;MixinConfigs&quot;</span>            : archivesBaseName + <span class="string">&quot;.mixins.json&quot;</span></span><br><span class="line">        ])</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure> 在这之后 IDEA 的用户记得重新运行一次 <code>genIntellijRuns</code> 刷新 IDEA 的运行参数。然后就可以参照其它教程加入配置文件。记得配置文件的文件名应该是 <code>&lt;modid&gt;.mixins.json</code>，里面的 <code>refmap</code> 参数应该是 <code>&lt;modid&gt;.refmap.json</code>。</p>
+<h4 id="结论">结论</h4>
+<p>不频繁的操作使用 <code>ObfuscationReflectionHelper</code> 进行简便反射操作；频繁的操作使用 Mixin 进行复杂但运行速度快的操作。</p>
+<h3 id="原版的火焰-bug">原版的火焰 bug</h3>
+<p>在编写火石代码的时候我查阅了较多的原版火焰方块的代码，并且发现一处 bug。这个 bug 已经被提交为 <a target="_blank" rel="noopener" href="https://bugs.mojang.com/browse/MC-225779">MC-225779</a> 具体效果是火焰在潮湿地形中燃烧速度反而更快。具体原因与 Forge 开发关系不大，这里就不说了。有兴趣的可以自行查看。</p>
+<h2 id="后续计划">后续计划</h2>
+<p>下个星期开始，由于学习原因我没有之前那么多的时间用于模组开发，开发难度会放缓。预计五月六月初能完成模组物品的基本代码。在这之后会先专注进行太阳实体的制作。如果有剩余时间会制作“遗忘者”boss。</p>
+<h2 id="其他不成熟想法">其他不成熟想法</h2>
+<p>这里附上一些没有仔细考虑和讨论的不成熟想法。</p>
+<p><strong>自旋不为 1 的石板</strong>：这块石板的正面和反面都写有文字。当玩家阅读了反面的文字，想转回正面时，会发现“正面”已经换上了新的内容。这个设计为模组的引导手册加入了一些科幻的设定（也可以说是魔幻，全看怎么解释）。更重要的是，它通过设定在某种程度上合理化了一个手册上百页的夸张情况。这个想法的具体实现是做出一个旋转石板，然后原先“正面”的文字渐变成新的文字的效果。</p>
+<p><strong>装饰性方块</strong>：由于 TeaCon 需要开发者搭建场馆并展示，可以在模组中额外添加一些装饰性（也许也可以有功能性）的方块。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+  <div class="addthis_inline_share_toolbox", style="text-align: center">
+    <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-6089b828ba6dc0ff" async="async"></script>
+  </div>
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>LucunJi
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://lucunji.github.io/2021/05/23/uusi-aurinko-devlog-1/" title="Uusi Aurinko 模组开发日志（第一周）">https://lucunji.github.io/2021/05/23/uusi-aurinko-devlog-1/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="followme">
+  <span>欢迎关注我的其它发布渠道</span>
+
+  <div class="social-list">
+
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="/atom.xml">
+          <span class="icon">
+            <i class="fa fa-rss"></i>
+          </span>
+
+          <span class="label">RSS</span>
+        </a>
+      </div>
+
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="https://space.bilibili.com/2117299">
+          <span class="icon">
+            <i class="fa bili-tv"></i>
+          </span>
+
+          <span class="label">Bilibili</span>
+        </a>
+      </div>
+  </div>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/minecraft/" rel="tag"># minecraft</a>
+              <a href="/tags/mod/" rel="tag"># mod</a>
+              <a href="/tags/forge/" rel="tag"># forge</a>
+              <a href="/tags/UusiAurinko/" rel="tag"># UusiAurinko</a>
+              <a href="/tags/devlog/" rel="tag"># devlog</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/03/04/brief-on-linear-color-transfer/" rel="prev" title="线性颜色转移">
+                  <i class="fa fa-chevron-left"></i> 线性颜色转移
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2018 – 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fas fa-biohazard"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">LucunJi</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+  <div class="addthis_inline_share_toolbox">
+    <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-6089b828ba6dc0ff" async="async"></script>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+  <script>
+    NProgress.configure({
+      showSpinner: false
+    });
+    NProgress.start();
+    document.addEventListener('readystatechange', () => {
+      if (document.readyState === 'interactive') {
+        NProgress.inc(0.8);
+      }
+      if (document.readyState === 'complete') {
+        NProgress.done();
+      }
+    });
+    document.addEventListener('pjax:send', () => {
+      NProgress.start();
+    });
+    document.addEventListener('pjax:success', () => {
+      NProgress.done();
+    });
+  </script>
+
+  
+
+
+<script>
+  (function() {
+    function leancloudSelector(url) {
+      url = encodeURI(url);
+      return document.getElementById(url).querySelector('.leancloud-visitors-count');
+    }
+
+    function addCount(Counter) {
+      const visitors = document.querySelector('.leancloud_visitors');
+      const url = decodeURI(visitors.id);
+      const title = visitors.dataset.flagTitle;
+
+      Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({ url })))
+        .then(response => response.json())
+        .then(({ results }) => {
+          if (results.length > 0) {
+            const counter = results[0];
+            leancloudSelector(url).innerText = counter.time + 1;
+            Counter('put', '/classes/Counter/' + counter.objectId, { time: { '__op': 'Increment', 'amount': 1 } })
+              .catch(error => {
+                console.error('Failed to save visitor count', error);
+              });
+          } else {
+              leancloudSelector(url).innerText = 'Counter not initialized! More info at console err msg.';
+              console.error('ATTENTION! LeanCloud counter has security bug, see how to solve it here: https://github.com/theme-next/hexo-leancloud-counter-security. \n However, you can still use LeanCloud without security, by setting `security` option to `false`.');
+            
+          }
+        })
+        .catch(error => {
+          console.error('LeanCloud Counter Error', error);
+        });
+    }
+
+    function showTime(Counter) {
+      const visitors = document.querySelectorAll('.leancloud_visitors');
+      const entries = [...visitors].map(element => {
+        return decodeURI(element.id);
+      });
+
+      Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({ url: { '$in': entries } })))
+        .then(response => response.json())
+        .then(({ results }) => {
+          for (let url of entries) {
+            const target = results.find(item => item.url === url);
+            leancloudSelector(url).innerText = target ? target.time : 0;
+          }
+        })
+        .catch(error => {
+          console.error('LeanCloud Counter Error', error);
+        });
+    }
+
+    const { app_id, app_key, server_url } = {"enable":true,"app_id":"GM3E9c3iav6Jjhwj4n9ktqIX-MdYXbMMI","app_key":"OIJ3z8gwKASYoJUUy3BQIFQU","server_url":null,"security":true};
+    function fetchData(api_server) {
+      const Counter = (method, url, data) => {
+        return fetch(`${api_server}/1.1${url}`, {
+          method,
+          headers: {
+            'X-LC-Id'     : app_id,
+            'X-LC-Key'    : app_key,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data)
+        });
+      };
+      if (CONFIG.page.isPost) {
+        if (CONFIG.hostname !== location.hostname) return;
+        addCount(Counter);
+      } else if (document.querySelectorAll('.post-title-link').length >= 1) {
+        showTime(Counter);
+      }
+    }
+
+    const api_server = app_id.slice(-9) === '-MdYXbMMI' ? `https://${app_id.slice(0, 8).toLowerCase()}.api.lncldglobal.com` : server_url;
+
+    if (api_server) {
+      fetchData(api_server);
+    } else {
+      fetch('https://app-router.leancloud.cn/2/route?appId=' + app_id)
+        .then(response => response.json())
+        .then(({ api_server }) => {
+          fetchData('https://' + api_server);
+        });
+    }
+  })();
+</script>
+
+
+  <script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              const target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    const script = document.createElement('script');
+    script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3.1.2/es5/tex-mml-chtml.js';
+    script.defer = true;
+    document.head.appendChild(script);
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.typesetClear();
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+
+
+<script>
+let inner = document.getElementsByClassName("main-inner archive")[0];
+if (inner != null) {
+    inner.children[0].style.marginTop = 0;
+    inner.innerHTML = `
+<div class="post-block animated fadeIn">
+    <header class="post-header animated fadeInDown">
+        <h1 class="post-title" itemprop="name headline"
+        style="font-weight: normal;text-align: center;margin: initial">
+            标签 
+        </h1>
+    </header>
+    <div class="post-body animated fadeInDown">
+        <div class="tag-cloud">
+            <a href="/tags/Hexo/" style="font-size: 12px; color: #ccc">Hexo</a> <a href="/tags/Java/" style="font-size: 18px; color: #8e8e8e">Java</a> <a href="/tags/NexT/" style="font-size: 12px; color: #ccc">NexT</a> <a href="/tags/TekTopia/" style="font-size: 18px; color: #8e8e8e">TekTopia</a> <a href="/tags/UusiAurinko/" style="font-size: 12px; color: #ccc">UusiAurinko</a> <a href="/tags/ai/" style="font-size: 12px; color: #ccc">ai</a> <a href="/tags/anime-images/" style="font-size: 12px; color: #ccc">anime images</a> <a href="/tags/art/" style="font-size: 12px; color: #ccc">art</a> <a href="/tags/bytecode/" style="font-size: 12px; color: #ccc">bytecode</a> <a href="/tags/computer-vision/" style="font-size: 12px; color: #ccc">computer vision</a> <a href="/tags/deepfake/" style="font-size: 12px; color: #ccc">deepfake</a> <a href="/tags/devlog/" style="font-size: 12px; color: #ccc">devlog</a> <a href="/tags/forge/" style="font-size: 12px; color: #ccc">forge</a> <a href="/tags/machine-learning/" style="font-size: 12px; color: #ccc">machine learning</a> <a href="/tags/math/" style="font-size: 12px; color: #ccc">math</a> <a href="/tags/minecraft/" style="font-size: 30px; color: #111">minecraft</a> <a href="/tags/misc/" style="font-size: 12px; color: #ccc">misc</a> <a href="/tags/mod/" style="font-size: 24px; color: #4f4f4f">mod</a> <a href="/tags/noita/" style="font-size: 12px; color: #ccc">noita</a> <a href="/tags/paintings/" style="font-size: 12px; color: #ccc">paintings</a> <a href="/tags/tech/" style="font-size: 12px; color: #ccc">tech</a> <a href="/tags/translation/" style="font-size: 18px; color: #8e8e8e">translation</a> <a href="/tags/weird/" style="font-size: 12px; color: #ccc">weird</a>
+        </div>
+    </div>
+</div>` + inner.innerHTML;
+}
+</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.css">
+
+<script>
+NexT.utils.loadComments('.gitalk-container', () => {
+  NexT.utils.getScript('https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '8fd22f2eb6ea944a13c2',
+      clientSecret: '9ed843020c43682254a95859546418fa8d7d43a1',
+      repo        : 'LucunJi.github.io-gitalk',
+      owner       : 'LucunJi',
+      admin       : ['LucunJi'],
+      id          : '654633ccdc319869fd8dc6105bf8367a',
+      proxy       : '',
+        language: '',
+      distractionFreeMode: true
+    });
+    gitalk.render(document.querySelector('.gitalk-container'));
+  }, window.Gitalk);
+});
+</script>
+
+</body>
+</html>

@@ -6,7 +6,7 @@
   <link href="https://lucunji.github.io/atom.xml" rel="self"/>
   
   <link href="https://lucunji.github.io/"/>
-  <updated>2021-05-02T08:13:27.722Z</updated>
+  <updated>2021-05-24T08:56:09.941Z</updated>
   <id>https://lucunji.github.io/</id>
   
   <author>
@@ -17,11 +17,43 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Uusi Aurinko 模组开发日志（第一周）</title>
+    <link href="https://lucunji.github.io/2021/05/23/uusi-aurinko-devlog-1/"/>
+    <id>https://lucunji.github.io/2021/05/23/uusi-aurinko-devlog-1/</id>
+    <published>2021-05-23T05:35:08.000Z</published>
+    <updated>2021-05-24T08:56:09.941Z</updated>
+    
+    
+    <summary type="html">&lt;figure&gt;
+    &lt;picture&gt;
+                &lt;source srcset=&quot;/2021/05/23/uusi-aurinko-devlog-1/d36cb0cb/stone_item_display@1x.png&quot;media=&quot;(max-width: 39.99em)&quot;  type=&quot;image/png&quot; /&gt;
+                &lt;source srcset=&quot;/2021/05/23/uusi-aurinko-devlog-1/d36cb0cb/stone_item_display@2x.png&quot;media=&quot;(min-width: 40em)&quot;  type=&quot;image/png&quot; /&gt;
+            &lt;img src=&quot;/2021/05/23/uusi-aurinko-devlog-1/d36cb0cb/stone_item_display@2x.png&quot; alt=&quot;现有物品一览&quot; /&gt;
+    &lt;/picture&gt;
+        &lt;figcaption&gt;现有物品一览&lt;/figcaption&gt;
+&lt;/figure&gt;</summary>
+    
+    
+    
+    
+    <category term="minecraft" scheme="https://lucunji.github.io/tags/minecraft/"/>
+    
+    <category term="mod" scheme="https://lucunji.github.io/tags/mod/"/>
+    
+    <category term="forge" scheme="https://lucunji.github.io/tags/forge/"/>
+    
+    <category term="UusiAurinko" scheme="https://lucunji.github.io/tags/UusiAurinko/"/>
+    
+    <category term="devlog" scheme="https://lucunji.github.io/tags/devlog/"/>
+    
+  </entry>
+  
+  <entry>
     <title>线性颜色转移</title>
     <link href="https://lucunji.github.io/2021/03/04/brief-on-linear-color-transfer/"/>
     <id>https://lucunji.github.io/2021/03/04/brief-on-linear-color-transfer/</id>
     <published>2021-03-05T01:27:03.000Z</published>
-    <updated>2021-05-02T08:13:27.722Z</updated>
+    <updated>2021-05-24T08:56:09.936Z</updated>
     
     
     <summary type="html">&lt;p&gt;前阵子做了一个关于线性颜色转移（Linear Color Transfer）的期末研究，准备闲下来把相关的东西发到在博客上面，分享的同时顺便帮自己巩固一下知识点。相关的代码可以在&lt;a href=&quot;https://github.com/LucunJi/Linear-Color-Transfer-Methods&quot;&gt;这里&lt;/a&gt;看到。当时写的 paper 为了充字数写得比较繁琐，也有一些不严谨的问题，因此就不放上来了。这篇博文相当于根据当初 paper 的思路重新梳理一遍。如有錯漏之处烦请斧正。&lt;/p&gt;</summary>
@@ -29,7 +61,7 @@
     
     
     
-    <category term="CV(computer vision)" scheme="https://lucunji.github.io/tags/CV-computer-vision/"/>
+    <category term="computer vision" scheme="https://lucunji.github.io/tags/computer-vision/"/>
     
     <category term="math" scheme="https://lucunji.github.io/tags/math/"/>
     
@@ -195,7 +227,7 @@
     <link href="https://lucunji.github.io/2020/07/22/can-tech-save-us-from-deepfakes/"/>
     <id>https://lucunji.github.io/2020/07/22/can-tech-save-us-from-deepfakes/</id>
     <published>2020-07-22T10:03:48.000Z</published>
-    <updated>2021-05-02T07:32:43.739Z</updated>
+    <updated>2021-05-24T08:56:09.938Z</updated>
     
     
     <summary type="html">&lt;figure&gt;
@@ -217,7 +249,7 @@
     
     <category term="deepfake" scheme="https://lucunji.github.io/tags/deepfake/"/>
     
-    <category term="ML(machine learning)" scheme="https://lucunji.github.io/tags/ML-machine-learning/"/>
+    <category term="machine learning" scheme="https://lucunji.github.io/tags/machine-learning/"/>
     
     <category term="translation" scheme="https://lucunji.github.io/tags/translation/"/>
     
@@ -286,7 +318,7 @@
     <link href="https://lucunji.github.io/2020/01/04/rift-with-mixin-setup/"/>
     <id>https://lucunji.github.io/2020/01/04/rift-with-mixin-setup/</id>
     <published>2020-01-04T06:02:24.000Z</published>
-    <updated>2021-04-28T18:22:42.034Z</updated>
+    <updated>2021-05-24T08:56:09.939Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -296,6 +328,10 @@
     
     
     
+    
+    <category term="minecraft" scheme="https://lucunji.github.io/tags/minecraft/"/>
+    
+    <category term="mod" scheme="https://lucunji.github.io/tags/mod/"/>
     
   </entry>
   
